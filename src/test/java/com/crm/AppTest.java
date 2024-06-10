@@ -1,5 +1,6 @@
 package com.crm;
 
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -36,6 +37,8 @@ public class AppTest{
         usernameField.sendKeys(username);
         passwordField.sendKeys(password);
         loginButton.click();
+
+        Reporter.log("Utilizator logat");
 
     }
 
