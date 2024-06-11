@@ -17,4 +17,13 @@ public class CredentialsProvider {
             
         };
     }
+
+    @DataProvider(name = "FarmerGlobalCredentials")
+    public Object[][] FarmerGlobalProviderDataSet() {
+        // Filtrare pentru utilizatorii selectați
+        return new Object[][] {
+            { "victor.cristea@vebo.io", "j8L3pc5hJ20Sjn10Lp!" },
+            { "marcel.g@vebo.io", "j8L3pc5hJ20Sjn10Lp!" }
+        };
+    }
 }

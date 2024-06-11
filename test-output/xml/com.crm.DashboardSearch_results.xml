@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNGTest-4428cdc7-6bce-445c-a9e7-8dbb5491a5df"
+<testsuite name="TestNGTest-3eb4f1ba-dd7c-4c53-8086-43c6a1c0f57c"
            tests="5"
            failures="0"
            errors="0"
            skipped="0"
-           time="22.802">
+           time="22.983">
     <properties></properties>
 
 
 
-            <testcase
-                name="signIn"
-                time="4.710"
-                classname="com.crm.DashboardSearch">
-            </testcase>
-            <testcase
-                name="signIn"
-                time="4.476"
-                classname="com.crm.DashboardSearch">
-            </testcase>
             <testcase
                 name="signIn"
                 time="4.435"
@@ -26,12 +16,22 @@
             </testcase>
             <testcase
                 name="signIn"
-                time="4.683"
+                time="4.343"
                 classname="com.crm.DashboardSearch">
             </testcase>
             <testcase
                 name="signIn"
-                time="4.498"
+                time="4.993"
+                classname="com.crm.DashboardSearch">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="4.682"
+                classname="com.crm.DashboardSearch">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="4.530"
                 classname="com.crm.DashboardSearch">
             </testcase>
 </testsuite>
