@@ -155,16 +155,29 @@ e.printStackTrace();
 }
 
 // Iterează primele 5 elemente sau mai puține, dacă lista are mai puțin de 5 elemente
+
+List<WebElement> updatedCells = driver.findElements(By.cssSelector("tr.even.grey-row td"));
+
+Math.min(updatedCells.size(), 6);
 for (int i = 0; i < count; i++) {
-WebElement cell = cells.get(i);
+WebElement cell = updatedCells.get(i);
 String text = cell.getText();
 Reporter.log("A fost eidtat proxyul: " + text);
 }
 
     // Create tabble settings 
+
+
     // Delete table settings 
     // Export csv
         // Delete proxy
+
+        try {
+            Thread.sleep(4000);
+            } catch (InterruptedException e) {
+            e.printStackTrace();
+            }
+
         WebElement selectCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/main/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[3]/div[2]/table/tbody/tr/td[1]/div/input")));
         selectCheckbox.click();
         

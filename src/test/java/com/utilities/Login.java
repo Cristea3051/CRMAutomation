@@ -28,4 +28,13 @@ public class Login {
         passwordField.sendKeys(password);
         loginButton.click();
     }
+
+    // Close debug bar 
+    public static void closeDebugBar(WebDriver driver) {
+            WebElement debugBar = driver.findElement(By.className("phpdebugbar-close-btn"));
+            // Face clic dacă elementul este găsit
+            debugBar.click();
+    }
 }
+
+
