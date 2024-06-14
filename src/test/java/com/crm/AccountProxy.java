@@ -44,6 +44,16 @@ public class AccountProxy {
 
         String title = driver.getTitle();
 
+        WebElement hideDebugBar = wait.until(ExpectedConditions.elementToBeClickable(By.className("phpdebugbar-close-btn")));
+
+        hideDebugBar.click();
+        // Verifică dacă butonul a fost apăsat
+if (hideDebugBar.isEnabled()) {
+    Reporter.log("Debug Bar a fost ascuns");
+} else {
+    Reporter.log("DebugBar NU a fost ascuns.");
+}
+
         Reporter.log("Utilizatorul a navigat cu succes la pagina - "  + title);
 
         // Create proxy
