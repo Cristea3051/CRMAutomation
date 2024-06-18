@@ -7,30 +7,26 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import com.Base.BaseTest;
 
 import com.resources.CredentialsProvider;
 import com.utilities.Login;
 
-public class AccountProxy {
-   
-    private WebDriver driver;
+public class AccountProxy extends BaseTest {
     private Login login;
 
     @BeforeMethod
     public void setUp() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        login = new Login(driver); // Inițializează obiectul Login
+        super.setUp(); // Apelăm metoda setUp() din clasa de bază
+        login = new Login(driver); // Inițializăm obiectul Login
     }
+
  @Test(dataProvider = "FarmerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
@@ -222,12 +218,5 @@ Reporter.log("A fost eidtat proxyul: " + text);
         }
     }
 
-    @AfterMethod
-    public void tearDown() {
-        // Închide browser-ul
-        if (driver != null) {
-            driver.quit();
-        }
-    }
 }
 

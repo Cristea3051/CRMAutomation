@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNGTest-37770d5d-38b8-407e-920a-b1fdbc5f2799"
+<testsuite name="TestNGTest-1c7d975e-8d8a-4eec-b70d-c216c3803fb0"
            tests="5"
            failures="0"
            errors="0"
            skipped="0"
-           time="22.320">
+           time="22.248">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="4.494"
+                time="4.378"
                 classname="com.crm.DashboardSearch">
             </testcase>
             <testcase
                 name="signIn"
-                time="4.468"
+                time="4.453"
                 classname="com.crm.DashboardSearch">
             </testcase>
             <testcase
                 name="signIn"
-                time="4.509"
+                time="4.398"
                 classname="com.crm.DashboardSearch">
             </testcase>
             <testcase
                 name="signIn"
-                time="4.556"
+                time="4.608"
                 classname="com.crm.DashboardSearch">
             </testcase>
             <testcase
                 name="signIn"
-                time="4.293"
+                time="4.411"
                 classname="com.crm.DashboardSearch">
             </testcase>
 </testsuite>
