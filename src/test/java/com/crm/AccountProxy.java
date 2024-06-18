@@ -1,6 +1,8 @@
 package com.crm;
 
 import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -158,10 +160,80 @@ showData.iterateAndLogTableData();
 
 
     // Create tabble settings 
+    try {
+        Thread.sleep(3000);
+        } catch (InterruptedException e) {
+        e.printStackTrace();
+        }
+    wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
+    try {
+        Thread.sleep(3000);
+        } catch (InterruptedException e) {
+        e.printStackTrace();
+        }
+   WebElement nameInput = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
+   nameInput.click();
+   nameInput.sendKeys(inputInfo.getProperty("a1"));
 
+    for (int i = 0; i < 5; i++) {
+        // Găsirea elementului și efectuarea clicului folosind XPath
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("move_in_hide")))).click();
+    }
+    wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
+
+    try {
+        // Începe încercarea de a găsi elementele dorite
+        List<WebElement> elements = driver.findElements(By.xpath(locators.getProperty("find_second_setting")));
+    
+        if (elements.size() > 0) {
+            // Dacă există cel puțin un al doilea element de tip label, execută a doua acțiune
+            elements.get(0).click();
+        } else {
+            // Dacă nu există al doilea element de tip label, execută prima acțiune
+            driver.findElement(By.xpath(locators.getProperty("find_setting"))).click();
+        }
+    } catch (Exception e) {
+        // Gestionarea excepțiilor (afișarea mesajului de eroare sau altă logică dorită)
+        Reporter.log("Excepție: " + e.getMessage());
+    }
+
+    wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+
+    Reporter.log("A fost creat cu succes noua setare");
 
     // Delete table settings 
+    wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
+    try {
+        Thread.sleep(3000);
+        } catch (InterruptedException e) {
+        e.printStackTrace();
+        }
+    wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
+    try {
+        Thread.sleep(3000);
+        } catch (InterruptedException e) {
+        e.printStackTrace();
+        }
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_preset")))).click();
+        try {
+            Thread.sleep(3000);
+            } catch (InterruptedException e) {
+            e.printStackTrace();
+            }
+    wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+    try {
+        Thread.sleep(3000);
+        } catch (InterruptedException e) {
+        e.printStackTrace();
+        }
+    Reporter.log("A fost creat cu succes noua setare");
+
+
     // Export csv
+
+
+
         // Delete proxy
 
         try {
