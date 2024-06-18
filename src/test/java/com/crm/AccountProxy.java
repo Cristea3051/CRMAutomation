@@ -1,9 +1,6 @@
 package com.crm;
 
-
 import java.time.Duration;
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -14,8 +11,8 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.Base.BaseTest;
-
 import com.resources.CredentialsProvider;
+import com.resources.Helpers;
 import com.utilities.Login;
 
 public class AccountProxy extends BaseTest {
@@ -40,7 +37,7 @@ public class AccountProxy extends BaseTest {
 
         String title = driver.getTitle();
 
-        WebElement hideDebugBar = wait.until(ExpectedConditions.elementToBeClickable(By.className("phpdebugbar-close-btn")));
+        WebElement hideDebugBar = wait.until(ExpectedConditions.elementToBeClickable(By.className(locators.getProperty("close_debugbar"))));
 
         hideDebugBar.click();
         // Verifică dacă butonul a fost apăsat
@@ -54,28 +51,28 @@ if (hideDebugBar.isEnabled()) {
 
         // Create proxy
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.btn-dual:nth-child(5)"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("create_proxy_button")))).click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.id("create_name"))).sendKeys("201.192.30.21:1123");
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_name_input")))).sendKeys(inputInfo.getProperty("name"));
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.id("create_username"))).sendKeys("ProxyAutomation");
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_username_input")))).sendKeys(inputInfo.getProperty("username"));
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.id("create_password"))).sendKeys("Password22##");
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_password_input")))).sendKeys(inputInfo.getProperty("password"));
 
-        WebElement selectSource = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"create-accounts-proxy-modal\"]/div/div/div/div/div/div/div[2]/form/div/div/div[4]/select")));
+        WebElement selectSource = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_proxy_type"))));
         
         // Identifică elementul și execută acțiunile necesare
         selectSource.click();
         driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
         driver.switchTo().activeElement().sendKeys(Keys.ENTER);
 
-        WebElement inputElement = driver.findElement(By.cssSelector("input[inputname='source_id']"));
+        WebElement inputElement = driver.findElement(By.cssSelector(locators.getProperty("select_proxy_sorce")));
         try {
             Thread.sleep(4000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        inputElement.sendKeys("ip");
+        inputElement.sendKeys((inputInfo.getProperty("input_source")));
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -85,7 +82,7 @@ if (hideDebugBar.isEnabled()) {
         driver.switchTo().activeElement().sendKeys(Keys.ENTER);
 
 
-       WebElement createProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id("create-accounts-proxy-button")));
+       WebElement createProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_proxy"))));
        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", createProxy);
        createProxy.click();
 
@@ -94,63 +91,58 @@ if (hideDebugBar.isEnabled()) {
     } catch (InterruptedException e) {
         e.printStackTrace();
     }
-
-    List<WebElement> cells = driver.findElements(By.cssSelector("tr.even.grey-row td"));
-
     // Iterează primele 5 elemente sau mai puține, dacă lista are mai puțin de 5 elemente
-    int count = Math.min(cells.size(), 6);
-    for (int i = 0; i < count; i++) {
-        WebElement cell = cells.get(i);
-        String text = cell.getText();
-        Reporter.log("A fost creat un nou proxy: " + text);
-    }
+   Helpers helpers = new Helpers(driver, locators);
+        helpers.iterateAndLogTableData();
+    
 
     // Update Proxy
 
-
- WebElement proxyCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/main/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[3]/div[2]/table/tbody/tr[1]/td[1]/div/input")));
+ WebElement proxyCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("checkbox_element"))));
 proxyCheckbox.click(); 
 
- wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-dt-row"))).click();
+ wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_header_button")))).click();
 
- WebElement editName = wait.until(ExpectedConditions.elementToBeClickable(By.id("edit_name")));
+ WebElement editName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_name_input"))));
 
  editName.clear();
- editName.sendKeys("101.232.32.25:2255");
+ editName.sendKeys(inputInfo.getProperty("edited_name"));
 
- WebElement editUserName = wait.until(ExpectedConditions.elementToBeClickable(By.id("edit_username")));
+ WebElement editUserName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_username_input"))));
 
  editUserName.clear();
- editUserName.sendKeys("UpdatedUsername");
+ editUserName.sendKeys(inputInfo.getProperty("edited_username"));
 
- WebElement editPassword = wait.until(ExpectedConditions.elementToBeClickable(By.id("edit_password")));
-editPassword.clear();
- editPassword.sendKeys("UpdatedPass22##");
+ WebElement editPassword = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_password_input"))));
+ editPassword.clear();
+ editPassword.sendKeys(inputInfo.getProperty("edited_password"));
 
 
-wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"edit-accounts-proxy-modal\"]/div/div/div/div/div/div/div[2]/form/div/div/div[4]/select"))).click();
+wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_edited_proxy_type")))).click();
 
+driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
 driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
 driver.switchTo().activeElement().sendKeys(Keys.ENTER);
 
-WebElement sourceName = driver.findElement(By.cssSelector("input[data-modal-field-id='edit_source']"));
+WebElement sourceName = driver.findElement(By.cssSelector(locators.getProperty("select_edted_proxy_sorce")));
 try {
     Thread.sleep(4000);
 } catch (InterruptedException e) {
     e.printStackTrace();
 }
 sourceName.clear();
-sourceName.sendKeys("ip");
+sourceName.sendKeys(inputInfo.getProperty("input_source"));
 try {
     Thread.sleep(2000);
 } catch (InterruptedException e) {
     e.printStackTrace();
 }
 driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
+driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
 driver.switchTo().activeElement().sendKeys(Keys.ENTER);
 
 
-WebElement updateProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id("edit-accounts-proxy-button")));
+WebElement updateProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_edited_proxy"))));
 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", updateProxy);
 updateProxy.click();
 
@@ -161,15 +153,9 @@ e.printStackTrace();
 }
 
 // Iterează primele 5 elemente sau mai puține, dacă lista are mai puțin de 5 elemente
+Helpers showData = new Helpers(driver, locators);
+showData.iterateAndLogTableData();
 
-List<WebElement> updatedCells = driver.findElements(By.cssSelector("tr.even.grey-row td"));
-
-Math.min(updatedCells.size(), 6);
-for (int i = 0; i < count; i++) {
-WebElement cell = updatedCells.get(i);
-String text = cell.getText();
-Reporter.log("A fost eidtat proxyul: " + text);
-}
 
     // Create tabble settings 
 
@@ -184,7 +170,7 @@ Reporter.log("A fost eidtat proxyul: " + text);
             e.printStackTrace();
             }
 
-        WebElement selectCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/main/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[3]/div[2]/table/tbody/tr/td[1]/div/input")));
+        WebElement selectCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("edited_chechbox_element"))));
         selectCheckbox.click();
         
         try {
@@ -195,20 +181,20 @@ Reporter.log("A fost eidtat proxyul: " + text);
         }
         
         // Identifică și selectează butonul pentru ștergere
-        WebElement deleteButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("delete-dt-row")));
+        WebElement deleteButton = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("delete_button"))));
         deleteButton.click();
         
         try {
             // Așteaptă un interval pentru a fi sigur că butonul de confirmare este prezent
             Thread.sleep(4000);
             // Încearcă să găsești și să apeși butonul de confirmare
-            WebElement confirmButton = driver.findElement(By.cssSelector(".swal2-confirm"));
+            WebElement confirmButton = driver.findElement(By.cssSelector(locators.getProperty("confirm_delete_modal")));
             confirmButton.click();
             // Afișează un mesaj către utilizator pentru a indica succesul
             Reporter.log("Proxy-ul a fost șters cu succes!");
         } catch (Exception e) {
             // Afiseaza un mesaj de eroare dacă nu a fost posibil de apasat butonul de confirmare
-            Reporter.log("Eroare: Nu s-a putut șter proxy-ul!");
+            Reporter.log("Eroare: Nu s-a putut șterge proxy-ul!");
         }
         try {
             // Așteaptă un interval pentru a fi sigur că proxy s-a sters
