@@ -173,7 +173,7 @@ showData.iterateAndLogTableData();
         }
    WebElement nameInput = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
    nameInput.click();
-   nameInput.sendKeys(inputInfo.getProperty("a1"));
+   nameInput.sendKeys(inputInfo.getProperty("setting_name"));
 
     for (int i = 0; i < 5; i++) {
         // Găsirea elementului și efectuarea clicului folosind XPath
@@ -202,32 +202,57 @@ showData.iterateAndLogTableData();
 
     Reporter.log("A fost creat cu succes noua setare");
 
+    try {
+        Thread.sleep(3000);
+        } catch (InterruptedException e) {
+        e.printStackTrace();
+        }
     // Delete table settings 
     wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
-    try {
-        Thread.sleep(3000);
-        } catch (InterruptedException e) {
-        e.printStackTrace();
-        }
+
+    // Așteaptă apariția și clicabilizarea butonului din prima fereastră modală (dacă există unul)
     wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
+    
+    // Așteaptă pentru a da timp fereaștrii modale să se încarce complet (puteți ajusta timpul de așteptare)
     try {
-        Thread.sleep(3000);
-        } catch (InterruptedException e) {
+        Thread.sleep(4000);
+    } catch (InterruptedException e) {
         e.printStackTrace();
-        }
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_preset")))).click();
-        try {
-            Thread.sleep(3000);
-            } catch (InterruptedException e) {
-            e.printStackTrace();
-            }
-    wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+    }
+    
+    // Faceți clic pe butonul care deschide a doua fereastră modală sau următoarea acțiune
+    wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_preset")))).click();
+    
+    // Așteaptă pentru a da timp fereaștrii modale să se încarce complet
     try {
-        Thread.sleep(3000);
-        } catch (InterruptedException e) {
+        Thread.sleep(4000);
+    } catch (InterruptedException e) {
         e.printStackTrace();
-        }
-    Reporter.log("A fost creat cu succes noua setare");
+    }
+    
+    // Faceți clic pe butonul din a doua fereastră modală (folosiți un selector mai specific pentru butonul din fereastra modală)
+   WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[10]/div/div[3]/button[1]")));
+   deletePreset.click();
+   deletePreset.click();
+    
+    // Așteaptă pentru a da timp fereaștrii modale să se încarce complet
+    try {
+        Thread.sleep(4000);
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+    
+    // Faceți clic pe alt buton sau finalizați acțiunea
+    wait.until(ExpectedConditions.elementToBeClickable(By.id("apply-swap-list-settings"))).click();
+    
+    // Așteaptă pentru a da timp fereaștrii modale să se încarce complet
+    try {
+        Thread.sleep(4000);
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+    
+    Reporter.log("A fost ștearsă cu succes setarea");
 
 
     // Export csv
