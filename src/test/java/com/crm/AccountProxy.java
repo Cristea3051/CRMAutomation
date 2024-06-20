@@ -200,13 +200,15 @@ showData.iterateAndLogTableData();
 
     wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
 
-    Reporter.log("A fost creat cu succes noua setare");
-
     try {
         Thread.sleep(3000);
         } catch (InterruptedException e) {
         e.printStackTrace();
         }
+        Reporter.log("A fost creat cu succes noua setare cu coloanele:");
+        Helpers dataHelpers = new Helpers(driver, locators);
+        dataHelpers.iterateAndLogTableData();
+
     // Delete table settings 
     wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
 
