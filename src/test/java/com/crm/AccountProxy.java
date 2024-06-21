@@ -257,7 +257,7 @@ showData.iterateAndLogTableData();
     Reporter.log("A fost ștearsă cu succes setarea");
 
 
-    // Export csv
+        // Export csv
 
 
 
