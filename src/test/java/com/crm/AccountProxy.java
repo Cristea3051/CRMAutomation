@@ -249,6 +249,26 @@ showData.iterateAndLogTableData();
     
     Reporter.log("A fost ștearsă cu succes setarea");
 
+// Download CSV
+try {
+    Thread.sleep(3000);
+    } catch (InterruptedException e) {
+    e.printStackTrace();
+    }
+wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("csv_button")))).click();
+
+try {
+    // Așteaptă un interval pentru a fi sigur că butonul de confirmare este prezent
+    Thread.sleep(3000);
+    // Încearcă să găsești și să apeși butonul de confirmare
+    WebElement confirmButton = driver.findElement(By.xpath(locators.getProperty("confirm_export_proxy")));
+    confirmButton.click();
+    // Afișează un mesaj către utilizator pentru a indica succesul
+    Reporter.log("A fost descarcat cu success fiserul CSV");
+} catch (Exception e) {
+    // Afiseaza un mesaj de eroare dacă nu a fost posibil de apasat butonul de confirmare
+    Reporter.log("Eroare: Nu s-a putut descarca fisierul!");
+}
         // Delete proxy
 
         try {
