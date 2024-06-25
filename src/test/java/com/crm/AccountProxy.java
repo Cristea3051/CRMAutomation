@@ -33,21 +33,13 @@ public class AccountProxy extends BaseTest {
 
         Reporter.log("Utilizator "  + username + " s-a logat logat");
 
+        login.closeDebugBar();
+
         driver.get("http://crm-dash/accounts-proxy");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         String title = driver.getTitle();
-
-        WebElement hideDebugBar = wait.until(ExpectedConditions.elementToBeClickable(By.className(locators.getProperty("close_debugbar"))));
-
-        hideDebugBar.click();
-        // Verifică dacă butonul a fost apăsat
-if (hideDebugBar.isEnabled()) {
-    Reporter.log("Debug Bar a fost ascuns");
-} else {
-    Reporter.log("DebugBar NU a fost ascuns.");
-}
 
         Reporter.log("Utilizatorul a navigat cu succes la pagina - "  + title);
 
@@ -93,6 +85,7 @@ if (hideDebugBar.isEnabled()) {
     } catch (InterruptedException e) {
         e.printStackTrace();
     }
+    Reporter.log("A fost creat poxyul");
     // Iterează primele 5 elemente sau mai puține, dacă lista are mai puțin de 5 elemente
    Helpers helpers = new Helpers(driver, locators);
         helpers.iterateAndLogTableData();
@@ -153,7 +146,7 @@ Thread.sleep(4000);
 } catch (InterruptedException e) {
 e.printStackTrace();
 }
-
+Reporter.log("A fost updatat poxyul");
 // Iterează primele 5 elemente sau mai puține, dacă lista are mai puțin de 5 elemente
 Helpers showData = new Helpers(driver, locators);
 showData.iterateAndLogTableData();
@@ -233,7 +226,7 @@ showData.iterateAndLogTableData();
     }
     
     // Faceți clic pe butonul din a doua fereastră modală (folosiți un selector mai specific pentru butonul din fereastra modală)
-   WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[10]/div/div[3]/button[1]")));
+   WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_setting"))));
    deletePreset.click();
    deletePreset.click();
     
@@ -245,7 +238,7 @@ showData.iterateAndLogTableData();
     }
     
     // Faceți clic pe alt buton sau finalizați acțiunea
-    wait.until(ExpectedConditions.elementToBeClickable(By.id("apply-swap-list-settings"))).click();
+    wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
     
     // Așteaptă pentru a da timp fereaștrii modale să se încarce complet
     try {

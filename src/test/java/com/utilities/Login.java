@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
+
 import java.time.Duration;
 
 public class Login {
@@ -29,12 +31,20 @@ public class Login {
         loginButton.click();
     }
 
-    // Close debug bar 
-    public static void closeDebugBar(WebDriver driver) {
-            WebElement debugBar = driver.findElement(By.className("phpdebugbar-close-btn"));
-            // Face clic dacă elementul este găsit
-            debugBar.click();
+    // Metoda pentru închiderea barei de debug
+    public void closeDebugBar() {
+        WebElement hideDebugBar = wait.until(ExpectedConditions.elementToBeClickable(By.className("phpdebugbar-close-btn")));
+        hideDebugBar.click();
+        
+        // Verifică dacă butonul a fost apăsat
+        if (!hideDebugBar.isDisplayed()) {
+            Reporter.log("Debug Bar a fost ascuns");
+        } else {
+            Reporter.log("DebugBar NU a fost ascuns.");
+        }
     }
 }
+
+
 
 
