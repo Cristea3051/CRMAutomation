@@ -17,7 +17,7 @@ import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
-public class AccountProxy extends BaseTest {
+public class ProxySource extends BaseTest {
     private Login login;
     private WebDriverWait wait;
 
