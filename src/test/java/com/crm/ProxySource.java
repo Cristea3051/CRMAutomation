@@ -48,9 +48,9 @@ public class ProxySource extends BaseTest {
     }
 
     private void createProxy() {
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("create_proxy_button")))).click();
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_name_input")))).sendKeys(inputInfo.getProperty("name"));
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_username_input")))).sendKeys(inputInfo.getProperty("username"));
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("add_source")))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_source_name")))).sendKeys(inputInfo.getProperty("source_name"));
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_source_port")))).sendKeys(inputInfo.getProperty("source_port"));
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_password_input")))).sendKeys(inputInfo.getProperty("password"));
         WebElement selectSource = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_proxy_type"))));
         selectSource.click();
