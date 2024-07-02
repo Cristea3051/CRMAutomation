@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="156.251">
+           time="129.686">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="77.859"
-                classname="com.crm.AccountProxy">
+                time="64.885"
+                classname="com.crm.ProxySource">
             </testcase>
             <testcase
                 name="signIn"
-                time="78.392"
-                classname="com.crm.AccountProxy">
+                time="64.801"
+                classname="com.crm.ProxySource">
             </testcase>
 </testsuite>

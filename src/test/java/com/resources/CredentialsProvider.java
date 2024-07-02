@@ -11,8 +11,7 @@ public class CredentialsProvider {
                 { "andreic@vebo.io", "j8L3pc5hJ20Sjn10Lp!" },
                 { "dorin.m@vebo.io", "j8L3pc5hJ20Sjn10Lp!" },
                 { "edward.s@vebo.io", "j8L3pc5hJ20Sjn10Lp!" },
-                { "marcel.g@vebo.io", "j8L3pc5hJ20Sjn10Lp!" },             
-            
+                { "marcel.g@vebo.io", "j8L3pc5hJ20Sjn10Lp!" },          
         };
     }
 

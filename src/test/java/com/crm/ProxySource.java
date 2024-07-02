@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -35,89 +34,56 @@ public class ProxySource extends BaseTest {
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/accounts-proxy");
+        driver.get("http://crm-dash/accounts-proxy-source");
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - "  + title);
-        createProxy();
-        updateProxy();
-        createTableSettings();
-        deleteTableSettings();
-        downloadCSV();
-        deleteProxy();
+        createProxySource();
+        updateProxySource();
+        createTableSettingsProxySource();
+        deleteTableSettingsProxySource();
+        downloadCSVporxySource();
+        deleteProxySource();
     }
 
-    private void createProxy() {
+    private void createProxySource() {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("add_source")))).click();
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_source_name")))).sendKeys(inputInfo.getProperty("source_name"));
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_source_port")))).sendKeys(inputInfo.getProperty("source_port"));
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_login_input")))).sendKeys(inputInfo.getProperty("login"));
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_password_input")))).sendKeys(inputInfo.getProperty("password"));
-        WebElement selectSource = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_proxy_type"))));
-        selectSource.click();
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
-        WebElement inputElement = driver.findElement(By.cssSelector(locators.getProperty("select_proxy_sorce")));
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        inputElement.sendKeys((inputInfo.getProperty("input_source")));
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
-       WebElement createProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_proxy"))));
-       ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", createProxy);
-       createProxy.click();
+       WebElement createSourceProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_proxy_source"))));
+       ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", createSourceProxy);
+       createSourceProxy.click();
        try {
         Thread.sleep(4000);
     } catch (InterruptedException e) {
         e.printStackTrace();
     }
-    Reporter.log("A fost creat poxyul");
+    Reporter.log("A fost creat Sursa Proxy");
     // Iterează primele 5 elemente sau mai puține, dacă lista are mai puțin de 5 elemente
    Helpers helpers = new Helpers(driver, locators);
         helpers.iterateAndLogTableData();
     }
 
-    private void updateProxy() {
+    private void updateProxySource() {
         WebElement proxyCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("checkbox_element"))));
         proxyCheckbox.click(); 
          wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_header_button")))).click();
-         WebElement editName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_name_input"))));
+         WebElement editName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_source_name"))));
          editName.clear();
-         editName.sendKeys(inputInfo.getProperty("edited_name"));
-         WebElement editUserName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_username_input"))));
+         editName.sendKeys(inputInfo.getProperty("update_source_name"));
+         WebElement editSourcePort = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_source_port"))));
+         editSourcePort.clear();
+         editSourcePort.sendKeys(inputInfo.getProperty("update_source_port"));
+         WebElement editUserName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_source_login"))));
          editUserName.clear();
-         editUserName.sendKeys(inputInfo.getProperty("edited_username"));
-         WebElement editPassword = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_password_input"))));
+         editUserName.sendKeys(inputInfo.getProperty("update_login_source"));
+         WebElement editPassword = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_source_password"))));
          editPassword.clear();
-         editPassword.sendKeys(inputInfo.getProperty("edited_password"));
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_edited_proxy_type")))).click();
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
-        WebElement sourceName = driver.findElement(By.cssSelector(locators.getProperty("select_edted_proxy_sorce")));
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        sourceName.clear();
-        sourceName.sendKeys(inputInfo.getProperty("input_source"));
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
-        WebElement updateProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_edited_proxy"))));
+         editPassword.sendKeys(inputInfo.getProperty("update_password"));
+
+        WebElement updateProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("update_proxy_source_button"))));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", updateProxy);
         updateProxy.click();
         try {
@@ -125,13 +91,13 @@ public class ProxySource extends BaseTest {
         } catch (InterruptedException e) {
         e.printStackTrace();
         }
-        Reporter.log("A fost updatat poxyul");
+        Reporter.log("A fost updatata Sursa Proxy");
         // Iterează primele 5 elemente sau mai puține, dacă lista are mai puțin de 5 elemente
         Helpers showData = new Helpers(driver, locators);
         showData.iterateAndLogTableData();
     }
 
-    private void createTableSettings() {
+    private void createTableSettingsProxySource() {
         try {
             Thread.sleep(3000);
             } catch (InterruptedException e) {
@@ -145,8 +111,8 @@ public class ProxySource extends BaseTest {
             }
        WebElement nameInput = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
        nameInput.click();
-       nameInput.sendKeys(inputInfo.getProperty("setting_name"));
-        for (int i = 0; i < 5; i++) {
+       nameInput.sendKeys(inputInfo.getProperty("source_setting_name"));
+        for (int i = 0; i < 2; i++) {
             wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
             wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("move_in_hide")))).click();
         }
@@ -173,7 +139,7 @@ public class ProxySource extends BaseTest {
             dataHelpers.iterateAndLogTableData();
     }
 
-    private void deleteTableSettings() {
+    private void deleteTableSettingsProxySource() {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
 
     // Așteaptă apariția și clicabilizarea butonului din prima fereastră modală (dacă există unul)
@@ -221,7 +187,7 @@ public class ProxySource extends BaseTest {
     Reporter.log("A fost ștearsă cu succes setarea");
     }
 
-    private void downloadCSV() {
+    private void downloadCSVporxySource() {
         try {
             Thread.sleep(3000);
             } catch (InterruptedException e) {
@@ -233,7 +199,7 @@ public class ProxySource extends BaseTest {
             // Așteaptă un interval pentru a fi sigur că butonul de confirmare este prezent
             Thread.sleep(3000);
             // Încearcă să găsești și să apeși butonul de confirmare
-            WebElement confirmButton = driver.findElement(By.xpath(locators.getProperty("confirm_export_proxy")));
+            WebElement confirmButton = driver.findElement(By.id(locators.getProperty("confirm_export_proxy_source")));
             confirmButton.click();
             // Afișează un mesaj către utilizator pentru a indica succesul
             Reporter.log("A fost descarcat cu success fiserul CSV");
@@ -243,7 +209,7 @@ public class ProxySource extends BaseTest {
         }
     }
 
-    private void deleteProxy() {
+    private void deleteProxySource() {
         try {
             Thread.sleep(4000);
             } catch (InterruptedException e) {
