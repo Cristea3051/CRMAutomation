@@ -69,7 +69,7 @@ public class AccountSource extends BaseTest {
          wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_header_button")))).click();
          WebElement editName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_name"))));
          editName.clear();
-         editName.sendKeys(inputInfo.getProperty("update_source_name"));
+         editName.sendKeys(inputInfo.getProperty("update_account_source_name"));
          WebElement editSourcePort = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_source_port"))));
          editSourcePort.clear();
          editSourcePort.sendKeys(inputInfo.getProperty("update_source_port"));
