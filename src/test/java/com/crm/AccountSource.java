@@ -34,7 +34,7 @@ public class AccountSource extends BaseTest {
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/accounts-proxy-source");
+        driver.get("http://crm-dash/accounts-source");
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - "  + title);
@@ -48,10 +48,11 @@ public class AccountSource extends BaseTest {
 
     private void createAccountSource() {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("add_source")))).click();
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_source_name")))).sendKeys(inputInfo.getProperty("account_source_name"));
-       WebElement createSourceProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_account_source_butt"))));
-       ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", createSourceProxy);
-       createSourceProxy.click();
+        WebElement createAccSource = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input.form-control[data-modal-field-id='create_name'][name='name']")));
+        createAccSource.click();
+        createAccSource.sendKeys("name_input");
+       WebElement submitAccSource = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_account_source_butt"))));
+       submitAccSource.click();
        try {
         Thread.sleep(4000);
     } catch (InterruptedException e) {
