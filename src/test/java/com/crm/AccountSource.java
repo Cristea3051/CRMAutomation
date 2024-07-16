@@ -2,9 +2,7 @@ package com.crm;
 
 import java.time.Duration;
 import java.util.List;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -48,9 +46,9 @@ public class AccountSource extends BaseTest {
 
     private void createAccountSource() {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("add_source")))).click();
-        WebElement createAccSource = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input.form-control[data-modal-field-id='create_name'][name='name']")));
+        WebElement createAccSource = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("account_source_name"))));
         createAccSource.click();
-        createAccSource.sendKeys("name_input");
+        createAccSource.sendKeys(inputInfo.getProperty("name_source"));
        WebElement submitAccSource = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_account_source_butt"))));
        submitAccSource.click();
        try {
@@ -68,22 +66,11 @@ public class AccountSource extends BaseTest {
         WebElement proxyCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("checkbox_element"))));
         proxyCheckbox.click(); 
          wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_header_button")))).click();
-         WebElement editName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_name"))));
+         WebElement editName = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty ("edit_name"))));
          editName.clear();
-         editName.sendKeys(inputInfo.getProperty("update_account_source_name"));
-         WebElement editSourcePort = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_source_port"))));
-         editSourcePort.clear();
-         editSourcePort.sendKeys(inputInfo.getProperty("update_source_port"));
-         WebElement editUserName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_source_login"))));
-         editUserName.clear();
-         editUserName.sendKeys(inputInfo.getProperty("update_login_source"));
-         WebElement editPassword = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_source_password"))));
-         editPassword.clear();
-         editPassword.sendKeys(inputInfo.getProperty("update_password"));
-
-        WebElement updateProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("update_proxy_source_button"))));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", updateProxy);
-        updateProxy.click();
+         editName.sendKeys(inputInfo.getProperty("updated_source_name"));
+         WebElement editAccSource = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_source_but"))));
+         editAccSource.click();
         try {
         Thread.sleep(4000);
         } catch (InterruptedException e) {
@@ -200,7 +187,7 @@ public class AccountSource extends BaseTest {
             // Așteaptă un interval pentru a fi sigur că butonul de confirmare este prezent
             Thread.sleep(3000);
             // Încearcă să găsești și să apeși butonul de confirmare
-            WebElement confirmButton = driver.findElement(By.id(locators.getProperty("confirm_export_proxy_source")));
+            WebElement confirmButton = driver.findElement(By.id(locators.getProperty("export_csv_butt")));
             confirmButton.click();
             // Afișează un mesaj către utilizator pentru a indica succesul
             Reporter.log("A fost descarcat cu success fiserul CSV");
@@ -211,14 +198,6 @@ public class AccountSource extends BaseTest {
     }
 
     private void deleteAccountSource() {
-        try {
-            Thread.sleep(4000);
-            } catch (InterruptedException e) {
-            e.printStackTrace();
-            }
-
-        WebElement selectCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("edited_chechbox_element"))));
-        selectCheckbox.click();
         
         try {
             // Așteaptă un interval pentru a fi sigur că se face clic pe proxy
