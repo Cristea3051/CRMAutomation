@@ -148,7 +148,12 @@ public class AccountProxy extends BaseTest {
        nameInput.sendKeys(inputInfo.getProperty("setting_name"));
         for (int i = 0; i < 5; i++) {
             wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
-            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("move_in_hide")))).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.w-100:nth-child(5)"))).click();
+        }
+    
+        for (int i = 0; i < 2; i++) {
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.mt-1:nth-child(1)"))).click();
         }
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
         try {
@@ -197,7 +202,7 @@ public class AccountProxy extends BaseTest {
     }
     
     // Faceți clic pe butonul din a doua fereastră modală (folosiți un selector mai specific pentru butonul din fereastra modală)
-   WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_setting"))));
+   WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
    deletePreset.click();
    deletePreset.click();
     
@@ -209,7 +214,7 @@ public class AccountProxy extends BaseTest {
     }
     
     // Faceți clic pe alt buton sau finalizați acțiunea
-    wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+    wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.btn-alt-primary:nth-child(2)"))).click();
     
     // Așteaptă pentru a da timp fereaștrii modale să se încarce complet
     try {
@@ -217,6 +222,7 @@ public class AccountProxy extends BaseTest {
     } catch (InterruptedException e) {
         e.printStackTrace();
     }
+    driver.navigate().refresh();
     
     Reporter.log("A fost ștearsă cu succes setarea");
     }
