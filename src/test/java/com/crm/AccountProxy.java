@@ -42,6 +42,7 @@ public class AccountProxy extends BaseTest {
         createProxy();
         updateProxy();
         createTableSettings();
+        moveTableSettings();
         deleteTableSettings();
         downloadCSV();
         deleteProxy();
@@ -131,6 +132,7 @@ public class AccountProxy extends BaseTest {
         showData.iterateAndLogTableData();
     }
 
+   
     private void createTableSettings() {
         try {
             Thread.sleep(3000);
@@ -146,16 +148,16 @@ public class AccountProxy extends BaseTest {
        WebElement nameInput = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
        nameInput.click();
        nameInput.sendKeys(inputInfo.getProperty("setting_name"));
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 3; i++) {
             wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
             wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.w-100:nth-child(5)"))).click();
         }
-    
-        for (int i = 0; i < 2; i++) {
-            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
-            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.mt-1:nth-child(1)"))).click();
-        }
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
+        try {
+            Thread.sleep(3000);
+            } catch (InterruptedException e) {
+            e.printStackTrace();
+            }
         try {
             List<WebElement> elements = driver.findElements(By.xpath(locators.getProperty("find_second_setting")));
         
@@ -177,6 +179,60 @@ public class AccountProxy extends BaseTest {
             Helpers dataHelpers = new Helpers(driver, locators);
             dataHelpers.iterateAndLogTableData();
     }
+
+    private void moveTableSettings() {
+        try {
+            Thread.sleep(3000);
+            } catch (InterruptedException e) {
+            e.printStackTrace();
+            }
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
+        try {
+            Thread.sleep(3000);
+            } catch (InterruptedException e) {
+            e.printStackTrace();
+            }
+       wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"swap-from\"]/option[2]"))).click();
+            try {
+                Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                e.printStackTrace();
+                }
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(@class, 'btn-primary')]//i[contains(@class, 'fa-arrow-circle-down')]"))).click();
+            try {
+                Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                e.printStackTrace();
+                }
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
+        try {
+            Thread.sleep(3000);
+            } catch (InterruptedException e) {
+            e.printStackTrace();
+            }
+        try {
+            List<WebElement> elements = driver.findElements(By.xpath(locators.getProperty("find_second_setting")));
+        
+            if (elements.size() > 0) {
+                elements.get(0).click();
+            } else {
+                driver.findElement(By.xpath(locators.getProperty("find_setting"))).click();
+            }
+        } catch (Exception e) {
+            Reporter.log("Excepție: " + e.getMessage());
+        }
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+        try {
+            Thread.sleep(3000);
+            } catch (InterruptedException e) {
+            e.printStackTrace();
+            }
+            Reporter.log("A fost creat cu succes noua setare cu coloanele:");
+            Helpers dataHelpers = new Helpers(driver, locators);
+            dataHelpers.iterateAndLogTableData();
+    }
+
 
     private void deleteTableSettings() {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();

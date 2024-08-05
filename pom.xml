@@ -8,19 +8,19 @@
   <name>crmAuto</name>
   <url>http://maven.apache.org</url>
 
- <build>
+<build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.1</version> <!-- Sau o versiune mai nouă -->
-        <configuration>
-          <source>7</source> <!-- Sau o versiune mai nouă -->
-          <target>7</target> <!-- Sau o versiune mai nouă -->
-        </configuration>
-      </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Verifică dacă există o versiune mai recentă și folosește-o dacă e necesar -->
+            <configuration>
+                <source>17</source>
+                <target>17</target>
+            </configuration>
+        </plugin>
     </plugins>
-  </build>
+</build>
 
   <dependencies>
     <dependency>
