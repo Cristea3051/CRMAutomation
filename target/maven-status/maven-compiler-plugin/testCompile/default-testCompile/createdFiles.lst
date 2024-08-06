@@ -1,2 +1,8 @@
-com/crm/AppTest.class
+com/utilities/Login.class
+com/Base/BaseTest.class
 com/resources/CredentialsProvider.class
+com/crm/AccountProxy.class
+com/crm/AccountSource.class
+com/crm/ProxySource.class
+com/crm/DashboardSearch.class
+com/resources/Helpers.class

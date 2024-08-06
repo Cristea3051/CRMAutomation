@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Helpers{
     private WebDriver driver;
-    private Properties locators; // Asigură-te că ai importat corect clasele Properties
+    private Properties locators;
 
     public Helpers(WebDriver driver, Properties locators) {
         this.driver = driver;
@@ -40,5 +40,18 @@ public class Helpers{
         }
 
         Reporter.log(result);
+    }
+
+      /**
+     * Așteaptă pentru un anumit număr de secunde.
+     * @param seconds Numărul de secunde pentru care trebuie să aștepte
+     */
+    public static void waitForSeconds(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt(); // Restaurarea stării întreruperii
+            Reporter.log("Thread interrupted: " + e.getMessage());
+        }
     }
 }

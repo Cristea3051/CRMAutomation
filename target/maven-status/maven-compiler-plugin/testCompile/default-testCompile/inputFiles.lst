@@ -1,2 +1,8 @@
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/AccountSource.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/DashboardSearch.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/utilities/Login.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/CredentialsProvider.java
-/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/AppTest.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/Helpers.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/Base/BaseTest.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/ProxySource.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/AccountProxy.java

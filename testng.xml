@@ -5,7 +5,7 @@
       <class name="com.crm.DashboardSearch"/>
     </classes>
   </test>
-  <test name="Test2">
+  <test name="Test">
     <classes>
       <class name="com.crm.Test"/>
     </classes>
