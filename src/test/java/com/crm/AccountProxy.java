@@ -42,8 +42,8 @@ public class AccountProxy extends BaseTest {
         createProxy();
         updateProxy();
         createAndOrderTableSettings();
-        deleteTableSettings();
         downloadCSVandDeleteProxy();
+        deleteTableSettings();
     }
 
     private void createProxy() {
@@ -171,27 +171,6 @@ public class AccountProxy extends BaseTest {
         dataHelpers.iterateAndLogTableData();
     }
 
-    private void deleteTableSettings() {
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
-
-        Helpers.waitForSeconds(5);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_preset")))).click();
-
-        Helpers.waitForSeconds(5);
-        WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
-        deletePreset.click();
-
-        Helpers.waitForSeconds(5);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.btn-alt-primary:nth-child(2)"))).click();
-
-        Helpers.waitForSeconds(5);
-        driver.navigate().refresh();
-
-        Reporter.log("A fost ștearsă cu succes setarea");
-    }
-
     private void downloadCSVandDeleteProxy() {
         Helpers.waitForSeconds(5);
         WebElement selectCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("edited_chechbox_element"))));
@@ -225,4 +204,26 @@ public class AccountProxy extends BaseTest {
         }
         Helpers.waitForSeconds(5);
     }
+    
+    private void deleteTableSettings() {
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
+
+        Helpers.waitForSeconds(5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_preset")))).click();
+
+        Helpers.waitForSeconds(5);
+        WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
+        deletePreset.click();
+
+        Helpers.waitForSeconds(5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.btn-alt-primary:nth-child(2)"))).click();
+
+        Helpers.waitForSeconds(5);
+        driver.navigate().refresh();
+
+        Reporter.log("A fost ștearsă cu succes setarea");
+    }
+
 }
