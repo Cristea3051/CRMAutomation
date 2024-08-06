@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNGTest-6516cda3-500d-4c55-8c46-c6bee76a3e19"
+<testsuite name="TestNGTest-06ac48de-9c42-4af6-b224-7bfb958ceb08"
            tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="83.322">
+           time="60.255">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="41.675"
+                time="30.103"
                 classname="com.crm.AccountProxy">
             </testcase>
             <testcase
                 name="signIn"
-                time="41.647"
+                time="30.152"
                 classname="com.crm.AccountProxy">
             </testcase>
 </testsuite>
