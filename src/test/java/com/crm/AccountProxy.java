@@ -135,16 +135,14 @@ public class AccountProxy extends BaseTest {
         nameInput.sendKeys(inputInfo.getProperty("setting_name"));
 
         for (int i = 0; i < 3; i++) {
-            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide"))))
-                    .click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
             wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.w-100:nth-child(5)"))).click();
         }
 
         Helpers.waitForSeconds(5);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"swap-from\"]/option[2]"))).click();
         for (int i = 0; i < 3; i++) {
-            WebElement moveDown = wait
-                    .until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
+            WebElement moveDown = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
             moveDown.click();
         }
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
@@ -204,7 +202,7 @@ public class AccountProxy extends BaseTest {
         }
         Helpers.waitForSeconds(5);
     }
-    
+
     private void deleteTableSettings() {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
 
