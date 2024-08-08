@@ -98,24 +98,26 @@ public class ProxySource extends BaseTest {
     }
 
     private void createTableSettingsProxySource() {
-        try {
-            Thread.sleep(3000);
-            } catch (InterruptedException e) {
-            e.printStackTrace();
-            }
+        Helpers.waitForSeconds(5);
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
-        try {
-            Thread.sleep(3000);
-            } catch (InterruptedException e) {
-            e.printStackTrace();
-            }
+        Helpers.waitForSeconds(5);
        WebElement nameInput = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
        nameInput.click();
        nameInput.sendKeys(inputInfo.getProperty("source_setting_name"));
         for (int i = 0; i < 2; i++) {
             wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
-            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("move_in_hide")))).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.w-100:nth-child(5)"))).click();
         }
+
+        Helpers.waitForSeconds(5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"swap-from\"]/option[2]"))).click();
+        for (int i = 0; i < 3; i++) {
+            WebElement moveDown = wait
+                    .until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
+            moveDown.click();
+        }
+        Helpers.waitForSeconds(5);
+
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
         try {
             List<WebElement> elements = driver.findElements(By.xpath(locators.getProperty("find_second_setting")));
@@ -128,12 +130,9 @@ public class ProxySource extends BaseTest {
         } catch (Exception e) {
             Reporter.log("Excepție: " + e.getMessage());
         }
+        Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
-        try {
-            Thread.sleep(3000);
-            } catch (InterruptedException e) {
-            e.printStackTrace();
-            }
+        Helpers.waitForSeconds(3);
             Reporter.log("A fost creat cu succes noua setare cu coloanele:");
             Helpers dataHelpers = new Helpers(driver, locators);
             dataHelpers.iterateAndLogTableData();
@@ -142,49 +141,22 @@ public class ProxySource extends BaseTest {
     private void deleteTableSettingsProxySource() {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
 
-    // Așteaptă apariția și clicabilizarea butonului din prima fereastră modală (dacă există unul)
-    wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
-    
-    // Așteaptă pentru a da timp fereaștrii modale să se încarce complet (puteți ajusta timpul de așteptare)
-    try {
-        Thread.sleep(4000);
-    } catch (InterruptedException e) {
-        e.printStackTrace();
-    }
-    
-    // Faceți clic pe butonul care deschide a doua fereastră modală sau următoarea acțiune
-    wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_preset")))).click();
-    
-    // Așteaptă pentru a da timp fereaștrii modale să se încarce complet
-    try {
-        Thread.sleep(4000);
-    } catch (InterruptedException e) {
-        e.printStackTrace();
-    }
-    
-    // Faceți clic pe butonul din a doua fereastră modală (folosiți un selector mai specific pentru butonul din fereastra modală)
-   WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_setting"))));
-   deletePreset.click();
-   deletePreset.click();
-    
-    // Așteaptă pentru a da timp fereaștrii modale să se încarce complet
-    try {
-        Thread.sleep(4000);
-    } catch (InterruptedException e) {
-        e.printStackTrace();
-    }
-    
-    // Faceți clic pe alt buton sau finalizați acțiunea
-    wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
-    
-    // Așteaptă pentru a da timp fereaștrii modale să se încarce complet
-    try {
-        Thread.sleep(4000);
-    } catch (InterruptedException e) {
-        e.printStackTrace();
-    }
-    
-    Reporter.log("A fost ștearsă cu succes setarea");
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
+
+        Helpers.waitForSeconds(5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_preset")))).click();
+
+        Helpers.waitForSeconds(5);
+        WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
+        deletePreset.click();
+
+        Helpers.waitForSeconds(5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.btn-alt-primary:nth-child(2)"))).click();
+
+        Helpers.waitForSeconds(5);
+        driver.navigate().refresh();
+
+        Reporter.log("A fost ștearsă cu succes setarea");
     }
 
     private void downloadCSVporxySource() {
