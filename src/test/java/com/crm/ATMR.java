@@ -35,13 +35,91 @@ public class ATMR extends BaseTest {
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/accounts-proxy");
+        driver.get("http://crm-dash/mr-dashboard/google/at-mr-campaigns");
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
+        // createProxy();
+        // updateProxy();
         createAndOrderTableSettings();
         downloadCSVandDeleteProxy();
         deleteTableSettings();
+    }
+
+    private void createProxy() {
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("create_proxy_button")))).click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_name_input")))).sendKeys(inputInfo.getProperty("name"));
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_username_input")))).sendKeys(inputInfo.getProperty("username"));
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_password_input")))).sendKeys(inputInfo.getProperty("password"));
+
+        WebElement selectSource = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_proxy_type"))));
+        selectSource.click();
+        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
+        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
+
+        WebElement inputElement = driver.findElement(By.cssSelector(locators.getProperty("select_proxy_sorce")));
+
+        Helpers.waitForSeconds(4);
+        inputElement.sendKeys((inputInfo.getProperty("input_source")));
+
+        Helpers.waitForSeconds(3);
+        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
+        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
+
+        WebElement createProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_proxy"))));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", createProxy);
+        createProxy.click();
+
+        Helpers.waitForSeconds(4);
+        Reporter.log("A fost creat poxyul");
+        
+        Helpers helpers = new Helpers(driver, locators);
+        helpers.iterateAndLogTableData();
+    }
+
+    private void updateProxy() {
+        WebElement proxyCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("checkbox_element"))));
+        proxyCheckbox.click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_header_button")))).click();
+        WebElement editName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_name_input"))));
+        editName.clear();
+        editName.sendKeys(inputInfo.getProperty("edited_name"));
+
+        WebElement editUserName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_username_input"))));
+        editUserName.clear();
+        editUserName.sendKeys(inputInfo.getProperty("edited_username"));
+
+        WebElement editPassword = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_password_input"))));
+        editPassword.clear();
+        editPassword.sendKeys(inputInfo.getProperty("edited_password"));
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_edited_proxy_type")))).click();
+        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
+        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
+        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
+
+        WebElement sourceName = driver.findElement(By.cssSelector(locators.getProperty("select_edted_proxy_sorce")));
+        Helpers.waitForSeconds(4);
+        sourceName.clear();
+        sourceName.sendKeys(inputInfo.getProperty("input_source"));
+
+        Helpers.waitForSeconds(3);
+        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
+        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
+        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
+
+        WebElement updateProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_edited_proxy"))));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", updateProxy);
+        updateProxy.click();
+
+        Helpers.waitForSeconds(5);
+        Reporter.log("A fost updatat poxyul");
+        Helpers showData = new Helpers(driver, locators);
+        showData.iterateAndLogTableData();
     }
 
     private void createAndOrderTableSettings() {
