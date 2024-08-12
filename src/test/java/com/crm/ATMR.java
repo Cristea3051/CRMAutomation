@@ -28,7 +28,7 @@ public class ATMR extends BaseTest {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    @Test(dataProvider = "FarmerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "MediaBuyerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
         Reporter.log("Utilizator " + username + " s-a logat");
@@ -39,90 +39,48 @@ public class ATMR extends BaseTest {
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
-        // createProxy();
-        // updateProxy();
         createAndOrderTableSettings();
-        downloadCSVandDeleteProxy();
+        downloadCSV();
         deleteTableSettings();
     }
 
-    private void createProxy() {
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("create_proxy_button")))).click();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_name_input")))).sendKeys(inputInfo.getProperty("name"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_username_input")))).sendKeys(inputInfo.getProperty("username"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_password_input")))).sendKeys(inputInfo.getProperty("password"));
-
-        WebElement selectSource = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_proxy_type"))));
-        selectSource.click();
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
-
-        WebElement inputElement = driver.findElement(By.cssSelector(locators.getProperty("select_proxy_sorce")));
-
-        Helpers.waitForSeconds(4);
-        inputElement.sendKeys((inputInfo.getProperty("input_source")));
-
-        Helpers.waitForSeconds(3);
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
-
-        WebElement createProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_proxy"))));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", createProxy);
-        createProxy.click();
-
-        Helpers.waitForSeconds(4);
-        Reporter.log("A fost creat poxyul");
-        
-        Helpers helpers = new Helpers(driver, locators);
-        helpers.iterateAndLogTableData();
-    }
-
-    private void updateProxy() {
-        WebElement proxyCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("checkbox_element"))));
-        proxyCheckbox.click();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_header_button")))).click();
-        WebElement editName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_name_input"))));
-        editName.clear();
-        editName.sendKeys(inputInfo.getProperty("edited_name"));
-
-        WebElement editUserName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_username_input"))));
-        editUserName.clear();
-        editUserName.sendKeys(inputInfo.getProperty("edited_username"));
-
-        WebElement editPassword = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_password_input"))));
-        editPassword.clear();
-        editPassword.sendKeys(inputInfo.getProperty("edited_password"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_edited_proxy_type")))).click();
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
-
-        WebElement sourceName = driver.findElement(By.cssSelector(locators.getProperty("select_edted_proxy_sorce")));
-        Helpers.waitForSeconds(4);
-        sourceName.clear();
-        sourceName.sendKeys(inputInfo.getProperty("input_source"));
-
-        Helpers.waitForSeconds(3);
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
-
-        WebElement updateProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_edited_proxy"))));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", updateProxy);
-        updateProxy.click();
-
-        Helpers.waitForSeconds(5);
-        Reporter.log("A fost updatat poxyul");
-        Helpers showData = new Helpers(driver, locators);
-        showData.iterateAndLogTableData();
-    }
-
     private void createAndOrderTableSettings() {
+        Helpers.waitForSeconds(3);
+        
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+        String[] xpaths = {
+            "/html/body/div[6]/div[1]/ul/li[13]",
+            "/html/body/div[7]/div[1]/ul/li[13]",
+            "/html/body/div[8]/div[1]/ul/li[13]",
+            "/html/body/div[9]/div[1]/ul/li[13]", 
+        };
+
+         new WebDriverWait(driver, Duration.ofSeconds(20));
+         boolean clicked = false;
+
+            for (String xpath : xpaths) {
+                try {
+                    // Așteaptă până când elementul devine vizibil și interactiv
+                    WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+                    
+                    // Dacă elementul este găsit și este clicabil, face clic pe el
+                    element.click();
+                    clicked = true;
+                    Reporter.log("Elementul activ a fost găsit și s-a făcut clic pe el: " + xpath);
+                    break; // Ieși din buclă dacă ai făcut clic pe element
+                } catch (Exception e) {
+                    // Nu a fost posibil să se facă clic pe element; trece la următorul
+                    Reporter.log("Elementul nu a fost clicabil: " + xpath);
+                }
+            }
+
+            if (!clicked) {
+                Reporter.log("Niciun element clicabil nu a fost găsit.");
+            }
+
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
@@ -169,11 +127,8 @@ public class ATMR extends BaseTest {
         dataHelpers.iterateAndLogTableData();
     }
 
-    private void downloadCSVandDeleteProxy() {
-        Helpers.waitForSeconds(5);
-        WebElement selectCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("edited_chechbox_element"))));
-        selectCheckbox.click();
-
+    private void downloadCSV() {
+     
         Helpers.waitForSeconds(5);
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("csv_button")))).click();
 
@@ -187,19 +142,6 @@ public class ATMR extends BaseTest {
             Reporter.log("Eroare: Nu s-a putut descarca fisierul!");
         }
 
-        Helpers.waitForSeconds(5);
-        WebElement deleteButton = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("delete_button"))));
-        deleteButton.click();
-
-        try {
-            Thread.sleep(4000);
-            WebElement confirmButton = driver.findElement(By.cssSelector(locators.getProperty("confirm_delete_modal")));
-            confirmButton.click();
-
-            Reporter.log("Proxy-ul a fost șters cu succes!");
-        } catch (Exception e) {
-            Reporter.log("Eroare: Nu s-a putut șterge proxy-ul!");
-        }
         Helpers.waitForSeconds(5);
     }
 
