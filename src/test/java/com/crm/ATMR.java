@@ -47,7 +47,7 @@ public class ATMR extends BaseTest {
         
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        new WebDriverWait(driver, Duration.ofSeconds(20));
 
         String[] xpaths = {
             "/html/body/div[6]/div[1]/ul/li[13]",
@@ -90,14 +90,14 @@ public class ATMR extends BaseTest {
 
         nameInput.sendKeys(inputInfo.getProperty("setting_name"));
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 6; i++) {
             wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
             wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.w-100:nth-child(5)"))).click();
         }
 
         Helpers.waitForSeconds(5);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"swap-from\"]/option[2]"))).click();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 10; i++) {
             WebElement moveDown = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
             moveDown.click();
         }

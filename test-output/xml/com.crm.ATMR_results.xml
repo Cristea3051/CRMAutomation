@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNGTest-3f0dfa55-cf63-4a66-b3ce-5bfa82c6b943"
+<testsuite name="TestNGTest-43334949-439f-421b-ac66-b3751cf801d2"
            tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="168.684">
+           time="160.309">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="84.568"
+                time="85.285"
                 classname="com.crm.ATMR">
             </testcase>
             <testcase
                 name="signIn"
-                time="84.116"
+                time="75.024"
                 classname="com.crm.ATMR">
             </testcase>
 </testsuite>
