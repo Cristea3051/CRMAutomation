@@ -132,7 +132,7 @@ public class ATMR extends BaseTest {
 
         try {
             Thread.sleep(3000);
-            WebElement confirmButton = driver.findElement(By.xpath(locators.getProperty("confirm_export_proxy")));
+            WebElement confirmButton = driver.findElement(By.cssSelector("#google-at-mr-campaigns-list-export-button"));
             confirmButton.click();
 
             Reporter.log("A fost descarcat cu success fiserul CSV");
@@ -156,7 +156,7 @@ public class ATMR extends BaseTest {
         deletePreset.click();
 
         Helpers.waitForSeconds(5);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.btn-alt-primary:nth-child(2)"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.ml-auto"))).click();
 
         Helpers.waitForSeconds(5);
         driver.navigate().refresh();
