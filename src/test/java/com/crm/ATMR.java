@@ -40,7 +40,12 @@ public class ATMR extends BaseTest {
         createAndOrderTableSettings();
         downloadCSV();
         deleteTableSettings();
+        createAndOrderTableSettingsPerOffer();
+        downloadCSVPerOffer();
+        deleteTableSettingsPerOffer();
     }
+
+   
 
     private void createAndOrderTableSettings() {
         Helpers.waitForSeconds(3);
@@ -163,5 +168,95 @@ public class ATMR extends BaseTest {
 
         Reporter.log("A fost ștearsă cu succes setarea");
     }
+
+    // PER OFFER tabble
+
+    private void createAndOrderTableSettingsPerOffer() {
+        Helpers.waitForSeconds(3);
+    
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("atmr_per_offer_table_settings")))).click();
+
+        Helpers.waitForSeconds(3);
+        WebElement nameInput = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
+
+        nameInput.click();
+
+        nameInput.sendKeys(inputInfo.getProperty("setting_name"));
+
+        for (int i = 0; i < 6; i++) {
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.w-100:nth-child(5)"))).click();
+        }
+
+        Helpers.waitForSeconds(5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"swap-from\"]/option[2]"))).click();
+        for (int i = 0; i < 10; i++) {
+            WebElement moveDown = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
+            moveDown.click();
+        }
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
+
+        Helpers.waitForSeconds(3);
+        try {
+            List<WebElement> elements = driver.findElements(By.xpath(locators.getProperty("find_second_setting")));
+
+            if (elements.size() > 0) {
+                elements.get(0).click();
+            } else {
+                driver.findElement(By.xpath(locators.getProperty("find_setting"))).click();
+            }
+        } catch (Exception e) {
+            Reporter.log("Excepție: " + e.getMessage());
+        }
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+
+        Helpers.waitForSeconds(3);
+        Reporter.log("A fost creat cu succes noua setare cu coloanele:");
+
+        Helpers.waitForSeconds(5);
+        Helpers dataHelpers = new Helpers(driver, locators);
+        dataHelpers.iterateAndLogTableData();
+    }
+
+    private void downloadCSVPerOffer() {
+     
+        Helpers.waitForSeconds(5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("atmr_per_offer_download_csv")))).click();
+
+        try {
+            Thread.sleep(3000);
+            WebElement confirmButton = driver.findElement(By.cssSelector("#binom-roi-offers-reports-atmr-export-button"));
+            confirmButton.click();
+
+            Reporter.log("A fost descarcat cu success fiserul CSV");
+        } catch (Exception e) {
+            Reporter.log("Eroare: Nu s-a putut descarca fisierul!");
+        }
+
+        Helpers.waitForSeconds(5);
+    }
+
+    private void deleteTableSettingsPerOffer() {
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("atmr_per_offer_table_settings")))).click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
+
+        Helpers.waitForSeconds(5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_preset")))).click();
+
+        Helpers.waitForSeconds(5);
+        WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
+        deletePreset.click();
+
+        Helpers.waitForSeconds(5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.ml-auto"))).click();
+
+        Helpers.waitForSeconds(5);
+        driver.navigate().refresh();
+
+        Reporter.log("A fost ștearsă cu succes setarea");
+    }
+
+    
 
 }
