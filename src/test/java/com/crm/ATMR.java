@@ -257,6 +257,4 @@ public class ATMR extends BaseTest {
         Reporter.log("A fost ștearsă cu succes setarea");
     }
 
-    
-
 }
