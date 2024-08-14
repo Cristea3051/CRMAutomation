@@ -169,7 +169,7 @@ public class ATMR extends BaseTest {
         Reporter.log("A fost ștearsă cu succes setarea");
     }
 
-    // PER OFFER tabble
+    // PER OFFER Report tabble
 
     private void createAndOrderTableSettingsPerOffer() {
         Helpers.waitForSeconds(3);
