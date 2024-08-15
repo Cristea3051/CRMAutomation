@@ -1,8 +1,9 @@
 package com.crm;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.WheelInput;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -32,12 +33,12 @@ import java.util.List;
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/dashboard");
+        driver.get("http://crm-dash/google-accounts");
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
 
-        // tableAuto();
+        tableAuto();
         scrollTable();
     }
 
@@ -95,10 +96,20 @@ private void scrollTable(){
 Helpers.waitForSeconds(10);
 
 // Execută scriptul JavaScript pentru a derula orizontal tabelul
-JavascriptExecutor js = (JavascriptExecutor) driver;
-js.executeScript("(window.scroll(0,300))");			
-		
+WebElement table = driver.findElement(By.cssSelector(".dataTables_scrollBody"));
 
+// Creează obiectul Actions
+Actions actions = new Actions(driver);
+
+// Creează obiectul WheelInput pentru scroll
+WheelInput.ScrollOrigin scrollOrigin = WheelInput.ScrollOrigin.fromElement(table);
+
+// Fă scroll orizontal
+actions
+    .scrollFromOrigin(scrollOrigin, 0, 2000) // 0 pe verticală și 2000 pe orizontală
+    .perform();
+		
+                Helpers.waitForSeconds(10);
 }
 
 
