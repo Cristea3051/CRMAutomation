@@ -32,12 +32,12 @@ import java.util.List;
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/google-accounts");
+        driver.get("http://crm-dash/dashboard");
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
 
-        tableAuto();
+        // tableAuto();
         scrollTable();
     }
 
@@ -61,9 +61,7 @@ List<String> headerTexts = new ArrayList<>();
 
 // Iterează prin fiecare celulă antetului
 for (int i = 0; i < headers.size(); i++) {
-    WebElement header = headers.get(i);
-    JavascriptExecutor js = (JavascriptExecutor) driver;
-    js.executeScript("arguments[0].scrollIntoView(true);", header);
+    WebElement header = headers.get(i); 
     String headerText = header.getText();
     headerTexts.add(headerText);  
     // Afișează textul antetului în log
@@ -92,21 +90,15 @@ for (int i = 0; i < cells.size(); i++) {
 
 
 private void scrollTable(){
-    Helpers.waitForSeconds(5);
-    // Locating the table
-// WebElement table = driver.findElement(By.cssSelector("#google-accounts-list_wrapper > div.dataTables_scroll.dtfc-has-left > div.dataTables_scrollBody"));
 
 
-Helpers.waitForSeconds(5);
-// Scroll to the end of the table horizontally
-WebElement element = driver.findElement(By.xpath("/html/body/div[2]/main/div[2]/div/div/div/div[2]/div[2]/div/div[1]/div/div[3]/div[1]/div/table/thead/tr/th[45]"));
+Helpers.waitForSeconds(10);
 
+// Execută scriptul JavaScript pentru a derula orizontal tabelul
 JavascriptExecutor js = (JavascriptExecutor) driver;
-js.executeScript("arguments[0].scrollIntoView(true);", element);
-Helpers.waitForSeconds(5);
+js.executeScript("(window.scroll(0,300))");			
+		
 
-String text = element.getText();
-Reporter.log(text);
 }
 
 
