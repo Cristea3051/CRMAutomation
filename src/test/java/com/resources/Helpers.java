@@ -53,7 +53,7 @@ for (int i = 0; i < cells.size(); i++) {
         }
     }catch (Exception e) {
         // Log any exception that occurs during execution
-        Reporter.log("An error occurred: " + e.getMessage());
+        Reporter.log( e.getMessage());
         e.printStackTrace();
     }
 

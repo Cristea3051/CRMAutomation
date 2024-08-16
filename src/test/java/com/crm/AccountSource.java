@@ -44,7 +44,6 @@ public class AccountSource extends BaseTest {
         deleteAccountSource();
     }
 
-    @Test(priority = 2)
     private void createAccountSource() {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("add_source")))).click();
         WebElement createAccSource = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("account_source_name"))));
@@ -57,8 +56,8 @@ public class AccountSource extends BaseTest {
     // Iterează primele 5 elemente sau mai puține, dacă lista are mai puțin de 5 elemente
    Helpers helpers = new Helpers(driver, locators);
         helpers.iterateAndLogTableData();
-    }
-    @Test(priority = 3)
+    } 
+
     private void updateAccountSource() {
         WebElement proxyCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("checkbox_element"))));
         proxyCheckbox.click(); 
@@ -74,7 +73,7 @@ public class AccountSource extends BaseTest {
         Helpers showData = new Helpers(driver, locators);
         showData.iterateAndLogTableData();
     }
-    @Test(priority = 4)
+
     private void createTableSettingsAccountSource() {
         Helpers.waitForSeconds(5);
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
@@ -115,7 +114,8 @@ public class AccountSource extends BaseTest {
             Helpers dataHelpers = new Helpers(driver, locators);
             dataHelpers.iterateAndLogTableData();
     }
-    @Test(priority = 5)
+
+    
     private void deleteTableSettingsAccountSource() {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
 
@@ -136,7 +136,8 @@ public class AccountSource extends BaseTest {
 
         Reporter.log("A fost ștearsă cu succes setarea");
     }
-    @Test(priority = 6)
+
+    
     private void downloadCSVaccountSource() {
 
         WebElement selectCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("edited_chechbox_element"))));
@@ -157,7 +158,8 @@ public class AccountSource extends BaseTest {
             Reporter.log("Eroare: Nu s-a putut descarca fisierul!");
         }
     }
-    @Test(priority = 7)
+
+    
     private void deleteAccountSource() {
         Helpers.waitForSeconds(3);
         
