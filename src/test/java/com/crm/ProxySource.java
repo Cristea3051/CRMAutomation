@@ -37,7 +37,7 @@ public class ProxySource extends BaseTest {
         driver.get("http://crm-dash/accounts-proxy-source");
 
         String title = driver.getTitle();
-        Reporter.log("Utilizatorul a navigat cu succes la pagina - "  + title);
+        Reporter.log("Utilizatorul a navigat cu succes la pagina - "  + title + "\n");
         createProxySource();
         updateProxySource();
         createTableSettingsProxySource();
@@ -60,7 +60,7 @@ public class ProxySource extends BaseTest {
     } catch (InterruptedException e) {
         e.printStackTrace();
     }
-    Reporter.log("A fost creat Sursa Proxy");
+    Reporter.log("A fost creat Sursa Proxy" + "\n");
     // Iterează primele 5 elemente sau mai puține, dacă lista are mai puțin de 5 elemente
    Helpers helpers = new Helpers(driver, locators);
         helpers.iterateAndLogTableData();
@@ -91,7 +91,7 @@ public class ProxySource extends BaseTest {
         } catch (InterruptedException e) {
         e.printStackTrace();
         }
-        Reporter.log("A fost updatata Sursa Proxy");
+        Reporter.log("A fost updatata Sursa Proxy" + "\n");
         // Iterează primele 5 elemente sau mai puține, dacă lista are mai puțin de 5 elemente
         Helpers showData = new Helpers(driver, locators);
         showData.iterateAndLogTableData();
@@ -133,7 +133,7 @@ public class ProxySource extends BaseTest {
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
         Helpers.waitForSeconds(3);
-            Reporter.log("A fost creat cu succes noua setare cu coloanele:");
+            Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
             Helpers dataHelpers = new Helpers(driver, locators);
             dataHelpers.iterateAndLogTableData();
     }
@@ -156,7 +156,7 @@ public class ProxySource extends BaseTest {
         Helpers.waitForSeconds(5);
         driver.navigate().refresh();
 
-        Reporter.log("A fost ștearsă cu succes setarea");
+        Reporter.log("A fost ștearsă cu succes setarea" + "\n");
     }
 
     private void downloadCSVporxySource() {
@@ -174,10 +174,10 @@ public class ProxySource extends BaseTest {
             WebElement confirmButton = driver.findElement(By.id(locators.getProperty("confirm_export_proxy_source")));
             confirmButton.click();
             // Afișează un mesaj către utilizator pentru a indica succesul
-            Reporter.log("A fost descarcat cu success fiserul CSV");
+            Reporter.log("A fost descarcat cu success fiserul CSV" + "\n");
         } catch (Exception e) {
             // Afiseaza un mesaj de eroare dacă nu a fost posibil de apasat butonul de confirmare
-            Reporter.log("Eroare: Nu s-a putut descarca fisierul!");
+            Reporter.log("Eroare: Nu s-a putut descarca fisierul!" + "\n");
         }
     }
 
@@ -209,10 +209,10 @@ public class ProxySource extends BaseTest {
             WebElement confirmButton = driver.findElement(By.cssSelector(locators.getProperty("confirm_delete_modal")));
             confirmButton.click();
             // Afișează un mesaj către utilizator pentru a indica succesul
-            Reporter.log("Proxy-ul a fost șters cu succes!");
+            Reporter.log("Proxy-ul a fost șters cu succes!" + "\n");
         } catch (Exception e) {
             // Afiseaza un mesaj de eroare dacă nu a fost posibil de apasat butonul de confirmare
-            Reporter.log("Eroare: Nu s-a putut șterge proxy-ul!");
+            Reporter.log("Eroare: Nu s-a putut șterge proxy-ul!" + "\n");
         }
         try {
             // Așteaptă un interval pentru a fi sigur că proxy s-a sters

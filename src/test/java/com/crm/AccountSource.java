@@ -28,14 +28,14 @@ public class AccountSource extends BaseTest {
     @Test(dataProvider = "FarmerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
-        Reporter.log("Utilizator "  + username + " s-a logat");
+        Reporter.log("Utilizator "  + username + " s-a logat" + "\n");
 
         login.closeDebugBar();
 
         driver.get("http://crm-dash/accounts-source");
 
         String title = driver.getTitle();
-        Reporter.log("Utilizatorul a navigat cu succes la pagina - "  + title);
+        Reporter.log("Utilizatorul a navigat cu succes la pagina - "  + title + "\n");
         createAccountSource();
         updateAccountSource();
         createTableSettingsAccountSource();
@@ -52,7 +52,7 @@ public class AccountSource extends BaseTest {
        WebElement submitAccSource = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_account_source_butt"))));
        submitAccSource.click();
        Helpers.waitForSeconds(3);
-    Reporter.log("A fost creat Account Source");
+    Reporter.log("A fost creat Account Source" + "\n");
     // Iterează primele 5 elemente sau mai puține, dacă lista are mai puțin de 5 elemente
    Helpers helpers = new Helpers(driver, locators);
         helpers.iterateAndLogTableData();
@@ -105,12 +105,12 @@ public class AccountSource extends BaseTest {
                 driver.findElement(By.xpath(locators.getProperty("find_setting"))).click();
             }
         } catch (Exception e) {
-            Reporter.log("Excepție: " + e.getMessage());
+            System.out.println(e.getMessage());
         }
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
         Helpers.waitForSeconds(3);
-            Reporter.log("A fost creat cu succes noua setare cu coloanele:");
+            Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
             Helpers dataHelpers = new Helpers(driver, locators);
             dataHelpers.iterateAndLogTableData();
     }
@@ -134,7 +134,7 @@ public class AccountSource extends BaseTest {
         Helpers.waitForSeconds(5);
         driver.navigate().refresh();
 
-        Reporter.log("A fost ștearsă cu succes setarea");
+        Reporter.log("A fost ștearsă cu succes setarea" + "\n");
     }
 
     
@@ -152,10 +152,10 @@ public class AccountSource extends BaseTest {
             WebElement confirmButton = driver.findElement(By.id(locators.getProperty("export_csv_butt")));
             confirmButton.click();
             // Afișează un mesaj către utilizator pentru a indica succesul
-            Reporter.log("A fost descarcat cu success fiserul CSV");
+            Reporter.log("A fost descarcat cu success fiserul CSV" + "\n");
         } catch (Exception e) {
             // Afiseaza un mesaj de eroare dacă nu a fost posibil de apasat butonul de confirmare
-            Reporter.log("Eroare: Nu s-a putut descarca fisierul!");
+            Reporter.log("Eroare: Nu s-a putut descarca fisierul!" + "\n");
         }
     }
 
@@ -174,10 +174,10 @@ public class AccountSource extends BaseTest {
             WebElement confirmButton = driver.findElement(By.cssSelector(locators.getProperty("confirm_delete_modal")));
             confirmButton.click();
             // Afișează un mesaj către utilizator pentru a indica succesul
-            Reporter.log("Proxy-ul a fost șters cu succes!");
+            Reporter.log("Proxy-ul a fost șters cu succes!" + "\n");
         } catch (Exception e) {
             // Afiseaza un mesaj de eroare dacă nu a fost posibil de apasat butonul de confirmare
-            Reporter.log("Eroare: Nu s-a putut șterge proxy-ul!");
+            Reporter.log("Eroare: Nu s-a putut șterge proxy-ul!" + "\n");
         }
         Helpers.waitForSeconds(3);
     }
