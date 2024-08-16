@@ -39,7 +39,7 @@ import java.util.List;
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
 
         tableAuto();
-        scrollTable();
+        // scrollTable();
     }
 
 
@@ -65,12 +65,10 @@ for (int i = 0; i < headers.size(); i++) {
     WebElement header = headers.get(i); 
     String headerText = header.getText();
     headerTexts.add(headerText);  
-    // Afișează textul antetului în log
-    Reporter.log((i + 1) + ": " + headerText);
 }
 
 // Locate the first row of the table body
-WebElement firstRow = driver.findElement(By.xpath("/html/body/div[2]/main/div[2]/div/div/div/div[2]/div[2]/div/div[1]/div/div[3]/div[2]/table/tbody/tr[1]"));
+WebElement firstRow = driver.findElement(By.cssSelector("tr.even:nth-child(1)"));
 
 // Get all cells in the first row
 List<WebElement> cells = firstRow.findElements(By.tagName("td"));
@@ -90,27 +88,29 @@ for (int i = 0; i < cells.size(); i++) {
     }
 
 
-private void scrollTable(){
+// private void scrollTable(){
 
 
-Helpers.waitForSeconds(10);
+// Helpers.waitForSeconds(10);
 
-// Execută scriptul JavaScript pentru a derula orizontal tabelul
-WebElement table = driver.findElement(By.cssSelector(".dataTables_scrollBody"));
+// // Execută scriptul JavaScript pentru a derula orizontal tabelul
+// WebElement table = driver.findElement(By.cssSelector(".dataTables_scrollBody"));
 
-// Creează obiectul Actions
-Actions actions = new Actions(driver);
 
-// Creează obiectul WheelInput pentru scroll
-WheelInput.ScrollOrigin scrollOrigin = WheelInput.ScrollOrigin.fromElement(table);
+// // "window.scrollBy(850, 0)"
+// // Creează obiectul Actions
+// Actions actions = new Actions(driver);
 
-// Fă scroll orizontal
-actions
-    .scrollFromOrigin(scrollOrigin, 0, 2000) // 0 pe verticală și 2000 pe orizontală
-    .perform();
+// // Creează obiectul WheelInput pentru scroll
+// WheelInput.ScrollOrigin scrollOrigin = WheelInput.ScrollOrigin.fromElement(table);
+
+// // Fă scroll orizontal
+// actions
+//     .scrollFromOrigin(scrollOrigin, 0, 2000) // 0 pe verticală și 2000 pe orizontală
+//     .perform();
 		
-                Helpers.waitForSeconds(10);
-}
+//                 Helpers.waitForSeconds(10);
+// }
 
 
 }

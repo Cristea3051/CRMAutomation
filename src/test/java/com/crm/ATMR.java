@@ -72,16 +72,16 @@ public class ATMR extends BaseTest {
                     // Dacă elementul este găsit și este clicabil, face clic pe el
                     element.click();
                     clicked = true;
-                    Reporter.log("Elementul activ a fost găsit și s-a făcut clic pe el: " + xpath);
+                    Reporter.log("Elementul activ a fost găsit și s-a făcut clic pe el: " + xpath + "\n");
                     break; // Ieși din buclă dacă ai făcut clic pe element
                 } catch (Exception e) {
                     // Nu a fost posibil să se facă clic pe element; trece la următorul
-                    Reporter.log("Elementul nu a fost clicabil: " + xpath);
+                    Reporter.log("Elementul nu a fost clicabil: " + xpath + "\n");
                 }
             }
 
             if (!clicked) {
-                Reporter.log("Niciun element clicabil nu a fost găsit.");
+                Reporter.log("Niciun element clicabil nu a fost găsit."+ "\n");
             }
 
 
@@ -123,7 +123,7 @@ public class ATMR extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
 
         Helpers.waitForSeconds(3);
-        Reporter.log("A fost creat cu succes noua setare cu coloanele:");
+        Reporter.log("A fost creat cu succes noua setare cu coloanele:"+ "\n");
 
         Helpers.waitForSeconds(5);
         Helpers dataHelpers = new Helpers(driver, locators);
@@ -140,9 +140,9 @@ public class ATMR extends BaseTest {
             WebElement confirmButton = driver.findElement(By.cssSelector("#google-at-mr-campaigns-list-export-button"));
             confirmButton.click();
 
-            Reporter.log("A fost descarcat cu success fiserul CSV");
+            Reporter.log("A fost descarcat cu success fiserul CSV"+ "\n");
         } catch (Exception e) {
-            Reporter.log("Eroare: Nu s-a putut descarca fisierul!");
+            Reporter.log("Eroare: Nu s-a putut descarca fisierul!"+ "\n");
         }
 
         Helpers.waitForSeconds(5);
@@ -166,7 +166,12 @@ public class ATMR extends BaseTest {
         Helpers.waitForSeconds(5);
         driver.navigate().refresh();
 
-        Reporter.log("A fost ștearsă cu succes setarea");
+        Helpers.waitForSeconds(5);
+
+        Helpers dataHelpers = new Helpers(driver, locators);
+        dataHelpers.iterateAndLogTableData();
+
+        Reporter.log("A fost ștearsă cu succes setarea"+ "\n");
     }
 
     // PER OFFER Report tabble
@@ -211,7 +216,7 @@ public class ATMR extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
 
         Helpers.waitForSeconds(3);
-        Reporter.log("A fost creat cu succes noua setare cu coloanele:");
+        Reporter.log("A fost creat cu succes noua setare cu coloanele:"+ "\n");
 
         Helpers.waitForSeconds(5);
         Helpers dataHelpers = new Helpers(driver, locators);
@@ -228,9 +233,9 @@ public class ATMR extends BaseTest {
             WebElement confirmButton = driver.findElement(By.cssSelector("#binom-roi-offers-reports-atmr-export-button"));
             confirmButton.click();
 
-            Reporter.log("A fost descarcat cu success fiserul CSV");
+            Reporter.log("A fost descarcat cu success fiserul CSV"+ "\n");
         } catch (Exception e) {
-            Reporter.log("Eroare: Nu s-a putut descarca fisierul!");
+            Reporter.log("Eroare: Nu s-a putut descarca fisierul!"+ "\n");
         }
 
         Helpers.waitForSeconds(5);
@@ -254,7 +259,12 @@ public class ATMR extends BaseTest {
         Helpers.waitForSeconds(5);
         driver.navigate().refresh();
 
-        Reporter.log("A fost ștearsă cu succes setarea");
+        Helpers.waitForSeconds(5);
+        
+        Helpers dataHelpers = new Helpers(driver, locators);
+        dataHelpers.iterateAndLogTableData();
+
+        Reporter.log("A fost ștearsă cu succes setarea"+ "\n");
     }
 
 }
