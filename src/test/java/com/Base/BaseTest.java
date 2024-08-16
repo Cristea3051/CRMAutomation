@@ -2,6 +2,7 @@ package com.Base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -21,6 +22,11 @@ public class BaseTest {
     public void setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+
+        // Headless mode
+        // ChromeOptions options=new ChromeOptions();
+        // options.addArguments("headless");
+        // driver=new ChromeDriver(options);
 
         // Încarcă fișierele de proprietăți
         locators = loadProperties("/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/locators.properties");
