@@ -1,22 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNGTest-7dcabdef-4e62-4664-a8b3-7663cf17a0dd"
-           tests="2"
-           failures="0"
+<testsuite name="TestNGTest-b3fd57ac-82f7-48b0-ba22-9a462f12a744"
+           tests="6"
+           failures="1"
            errors="0"
-           skipped="0"
-           time="178.605">
+           skipped="5"
+           time="0.002">
     <properties></properties>
 
+            <testcase
+                name="setUp"
+                time="0.002"
+                classname="com.crm.AccountSource">
 
+            <failure type="java.lang.Error" message="Unresolved compilation problem: 
+	The method chrome() is undefined for the type DesiredCapabilities
+">
+                <![CDATA[java.lang.Error: Unresolved compilation problem: 
+	The method chrome() is undefined for the type DesiredCapabilities
+
+                com.Base.BaseTest.setUp(BaseTest.java:26)com.crm.AccountSource.setUp(AccountSource.java:23)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:568)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:781)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:574)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1511)org.testng.TestRunner.privateRun(TestRunner.java:808)org.testng.TestRunner.run(TestRunner.java:603)org.testng.SuiteRunner.runTest(SuiteRunner.java:429)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)org.testng.SuiteRunner.run(SuiteRunner.java:326)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)org.testng.TestNG.runSuitesLocally(TestNG.java:1169)org.testng.TestNG.runSuites(TestNG.java:1092)org.testng.TestNG.run(TestNG.java:1060)com.microsoft.java.test.runner.testng.TestNGRunner.run(TestNGRunner.java:45)com.microsoft.java.test.runner.testng.TestNGLauncher.execute(TestNGLauncher.java:32)com.microsoft.java.test.runner.Launcher.main(Launcher.java:57)
+]]>
+            </failure>
+    </testcase>
 
             <testcase
-                name="signIn"
-                time="89.119"
+                name="tearDown"
+                time="0.0"
+                classname="com.crm.AccountSource">
+            </testcase>
+            <testcase
+                name="setUp"
+                time="0.0"
+                classname="com.crm.AccountSource">
+            </testcase>
+            <testcase
+                name="tearDown"
+                time="0.0"
                 classname="com.crm.AccountSource">
             </testcase>
             <testcase
                 name="signIn"
-                time="89.486"
+                time="0.0"
                 classname="com.crm.AccountSource">
             </testcase>
+            <testcase
+                name="signIn"
+                time="0.0"
+                classname="com.crm.AccountSource">
+            </testcase>
+
 </testsuite>
