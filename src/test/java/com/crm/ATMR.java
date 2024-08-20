@@ -161,12 +161,9 @@ public class ATMR extends BaseTest {
         deletePreset.click();
 
         Helpers.waitForSeconds(5);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.ml-auto"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+        Helpers.waitForSeconds(3);
 
-        Helpers.waitForSeconds(5);
-        driver.navigate().refresh();
-
-        Helpers.waitForSeconds(5);
 
         Helpers dataHelpers = new Helpers(driver, locators);
         dataHelpers.iterateAndLogTableData();
@@ -254,12 +251,8 @@ public class ATMR extends BaseTest {
         deletePreset.click();
 
         Helpers.waitForSeconds(5);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.ml-auto"))).click();
-
-        Helpers.waitForSeconds(5);
-        driver.navigate().refresh();
-
-        Helpers.waitForSeconds(5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+        Helpers.waitForSeconds(3);
         
         Helpers dataHelpers = new Helpers(driver, locators);
         dataHelpers.iterateAndLogTableData();

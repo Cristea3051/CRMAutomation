@@ -216,10 +216,9 @@ public class AccountProxy extends BaseTest {
         deletePreset.click();
 
         Helpers.waitForSeconds(5);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.btn-alt-primary:nth-child(2)"))).click();
-
-        Helpers.waitForSeconds(5);
-        driver.navigate().refresh();
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+        
+        Helpers.waitForSeconds(3);
 
         Reporter.log("A fost ștearsă cu succes setarea" + "\n");
     }
