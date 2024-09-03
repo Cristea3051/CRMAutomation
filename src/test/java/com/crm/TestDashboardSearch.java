@@ -14,10 +14,11 @@ import com.Base.BaseTest;
 import com.resources.CredentialsProvider;
 import com.utilities.Login;
 
-public class DashboardSearch extends BaseTest {
+public class TestDashboardSearch extends BaseTest {
     private Login login;
 
     @BeforeMethod
+    @Override
     public void setUp() {
         super.setUp(); // Apelăm metoda setUp() din clasa de bază
         login = new Login(driver); // Inițializăm obiectul Login

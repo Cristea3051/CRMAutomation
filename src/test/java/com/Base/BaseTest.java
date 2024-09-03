@@ -21,15 +21,9 @@ public class BaseTest {
     public void setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-
-        // Headless mode
-        // ChromeOptions options=new ChromeOptions();
-        // options.addArguments("headless");
-        // driver=new ChromeDriver(options);
-
         // Încarcă fișierele de proprietăți
         locators = loadProperties("/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/locators.properties");
-        inputInfo = loadProperties("/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/inputinfo.properties"); // Înlocuiește cu calea ta către inputinfo.properties
+        inputInfo = loadProperties("/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/inputinfo.properties"); 
     }
     Helpers helpers = new Helpers(driver, locators);
 

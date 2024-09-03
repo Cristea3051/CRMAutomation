@@ -15,11 +15,12 @@ import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
-public class ATMR extends BaseTest {
+public class TestATMR extends BaseTest {
     private Login login;
     private WebDriverWait wait;
 
     @BeforeMethod
+    @Override
     public void setUp() {
         super.setUp();
         login = new Login(driver);
@@ -136,7 +137,7 @@ public class ATMR extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("csv_button")))).click();
 
         try {
-            Thread.sleep(3000);
+            Helpers.waitForSeconds(3);
             WebElement confirmButton = driver.findElement(By.cssSelector("#google-at-mr-campaigns-list-export-button"));
             confirmButton.click();
 
@@ -226,7 +227,7 @@ public class ATMR extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("atmr_per_offer_download_csv")))).click();
 
         try {
-            Thread.sleep(3000);
+            Helpers.waitForSeconds(3);
             WebElement confirmButton = driver.findElement(By.cssSelector("#binom-roi-offers-reports-atmr-export-button"));
             confirmButton.click();
 

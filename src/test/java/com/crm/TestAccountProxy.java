@@ -17,11 +17,12 @@ import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
-public class AccountProxy extends BaseTest {
+public class TestAccountProxy extends BaseTest {
     private Login login;
     private WebDriverWait wait;
 
     @BeforeMethod
+    @Override
     public void setUp() {
         super.setUp();
         login = new Login(driver);
@@ -178,7 +179,7 @@ public class AccountProxy extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("csv_button")))).click();
 
         try {
-            Thread.sleep(3000);
+            Helpers.waitForSeconds(3);
             WebElement confirmButton = driver.findElement(By.xpath(locators.getProperty("confirm_export_proxy")));
             confirmButton.click();
 
@@ -192,7 +193,7 @@ public class AccountProxy extends BaseTest {
         deleteButton.click();
 
         try {
-            Thread.sleep(4000);
+            Helpers.waitForSeconds(5);
             WebElement confirmButton = driver.findElement(By.cssSelector(locators.getProperty("confirm_delete_modal")));
             confirmButton.click();
 
