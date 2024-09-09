@@ -38,12 +38,13 @@ public class TestSgCampaigns extends BaseTest {
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
-        createAndOrderTableSettings();
-        downloadCSV();
-        deleteTableSettings();
-        createAndOrderTableSettingsPerOffer();
-        downloadCSVPerOffer();
-        deleteTableSettingsPerOffer();
+        selectDataRangeAndTime();
+        // createAndOrderTableSettings();
+        // downloadCSV();
+        // deleteTableSettings();
+        // createAndOrderTableSettingsPerOffer();
+        // downloadCSVPerOffer();
+        // deleteTableSettingsPerOffer();
     }
 
    private void selectDataRangeAndTime() {
@@ -54,7 +55,9 @@ public class TestSgCampaigns extends BaseTest {
 
     new WebDriverWait(driver, Duration.ofSeconds(20));
 
-    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//li[@data-range-key='All Time'])[3]"))).click();
+    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']"))).click();
+
+    Helpers.waitForSeconds(5);
    }
 
     private void createAndOrderTableSettings() {

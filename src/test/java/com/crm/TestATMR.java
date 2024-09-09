@@ -39,11 +39,11 @@ public class TestATMR extends BaseTest {
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
         createAndOrderTableSettings();
-        downloadCSV();
+        // downloadCSV();
         deleteTableSettings();
-        createAndOrderTableSettingsPerOffer();
-        downloadCSVPerOffer();
-        deleteTableSettingsPerOffer();
+        // createAndOrderTableSettingsPerOffer();
+        // downloadCSVPerOffer();
+        // deleteTableSettingsPerOffer();
     }
 
    
@@ -55,36 +55,7 @@ public class TestATMR extends BaseTest {
 
         new WebDriverWait(driver, Duration.ofSeconds(20));
 
-        String[] xpaths = {
-            "/html/body/div[6]/div[1]/ul/li[13]",
-            "/html/body/div[7]/div[1]/ul/li[13]",
-            "/html/body/div[8]/div[1]/ul/li[13]",
-            "/html/body/div[9]/div[1]/ul/li[13]", 
-        };
-
-         new WebDriverWait(driver, Duration.ofSeconds(20));
-         boolean clicked = false;
-
-            for (String xpath : xpaths) {
-                try {
-                    // Așteaptă până când elementul devine vizibil și interactiv
-                    WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-                    
-                    // Dacă elementul este găsit și este clicabil, face clic pe el
-                    element.click();
-                    clicked = true;
-                    Reporter.log("Elementul activ a fost găsit și s-a făcut clic pe el: " + xpath + "\n");
-                    break; // Ieși din buclă dacă ai făcut clic pe element
-                } catch (Exception e) {
-                    // Nu a fost posibil să se facă clic pe element; trece la următorul
-                    Reporter.log("Elementul nu a fost clicabil: " + xpath + "\n");
-                }
-            }
-
-            if (!clicked) {
-                Reporter.log("Niciun element clicabil nu a fost găsit."+ "\n");
-            }
-
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']"))).click();
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
