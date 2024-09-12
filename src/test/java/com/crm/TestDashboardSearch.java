@@ -31,25 +31,27 @@ public class TestDashboardSearch extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         // Localizez si aplic click() pe butonul user dropdown din header
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locators.getProperty("user_dropdown")))).click(); 
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locators.getProperty("user_dropdown")))).click();
 
         // Extrag textul cu rolul pe care
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locators.getProperty("get_userrole"))));
+        WebElement element = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locators.getProperty("get_userrole"))));
         String role = element.getText();
 
-        Reporter.log("Utilizator "  + username + " - " + role + " s-a logat logat");
+        Reporter.log("Utilizator " + username + " - " + role + " s-a logat logat");
 
-    //   Localizez elementul cu ajutorul lui wait
-    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locators.getProperty("localize_card"))));
+        // Localizez elementul cu ajutorul lui wait
+        wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locators.getProperty("localize_card"))));
 
-    // Afisez lista de elemente cu acelasi css selector 
-    List<WebElement> spanElements = driver.findElements(By.cssSelector(locators.getProperty("get_dashcard_name")));
+        // Afisez lista de elemente cu acelasi css selector
+        List<WebElement> spanElements = driver.findElements(By.cssSelector(locators.getProperty("get_dashcard_name")));
 
-    // Se iterează prin lista de elemente și se extrage textul din fiecare element
-    for (WebElement spanElement : spanElements) {
-        String card = spanElement.getText();
-        Reporter.log("A fost localizat: "  + card);
-    }
+        // Se iterează prin lista de elemente și se extrage textul din fiecare element
+        for (WebElement spanElement : spanElements) {
+            String card = spanElement.getText();
+            Reporter.log("A fost localizat: " + card);
+        }
 
     }
 }

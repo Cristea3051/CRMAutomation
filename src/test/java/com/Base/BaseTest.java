@@ -16,15 +16,17 @@ public class BaseTest {
     protected Properties locators;
     protected Properties inputInfo;
 
-
     @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         // Încarcă fișierele de proprietăți
-        locators = loadProperties("/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/locators.properties");
-        inputInfo = loadProperties("/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/inputinfo.properties"); 
+        locators = loadProperties(
+                "/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/locators.properties");
+        inputInfo = loadProperties(
+                "/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/inputinfo.properties");
     }
+
     Helpers helpers = new Helpers(driver, locators);
 
     private Properties loadProperties(String filePath) {
@@ -37,7 +39,7 @@ public class BaseTest {
         return properties;
     }
 
-   @AfterMethod
+    @AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();

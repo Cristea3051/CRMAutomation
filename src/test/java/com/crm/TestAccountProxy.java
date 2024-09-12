@@ -48,15 +48,20 @@ public class TestAccountProxy extends BaseTest {
     }
 
     private void createProxy() {
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("create_proxy_button")))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("create_proxy_button"))))
+                .click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_name_input")))).sendKeys(inputInfo.getProperty("name"));
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_name_input"))))
+                .sendKeys(inputInfo.getProperty("name"));
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_username_input")))).sendKeys(inputInfo.getProperty("username"));
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_username_input"))))
+                .sendKeys(inputInfo.getProperty("username"));
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_password_input")))).sendKeys(inputInfo.getProperty("password"));
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_password_input"))))
+                .sendKeys(inputInfo.getProperty("password"));
 
-        WebElement selectSource = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_proxy_type"))));
+        WebElement selectSource = wait
+                .until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_proxy_type"))));
         selectSource.click();
         driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
         driver.switchTo().activeElement().sendKeys(Keys.ENTER);
@@ -70,35 +75,41 @@ public class TestAccountProxy extends BaseTest {
         driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
         driver.switchTo().activeElement().sendKeys(Keys.ENTER);
 
-        WebElement createProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_proxy"))));
+        WebElement createProxy = wait
+                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_proxy"))));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", createProxy);
         createProxy.click();
 
         Helpers.waitForSeconds(4);
         Reporter.log("A fost creat poxyul");
-        
+
         Helpers helpers = new Helpers(driver, locators);
         helpers.iterateAndLogTableData();
     }
 
     private void updateProxy() {
-        WebElement proxyCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("checkbox_element"))));
+        WebElement proxyCheckbox = wait
+                .until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("checkbox_element"))));
         proxyCheckbox.click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_header_button")))).click();
-        WebElement editName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_name_input"))));
+        WebElement editName = wait
+                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_name_input"))));
         editName.clear();
         editName.sendKeys(inputInfo.getProperty("edited_name"));
 
-        WebElement editUserName = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_username_input"))));
+        WebElement editUserName = wait
+                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_username_input"))));
         editUserName.clear();
         editUserName.sendKeys(inputInfo.getProperty("edited_username"));
 
-        WebElement editPassword = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_password_input"))));
+        WebElement editPassword = wait
+                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_password_input"))));
         editPassword.clear();
         editPassword.sendKeys(inputInfo.getProperty("edited_password"));
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_edited_proxy_type")))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_edited_proxy_type"))))
+                .click();
         driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
         driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
         driver.switchTo().activeElement().sendKeys(Keys.ENTER);
@@ -113,7 +124,8 @@ public class TestAccountProxy extends BaseTest {
         driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
         driver.switchTo().activeElement().sendKeys(Keys.ENTER);
 
-        WebElement updateProxy = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_edited_proxy"))));
+        WebElement updateProxy = wait
+                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_edited_proxy"))));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", updateProxy);
         updateProxy.click();
 
@@ -126,24 +138,29 @@ public class TestAccountProxy extends BaseTest {
     private void createAndOrderTableSettings() {
 
         Helpers.waitForSeconds(3);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
+        wait.until(
+                ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button"))))
+                .click();
 
         Helpers.waitForSeconds(3);
-        WebElement nameInput = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
+        WebElement nameInput = wait
+                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
 
         nameInput.click();
 
         nameInput.sendKeys(inputInfo.getProperty("setting_name"));
 
         for (int i = 0; i < 3; i++) {
-            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide"))))
+                    .click();
             wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.w-100:nth-child(5)"))).click();
         }
 
         Helpers.waitForSeconds(5);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"swap-from\"]/option[2]"))).click();
         for (int i = 0; i < 3; i++) {
-            WebElement moveDown = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
+            WebElement moveDown = wait
+                    .until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
             moveDown.click();
         }
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
@@ -172,7 +189,8 @@ public class TestAccountProxy extends BaseTest {
 
     private void downloadCSVandDeleteProxy() {
         Helpers.waitForSeconds(5);
-        WebElement selectCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("edited_chechbox_element"))));
+        WebElement selectCheckbox = wait.until(
+                ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("edited_chechbox_element"))));
         selectCheckbox.click();
 
         Helpers.waitForSeconds(5);
@@ -189,7 +207,8 @@ public class TestAccountProxy extends BaseTest {
         }
 
         Helpers.waitForSeconds(5);
-        WebElement deleteButton = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("delete_button"))));
+        WebElement deleteButton = wait
+                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("delete_button"))));
         deleteButton.click();
 
         try {
@@ -205,7 +224,9 @@ public class TestAccountProxy extends BaseTest {
     }
 
     private void deleteTableSettings() {
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
+        wait.until(
+                ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button"))))
+                .click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
 
@@ -218,7 +239,7 @@ public class TestAccountProxy extends BaseTest {
 
         Helpers.waitForSeconds(5);
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
-        
+
         Helpers.waitForSeconds(3);
 
         Reporter.log("A fost ștearsă cu succes setarea" + "\n");

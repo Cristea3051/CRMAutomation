@@ -33,9 +33,10 @@ public class Login {
 
     // Metoda pentru închiderea barei de debug
     public void closeDebugBar() {
-        WebElement hideDebugBar = wait.until(ExpectedConditions.elementToBeClickable(By.className("phpdebugbar-close-btn")));
+        WebElement hideDebugBar = wait
+                .until(ExpectedConditions.elementToBeClickable(By.className("phpdebugbar-close-btn")));
         hideDebugBar.click();
-        
+
         // Verifică dacă butonul a fost apăsat
         if (!hideDebugBar.isDisplayed()) {
             Reporter.log("Debug Bar a fost ascuns");
@@ -44,7 +45,3 @@ public class Login {
         }
     }
 }
-
-
-
-

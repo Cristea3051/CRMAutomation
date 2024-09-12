@@ -8,7 +8,7 @@ import java.util.Properties;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Helpers{
+public class Helpers {
     private WebDriver driver;
 
     public Helpers(WebDriver driver, Properties locators) {
@@ -16,50 +16,53 @@ public class Helpers{
     }
 
     public void iterateAndLogTableData() {
-           try {
-         
-// Localizează elementul antetului tabelului
-WebElement headerRow = driver.findElement(By.cssSelector(".dataTables_scrollHeadInner > table:nth-child(1) > thead"));
+        try {
 
-// Obține toate celulele antetului
-List<WebElement> headers = headerRow.findElements(By.tagName("th"));
+            // Localizează elementul antetului tabelului
+            WebElement headerRow = driver
+                    .findElement(By.cssSelector(".dataTables_scrollHeadInner > table:nth-child(1) > thead"));
 
-// Așteaptă câteva secunde (dacă este necesar)
-Helpers.waitForSeconds(3);
+            // Obține toate celulele antetului
+            List<WebElement> headers = headerRow.findElements(By.tagName("th"));
 
-// Creează o listă pentru a stoca textele antetului
-List<String> headerTexts = new ArrayList<>();
+            // Așteaptă câteva secunde (dacă este necesar)
+            Helpers.waitForSeconds(3);
 
-// Iterează prin fiecare celulă antetului
-for (int i = 0; i < headers.size(); i++) {
-    WebElement header = headers.get(i); 
-    String headerText = header.getText();
-    headerTexts.add(headerText);  
-}
+            // Creează o listă pentru a stoca textele antetului
+            List<String> headerTexts = new ArrayList<>();
 
-// Locate the first row of the table body
-WebElement firstRow = driver.findElement(By.cssSelector("tr.even:nth-child(1)"));
+            // Iterează prin fiecare celulă antetului
+            for (int i = 0; i < headers.size(); i++) {
+                WebElement header = headers.get(i);
+                String headerText = header.getText();
+                headerTexts.add(headerText);
+            }
 
-// Get all cells in the first row
-List<WebElement> cells = firstRow.findElements(By.tagName("td"));
+            // Locate the first row of the table body
+            WebElement firstRow = driver.findElement(By.cssSelector("tr.even:nth-child(1)"));
 
-// Print the data from each cell in the first row with the corresponding header
-Reporter.log("Data in the first row:");
-for (int i = 0; i < cells.size(); i++) {
-    WebElement cell = cells.get(i);
-    String cellText = cell.getText();
-    String headerText = headerTexts.get(i); // Get corresponding header text
-    Reporter.log((i + 1) + ": " + headerText + ": " + cellText);
+            // Get all cells in the first row
+            List<WebElement> cells = firstRow.findElements(By.tagName("td"));
+
+            // Print the data from each cell in the first row with the corresponding header
+            Reporter.log("Data in the first row:");
+            for (int i = 0; i < cells.size(); i++) {
+                WebElement cell = cells.get(i);
+                String cellText = cell.getText();
+                String headerText = headerTexts.get(i); // Get corresponding header text
+                Reporter.log((i + 1) + ": " + headerText + ": " + cellText);
+            }
+        } catch (Exception e) {
+            // Log any exception that occurs during execution
+            Reporter.log(e.getMessage());
+            e.printStackTrace();
         }
-    }catch (Exception e) {
-        // Log any exception that occurs during execution
-        Reporter.log( e.getMessage());
-        e.printStackTrace();
+
     }
 
-}
-      /**
+    /**
      * Așteaptă pentru un anumit număr de secunde.
+     * 
      * @param seconds Numărul de secunde pentru care trebuie să aștepte
      */
     public static void waitForSeconds(int seconds) {

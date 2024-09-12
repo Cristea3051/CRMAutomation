@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
@@ -38,50 +39,53 @@ public class TestSgCampaigns extends BaseTest {
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
-        selectDataRangeAndTime();
-        // createAndOrderTableSettings();
-        // downloadCSV();
-        // deleteTableSettings();
-        // createAndOrderTableSettingsPerOffer();
-        // downloadCSVPerOffer();
-        // deleteTableSettingsPerOffer();
+
+        createAndOrderTableSettings();
+        downloadCSV();
+        deleteTableSettings();
+        createAndOrderTableSettingsPerOffer();
+        downloadCSVPerOffer();
+        deleteTableSettingsPerOffer();
     }
 
-   private void selectDataRangeAndTime() {
-
-    Helpers.waitForSeconds(3);
-        
-    wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
-
-    new WebDriverWait(driver, Duration.ofSeconds(20));
-
-    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']"))).click();
-
-    Helpers.waitForSeconds(5);
-   }
-
     private void createAndOrderTableSettings() {
-  
 
         Helpers.waitForSeconds(3);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
+
+        driver.findElement(By.cssSelector("i.fa-calendar:nth-of-type(1)")).click();
+        driver.findElement(By.xpath(
+                "//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']"))
+                .click();
+
+        WebElement staticDropdown = driver.findElement(
+                By.xpath("//div[@id='sg-campaigns-list_length'] //select[@name='sg-campaigns-list_length']"));
+        Select dropdown = new Select(staticDropdown);
+        dropdown.selectByIndex(0);
+
+        Helpers.waitForSeconds(5);
+        wait.until(
+                ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button"))))
+                .click();
 
         Helpers.waitForSeconds(3);
-        WebElement nameInput = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
+        WebElement nameInput = wait
+                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
 
         nameInput.click();
 
         nameInput.sendKeys(inputInfo.getProperty("setting_name"));
 
         for (int i = 0; i < 6; i++) {
-            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide"))))
+                    .click();
             wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.w-100:nth-child(5)"))).click();
         }
 
         Helpers.waitForSeconds(5);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"swap-from\"]/option[2]"))).click();
         for (int i = 0; i < 10; i++) {
-            WebElement moveDown = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
+            WebElement moveDown = wait
+                    .until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
             moveDown.click();
         }
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
@@ -101,7 +105,7 @@ public class TestSgCampaigns extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
 
         Helpers.waitForSeconds(3);
-        Reporter.log("A fost creat cu succes noua setare cu coloanele:"+ "\n");
+        Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
 
         Helpers.waitForSeconds(5);
         Helpers dataHelpers = new Helpers(driver, locators);
@@ -109,7 +113,7 @@ public class TestSgCampaigns extends BaseTest {
     }
 
     private void downloadCSV() {
-     
+
         Helpers.waitForSeconds(5);
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("csv_button")))).click();
 
@@ -118,16 +122,18 @@ public class TestSgCampaigns extends BaseTest {
             WebElement confirmButton = driver.findElement(By.cssSelector("#google-at-mr-campaigns-list-export-button"));
             confirmButton.click();
 
-            Reporter.log("A fost descarcat cu success fiserul CSV"+ "\n");
+            Reporter.log("A fost descarcat cu success fiserul CSV" + "\n");
         } catch (Exception e) {
-            Reporter.log("Eroare: Nu s-a putut descarca fisierul!"+ "\n");
+            Reporter.log("Eroare: Nu s-a putut descarca fisierul!" + "\n");
         }
 
         Helpers.waitForSeconds(5);
     }
 
     private void deleteTableSettings() {
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button")))).click();
+        wait.until(
+                ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button"))))
+                .click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
 
@@ -142,36 +148,45 @@ public class TestSgCampaigns extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
         Helpers.waitForSeconds(3);
 
-
         Helpers dataHelpers = new Helpers(driver, locators);
         dataHelpers.iterateAndLogTableData();
 
-        Reporter.log("A fost ștearsă cu succes setarea"+ "\n");
+        Reporter.log("A fost ștearsă cu succes setarea" + "\n");
+
     }
 
     // PER OFFER Report tabble
 
     private void createAndOrderTableSettingsPerOffer() {
-        Helpers.waitForSeconds(3);
-    
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("atmr_per_offer_table_settings")))).click();
+
+        WebElement staticDropdown = driver.findElement(
+                By.xpath("//div[@id='sg-campaigns-list_length'] //select[@name='sg-campaigns-list_length']"));
+        Select dropdown = new Select(staticDropdown);
+        dropdown.selectByIndex(0);
 
         Helpers.waitForSeconds(3);
-        WebElement nameInput = wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(""))).click();
+
+        Helpers.waitForSeconds(3);
+        WebElement nameInput = wait
+                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
 
         nameInput.click();
 
         nameInput.sendKeys(inputInfo.getProperty("setting_name"));
 
         for (int i = 0; i < 6; i++) {
-            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide")))).click();
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide"))))
+                    .click();
             wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.w-100:nth-child(5)"))).click();
         }
 
         Helpers.waitForSeconds(5);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"swap-from\"]/option[2]"))).click();
         for (int i = 0; i < 10; i++) {
-            WebElement moveDown = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
+            WebElement moveDown = wait
+                    .until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
             moveDown.click();
         }
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
@@ -191,7 +206,7 @@ public class TestSgCampaigns extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
 
         Helpers.waitForSeconds(3);
-        Reporter.log("A fost creat cu succes noua setare cu coloanele:"+ "\n");
+        Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
 
         Helpers.waitForSeconds(5);
         Helpers dataHelpers = new Helpers(driver, locators);
@@ -199,25 +214,28 @@ public class TestSgCampaigns extends BaseTest {
     }
 
     private void downloadCSVPerOffer() {
-     
+
         Helpers.waitForSeconds(5);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("atmr_per_offer_download_csv")))).click();
+        wait.until(ExpectedConditions
+                .elementToBeClickable(By.cssSelector(locators.getProperty("atmr_per_offer_download_csv")))).click();
 
         try {
             Helpers.waitForSeconds(3);
-            WebElement confirmButton = driver.findElement(By.cssSelector("#binom-roi-offers-reports-atmr-export-button"));
+            WebElement confirmButton = driver
+                    .findElement(By.cssSelector("#binom-roi-offers-reports-atmr-export-button"));
             confirmButton.click();
 
-            Reporter.log("A fost descarcat cu success fiserul CSV"+ "\n");
+            Reporter.log("A fost descarcat cu success fiserul CSV" + "\n");
         } catch (Exception e) {
-            Reporter.log("Eroare: Nu s-a putut descarca fisierul!"+ "\n");
+            Reporter.log("Eroare: Nu s-a putut descarca fisierul!" + "\n");
         }
 
         Helpers.waitForSeconds(5);
     }
 
     private void deleteTableSettingsPerOffer() {
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("atmr_per_offer_table_settings")))).click();
+        wait.until(ExpectedConditions
+                .elementToBeClickable(By.cssSelector(locators.getProperty("atmr_per_offer_table_settings")))).click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
 
@@ -231,11 +249,11 @@ public class TestSgCampaigns extends BaseTest {
         Helpers.waitForSeconds(5);
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
         Helpers.waitForSeconds(3);
-        
+
         Helpers dataHelpers = new Helpers(driver, locators);
         dataHelpers.iterateAndLogTableData();
 
-        Reporter.log("A fost ștearsă cu succes setarea"+ "\n");
+        Reporter.log("A fost ștearsă cu succes setarea" + "\n");
     }
 
 }
