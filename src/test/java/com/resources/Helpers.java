@@ -45,7 +45,6 @@ public class Helpers {
             List<WebElement> cells = firstRow.findElements(By.tagName("td"));
 
             // Print the data from each cell in the first row with the corresponding header
-            Reporter.log("Data in the first row:");
             for (int i = 0; i < cells.size(); i++) {
                 WebElement cell = cells.get(i);
                 String cellText = cell.getText();

@@ -1,13 +1,12 @@
 package com.crm;
 
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
@@ -15,6 +14,7 @@ import org.testng.annotations.Test;
 import com.Base.BaseTest;
 import com.resources.CredentialsProvider;
 import com.resources.Helpers;
+import com.resources.configfiles.SettingsHelper;
 import com.utilities.Login;
 
 public class TestAccountProxy extends BaseTest {
@@ -48,37 +48,28 @@ public class TestAccountProxy extends BaseTest {
     }
 
     private void createProxy() {
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("create_proxy_button"))))
-                .click();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_name_input"))))
-                .sendKeys(inputInfo.getProperty("name"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_username_input"))))
-                .sendKeys(inputInfo.getProperty("username"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("create_password_input"))))
-                .sendKeys(inputInfo.getProperty("password"));
-
-        WebElement selectSource = wait
-                .until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_proxy_type"))));
-        selectSource.click();
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
-
-        WebElement inputElement = driver.findElement(By.cssSelector(locators.getProperty("select_proxy_sorce")));
-
         Helpers.waitForSeconds(4);
-        inputElement.sendKeys((inputInfo.getProperty("input_source")));
 
-        Helpers.waitForSeconds(3);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".fa-plus-circle"))).click();
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("create_name"))).sendKeys("21.226.116.124:4444");
+
+        driver.findElement(By.id("create_username")).sendKeys("ProxyAutoUsername");
+
+        driver.findElement(By.id("create_password")).sendKeys("ProxyAutoPass");
+
+        WebElement select = driver
+                .findElement(By.cssSelector("label[for='create_proxy_types'] ~ select[name='proxy_type']"));
+        Select type = new Select(select);
+        type.selectByValue("Residential");
+
+        WebElement source = driver.findElement(By.cssSelector("input[data-modal-field-id='create_source_id']"));
+        Helpers.waitForSeconds(4);
+        source.sendKeys("ip");
         driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
         driver.switchTo().activeElement().sendKeys(Keys.ENTER);
 
-        WebElement createProxy = wait
-                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_proxy"))));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", createProxy);
-        createProxy.click();
+        driver.findElement(By.id("create-accounts-proxy-button")).click();
 
         Helpers.waitForSeconds(4);
         Reporter.log("A fost creat poxyul");
@@ -96,7 +87,7 @@ public class TestAccountProxy extends BaseTest {
         WebElement editName = wait
                 .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_name_input"))));
         editName.clear();
-        editName.sendKeys(inputInfo.getProperty("edited_name"));
+        editName.sendKeys("21.226.116.124:4444");
 
         WebElement editUserName = wait
                 .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("edit_username_input"))));
@@ -108,26 +99,19 @@ public class TestAccountProxy extends BaseTest {
         editPassword.clear();
         editPassword.sendKeys(inputInfo.getProperty("edited_password"));
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_edited_proxy_type"))))
-                .click();
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
-        driver.switchTo().activeElement().sendKeys(Keys.ENTER);
+        WebElement select = driver
+                .findElement(By.cssSelector("label[for='edit_proxy_type'] ~ select[name='proxy_type']"));
+        Select type = new Select(select);
+        type.selectByValue("Other");
 
-        WebElement sourceName = driver.findElement(By.cssSelector(locators.getProperty("select_edted_proxy_sorce")));
+        WebElement source = driver.findElement(By.cssSelector("input[data-modal-field-id='edit_source']"));
+        source.clear();
         Helpers.waitForSeconds(4);
-        sourceName.clear();
-        sourceName.sendKeys(inputInfo.getProperty("input_source"));
-
-        Helpers.waitForSeconds(3);
-        driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
+        source.sendKeys("Bla");
         driver.switchTo().activeElement().sendKeys(Keys.ARROW_DOWN);
         driver.switchTo().activeElement().sendKeys(Keys.ENTER);
 
-        WebElement updateProxy = wait
-                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("submit_edited_proxy"))));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", updateProxy);
-        updateProxy.click();
+        driver.findElement(By.id("edit-accounts-proxy-button")).click();
 
         Helpers.waitForSeconds(5);
         Reporter.log("A fost updatat poxyul" + "\n");
@@ -138,45 +122,33 @@ public class TestAccountProxy extends BaseTest {
     private void createAndOrderTableSettings() {
 
         Helpers.waitForSeconds(3);
-        wait.until(
-                ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button"))))
-                .click();
+
+        driver.findElement(By.cssSelector(".fa-table")).click();
 
         Helpers.waitForSeconds(3);
-        WebElement nameInput = wait
-                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
 
-        nameInput.click();
-
-        nameInput.sendKeys(inputInfo.getProperty("setting_name"));
-
-        for (int i = 0; i < 3; i++) {
-            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide"))))
-                    .click();
-            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.w-100:nth-child(5)"))).click();
-        }
-
-        Helpers.waitForSeconds(5);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"swap-from\"]/option[2]"))).click();
-        for (int i = 0; i < 3; i++) {
-            WebElement moveDown = wait
-                    .until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
-            moveDown.click();
-        }
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
+        driver.findElement(By.id("setting-name")).sendKeys("ProxyAutoTableSetting");
 
         Helpers.waitForSeconds(3);
-        try {
-            List<WebElement> elements = driver.findElements(By.xpath(locators.getProperty("find_second_setting")));
 
-            if (elements.size() > 0) {
-                elements.get(0).click();
-            } else {
-                driver.findElement(By.xpath(locators.getProperty("find_setting"))).click();
-            }
-        } catch (Exception e) {
-            Reporter.log("Excepție: " + e.getMessage());
-        }
+        SettingsHelper settingsHelper = new SettingsHelper(driver);
+
+        Helpers.waitForSeconds(3);
+        // Selectează multiple valori
+        String[] valuesToSelect = { "Owner", "Updated At", "Created At" };
+        settingsHelper.selectMultipleValuesByValue(valuesToSelect);
+
+        // Apasă pe butonul de navigare
+        settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
+
+        // Mută elementele
+        settingsHelper.selectMultipleValuesByValue(new String[] { "Source" });
+        settingsHelper.moveElements("fa fa-arrow-circle-up", 4);
+
+        driver.findElement(By.cssSelector(".btn[data-wizard='next']")).click();
+
+        Helpers.waitForSeconds(3);
+
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
 
         Helpers.waitForSeconds(3);
@@ -190,7 +162,8 @@ public class TestAccountProxy extends BaseTest {
     private void downloadCSVandDeleteProxy() {
         Helpers.waitForSeconds(5);
         WebElement selectCheckbox = wait.until(
-                ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("edited_chechbox_element"))));
+                ExpectedConditions.elementToBeClickable(By.xpath(
+                        "//td[text()='21.226.116.124:4444']//preceding-sibling::td//input[@class='form-check-input']")));
         selectCheckbox.click();
 
         Helpers.waitForSeconds(5);
