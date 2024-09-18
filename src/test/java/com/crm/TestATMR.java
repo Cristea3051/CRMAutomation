@@ -47,22 +47,22 @@ public class TestATMR extends BaseTest {
         downloadCSVPerOffer();
         deleteTableSettingsPerOffer();
         try {
-        // Verificăm dacă elementul există
-        driver.findElement(By.name("atmr-google-search-daily-breakdown-campaigns_length"));
-        // Dacă elementul a fost găsit, executăm metodele
-        DailyBreakdownTableSettings();
-        DailyBreakdownExportCSV();
-        DailyBreakdownDeleteTableSettings();
+            // Verificăm dacă elementul există
+            driver.findElement(By.name("atmr-google-search-daily-breakdown-campaigns_length"));
+            // Dacă elementul a fost găsit, executăm metodele
+            DailyBreakdownTableSettings();
+            DailyBreakdownExportCSV();
+            DailyBreakdownDeleteTableSettings();
         } catch (NoSuchElementException e) {
-        // Elementul nu a fost găsit, sarim peste execuție
-        System.out.println("Elementul nu a fost găsit, sar peste execuție.");
-    }
+            // Elementul nu a fost găsit, sarim peste execuție
+            System.out.println("Elementul nu a fost găsit, sar peste execuție.");
+        }
     }
 
     private void createAndOrderTableSettings() {
         Helpers.waitForSeconds(3);
 
-           WebElement select = driver
+        WebElement select = driver
                 .findElement(By.name("google-at-mr-campaigns-list_length"));
         Select rows = new Select(select);
         rows.selectByIndex(0);
@@ -75,7 +75,7 @@ public class TestATMR extends BaseTest {
                 "//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']")))
                 .click();
 
-       Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(3);
 
         driver.findElement(By.cssSelector(".fa-table")).click();
 
@@ -89,7 +89,8 @@ public class TestATMR extends BaseTest {
 
         Helpers.waitForSeconds(3);
         // Selectează multiple valori
-        String[] valuesToSelect = { "GEO", "TS", "Owner", "TMZ", "G Search Abs Top Impr", "G Search Top Impr Share", "G Search Impr Share" ,"Impr" };
+        String[] valuesToSelect = { "GEO", "TS", "Owner", "TMZ", "G Search Abs Top Impr", "G Search Top Impr Share",
+                "G Search Impr Share", "Impr" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
         // Apasă pe butonul de navigare
@@ -153,11 +154,13 @@ public class TestATMR extends BaseTest {
         dataHelpers.iterateAndLogTableData();
 
         Reporter.log("A fost ștearsă cu succes setarea" + "\n");
-    
+
         Helpers.waitForSeconds(2);
         driver.findElement(By.id("scroll-top-dt-tables")).click();
         Helpers.waitForSeconds(2);
-        driver.findElement(By.xpath("//h3[text()='ATMR Campaigns']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]")).click();
+        driver.findElement(By.xpath(
+                "//h3[text()='ATMR Campaigns']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]"))
+                .click();
     }
 
     // PER OFFER Report tabble
@@ -166,45 +169,45 @@ public class TestATMR extends BaseTest {
         Helpers.waitForSeconds(3);
 
         WebElement select = driver
-        .findElement(By.name("binom-roi-offers-reports-atmr_length"));
-Select rows = new Select(select);
-rows.selectByIndex(0);
-Helpers.waitForSeconds(3);
+                .findElement(By.name("binom-roi-offers-reports-atmr_length"));
+        Select rows = new Select(select);
+        rows.selectByIndex(0);
+        Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions
                 .elementToBeClickable(By.cssSelector(locators.getProperty("atmr_per_offer_table_settings")))).click();
 
-                Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(3);
 
-                driver.findElement(By.id("setting-name")).sendKeys("ProxyAutoTableSetting");
-        
-                Helpers.waitForSeconds(3);
-        
-                SettingsHelper settingsHelper = new SettingsHelper(driver);
-        
-                Helpers.waitForSeconds(3);
-                // Selectează multiple valori
-                String[] valuesToSelect = { "GEO", "Conv", "CPA", "ECPA" };
-                settingsHelper.selectMultipleValuesByValue(valuesToSelect);
-        
-                // Apasă pe butonul de navigare
-                settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
-        
-                // Mută elementele
-                settingsHelper.selectMultipleValuesByValue(new String[] { "FTD" });
-                settingsHelper.moveElements("fa fa-arrow-circle-up", 5);
-        
-                driver.findElement(By.cssSelector(".btn[data-wizard='next']")).click();
-        
-                Helpers.waitForSeconds(3);
-        
-                wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
-        
-                Helpers.waitForSeconds(3);
-                Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
-        
-                Helpers.waitForSeconds(5);
-                Helpers dataHelpers = new Helpers(driver, locators);
-                dataHelpers.iterateAndLogTableData();
+        driver.findElement(By.id("setting-name")).sendKeys("ProxyAutoTableSetting");
+
+        Helpers.waitForSeconds(3);
+
+        SettingsHelper settingsHelper = new SettingsHelper(driver);
+
+        Helpers.waitForSeconds(3);
+        // Selectează multiple valori
+        String[] valuesToSelect = { "GEO", "Conv", "CPA", "ECPA" };
+        settingsHelper.selectMultipleValuesByValue(valuesToSelect);
+
+        // Apasă pe butonul de navigare
+        settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
+
+        // Mută elementele
+        settingsHelper.selectMultipleValuesByValue(new String[] { "FTD" });
+        settingsHelper.moveElements("fa fa-arrow-circle-up", 5);
+
+        driver.findElement(By.cssSelector(".btn[data-wizard='next']")).click();
+
+        Helpers.waitForSeconds(3);
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+
+        Helpers.waitForSeconds(3);
+        Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
+
+        Helpers.waitForSeconds(5);
+        Helpers dataHelpers = new Helpers(driver, locators);
+        dataHelpers.iterateAndLogTableData();
     }
 
     private void downloadCSVPerOffer() {
@@ -249,70 +252,83 @@ Helpers.waitForSeconds(3);
 
         Reporter.log("A fost ștearsă cu succes setarea" + "\n");
 
-                Helpers.waitForSeconds(1);
-                driver.findElement(By.id("scroll-top-dt-tables")).click();
-                Helpers.waitForSeconds(1);
-                driver.findElement(By.xpath("//h3[text()='ATMR Campaigns']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]")).click();
-                Helpers.waitForSeconds(1);
-                driver.findElement(By.xpath("//h3[text()='Per Offer Report']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]")).click();
+        Helpers.waitForSeconds(1);
+        driver.findElement(By.id("scroll-top-dt-tables")).click();
+        Helpers.waitForSeconds(1);
+        driver.findElement(By.xpath(
+                "//h3[text()='ATMR Campaigns']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]"))
+                .click();
+        Helpers.waitForSeconds(1);
+        driver.findElement(By.xpath(
+                "//h3[text()='Per Offer Report']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]"))
+                .click();
     }
 
-    private void DailyBreakdownTableSettings(){
+    private void DailyBreakdownTableSettings() {
         Helpers.waitForSeconds(3);
 
         WebElement select = driver
-        .findElement(By.name("atmr-google-search-daily-breakdown-campaigns_length"));
-Select rows = new Select(select);
-rows.selectByIndex(0);
-Helpers.waitForSeconds(3);
+                .findElement(By.name("atmr-google-search-daily-breakdown-campaigns_length"));
+        Select rows = new Select(select);
+        rows.selectByIndex(0);
+        Helpers.waitForSeconds(3);
 
-driver.findElement(By.xpath("//button[@aria-controls='atmr-google-search-daily-breakdown-campaigns'][.//i[contains(@class, 'fas fa-table')]]")).click();
+        driver.findElement(By.xpath(
+                "//button[@aria-controls='atmr-google-search-daily-breakdown-campaigns'][.//i[contains(@class, 'fas fa-table')]]"))
+                .click();
 
-Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(3);
 
-driver.findElement(By.id("setting-name")).sendKeys("DBreakTableSetting");
+        driver.findElement(By.id("setting-name")).sendKeys("DBreakTableSetting");
 
-Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(3);
 
-SettingsHelper settingsHelper = new SettingsHelper(driver);
+        SettingsHelper settingsHelper = new SettingsHelper(driver);
 
-Helpers.waitForSeconds(3);
-// Selectează multiple valori
-String[] valuesToSelect = { "TS", "Owner", "TMZ", "G Search Abs Top Impr", "G Search Top Impr Share", "G Search Impr Share" ,"Impr" };
-settingsHelper.selectMultipleValuesByValue(valuesToSelect);
+        Helpers.waitForSeconds(3);
+        // Selectează multiple valori
+        String[] valuesToSelect = { "TS", "Owner", "TMZ", "G Search Abs Top Impr", "G Search Top Impr Share",
+                "G Search Impr Share", "Impr" };
+        settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
-// Apasă pe butonul de navigare
-settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
+        // Apasă pe butonul de navigare
+        settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
 
-// Mută elementele
-settingsHelper.selectMultipleValuesByValue(new String[] { "AVG Cpc" });
-settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
+        // Mută elementele
+        settingsHelper.selectMultipleValuesByValue(new String[] { "AVG Cpc" });
+        settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
 
-driver.findElement(By.cssSelector(".btn[data-wizard='next']")).click();
+        driver.findElement(By.cssSelector(".btn[data-wizard='next']")).click();
 
-Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(3);
 
-wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
 
-Helpers.waitForSeconds(3);
-Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
+        Helpers.waitForSeconds(3);
+        Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
 
-Helpers.waitForSeconds(3);
-Helpers dataHelpers = new Helpers(driver, locators);
-dataHelpers.iterateAndLogTableData();
+        Helpers.waitForSeconds(3);
+        Helpers dataHelpers = new Helpers(driver, locators);
+        dataHelpers.iterateAndLogTableData();
 
-Helpers.waitForSeconds(1);
-                driver.findElement(By.id("scroll-top-dt-tables")).click();
-                Helpers.waitForSeconds(1);
-                driver.findElement(By.xpath("//h3[text()='ATMR Campaigns']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]")).click();
-                Helpers.waitForSeconds(1);
-                driver.findElement(By.xpath("//h3[text()='Per Offer Report']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]")).click();
+        Helpers.waitForSeconds(1);
+        driver.findElement(By.id("scroll-top-dt-tables")).click();
+        Helpers.waitForSeconds(1);
+        driver.findElement(By.xpath(
+                "//h3[text()='ATMR Campaigns']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]"))
+                .click();
+        Helpers.waitForSeconds(1);
+        driver.findElement(By.xpath(
+                "//h3[text()='Per Offer Report']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]"))
+                .click();
     }
 
-    private void DailyBreakdownExportCSV(){
+    private void DailyBreakdownExportCSV() {
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions
-                .elementToBeClickable(By.xpath("//button[@aria-controls='atmr-google-search-daily-breakdown-campaigns'][.//i[contains(@class, 'fa fa-file-csv')]]"))).click();
+                .elementToBeClickable(By.xpath(
+                        "//button[@aria-controls='atmr-google-search-daily-breakdown-campaigns'][.//i[contains(@class, 'fa fa-file-csv')]]")))
+                .click();
 
         try {
             Helpers.waitForSeconds(3);
@@ -326,31 +342,31 @@ Helpers.waitForSeconds(1);
         }
 
         Helpers.waitForSeconds(3);
-    
+
     }
 
+    private void DailyBreakdownDeleteTableSettings() {
+        driver.findElement(By.xpath(
+                "//button[@aria-controls='atmr-google-search-daily-breakdown-campaigns'][.//i[contains(@class, 'fas fa-table')]]"))
+                .click();
 
-    private void DailyBreakdownDeleteTableSettings(){
-        driver.findElement(By.xpath("//button[@aria-controls='atmr-google-search-daily-breakdown-campaigns'][.//i[contains(@class, 'fas fa-table')]]")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
 
-    wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
+        Helpers.waitForSeconds(5);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_preset")))).click();
 
-    Helpers.waitForSeconds(5);
-    wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_preset")))).click();
+        Helpers.waitForSeconds(5);
+        WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
+        deletePreset.click();
 
-    Helpers.waitForSeconds(5);
-    WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
-    deletePreset.click();
+        Helpers.waitForSeconds(3);
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+        Helpers.waitForSeconds(3);
 
-    Helpers.waitForSeconds(3);
-    wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
-    Helpers.waitForSeconds(3);
+        Helpers dataHelpers = new Helpers(driver, locators);
+        dataHelpers.iterateAndLogTableData();
 
-    Helpers dataHelpers = new Helpers(driver, locators);
-    dataHelpers.iterateAndLogTableData();
-
-    Reporter.log("A fost ștearsă cu succes setarea" + "\n");
+        Reporter.log("A fost ștearsă cu succes setarea" + "\n");
     }
-
 
 }
