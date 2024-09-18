@@ -217,5 +217,4 @@ public class TestAccountProxy extends BaseTest {
 
         Reporter.log("A fost ștearsă cu succes setarea" + "\n");
     }
-
 }

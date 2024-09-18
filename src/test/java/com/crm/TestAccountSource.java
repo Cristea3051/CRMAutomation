@@ -1,7 +1,6 @@
 package com.crm;
 
 import java.time.Duration;
-import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,6 +11,7 @@ import org.testng.annotations.Test;
 import com.Base.BaseTest;
 import com.resources.CredentialsProvider;
 import com.resources.Helpers;
+import com.resources.configfiles.SettingsHelper;
 import com.utilities.Login;
 
 public class TestAccountSource extends BaseTest {
@@ -40,8 +40,8 @@ public class TestAccountSource extends BaseTest {
         createAccountSource();
         updateAccountSource();
         createTableSettingsAccountSource();
-        deleteTableSettingsAccountSource();
         downloadCSVaccountSource();
+        deleteTableSettingsAccountSource();
         deleteAccountSource();
     }
 
@@ -83,46 +83,40 @@ public class TestAccountSource extends BaseTest {
     }
 
     private void createTableSettingsAccountSource() {
-        Helpers.waitForSeconds(5);
-        wait.until(
-                ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button"))))
-                .click();
-        Helpers.waitForSeconds(5);
-        WebElement nameInput = wait
-                .until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("table_setings_name"))));
-        nameInput.click();
-        nameInput.sendKeys(inputInfo.getProperty("source_setting_name"));
-        for (int i = 0; i < 2; i++) {
-            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("select_column_to_hide"))))
-                    .click();
-            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.w-100:nth-child(5)"))).click();
-        }
+       Helpers.waitForSeconds(3);
 
-        Helpers.waitForSeconds(5);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"swap-from\"]/option[2]"))).click();
-        for (int i = 0; i < 3; i++) {
-            WebElement moveDown = wait
-                    .until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("move_down"))));
-            moveDown.click();
-        }
-        Helpers.waitForSeconds(5);
+        driver.findElement(By.cssSelector(".fa-table")).click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
-        try {
-            List<WebElement> elements = driver.findElements(By.xpath(locators.getProperty("find_second_setting")));
-
-            if (elements.size() > 0) {
-                elements.get(0).click();
-            } else {
-                driver.findElement(By.xpath(locators.getProperty("find_setting"))).click();
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
         Helpers.waitForSeconds(3);
+
+        driver.findElement(By.id("setting-name")).sendKeys("SourceTableSettings");
+
+        Helpers.waitForSeconds(3);
+
+        SettingsHelper settingsHelper = new SettingsHelper(driver);
+
+        Helpers.waitForSeconds(3);
+        // Selectează multiple valori
+        String[] valuesToSelect = { "Updated At", "Created At" };
+        settingsHelper.selectMultipleValuesByValue(valuesToSelect);
+
+        // Apasă pe butonul de navigare
+        settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
+
+        // Mută elementele
+        settingsHelper.selectMultipleValuesByValue(new String[] { "Warming Cost" });
+        settingsHelper.moveElements("fa fa-arrow-circle-up", 4);
+
+        driver.findElement(By.cssSelector(".btn[data-wizard='next']")).click();
+
+        Helpers.waitForSeconds(3);
+
         wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
+
         Helpers.waitForSeconds(3);
         Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
+
+        Helpers.waitForSeconds(5);
         Helpers dataHelpers = new Helpers(driver, locators);
         dataHelpers.iterateAndLogTableData();
     }
@@ -186,11 +180,11 @@ public class TestAccountSource extends BaseTest {
             WebElement confirmButton = driver.findElement(By.cssSelector(locators.getProperty("confirm_delete_modal")));
             confirmButton.click();
             // Afișează un mesaj către utilizator pentru a indica succesul
-            Reporter.log("Proxy-ul a fost șters cu succes!" + "\n");
+            Reporter.log("Sursa a fost stearsa cu succes" + "\n");
         } catch (Exception e) {
             // Afiseaza un mesaj de eroare dacă nu a fost posibil de apasat butonul de
             // confirmare
-            Reporter.log("Eroare: Nu s-a putut șterge proxy-ul!" + "\n");
+            Reporter.log("Eroare: Sursa nu s-a sters" + "\n");
         }
         Helpers.waitForSeconds(3);
     }
