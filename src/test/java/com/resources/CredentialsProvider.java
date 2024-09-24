@@ -19,6 +19,7 @@ public class CredentialsProvider {
     public Object[][] FarmerGlobalProviderDataSet() {
         // Filtrare pentru utilizatorii selectați
         return new Object[][] {
+                { "victor.cristea@vebo.io", "Morris22##" },
                 { "cristian.ciubuc@vebo.io", "Morris22##" },
                 { "marcel.g@vebo.io", "Morris22##" }
         };
@@ -30,6 +31,8 @@ public class CredentialsProvider {
         return new Object[][] {
                 { "victor.cristea@vebo.io", "Morris22##" },
                 { "dorin.m@vebo.io", "Morris22##" },
+                { "edward.s@vebo.io", "Morris22##" },
+                { "andreic@vebo.io", "Morris22##" },
 
         };
     }
