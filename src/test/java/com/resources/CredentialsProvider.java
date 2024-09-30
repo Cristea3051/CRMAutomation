@@ -30,9 +30,9 @@ public class CredentialsProvider {
         // Filtrare pentru utilizatorii selectați
         return new Object[][] {
                 { "victor.cristea@vebo.io", "Morris22##" },
-                { "dorin.m@vebo.io", "Morris22##" },
-                { "edward.s@vebo.io", "Morris22##" },
-                { "andreic@vebo.io", "Morris22##" },
+                // { "dorin.m@vebo.io", "Morris22##" },
+                // { "edward.s@vebo.io", "Morris22##" },
+                // { "andreic@vebo.io", "Morris22##" },
 
         };
     }
