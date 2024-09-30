@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNGTest-8da91be4-986f-4fff-8449-7d24d01327a2"
+<testsuite name="TestNGTest-314dfdb5-2565-4b71-b336-1188b0656aee"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="63.182">
+           time="121.288">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="63.182"
+                time="121.288"
                 classname="com.crm.SGCampaigns.TestSgCampaigns">
             </testcase>
 </testsuite>
