@@ -21,6 +21,8 @@ public class TestSgCampaigns extends BaseTest {
     private Login login;
     private WebDriverWait wait;
     private CreateAndOrderTableSettings createAndOrderTableSettings;
+    private DownloadCSV downloadCSVFile;
+    private DeleteTableSettings deleteTableSettings;
 
     @BeforeMethod
     @Override
@@ -28,6 +30,9 @@ public class TestSgCampaigns extends BaseTest {
         super.setUp();
         login = new Login(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        createAndOrderTableSettings = new CreateAndOrderTableSettings(driver, wait);
+        downloadCSVFile = new DownloadCSV(driver, wait);
+        deleteTableSettings = new DeleteTableSettings(driver, wait);
     }
 
     @Test(dataProvider = "MediaBuyerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
@@ -42,48 +47,8 @@ public class TestSgCampaigns extends BaseTest {
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
         createAndOrderTableSettings.createAndOrder();
-    }
-
-    private void downloadCSV() {
-
-        Helpers.waitForSeconds(3);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("csv_button")))).click();
-
-        try {
-            Helpers.waitForSeconds(3);
-            WebElement confirmButton = driver.findElement(By.id("sg-campaigns-list-export-button"));
-            confirmButton.click();
-
-            Reporter.log("A fost descarcat cu success fiserul CSV" + "\n");
-        } catch (Exception e) {
-            Reporter.log("Eroare: Nu s-a putut descarca fisierul!" + "\n");
-        }
-
-        Helpers.waitForSeconds(5);
-    }
-
-    private void deleteTableSettings() {
-        wait.until(
-                ExpectedConditions.elementToBeClickable(By.cssSelector(locators.getProperty("table_setings_button"))))
-                .click();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("next_button")))).click();
-
-        Helpers.waitForSeconds(3);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locators.getProperty("delete_preset")))).click();
-
-        Helpers.waitForSeconds(3);
-        WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
-        deletePreset.click();
-
-        Helpers.waitForSeconds(3);
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locators.getProperty("apply_button")))).click();
-        Helpers.waitForSeconds(3);
-
-        Helpers dataHelpers = new Helpers(driver, locators);
-        dataHelpers.iterateAndLogTableData();
-
-        Reporter.log("A fost ștearsă cu succes setarea" + "\n");
+        downloadCSVFile.downloadCSVFile();
+        deleteTableSettings.deleteTableSettings();
 
         Helpers.waitForSeconds(2);
         driver.findElement(By.id("scroll-top-dt-tables")).click();
@@ -92,7 +57,6 @@ public class TestSgCampaigns extends BaseTest {
                 "//h3[text()='Google Campaigns']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]"))
                 .click();
     }
-
     // PER OFFER Report tabble
 
     private void createAndOrderTableSettingsPerOffer() {

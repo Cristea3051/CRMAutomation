@@ -63,10 +63,10 @@ public class CreateAndOrderTableSettings {
         settingsHelper.selectMultipleValuesByValue(new String[] { "CPA" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
 
-        List<WebElement> swapedCols = driver.findElements(By.cssSelector(".select[id='swap-to'] option"));
-        for (int i = 0; i < swapedCols.size(); i++) {
-            Reporter.log(swapedCols.get(i).getText());
-        }
+        // List<WebElement> swapedCols = driver.findElements(By.cssSelector(".select[id='swap-to'] option"));
+        // for (int i = 0; i < swapedCols.size(); i++) {
+        //     Reporter.log(swapedCols.get(i).getText());
+        // }
         driver.findElement(By.cssSelector(".btn[data-wizard='next']")).click();
 
         Helpers.waitForSeconds(3);
@@ -77,8 +77,8 @@ public class CreateAndOrderTableSettings {
         Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
 
         Helpers.waitForSeconds(3);
-        List<WebElement> headers = driver.findElements(By.cssSelector("#sg-campaigns-list_wrapper .table-striped.dataTable thead")); 
-        List<WebElement> firstRow = driver.findElements(By.cssSelector("#binom-offers-reports-sg_wrapper .table-striped.dataTable tbody tr:first-child td"));
+        List<WebElement> headers = driver.findElements(By.cssSelector("#sg-campaigns-list_wrapper .table-striped.dataTable thead th")); 
+        List<WebElement> firstRow = driver.findElements(By.cssSelector("#sg-campaigns-list tbody tr:first-child td"));
         
         for (int i = 0; i < firstRow.size(); i++) {
             String header = headers.get(i).getText();
