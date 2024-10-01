@@ -28,7 +28,6 @@ public class TestSgCampaigns extends BaseTest {
         super.setUp();
         login = new Login(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        createAndOrderTableSettings = new CreateAndOrderTableSettings(driver, wait);
         downloadCSVFile = new DownloadCSV(driver, wait);
         deleteTableSettings = new DeleteTableSettings(driver, wait);
         createSettingPerOfferSG = new CreateTableSettingsPerOffer(driver, wait);
@@ -47,7 +46,6 @@ public class TestSgCampaigns extends BaseTest {
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
-        createAndOrderTableSettings.createAndOrder();
         downloadCSVFile.downloadCSVFile();
         deleteTableSettings.deleteTableSettings();
 
