@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNGTest-30c88877-5169-4415-8933-9e0333dbefe4"
+<testsuite name="TestNGTest-25178dba-ea75-42e1-9e57-91f833f3dd87"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="28.221">
+           time="25.073">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="28.221"
-                classname="com.crm.SGCampaigns.CreateAndOrderTableSettings">
+                time="25.073"
+                classname="com.crm.SGCampaigns.DeleteTableSettings">
             </testcase>
 </testsuite>

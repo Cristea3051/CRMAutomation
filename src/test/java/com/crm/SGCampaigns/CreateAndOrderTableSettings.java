@@ -103,5 +103,6 @@ public class CreateAndOrderTableSettings {
             String content = (i < firstRow.size()) ? firstRow.get(i).getText() : "";
             Reporter.log(header + " -> " + content);
         }
+        driver.quit();
     }
 }

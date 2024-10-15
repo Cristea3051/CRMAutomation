@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="28.221">
+           time="30.062">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="28.221"
-                classname="com.crm.SGCampaigns.CreateAndOrderTableSettings">
+                time="30.062"
+                classname="com.crm.SGCampaigns.SGFilter">
             </testcase>
 </testsuite>
