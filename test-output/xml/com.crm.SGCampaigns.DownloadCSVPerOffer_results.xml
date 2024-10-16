@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestNGTest-5fa6e4c2-43dc-410a-8052-fc7b00c87fd8"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="24.247">
+    <properties></properties>
+
+
+
+            <testcase
+                name="signIn"
+                time="24.247"
+                classname="com.crm.SGCampaigns.DownloadCSVPerOffer">
+            </testcase>
+</testsuite>

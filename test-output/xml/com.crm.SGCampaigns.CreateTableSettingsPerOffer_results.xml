@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestNGTest-2e4d50be-f868-4631-b33c-be71f5386788"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="40.051">
+    <properties></properties>
+
+
+
+            <testcase
+                name="signIn"
+                time="40.051"
+                classname="com.crm.SGCampaigns.CreateTableSettingsPerOffer">
+            </testcase>
+</testsuite>

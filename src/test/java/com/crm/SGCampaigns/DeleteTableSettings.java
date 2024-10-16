@@ -22,9 +22,6 @@ public class DeleteTableSettings {
     private WebDriverWait wait;
     private Login login;
 
-    public DeleteTableSettings() {
-    }
-
        @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
