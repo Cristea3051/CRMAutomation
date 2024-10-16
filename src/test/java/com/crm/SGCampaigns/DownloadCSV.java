@@ -41,8 +41,6 @@ public class DownloadCSV {
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
 
-        new WebDriverWait(driver, Duration.ofSeconds(20));
-
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
                 "//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']"))).click();
 
