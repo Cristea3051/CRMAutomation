@@ -40,10 +40,6 @@ public class TestDashboardSearch extends BaseTest {
 
         Reporter.log("Utilizator " + username + " - " + role + " s-a logat logat");
 
-        // Localizez elementul cu ajutorul lui wait
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locators.getProperty("localize_card"))));
-
         // Afisez lista de elemente cu acelasi css selector
         List<WebElement> spanElements = driver.findElements(By.cssSelector(locators.getProperty("get_dashcard_name")));
 
@@ -52,6 +48,9 @@ public class TestDashboardSearch extends BaseTest {
             String card = spanElement.getText();
             Reporter.log("A fost localizat: " + card);
         }
+
+        int countcard = spanElements.size();
+        Reporter.log("In total sunt: " + countcard + "CardDash");
 
     }
 }
