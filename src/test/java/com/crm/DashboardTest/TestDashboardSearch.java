@@ -1,4 +1,4 @@
-package com.crm;
+package com.crm.DashboardTest;
 
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
