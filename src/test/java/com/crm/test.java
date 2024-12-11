@@ -1,9 +1,10 @@
 package com.crm;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 
 import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -14,16 +15,19 @@ import org.testng.annotations.Test;
 
 import com.Base.BaseTest;
 import com.resources.CredentialsProvider;
+import com.resources.Helpers;
 import com.utilities.Login;
 
 public class test extends BaseTest {
     private Login login;
+    private WebDriverWait wait;
 
     @BeforeMethod
     @Override
     public void setUp() {
         super.setUp();
         login = new Login(driver);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     @Test(dataProvider = "MediaBuyerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
@@ -33,47 +37,41 @@ public class test extends BaseTest {
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/mr-dashboard/google/at-mr-campaigns");
+         driver.get("http://crm-dash/google-accounts");
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
 
-        Thread.sleep(3000);
-        WebElement select = driver
-                .findElement(By.name("google-at-mr-campaigns-list_length"));
-        Select type = new Select(select);
-        type.selectByValue("10");
-        Thread.sleep(2000);
+        Helpers.waitForSeconds(3);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement select = driver.findElement(By.name("google-accounts-list_length"));
+        Select rows = new Select(select);
+        rows.selectByIndex(0);
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
 
-        new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
+                "li.active:nth-child(13)"))).click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-                "//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']")))
-                .click();
-        Thread.sleep(6000);
+        Helpers.waitForSeconds(3);
+        
 
-        driver.findElement(By.id("scroll-top-dt-tables")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath(
-                "//h3[text()='ATMR Campaigns']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]"))
-                .click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath(
-                "//h3[text()='Per Offer Report']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]"))
-                .click();
-        Thread.sleep(2000);
-        try {
-            WebElement arrowUpIcon = driver.findElement(By.xpath(
-                    "//h3[text()='Daily breakdown Campaigns']/ancestor::div[@class='block-header']//i[contains(@class, 'si-arrow-up')]"));
-            arrowUpIcon.click();
-        } catch (NoSuchElementException e) {
-            Reporter.log("Elementul nu a fost găsit, sar peste click.");
+        Helpers.waitForSeconds(3);
+        List<WebElement> headers = driver.findElements(By.cssSelector("#google-accounts-list_wrapper .table-striped.dataTable thead th"));
+        List<WebElement> firstRow = driver.findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
+        
+        for (int i = 0; i < firstRow.size(); i++) {
+            String header = headers.get(i).getText().trim();
+            String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : "";
+            
+            if (!header.isEmpty()) {
+                System.out.println(header + " -> " + content);
+            } else {
+                System.out.println("Header is empty for index " + i);
+            }
         }
-        Thread.sleep(6000);
+        
+        driver.quit();
 
     }
 }
