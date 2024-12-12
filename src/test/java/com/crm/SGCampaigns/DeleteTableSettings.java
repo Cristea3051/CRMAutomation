@@ -22,7 +22,7 @@ public class DeleteTableSettings {
     private WebDriverWait wait;
     private Login login;
 
-       @BeforeMethod
+    @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
         login = new Login(driver);
@@ -38,16 +38,17 @@ public class DeleteTableSettings {
 
         driver.get("http://crm-dash/google-dashboard/sg-campaigns");
 
-        WebElement select = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("sg-campaigns-list_length")));
-Select rows = new Select(select);
-rows.selectByIndex(0);
+        WebElement select = wait
+                .until(ExpectedConditions.visibilityOfElementLocated(By.name("sg-campaigns-list_length")));
+        Select rows = new Select(select);
+        rows.selectByIndex(0);
 
-wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
 
-wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-    "//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']")))
-    .click();
-    Helpers.waitForSeconds(3);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+                "//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']")))
+                .click();
+        Helpers.waitForSeconds(3);
         driver.findElement(By.cssSelector(".fa-table")).click();
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn[data-wizard='next']"))).click();
@@ -65,17 +66,18 @@ wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 
         Reporter.log("A fost ștearsă cu succes setarea" + "\n");
 
-        List<WebElement> headers = driver.findElements(By.cssSelector("#sg-campaigns-list_wrapper .table-striped.dataTable thead th")); 
+        List<WebElement> headers = driver
+                .findElements(By.cssSelector("#sg-campaigns-list_wrapper .table-striped.dataTable thead th"));
         List<WebElement> firstRow = driver.findElements(By.cssSelector("#sg-campaigns-list tbody tr:first-child td"));
-        
+
         for (int i = 0; i < firstRow.size(); i++) {
             String header = headers.get(i).getText();
             String content = (i < firstRow.size()) ? firstRow.get(i).getText() : "";
             Reporter.log(header + " -> " + content);
 
+        }
+        Helpers.waitForSeconds(2);
+        driver.quit();
     }
-    Helpers.waitForSeconds(2);
-    driver.quit();
-}
 
 }

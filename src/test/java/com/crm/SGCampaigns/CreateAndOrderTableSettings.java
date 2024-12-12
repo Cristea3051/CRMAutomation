@@ -52,7 +52,8 @@ public class CreateAndOrderTableSettings {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-                "//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']"))).click();
+                "//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']")))
+                .click();
 
         Helpers.waitForSeconds(3);
 
@@ -89,7 +90,8 @@ public class CreateAndOrderTableSettings {
         Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
 
         Helpers.waitForSeconds(3);
-        List<WebElement> headers = driver.findElements(By.cssSelector("#sg-campaigns-list_wrapper .table-striped.dataTable thead th"));
+        List<WebElement> headers = driver
+                .findElements(By.cssSelector("#sg-campaigns-list_wrapper .table-striped.dataTable thead th"));
         List<WebElement> firstRow = driver.findElements(By.cssSelector("#sg-campaigns-list tbody tr:first-child td"));
 
         for (int i = 0; i < firstRow.size(); i++) {

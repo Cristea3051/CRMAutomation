@@ -49,7 +49,6 @@ public class CreateAndOrderTableSettings {
         Select rows = new Select(select);
         rows.selectByIndex(0);
 
-
         Helpers.waitForSeconds(3);
 
         driver.findElement(By.cssSelector(".fa-table")).click();
@@ -64,7 +63,8 @@ public class CreateAndOrderTableSettings {
 
         Helpers.waitForSeconds(3);
         // Selectează multiple valori
-        String[] valuesToSelect = { "Account Domains", "MB Comments", "Farmer Comments", "Backup Code", "Source Delivery Date", "Created At",
+        String[] valuesToSelect = { "Account Domains", "MB Comments", "Farmer Comments", "Backup Code",
+                "Source Delivery Date", "Created At",
                 "Sync from date" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
@@ -85,8 +85,10 @@ public class CreateAndOrderTableSettings {
         Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
 
         Helpers.waitForSeconds(3);
-        List<WebElement> headers = driver.findElements(By.cssSelector("#google-accounts-list_wrapper .table-striped.dataTable thead th"));
-        List<WebElement> firstRow = driver.findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
+        List<WebElement> headers = driver
+                .findElements(By.cssSelector("#google-accounts-list_wrapper .table-striped.dataTable thead th"));
+        List<WebElement> firstRow = driver
+                .findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
 
         for (int i = 0; i < firstRow.size(); i++) {
             String header = headers.get(i).getText();

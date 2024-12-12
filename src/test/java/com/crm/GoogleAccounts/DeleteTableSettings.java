@@ -22,7 +22,7 @@ public class DeleteTableSettings {
     private WebDriverWait wait;
     private Login login;
 
-       @BeforeMethod
+    @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
         login = new Login(driver);
@@ -38,11 +38,12 @@ public class DeleteTableSettings {
 
         driver.get("http://crm-dash/google-accounts");
 
-        WebElement select = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("google-accounts-list_length")));
-Select rows = new Select(select);
-rows.selectByIndex(0);
+        WebElement select = wait
+                .until(ExpectedConditions.visibilityOfElementLocated(By.name("google-accounts-list_length")));
+        Select rows = new Select(select);
+        rows.selectByIndex(0);
 
-    Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(3);
         driver.findElement(By.cssSelector(".fa-table")).click();
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn[data-wizard='next']"))).click();
@@ -60,17 +61,19 @@ rows.selectByIndex(0);
 
         Reporter.log("A fost ștearsă cu succes setarea" + "\n");
 
-        List<WebElement> headers = driver.findElements(By.cssSelector("#google-accounts-list_wrapper .table-striped.dataTable thead th"));
-        List<WebElement> firstRow = driver.findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
-        
+        List<WebElement> headers = driver
+                .findElements(By.cssSelector("#google-accounts-list_wrapper .table-striped.dataTable thead th"));
+        List<WebElement> firstRow = driver
+                .findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
+
         for (int i = 0; i < firstRow.size(); i++) {
             String header = headers.get(i).getText();
             String content = (i < firstRow.size()) ? firstRow.get(i).getText() : "";
             Reporter.log(header + " -> " + content);
 
+        }
+        Helpers.waitForSeconds(2);
+        driver.quit();
     }
-    Helpers.waitForSeconds(2);
-    driver.quit();
-}
 
 }
