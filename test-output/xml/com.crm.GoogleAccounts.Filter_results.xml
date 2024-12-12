@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNGTest-e02f489c-6a64-41b6-982d-293a63bc7644"
+<testsuite name="TestNGTest-63927494-fe5b-4014-918b-e4e558ea27d9"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="28.805">
+           time="36.568">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="28.805"
-                classname="com.crm.GoogleAccounts.CreateAndOrderTableSettings">
+                time="36.568"
+                classname="com.crm.GoogleAccounts.Filter">
             </testcase>
 </testsuite>

@@ -42,17 +42,12 @@ public class Filter {
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/google-dashboard/sg-campaigns");
+        driver.get("http://crm-dash/google-accounts");
 
-        WebElement select = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("sg-campaigns-list_length")));
-Select rows = new Select(select);
-rows.selectByIndex(0);
-
-wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
-
-wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-    "//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']")))
-    .click();
+        WebElement select = wait
+                .until(ExpectedConditions.visibilityOfElementLocated(By.name("google-accounts-list_length")));
+        Select rows = new Select(select);
+        rows.selectByIndex(0);
 
         try {
             filters.applyRandomFilters(); // Reuse Filters logic

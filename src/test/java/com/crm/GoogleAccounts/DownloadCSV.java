@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
@@ -16,7 +17,7 @@ import com.resources.Helpers;
 import com.utilities.Login;
 
 public class DownloadCSV {
-      private WebDriver driver;
+    private WebDriver driver;
     private WebDriverWait wait;
     private Login login;
 
@@ -34,26 +35,23 @@ public class DownloadCSV {
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/google-dashboard/sg-campaigns");
+        driver.get("http://crm-dash/google-accounts");
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-                "//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']"))).click();
-
-        Helpers.waitForSeconds(3);
+        WebElement select = driver.findElement(By.name("google-accounts-list_length"));
+        Select rows = new Select(select);
+        rows.selectByIndex(0);
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-                "//button[@title='Export to CSV File' and contains(@class, 'buttons-csv') and @aria-controls='sg-campaigns-list']")))
+                "//button[@title='Export to CSV File' and contains(@class, 'buttons-csv') and @aria-controls='google-accounts-list']")))
                 .click();
 
         try {
             Helpers.waitForSeconds(3);
-            WebElement confirmButton = driver.findElement(By.id("sg-campaigns-list-export-button"));
+            WebElement confirmButton = driver.findElement(By.id("google-accounts-list-export-button"));
             confirmButton.click();
 
             Reporter.log("A fost descarcat cu success fiserul CSV" + "\n");
@@ -62,7 +60,7 @@ public class DownloadCSV {
         }
 
         Helpers.waitForSeconds(5);
- 
+
         driver.quit();
     }
 }

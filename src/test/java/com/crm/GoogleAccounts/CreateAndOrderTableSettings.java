@@ -49,10 +49,6 @@ public class CreateAndOrderTableSettings {
         Select rows = new Select(select);
         rows.selectByIndex(0);
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
-                "li.active:nth-child(13)"))).click();
 
         Helpers.waitForSeconds(3);
 
