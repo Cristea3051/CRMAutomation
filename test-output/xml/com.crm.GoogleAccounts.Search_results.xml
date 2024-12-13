@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestNGTest-d6181f89-9a25-4bda-a5b2-4314375d09d3"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="12.963">
+    <properties></properties>
+
+
+
+            <testcase
+                name="signIn"
+                time="12.963"
+                classname="com.crm.GoogleAccounts.Search">
+            </testcase>
+</testsuite>
