@@ -88,19 +88,19 @@ public class CreateGoogleAccount {
                 "input.form-control.js-maxlength[name='id_verification'][data-modal-field-id='create_id_verification']"))
                 .click();
 
-        WebElement activeCalendar = driver.findElement(By.cssSelector(".flatpickr-calendar.open"));
+        WebElement activeIdVerificationCalendar = driver.findElement(By.cssSelector(".flatpickr-calendar.open"));
 
         // Localizează toate zilele disponibile din calendar
-        List<WebElement> days = activeCalendar
+        List<WebElement> daysIdVerification = activeIdVerificationCalendar
                 .findElements(By.cssSelector(".flatpickr-day:not(.prevMonthDay):not(.nextMonthDay)"));
 
         // Verifică dacă există zile disponibile
-        if (days.isEmpty()) {
+        if (daysIdVerification.isEmpty()) {
             System.out.println("Nu există zile disponibile în calendar.");
         } else {
             // Selectează o zi aleatorie
             Random random = new Random();
-            WebElement randomDay = days.get(random.nextInt(days.size()));
+            WebElement randomDay = daysIdVerification.get(random.nextInt(daysIdVerification.size()));
 
             // Apasă pe ziua aleatorie
             randomDay.click();
@@ -118,7 +118,7 @@ public class CreateGoogleAccount {
         driver.findElement(By.cssSelector(
                 "input.form-control.js-maxlength[name='backup_code'][data-modal-field-id='create_backup_code']"))
                 .sendKeys(
-                        "gq52limcbz2fj7iqowo6a6hzufm2vjxd7781 2286 7437 6456 9022 9765 6536 1766 4432 2797 3077 2043 6864 9346 0563 6609 9405 0172 7099 1031");
+                        "7781 2286 7437 6456 9022 9765 6536 1766 4432 2797 3077 2043 6864 9346 0563 6609 9405 0172 7099 1031");
 
         WebElement selectCard = driver.findElement(By.cssSelector(
                 "select.js-select2.multiple-selector-inputs[name='account-cards[]'][data-modal-field-id='create_credit_cards']"));
@@ -155,9 +155,237 @@ public class CreateGoogleAccount {
             e.printStackTrace();
         }
 
+        // Fee Date
+        driver.findElement(By.cssSelector(
+                "input.form-control.js-maxlength[name='monthly_fees_date'][data-modal-field-id='create_monthly_fees_date']"))
+                .click();
 
+        WebElement activeFeeDateCalendar = driver.findElement(By.cssSelector(".flatpickr-calendar.open"));
 
-        
+        // Localizează toate zilele disponibile din calendar
+        List<WebElement> daysFeeDate = activeFeeDateCalendar
+                .findElements(By.cssSelector(".flatpickr-day:not(.prevMonthDay):not(.nextMonthDay)"));
+
+        // Verifică dacă există zile disponibile
+        if (daysFeeDate.isEmpty()) {
+            System.out.println("Nu există zile disponibile în calendar.");
+        } else {
+            // Selectează o zi aleatorie
+            Random random = new Random();
+            WebElement randomDay = daysFeeDate.get(random.nextInt(daysFeeDate.size()));
+
+            // Apasă pe ziua aleatorie
+            randomDay.click();
+
+        }
+        // Sync From Date
+        driver.findElement(By.cssSelector(
+                "input.form-control.js-maxlength[name='sync_from_date'][data-modal-field-id='create_sync_from_date']"))
+                .click();
+
+        WebElement activeSyncFromDateCalendar = driver.findElement(By.cssSelector(".flatpickr-calendar.open"));
+
+        // Localizează toate zilele disponibile din calendar
+        List<WebElement> daysyncFromDate = activeSyncFromDateCalendar
+                .findElements(By.cssSelector(".flatpickr-day:not(.prevMonthDay):not(.nextMonthDay)"));
+
+        // Verifică dacă există zile disponibile
+        if (daysyncFromDate.isEmpty()) {
+            System.out.println("Nu există zile disponibile în calendar.");
+        } else {
+            // Selectează o zi aleatorie
+            Random random = new Random();
+            WebElement randomDay = daysyncFromDate.get(random.nextInt(daysyncFromDate.size()));
+
+            // Apasă pe ziua aleatorie
+            randomDay.click();
+
+        }
+
+        // BH Date
+        driver.findElement(By.cssSelector(
+                "input.form-control.js-maxlength[name='bh_date'][data-modal-field-id='create_bh_date']"))
+                .click();
+
+        WebElement activeBHDateCalendar = driver.findElement(By.cssSelector(".flatpickr-calendar.open"));
+
+        // Localizează toate zilele disponibile din calendar
+        List<WebElement> daysBHDate = activeBHDateCalendar
+                .findElements(By.cssSelector(".flatpickr-day:not(.prevMonthDay):not(.nextMonthDay)"));
+
+        // Verifică dacă există zile disponibile
+        if (daysBHDate.isEmpty()) {
+            System.out.println("Nu există zile disponibile în calendar.");
+        } else {
+            // Selectează o zi aleatorie
+            Random random = new Random();
+            WebElement randomDay = daysBHDate.get(random.nextInt(daysBHDate.size()));
+
+            // Apasă pe ziua aleatorie
+            randomDay.click();
+
+        }
+
+        // MB Delivery Date
+        driver.findElement(By.cssSelector(
+                "input.form-control.js-maxlength[name='bh_date'][data-modal-field-id='create_bh_date']"))
+                .click();
+
+        WebElement activeMBDeliveryDateCalendar = driver.findElement(By.cssSelector(".flatpickr-calendar.open"));
+
+        // Localizează toate zilele disponibile din calendar
+        List<WebElement> daysMBDeliveryDate = activeMBDeliveryDateCalendar
+                .findElements(By.cssSelector(".flatpickr-day:not(.prevMonthDay):not(.nextMonthDay)"));
+
+        // Verifică dacă există zile disponibile
+        if (daysMBDeliveryDate.isEmpty()) {
+            System.out.println("Nu există zile disponibile în calendar.");
+        } else {
+            // Selectează o zi aleatorie
+            Random random = new Random();
+            WebElement randomDay = daysMBDeliveryDate.get(random.nextInt(daysBHDate.size()));
+
+            // Apasă pe ziua aleatorie
+            randomDay.click();
+
+        }
+
+        // Acc Sources
+        try {
+            // Găsește input-ul autocomplete
+            WebElement autocompleteInput = driver.findElement(By.cssSelector(
+                    "input.form-control.js-maxlength[inputname='source_id'][data-modal-field-id='create_source_id']"));
+
+            // Introdu textul dorit în input
+            autocompleteInput.sendKeys("FJ"); // Textul care declanșează sugestiile
+
+            // Așteaptă afișarea listei de sugestii
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            WebElement autocompleteList = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.id("autocomplete-list") // Selector pentru lista de autocomplete
+            ));
+
+            // Găsește toate opțiunile din lista de autocomplete
+            List<WebElement> options = autocompleteList.findElements(By.tagName("div"));
+
+            // Parcurge opțiunile și selectează pe cea dorită
+            if (!options.isEmpty()) {
+                // Selectează primul element din listă (index 0)
+                WebElement firstOption = options.get(0);
+                firstOption.click(); // Click pe primul element
+                Reporter.log("Primul element selectat: " + firstOption.getText());
+            } else {
+                Reporter.log("Nu există sugestii disponibile.");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // First/Last Name
+        driver.findElement(By.cssSelector(
+                "input.form-control.js-maxlength[name='first_last_name'][data-modal-field-id='create_first_last_name']"))
+                .sendKeys("FirstNameTest LastNameTest");
+
+        // Account RDP
+        try {
+            // Găsește input-ul autocomplete
+            WebElement autocompleteInput = driver.findElement(By.cssSelector(
+                    "input.form-control.js-maxlength[inputname='rdp_id'][data-modal-field-id='create_rdp_id']"));
+
+            // Introdu textul dorit în input
+            autocompleteInput.sendKeys("GUL"); // Textul care declanșează sugestiile
+
+            // Așteaptă afișarea listei de sugestii
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            WebElement autocompleteList = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.id("autocomplete-list") // Selector pentru lista de autocomplete
+            ));
+
+            // Găsește toate opțiunile din lista de autocomplete
+            List<WebElement> options = autocompleteList.findElements(By.tagName("div"));
+
+            // Parcurge opțiunile și selectează pe cea dorită
+            if (!options.isEmpty()) {
+                // Selectează primul element din listă (index 0)
+                WebElement firstOption = options.get(0);
+                firstOption.click(); // Click pe primul element
+                Reporter.log("Primul element selectat: " + firstOption.getText());
+            } else {
+                Reporter.log("Nu există sugestii disponibile.");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // Account Proxy
+
+        WebElement selectProxy = driver.findElement(By.cssSelector(
+                "select.form-control[name='proxy_id'][data-modal-field-id='create_proxies']"));
+        Select proxyRow = new Select(selectProxy);
+        proxyRow.selectByIndex(0);
+
+        // Account Domains
+
+        WebElement selectDomain = driver.findElement(By.cssSelector(
+                "select.form-control[name='account-domains[]'][data-modal-field-id='create_domains']"));
+        Select domainRow = new Select(selectDomain);
+        domainRow.selectByIndex(2);
+
+        // MediaBuyer
+
+        try {
+            // Găsește input-ul autocomplete
+            WebElement autocompleteInput = driver.findElement(By.cssSelector(
+                    "input.form-control.js-maxlength[inputname='account_owner'][data-modal-field-id='create_account_owner']"));
+
+            // Introdu textul dorit în input
+            autocompleteInput.sendKeys("Do"); // Textul care declanșează sugestiile
+
+            // Așteaptă afișarea listei de sugestii
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            WebElement autocompleteList = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.id("autocomplete-list") // Selector pentru lista de autocomplete
+            ));
+
+            // Găsește toate opțiunile din lista de autocomplete
+            List<WebElement> options = autocompleteList.findElements(By.tagName("div"));
+
+            // Parcurge opțiunile și selectează pe cea dorită
+            if (!options.isEmpty()) {
+                // Selectează primul element din listă (index 0)
+                WebElement firstOption = options.get(0);
+                firstOption.click(); // Click pe primul element
+                Reporter.log("Primul element selectat: " + firstOption.getText());
+            } else {
+                Reporter.log("Nu există sugestii disponibile.");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // MB Comments
+        driver.findElement(By.cssSelector(
+                "input.form-control.js-maxlength[name='mb_comments'][data-modal-field-id='create_mb_comments']"))
+                .sendKeys("1commentMB / 2commentsMB / 3commentsMB");
+
+        // License
+
+        driver.findElement(By.cssSelector(
+                "input.form-control.js-maxlength[name='license'][data-modal-field-id='create_license']"))
+                .sendKeys("AutomationTestLicense");
+
+        // GEO
+
+        driver.findElement(By.cssSelector(
+                "input.form-control.js-maxlength[name='geo'][data-modal-field-id='create_geo']"))
+                .sendKeys("AutomationTestGeo");
+
+        // Save button
+
+        driver.findElement(By.id(
+                "create-google-accounts-button"))
+                .click();
+
     }
 
 }
