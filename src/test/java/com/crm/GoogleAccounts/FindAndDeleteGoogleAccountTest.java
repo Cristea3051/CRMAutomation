@@ -36,7 +36,7 @@ public class FindAndDeleteGoogleAccountTest {
 
         driver.get("http://crm-dash/google-accounts");
         String title = driver.getTitle();
-        Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
+        Reporter.log("S-a navigat cu succes la pagina - " + title);
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.form-control[type='search']")))
@@ -52,6 +52,8 @@ public class FindAndDeleteGoogleAccountTest {
                 .click();
 
         Helpers.waitForSeconds(3);
+
+        Reporter.log("A fost sters cu succes contul - GoogleAccountNameTestJava");
 
         driver.quit();
 
