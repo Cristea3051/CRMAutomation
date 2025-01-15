@@ -26,7 +26,7 @@
       <![CDATA[$30]]>
     </line>
     <line>
-      <![CDATA[Reina Marenco]]>
+      <![CDATA[Santos Almeida]]>
     </line>
     <line>
       <![CDATA[1234567890]]>
@@ -74,7 +74,7 @@
       <![CDATA[1comment / 2comments / 3comments]]>
     </line>
     <line>
-      <![CDATA[2025-01-15 12:48]]>
+      <![CDATA[2025-01-15 12:54]]>
     </line>
     <line>
       <![CDATA[AutomationEmail@Login]]>
@@ -104,13 +104,10 @@
       <![CDATA[1234]]>
     </line>
     <line>
-      <![CDATA[2025-01-13 12:00:00]]>
+      <![CDATA[2025-01-06 12:00:00]]>
     </line>
     <line>
-      <![CDATA[2025-01-18]]>
-    </line>
-    <line>
-      <![CDATA[-]]>
+      <![CDATA[2025-01-14]]>
     </line>
     <line>
       <![CDATA[-]]>
@@ -122,10 +119,13 @@
       <![CDATA[-]]>
     </line>
     <line>
-      <![CDATA[2025-01-15 12:48:28]]>
+      <![CDATA[-]]>
     </line>
     <line>
-      <![CDATA[2025-01-04 12:00:00]]>
+      <![CDATA[2025-01-15 12:54:10]]>
+    </line>
+    <line>
+      <![CDATA[2025-01-29 12:00:00]]>
     </line>
     <line>
       <![CDATA[Copy]]>
@@ -143,7 +143,7 @@
       <![CDATA[15 January - Active (Victor Cristea)]]>
     </line>
     <line>
-      <![CDATA[2025-01-18]]>
+      <![CDATA[2025-01-30]]>
     </line>
     <line>
       <![CDATA[7781 2286 7437 6456 9022 9765 6536 1766 4432 2797 3077 2043 6864 9346 0563 6609 9405 0172 7099 1031]]>
@@ -185,7 +185,7 @@
       <![CDATA[$30]]>
     </line>
     <line>
-      <![CDATA[Reina Marenco, Spencer Robson]]>
+      <![CDATA[Mandy Klu, Santos Almeida]]>
     </line>
     <line>
       <![CDATA[2345678901]]>
@@ -233,7 +233,7 @@
       <![CDATA[1comment / 2comments / 3comments]]>
     </line>
     <line>
-      <![CDATA[2025-01-15 12:48]]>
+      <![CDATA[2025-01-15 12:54]]>
     </line>
     <line>
       <![CDATA[AutomationEmail@Login]]>
@@ -263,13 +263,10 @@
       <![CDATA[1234]]>
     </line>
     <line>
-      <![CDATA[2025-01-30 12:00:00]]>
+      <![CDATA[2025-01-17 12:00:00]]>
     </line>
     <line>
-      <![CDATA[2025-01-25]]>
-    </line>
-    <line>
-      <![CDATA[-]]>
+      <![CDATA[2025-01-14]]>
     </line>
     <line>
       <![CDATA[-]]>
@@ -281,10 +278,13 @@
       <![CDATA[-]]>
     </line>
     <line>
-      <![CDATA[2025-01-15 12:48:28]]>
+      <![CDATA[-]]>
     </line>
     <line>
-      <![CDATA[2025-01-31 12:00:00]]>
+      <![CDATA[2025-01-15 12:54:10]]>
+    </line>
+    <line>
+      <![CDATA[2025-01-29 12:00:00]]>
     </line>
     <line>
       <![CDATA[Copy]]>
@@ -302,7 +302,7 @@
       <![CDATA[15 January - ID Verification (Victor Cristea), 15 January - Active (Victor Cristea)]]>
     </line>
     <line>
-      <![CDATA[2025-01-03]]>
+      <![CDATA[2025-01-26]]>
     </line>
     <line>
       <![CDATA[7781 2286 7437 6456 9022 9765]]>
@@ -332,16 +332,16 @@
       <![CDATA[A fost sters cu succes contul - GoogleAccountNameTestJava]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-01-15T12:48:15 EET" name="Suite" finished-at="2025-01-15T12:49:14 EET" duration-ms="58399">
+  <suite started-at="2025-01-15T12:53:58 EET" name="Suite" finished-at="2025-01-15T12:54:56 EET" duration-ms="58430">
     <groups>
     </groups>
-    <test started-at="2025-01-15T12:48:15 EET" name="Google Accounts Test" finished-at="2025-01-15T12:49:14 EET" duration-ms="58399">
+    <test started-at="2025-01-15T12:53:58 EET" name="Google Accounts Test" finished-at="2025-01-15T12:54:56 EET" duration-ms="58430">
       <class name="com.crm.GoogleAccounts.CreateGoogleAccount">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccount@1fe20588]" started-at="2025-01-15T12:48:15 EET" name="setUp" finished-at="2025-01-15T12:48:16 EET" duration-ms="598" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccount@1fe20588]" started-at="2025-01-15T12:53:58 EET" name="setUp" finished-at="2025-01-15T12:53:58 EET" duration-ms="638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccount@1fe20588]" started-at="2025-01-15T12:48:16 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-01-15T12:48:37 EET" duration-ms="20972" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccount@1fe20588]" started-at="2025-01-15T12:53:58 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-01-15T12:54:20 EET" duration-ms="21291" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -380,7 +380,7 @@
               <![CDATA[$30]]>
             </line>
             <line>
-              <![CDATA[Reina Marenco]]>
+              <![CDATA[Santos Almeida]]>
             </line>
             <line>
               <![CDATA[1234567890]]>
@@ -428,7 +428,7 @@
               <![CDATA[1comment / 2comments / 3comments]]>
             </line>
             <line>
-              <![CDATA[2025-01-15 12:48]]>
+              <![CDATA[2025-01-15 12:54]]>
             </line>
             <line>
               <![CDATA[AutomationEmail@Login]]>
@@ -458,13 +458,10 @@
               <![CDATA[1234]]>
             </line>
             <line>
-              <![CDATA[2025-01-13 12:00:00]]>
+              <![CDATA[2025-01-06 12:00:00]]>
             </line>
             <line>
-              <![CDATA[2025-01-18]]>
-            </line>
-            <line>
-              <![CDATA[-]]>
+              <![CDATA[2025-01-14]]>
             </line>
             <line>
               <![CDATA[-]]>
@@ -476,10 +473,13 @@
               <![CDATA[-]]>
             </line>
             <line>
-              <![CDATA[2025-01-15 12:48:28]]>
+              <![CDATA[-]]>
             </line>
             <line>
-              <![CDATA[2025-01-04 12:00:00]]>
+              <![CDATA[2025-01-15 12:54:10]]>
+            </line>
+            <line>
+              <![CDATA[2025-01-29 12:00:00]]>
             </line>
             <line>
               <![CDATA[Copy]]>
@@ -497,7 +497,7 @@
               <![CDATA[15 January - Active (Victor Cristea)]]>
             </line>
             <line>
-              <![CDATA[2025-01-18]]>
+              <![CDATA[2025-01-30]]>
             </line>
             <line>
               <![CDATA[7781 2286 7437 6456 9022 9765 6536 1766 4432 2797 3077 2043 6864 9346 0563 6609 9405 0172 7099 1031]]>
@@ -518,11 +518,11 @@
         </test-method> <!-- signIn -->
       </class> <!-- com.crm.GoogleAccounts.CreateGoogleAccount -->
       <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@49c386c8]" started-at="2025-01-15T12:49:01 EET" name="setUp" finished-at="2025-01-15T12:49:01 EET" duration-ms="411" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@49c386c8]" started-at="2025-01-15T12:54:43 EET" name="setUp" finished-at="2025-01-15T12:54:44 EET" duration-ms="402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@49c386c8]" started-at="2025-01-15T12:49:01 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-01-15T12:49:14 EET" duration-ms="12371" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@49c386c8]" started-at="2025-01-15T12:54:44 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-01-15T12:54:56 EET" duration-ms="12366" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -552,11 +552,11 @@
         </test-method> <!-- signIn -->
       </class> <!-- com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest -->
       <class name="com.crm.GoogleAccounts.UpdateGoogleAccount">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.UpdateGoogleAccount@1f0f1111]" started-at="2025-01-15T12:48:37 EET" name="setUp" finished-at="2025-01-15T12:48:37 EET" duration-ms="449" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.UpdateGoogleAccount@1f0f1111]" started-at="2025-01-15T12:54:20 EET" name="setUp" finished-at="2025-01-15T12:54:20 EET" duration-ms="435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.UpdateGoogleAccount@1f0f1111]" started-at="2025-01-15T12:48:37 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-01-15T12:49:01 EET" duration-ms="23580" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.UpdateGoogleAccount@1f0f1111]" started-at="2025-01-15T12:54:20 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-01-15T12:54:43 EET" duration-ms="23274" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -595,7 +595,7 @@
               <![CDATA[$30]]>
             </line>
             <line>
-              <![CDATA[Reina Marenco, Spencer Robson]]>
+              <![CDATA[Mandy Klu, Santos Almeida]]>
             </line>
             <line>
               <![CDATA[2345678901]]>
@@ -643,7 +643,7 @@
               <![CDATA[1comment / 2comments / 3comments]]>
             </line>
             <line>
-              <![CDATA[2025-01-15 12:48]]>
+              <![CDATA[2025-01-15 12:54]]>
             </line>
             <line>
               <![CDATA[AutomationEmail@Login]]>
@@ -673,13 +673,10 @@
               <![CDATA[1234]]>
             </line>
             <line>
-              <![CDATA[2025-01-30 12:00:00]]>
+              <![CDATA[2025-01-17 12:00:00]]>
             </line>
             <line>
-              <![CDATA[2025-01-25]]>
-            </line>
-            <line>
-              <![CDATA[-]]>
+              <![CDATA[2025-01-14]]>
             </line>
             <line>
               <![CDATA[-]]>
@@ -691,10 +688,13 @@
               <![CDATA[-]]>
             </line>
             <line>
-              <![CDATA[2025-01-15 12:48:28]]>
+              <![CDATA[-]]>
             </line>
             <line>
-              <![CDATA[2025-01-31 12:00:00]]>
+              <![CDATA[2025-01-15 12:54:10]]>
+            </line>
+            <line>
+              <![CDATA[2025-01-29 12:00:00]]>
             </line>
             <line>
               <![CDATA[Copy]]>
@@ -712,7 +712,7 @@
               <![CDATA[15 January - ID Verification (Victor Cristea), 15 January - Active (Victor Cristea)]]>
             </line>
             <line>
-              <![CDATA[2025-01-03]]>
+              <![CDATA[2025-01-26]]>
             </line>
             <line>
               <![CDATA[7781 2286 7437 6456 9022 9765]]>

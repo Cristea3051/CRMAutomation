@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="12.371">
+           time="12.366">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="12.371"
+                time="12.366"
                 classname="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest">
             </testcase>
 </testsuite>
