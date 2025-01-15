@@ -40,7 +40,7 @@ public class FindAndDeleteGoogleAccountTest {
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.form-control[type='search']")))
-                .sendKeys("GoogleAccountNameTestJava");
+                .sendKeys("GoogleAccountUpdatedTestJava");
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions

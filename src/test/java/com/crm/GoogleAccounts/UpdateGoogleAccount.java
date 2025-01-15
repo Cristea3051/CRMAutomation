@@ -67,111 +67,106 @@ public class UpdateGoogleAccount {
                 "GoogleAccountUpdatedTestJava");
         enterText(
                 By.cssSelector(
-                        "input.form-control.js-maxlength[name='account_id'][data-modal-field-id='create_account_id']"),
+                        "input.form-control.js-maxlength[name='account_id'][data-modal-field-id='edit_account_id']"),
                 "2345678901");
         selectDropdownOption(
-                By.cssSelector("select.form-control.js-maxlength[name='status'][data-modal-field-id='create_status']"),
-                1);
+                By.cssSelector("select.form-control.js-maxlength[name='status'][data-modal-field-id='edit_status']"),
+                3);
         selectDropdownOption(
-                By.cssSelector("select.form-control.js-maxlength[name='usage'][data-modal-field-id='create_usage']"),
+                By.cssSelector("select.form-control.js-maxlength[name='usage'][data-modal-field-id='edit_usage']"),
                 0);
         enterText(
                 By.cssSelector(
-                        "input.form-control.js-maxlength[name='other_fees'][data-modal-field-id='create_other_fees']"),
+                        "input.form-control.js-maxlength[name='other_fees'][data-modal-field-id='edit_other_fees']"),
                 "1234");
         enterText(
                 By.cssSelector(
-                        "input.form-control.js-maxlength[name='username'][data-modal-field-id='create_username']"),
-                "AutomationTestJavaUser");
+                        "input.form-control.js-maxlength[name='username'][data-modal-field-id='edit_username']"),
+                "AutomationTestJavaUserUpdated");
         enterText(
                 By.cssSelector(
-                        "input.form-control.js-maxlength[name='password'][data-modal-field-id='create_password']"),
-                "AutomationTestJavaPass");
+                        "#edit-google-accounts-modal form div:nth-child(3) input[name='password'][data-modal-field-id='edit_password']"),
+                "AutomationTestJavaPassUpdated");
         enterText(By.cssSelector(
-                "input.form-control.js-maxlength[name='email_login'][data-modal-field-id='create_email_login']"),
+                "input.form-control.js-maxlength[name='email_login'][data-modal-field-id='edit_email_login']"),
                 "AutomationEmail@Login");
         enterText(By.cssSelector(
-                "input.form-control.js-maxlength[name='email_password'][data-modal-field-id='create_email_password']"),
+                "input.form-control.js-maxlength[name='email_password'][data-modal-field-id='edit_email_password']"),
                 "AutomationEmail@Password");
 
         clickAndSelectRandomDay(By.cssSelector(
-                "input.form-control.js-maxlength[name='id_verification'][data-modal-field-id='create_id_verification']"));
+                "input.form-control.js-maxlength[name='id_verification'][data-modal-field-id='edit_id_verification']"));
         enterText(By.cssSelector(
-                "input.form-control.js-maxlength[name='farmer_comments'][data-modal-field-id='create_farmer_comments']"),
+                "input.form-control.js-maxlength[name='farmer_comments'][data-modal-field-id='edit_farmer_comments']"),
                 "1comment / 2comments / 3comments");
         enterText(By.cssSelector(
-                "input.form-control.js-maxlength[name='2fa'][data-modal-field-id='create_2fa']"),
+                "input.form-control.js-maxlength[name='2fa'][data-modal-field-id='edit_2fa']"),
                 "gq52limcbz2fj7iqowo6a6hzufm2vjxd");
         enterText(By.cssSelector(
-                "input.form-control.js-maxlength[name='backup_code'][data-modal-field-id='create_backup_code']"),
-                "7781 2286 7437 6456 9022 9765 6536 1766 4432 2797 3077 2043 6864 9346 0563 6609 9405 0172 7099 1031");
+                "input.form-control.js-maxlength[name='backup_code'][data-modal-field-id='edit_backup_code']"),
+                "7781 2286 7437 6456 9022 9765");
 
         selectDropdownOption(By.cssSelector(
-                "select.js-select2.multiple-selector-inputs[name='account-cards[]'][data-modal-field-id='create_credit_cards']"),
+                "select.js-select2.multiple-selector-inputs[name='account-cards[]'][data-modal-field-id='edit_credit_cards']"),
                 2);
 
         handleAutocomplete(
                 By.cssSelector(
-                        "input.form-control.js-maxlength[inputname='batch_id'][data-modal-field-id='create_batch_id']"),
-                "Su", By.id("autocomplete-list"));
+                        "input.form-control.js-maxlength[inputname='batch_id'][data-modal-field-id='edit_batch_id']"),
+                "FJ", By.id("autocomplete-list"));
         clickAndSelectRandomDay(By.cssSelector(
-                "input.form-control.js-maxlength[name='monthly_fees_date'][data-modal-field-id='create_monthly_fees_date']"));
+                "input.form-control.js-maxlength[name='monthly_fees_date'][data-modal-field-id='edit_monthly_fees_date']"));
         clickAndSelectRandomDay(By.cssSelector(
-                "input.form-control.js-maxlength[name='sync_from_date'][data-modal-field-id='create_sync_from_date']"));
+                "input.form-control.js-maxlength[name='sync_from_date'][data-modal-field-id='edit_sync_from_date']"));
         clickAndSelectRandomDay(By
-                .cssSelector("input.form-control.js-maxlength[name='bh_date'][data-modal-field-id='create_bh_date']"));
+                .cssSelector("input.form-control.js-maxlength[name='bh_date'][data-modal-field-id='edit_bh_date']"));
         clickAndSelectRandomDay(By.cssSelector(
-                "input.form-control.js-maxlength[name='mb_delivery_date'][data-modal-field-id='create_mb_delivery_date']"));
+                "input.form-control.js-maxlength[name='mb_delivery_date'][data-modal-field-id='edit_mb_delivery_date']"));
 
         handleAutocomplete(By.cssSelector(
-                "input.form-control.js-maxlength[inputname='source_id'][data-modal-field-id='create_source_id']"),
+                "input.form-control.js-maxlength[inputname='source_id'][data-modal-field-id='edit_source_id']"),
                 "FJ",
                 By.id("autocomplete-list"));
         enterText(By.cssSelector(
-                "input.form-control.js-maxlength[name='first_last_name'][data-modal-field-id='create_first_last_name']"),
-                "FirstNameTest LastNameTest");
+                "input.form-control.js-maxlength[name='first_last_name'][data-modal-field-id='edit_first_last_name']"),
+                "FirstNameTestUpdated LastNameTestUpdated");
         handleAutocomplete(
                 By.cssSelector(
-                        "input.form-control.js-maxlength[inputname='rdp_id'][data-modal-field-id='create_rdp_id']"),
+                        "input.form-control.js-maxlength[inputname='rdp_id'][data-modal-field-id='edit_rdp_id']"),
                 "GUL", By.id("autocomplete-list"));
-
-        // Account Proxy
-        selectDropdownOption(By.cssSelector(
-                "select.form-control[name='proxy_id'][data-modal-field-id='create_proxies']"),
-                1);
 
         // Account Domains
         selectDropdownOption(By.cssSelector(
-                "select.form-control[name='account-domains[]'][data-modal-field-id='create_domains']"),
-                0);
+                "select.form-control[name='account-domains[]'][data-modal-field-id='edit_domains']"),
+                1);
 
         // MediaBuyer
         handleAutocomplete(
                 By.cssSelector(
-                        "input.form-control.js-maxlength[inputname='account_owner'][data-modal-field-id='create_account_owner']"),
-                "Do", By.id("autocomplete-list"));
+                        "input.form-control.js-maxlength[inputname='account_owner'][data-modal-field-id='edit_account_owner']"),
+                "Ser", By.id("autocomplete-list"));
 
         // MediaBuyer Comments
 
         enterText(By.cssSelector(
-                "input.form-control.js-maxlength[name='mb_comments'][data-modal-field-id='create_mb_comments']"),
+                "input.form-control.js-maxlength[name='mb_comments'][data-modal-field-id='edit_mb_comments']"),
                 "1commentMB / 2commentsMB / 3commentsMB");
 
         // License
 
         enterText(By.cssSelector(
-                "input.form-control.js-maxlength[name='license'][data-modal-field-id='create_license']"),
+                "input.form-control.js-maxlength[name='license'][data-modal-field-id='edit_license']"),
                 "AutomationTestLicense");
 
         // GEO
         enterText(By.cssSelector(
-                "input.form-control.js-maxlength[name='geo'][data-modal-field-id='create_geo']"),
-                "ATG");
+                "input.form-control.js-maxlength[name='geo'][data-modal-field-id='edit_geo']"),
+                "ATGU");
 
         // Save button
 
         driver.findElement(By.id(
-                "create-google-accounts-button"))
+                "edit-google-accounts-button"))
                 .click();
 
     }
@@ -206,6 +201,7 @@ public class UpdateGoogleAccount {
     private void handleAutocomplete(By locator, String inputText, By autocompleteListLocator) {
         try {
             WebElement autocompleteInput = driver.findElement(locator);
+            autocompleteInput.clear();
             autocompleteInput.sendKeys(inputText);
 
             WebElement autocompleteList = wait
