@@ -45,23 +45,19 @@ public class Search {
 
         Helpers.waitForSeconds(3);
 
-        String searchKeyword = "GUL-GR1838-FRM-162811";
+        String searchKeyword = "GoogleAccountNameTestJava";
         driver.findElement(By.cssSelector("input.form-control-sm")).sendKeys(searchKeyword);
 
         Helpers.waitForSeconds(3);
 
-        // Extragem prima linie a tabelului
-        List<WebElement> headers = driver
-                .findElements(By.cssSelector("#google-accounts-list_wrapper .table-striped.dataTable thead th"));
         List<WebElement> firstRow = driver
                 .findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
 
         // Construim conținutul primei linii pentru a verifica dacă există keyword-ul
         boolean found = false;
         for (int i = 0; i < firstRow.size(); i++) {
-            String header = headers.get(i).getText();
             String content = (i < firstRow.size()) ? firstRow.get(i).getText() : "";
-            Reporter.log(header + " -> " + content);
+            Reporter.log(content);
 
             if (content.contains(searchKeyword)) {
                 found = true;

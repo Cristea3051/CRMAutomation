@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Google Accounts Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="12.371">
+    <properties></properties>
+
+
+
+            <testcase
+                name="signIn"
+                time="12.371"
+                classname="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest">
+            </testcase>
+</testsuite>

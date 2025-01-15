@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -47,6 +48,26 @@ public class CreateGoogleAccount {
                 Helpers.waitForSeconds(3);
 
                 fillFormFields();
+                Helpers.waitForSeconds(3);
+                String searchKeyword = "GoogleAccountNameTestJava";
+                driver.findElement(By.cssSelector("input.form-control-sm")).sendKeys(searchKeyword);
+                List<WebElement> firstRow = driver
+                                .findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
+                boolean found = false;
+                for (int i = 0; i < firstRow.size(); i++) {
+                        String content = (i < firstRow.size()) ? firstRow.get(i).getText() : "";
+                        Reporter.log(content);
+
+                        if (content.contains(searchKeyword)) {
+                                found = true;
+                        }
+                }
+
+                Helpers.waitForSeconds(3);
+                // Adăugăm aserția
+                Assert.assertTrue(found,
+                                "Keyword-ul '" + searchKeyword + "' nu a fost găsit în prima linie a tabelului!");
+                Reporter.log("Keyword-ul '" + searchKeyword + "' a fost găsit în prima linie a tabelului.");
 
                 Helpers.waitForSeconds(3);
 
