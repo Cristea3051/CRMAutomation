@@ -3,12 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Google Accounts Test(failed)" verbose="0">
     <classes>
-      <class name="com.crm.GoogleAccounts.UpdateGoogleAccount">
+      <class name="com.crm.GoogleAccounts.Filter">
         <methods>
-          <include name="setUp"/>
           <include name="signIn" invocation-numbers="0"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.crm.GoogleAccounts.UpdateGoogleAccount -->
+      </class> <!-- com.crm.GoogleAccounts.Filter -->
     </classes>
   </test> <!-- Google Accounts Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

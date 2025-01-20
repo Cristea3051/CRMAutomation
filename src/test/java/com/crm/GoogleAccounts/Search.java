@@ -45,7 +45,7 @@ public class Search {
 
         Helpers.waitForSeconds(3);
 
-        String searchKeyword = "GoogleAccountNameTestJava";
+        String searchKeyword = "GoogleAccountUpdatedTestJava";
         driver.findElement(By.cssSelector("input.form-control-sm")).sendKeys(searchKeyword);
 
         Helpers.waitForSeconds(3);

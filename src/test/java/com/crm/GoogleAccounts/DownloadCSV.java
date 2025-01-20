@@ -40,7 +40,8 @@ public class DownloadCSV {
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
 
-        WebElement select = driver.findElement(By.name("google-accounts-list_length"));
+        Helpers.waitForSeconds(3);
+        WebElement select = driver.findElement(By.cssSelector("select.custom-select[name='google-accounts-list_length']"));
         Select rows = new Select(select);
         rows.selectByIndex(0);
 
