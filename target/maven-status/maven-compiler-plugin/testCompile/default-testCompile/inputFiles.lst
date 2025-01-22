@@ -11,6 +11,7 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/CreateAndOrderTableSettings.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/DeleteTableSettings.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/CredentialsProvider.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/ClientTest/SpendAndTotalSpendTest.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/CreateTableSettingsPerOffer.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/Helpers.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/DownloadCSV.java

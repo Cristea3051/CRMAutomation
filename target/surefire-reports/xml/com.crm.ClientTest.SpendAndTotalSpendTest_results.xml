@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="column Test"
+           tests="19"
+           failures="4"
+           errors="0"
+           skipped="0"
+           time="356.388">
+    <properties></properties>
+
+            <testcase
+                name="signIn"
+                time="29.899"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+
+            <failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for element to be clickable: By.cssSelector: body &gt; div:nth-child(23) &gt; div.ranges &gt; ul &gt; li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.9.3-76060903-generic&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44895/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82a4322ef633d2d5854e6796634ecc95">
+                <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: body > div:nth-child(23) > div.ranges > ul > li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.9.3-76060903-generic', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44895/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82a4322ef633d2d5854e6796634ecc95
+                org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:58)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)java.base/java.lang.reflect.Method.invoke(Method.java:580)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1596)org.testng.TestRunner.privateRun(TestRunner.java:808)org.testng.TestRunner.run(TestRunner.java:603)org.testng.SuiteRunner.runTest(SuiteRunner.java:429)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)org.testng.SuiteRunner.run(SuiteRunner.java:326)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)org.testng.TestNG.runSuitesLocally(TestNG.java:1169)org.testng.TestNG.runSuites(TestNG.java:1092)org.testng.TestNG.run(TestNG.java:1060)org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="signIn"
+                time="30.153"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+
+            <failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for element to be clickable: By.cssSelector: body &gt; div:nth-child(23) &gt; div.ranges &gt; ul &gt; li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.9.3-76060903-generic&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37437}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37437/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 710851e94948b28484af789fa6dacd52">
+                <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: body > div:nth-child(23) > div.ranges > ul > li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.9.3-76060903-generic', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37437}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37437/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 710851e94948b28484af789fa6dacd52
+                org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:58)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)java.base/java.lang.reflect.Method.invoke(Method.java:580)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1596)org.testng.TestRunner.privateRun(TestRunner.java:808)org.testng.TestRunner.run(TestRunner.java:603)org.testng.SuiteRunner.runTest(SuiteRunner.java:429)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)org.testng.SuiteRunner.run(SuiteRunner.java:326)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)org.testng.TestNG.runSuitesLocally(TestNG.java:1169)org.testng.TestNG.runSuites(TestNG.java:1092)org.testng.TestNG.run(TestNG.java:1060)org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="signIn"
+                time="12.190"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+
+            <failure type="java.lang.AssertionError" message="Value under &apos;Total Spent&apos; should not be empty expected [false] but found [true]">
+                <![CDATA[java.lang.AssertionError: Value under 'Total Spent' should not be empty expected [false] but found [true]
+                org.testng.Assert.fail(Assert.java:110)org.testng.Assert.failNotEquals(Assert.java:1413)org.testng.Assert.assertFalse(Assert.java:78)com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:86)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)java.base/java.lang.reflect.Method.invoke(Method.java:580)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1596)org.testng.TestRunner.privateRun(TestRunner.java:808)org.testng.TestRunner.run(TestRunner.java:603)org.testng.SuiteRunner.runTest(SuiteRunner.java:429)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)org.testng.SuiteRunner.run(SuiteRunner.java:326)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)org.testng.TestNG.runSuitesLocally(TestNG.java:1169)org.testng.TestNG.runSuites(TestNG.java:1092)org.testng.TestNG.run(TestNG.java:1060)org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="signIn"
+                time="30.275"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+
+            <failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for element to be clickable: By.cssSelector: body &gt; div:nth-child(23) &gt; div.ranges &gt; ul &gt; li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.9.3-76060903-generic&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46441}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46441/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd7195c795ba2c0413ad661d7236ea35">
+                <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: body > div:nth-child(23) > div.ranges > ul > li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.9.3-76060903-generic', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46441}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46441/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd7195c795ba2c0413ad661d7236ea35
+                org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:58)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)java.base/java.lang.reflect.Method.invoke(Method.java:580)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1596)org.testng.TestRunner.privateRun(TestRunner.java:808)org.testng.TestRunner.run(TestRunner.java:603)org.testng.SuiteRunner.runTest(SuiteRunner.java:429)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)org.testng.SuiteRunner.run(SuiteRunner.java:326)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)org.testng.TestNG.runSuitesLocally(TestNG.java:1169)org.testng.TestNG.runSuites(TestNG.java:1092)org.testng.TestNG.run(TestNG.java:1060)org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </failure>
+    </testcase>
+
+
+            <testcase
+                name="signIn"
+                time="12.507"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="22.758"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="13.664"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="12.570"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="12.428"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="12.630"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="22.941"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="22.474"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="13.056"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="23.924"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="13.001"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="12.699"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="23.088"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="23.360"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="12.771"
+                classname="com.crm.ClientTest.SpendAndTotalSpendTest">
+            </testcase>
+</testsuite>
