@@ -15,7 +15,7 @@
 
    <test name="column Test">
       <classes>
-         <class name="com.crm.ClientTest.SpendAndTotalSpendTest" />
+         <class name="com.crm.test" />
       </classes>
    </test>
 </suite>

@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 250.699 s <<< FAILURE! - in TestSuite
-com.crm.ClientTest.SpendAndTotalSpendTest.signIn[demrclient@vebo.io, j8L3pc5hJ20Sjn10Lp!](7)  Time elapsed: 12.397 s  <<< FAILURE!
-java.lang.AssertionError: Value under 'Total Spent' should not be empty expected [false] but found [true]
-	at com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:73)
-
-com.crm.ClientTest.SpendAndTotalSpendTest.signIn[bodmrclient@vebo.io, j8L3pc5hJ20Sjn10Lp!](12)  Time elapsed: 12.394 s  <<< FAILURE!
-java.lang.AssertionError: 'Total Spent' header was not found in the table expected [true] but found [false]
-	at com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:81)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.743 s - in TestSuite
