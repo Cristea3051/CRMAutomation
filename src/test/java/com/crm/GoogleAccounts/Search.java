@@ -2,6 +2,7 @@ package com.crm.GoogleAccounts;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -56,6 +57,7 @@ public class Search {
         // Construim conținutul primei linii pentru a verifica dacă există keyword-ul
         boolean found = false;
         for (int i = 0; i < firstRow.size(); i++) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", firstRow.get(i));
             String content = (i < firstRow.size()) ? firstRow.get(i).getText() : "";
             Reporter.log(content);
 

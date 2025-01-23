@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -71,6 +72,7 @@ public class UpdateGoogleAccount {
                                 .findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
                 boolean found = false;
                 for (int i = 0; i < firstRow.size(); i++) {
+                        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", firstRow.get(i));
                         String content = (i < firstRow.size()) ? firstRow.get(i).getText() : "";
                         Reporter.log(content);
 

@@ -1,6 +1,7 @@
 package com.crm;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 
 import java.time.Duration;
 import java.util.List;
@@ -57,20 +58,23 @@ public class test extends BaseTest {
         
 
         Helpers.waitForSeconds(3);
-        List<WebElement> headers = driver.findElements(By.cssSelector("#google-accounts-list_wrapper .table-striped.dataTable thead th"));
+        List<WebElement> headers = driver.findElements(By.cssSelector(".dataTables_scrollHeadInner > table:nth-child(1) > thead:nth-child(1) > tr:nth-child(1) > th"));
         List<WebElement> firstRow = driver.findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
         
-        for (int i = 0; i < firstRow.size(); i++) {
+        for (int i = 0; i < headers.size(); i++) {
+            // Scroll până la elementul curent din header
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", headers.get(i));
+        
             String header = headers.get(i).getText().trim();
             String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : "";
-            
-            if (!header.isEmpty()) {
-                System.out.println(header + " -> " + content);
-            } else {
-                System.out.println("Header is empty for index " + i);
-            }
-        }
         
+            if (!header.isEmpty()) {
+                Reporter.log(header + " -> " + content + "\n");
+            } else {
+                Reporter.log("Header is empty for index " + i + "\n");
+            }
+            
+        }        
         driver.quit();
 
     }

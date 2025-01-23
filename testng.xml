@@ -6,7 +6,6 @@
          <class name="com.crm.GoogleAccounts.UpdateGoogleAccount" />
          <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettings" />
          <class name="com.crm.GoogleAccounts.DownloadCSV" />
-         <class name="com.crm.GoogleAccounts.Filter" />
          <class name="com.crm.GoogleAccounts.Search" />
          <class name="com.crm.GoogleAccounts.DeleteTableSettings" />
          <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest" />
