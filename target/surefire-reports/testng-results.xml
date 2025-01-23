@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="15" failed="4" skipped="0">
+<testng-results ignored="0" total="19" passed="17" failed="2" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Utilizator searchmrclient@vebo.io s-a logat]]>
@@ -14,6 +14,9 @@
       <![CDATA[Found: Total Spent -> $4,757,080.19]]>
     </line>
     <line>
+      <![CDATA[Found: Total Spent -> $4,757,080.19]]>
+    </line>
+    <line>
       <![CDATA[Utilizator fbclient@vebo.io s-a logat]]>
     </line>
     <line>
@@ -21,6 +24,9 @@
     </line>
     <line>
       <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook mr campaigns - iCRM v.36.46]]>
+    </line>
+    <line>
+      <![CDATA[Found: Total Spent -> $239,714.91]]>
     </line>
     <line>
       <![CDATA[Utilizator reportnew@vebo.io s-a logat]]>
@@ -44,6 +50,12 @@
       <![CDATA[Utilizatorul a navigat cu succes la pagina - Google nl mr campaigns - iCRM v.36.46]]>
     </line>
     <line>
+      <![CDATA[Found: Total Spent -> $222,088.40]]>
+    </line>
+    <line>
+      <![CDATA[Found: Total Spent -> $222,088.40]]>
+    </line>
+    <line>
       <![CDATA[Utilizator itmrclient@vebo.io s-a logat]]>
     </line>
     <line>
@@ -56,6 +68,9 @@
       <![CDATA[Found: Total Spent -> $1,264,938.11]]>
     </line>
     <line>
+      <![CDATA[Found: Total Spent -> $1,264,938.11]]>
+    </line>
+    <line>
       <![CDATA[Utilizator grmrclient@vebo.io s-a logat]]>
     </line>
     <line>
@@ -63,6 +78,9 @@
     </line>
     <line>
       <![CDATA[Utilizatorul a navigat cu succes la pagina - Google gr mr campaigns - iCRM v.36.46]]>
+    </line>
+    <line>
+      <![CDATA[Found: Total Spent -> $201,316.35]]>
     </line>
     <line>
       <![CDATA[Found: Total Spent -> $201,316.35]]>
@@ -92,6 +110,9 @@
       <![CDATA[Found: Total Spent -> $35,095.28]]>
     </line>
     <line>
+      <![CDATA[Found: Total Spent -> $35,095.28]]>
+    </line>
+    <line>
       <![CDATA[Utilizator atmrclient@vebo.io s-a logat]]>
     </line>
     <line>
@@ -99,6 +120,9 @@
     </line>
     <line>
       <![CDATA[Utilizatorul a navigat cu succes la pagina - Google at mr campaigns - iCRM v.36.46]]>
+    </line>
+    <line>
+      <![CDATA[Found: Total Spent -> $37,899.55]]>
     </line>
     <line>
       <![CDATA[Found: Total Spent -> $37,899.55]]>
@@ -116,6 +140,9 @@
       <![CDATA[Found: Total Spent -> $215,409.74]]>
     </line>
     <line>
+      <![CDATA[Found: Total Spent -> $215,409.74]]>
+    </line>
+    <line>
       <![CDATA[Utilizator demandgen@vebo.io s-a logat]]>
     </line>
     <line>
@@ -123,6 +150,9 @@
     </line>
     <line>
       <![CDATA[Utilizatorul a navigat cu succes la pagina - Google dr campaigns - iCRM v.36.46]]>
+    </line>
+    <line>
+      <![CDATA[Found: Total Spent -> $1,155,500.17]]>
     </line>
     <line>
       <![CDATA[Found: Total Spent -> $1,155,500.17]]>
@@ -168,6 +198,9 @@
     </line>
     <line>
       <![CDATA[Utilizatorul a navigat cu succes la pagina - Google sp mr campaigns - iCRM v.36.46]]>
+    </line>
+    <line>
+      <![CDATA[Found: Total Spent -> $17,289.93]]>
     </line>
     <line>
       <![CDATA[Found: Total Spent -> $17,289.93]]>
@@ -221,16 +254,16 @@
       <![CDATA[Found: Total Spent -> $41,119.24]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-01-22T17:55:39 EET" name="Suite" finished-at="2025-01-22T18:01:46 EET" duration-ms="367362">
+  <suite started-at="2025-01-23T11:03:49 EET" name="Suite" finished-at="2025-01-23T11:08:00 EET" duration-ms="250341">
     <groups>
     </groups>
-    <test started-at="2025-01-22T17:55:39 EET" name="column Test" finished-at="2025-01-22T18:01:46 EET" duration-ms="367362">
+    <test started-at="2025-01-23T11:03:49 EET" name="column Test" finished-at="2025-01-23T11:08:00 EET" duration-ms="250341">
       <class name="com.crm.ClientTest.SpendAndTotalSpendTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:55:39 EET" name="setUp" finished-at="2025-01-22T17:55:40 EET" duration-ms="1022" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:03:49 EET" name="setUp" finished-at="2025-01-23T11:03:50 EET" duration-ms="1072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:55:40 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:55:53 EET" duration-ms="12771" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:03:50 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:04:04 EET" duration-ms="13093" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -256,17 +289,20 @@
             <line>
               <![CDATA[Found: Total Spent -> $4,757,080.19]]>
             </line>
+            <line>
+              <![CDATA[Found: Total Spent -> $4,757,080.19]]>
+            </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:55:53 EET" name="tearDown" finished-at="2025-01-22T17:55:53 EET" duration-ms="74" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:04 EET" name="tearDown" finished-at="2025-01-23T11:04:04 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:55:53 EET" name="setUp" finished-at="2025-01-22T17:55:53 EET" duration-ms="433" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:04 EET" name="setUp" finished-at="2025-01-23T11:04:04 EET" duration-ms="468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:55:53 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:56:23 EET" duration-ms="29899" status="FAIL">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:04 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:04:16 EET" duration-ms="12259" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -279,58 +315,6 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.cssSelector: body > div:nth-child(23) > div.ranges > ul > li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.9.3-76060903-generic', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44895/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 82a4322ef633d2d5854e6796634ecc95]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: body > div:nth-child(23) > div.ranges > ul > li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.9.3-76060903-generic', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44895/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 82a4322ef633d2d5854e6796634ecc95
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
             <line>
               <![CDATA[Utilizator fbclient@vebo.io s-a logat]]>
@@ -341,17 +325,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             <line>
               <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook mr campaigns - iCRM v.36.46]]>
             </line>
+            <line>
+              <![CDATA[Found: Total Spent -> $239,714.91]]>
+            </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:56:23 EET" name="tearDown" finished-at="2025-01-22T17:56:23 EET" duration-ms="328" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:16 EET" name="tearDown" finished-at="2025-01-23T11:04:16 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:56:23 EET" name="setUp" finished-at="2025-01-22T17:56:24 EET" duration-ms="453" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:16 EET" name="setUp" finished-at="2025-01-23T11:04:17 EET" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:56:24 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:56:48 EET" duration-ms="23924" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:17 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:04:29 EET" duration-ms="12307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -379,15 +366,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:56:48 EET" name="tearDown" finished-at="2025-01-22T17:56:48 EET" duration-ms="77" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:29 EET" name="tearDown" finished-at="2025-01-23T11:04:29 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:56:48 EET" name="setUp" finished-at="2025-01-22T17:56:48 EET" duration-ms="464" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:29 EET" name="setUp" finished-at="2025-01-23T11:04:29 EET" duration-ms="426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:56:48 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:57:19 EET" duration-ms="30275" status="FAIL">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:29 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:04:42 EET" duration-ms="12819" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -400,58 +387,6 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.cssSelector: body > div:nth-child(23) > div.ranges > ul > li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.9.3-76060903-generic', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46441}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46441/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd7195c795ba2c0413ad661d7236ea35]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: body > div:nth-child(23) > div.ranges > ul > li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.9.3-76060903-generic', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46441}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46441/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd7195c795ba2c0413ad661d7236ea35
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
             <line>
               <![CDATA[Utilizator nlmrclient@vebo.io s-a logat]]>
@@ -462,17 +397,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             <line>
               <![CDATA[Utilizatorul a navigat cu succes la pagina - Google nl mr campaigns - iCRM v.36.46]]>
             </line>
+            <line>
+              <![CDATA[Found: Total Spent -> $222,088.40]]>
+            </line>
+            <line>
+              <![CDATA[Found: Total Spent -> $222,088.40]]>
+            </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:19 EET" name="tearDown" finished-at="2025-01-22T17:57:19 EET" duration-ms="73" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:42 EET" name="tearDown" finished-at="2025-01-23T11:04:42 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:19 EET" name="setUp" finished-at="2025-01-22T17:57:19 EET" duration-ms="480" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:42 EET" name="setUp" finished-at="2025-01-23T11:04:43 EET" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:19 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:57:32 EET" duration-ms="12428" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:43 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:04:55 EET" duration-ms="12513" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -498,17 +439,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             <line>
               <![CDATA[Found: Total Spent -> $1,264,938.11]]>
             </line>
+            <line>
+              <![CDATA[Found: Total Spent -> $1,264,938.11]]>
+            </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:32 EET" name="tearDown" finished-at="2025-01-22T17:57:32 EET" duration-ms="70" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:32 EET" name="setUp" finished-at="2025-01-22T17:57:32 EET" duration-ms="467" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:55 EET" name="setUp" finished-at="2025-01-23T11:04:56 EET" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:32 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:57:46 EET" duration-ms="13664" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:55 EET" name="tearDown" finished-at="2025-01-23T11:04:55 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:04:56 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:05:09 EET" duration-ms="13268" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -534,17 +478,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             <line>
               <![CDATA[Found: Total Spent -> $201,316.35]]>
             </line>
+            <line>
+              <![CDATA[Found: Total Spent -> $201,316.35]]>
+            </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:46 EET" name="tearDown" finished-at="2025-01-22T17:57:46 EET" duration-ms="70" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:46 EET" name="setUp" finished-at="2025-01-22T17:57:46 EET" duration-ms="487" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:09 EET" name="setUp" finished-at="2025-01-23T11:05:09 EET" duration-ms="425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:46 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:57:59 EET" duration-ms="12190" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:09 EET" name="tearDown" finished-at="2025-01-23T11:05:09 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:09 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:05:22 EET" duration-ms="12398" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -566,7 +513,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1413)
 at org.testng.Assert.assertFalse(Assert.java:78)
-at com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:86)
+at com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:73)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
@@ -615,15 +562,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:59 EET" name="tearDown" finished-at="2025-01-22T17:57:59 EET" duration-ms="70" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:22 EET" name="tearDown" finished-at="2025-01-23T11:05:22 EET" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:59 EET" name="setUp" finished-at="2025-01-22T17:57:59 EET" duration-ms="452" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:22 EET" name="setUp" finished-at="2025-01-23T11:05:22 EET" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:57:59 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:58:12 EET" duration-ms="12570" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:22 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:05:34 EET" duration-ms="12175" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -649,17 +596,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             <line>
               <![CDATA[Found: Total Spent -> $35,095.28]]>
             </line>
+            <line>
+              <![CDATA[Found: Total Spent -> $35,095.28]]>
+            </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:12 EET" name="tearDown" finished-at="2025-01-22T17:58:12 EET" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:34 EET" name="tearDown" finished-at="2025-01-23T11:05:34 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:12 EET" name="setUp" finished-at="2025-01-22T17:58:12 EET" duration-ms="444" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:34 EET" name="setUp" finished-at="2025-01-23T11:05:35 EET" duration-ms="408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:12 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:58:25 EET" duration-ms="13056" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:35 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:05:48 EET" duration-ms="12750" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -685,17 +635,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             <line>
               <![CDATA[Found: Total Spent -> $37,899.55]]>
             </line>
+            <line>
+              <![CDATA[Found: Total Spent -> $37,899.55]]>
+            </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:25 EET" name="tearDown" finished-at="2025-01-22T17:58:25 EET" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:48 EET" name="tearDown" finished-at="2025-01-23T11:05:48 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:25 EET" name="setUp" finished-at="2025-01-22T17:58:26 EET" duration-ms="586" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:48 EET" name="setUp" finished-at="2025-01-23T11:05:48 EET" duration-ms="427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:26 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:58:39 EET" duration-ms="12699" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:05:48 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:06:01 EET" duration-ms="12686" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -721,17 +674,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             <line>
               <![CDATA[Found: Total Spent -> $215,409.74]]>
             </line>
+            <line>
+              <![CDATA[Found: Total Spent -> $215,409.74]]>
+            </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:39 EET" name="tearDown" finished-at="2025-01-22T17:58:39 EET" duration-ms="72" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:39 EET" name="setUp" finished-at="2025-01-22T17:58:39 EET" duration-ms="454" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:01 EET" name="setUp" finished-at="2025-01-23T11:06:01 EET" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:39 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:58:52 EET" duration-ms="12507" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:01 EET" name="tearDown" finished-at="2025-01-23T11:06:01 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:01 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:06:14 EET" duration-ms="12869" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -757,17 +713,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             <line>
               <![CDATA[Found: Total Spent -> $1,155,500.17]]>
             </line>
+            <line>
+              <![CDATA[Found: Total Spent -> $1,155,500.17]]>
+            </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:52 EET" name="tearDown" finished-at="2025-01-22T17:58:52 EET" duration-ms="68" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:52 EET" name="setUp" finished-at="2025-01-22T17:58:52 EET" duration-ms="440" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:14 EET" name="setUp" finished-at="2025-01-23T11:06:14 EET" duration-ms="412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:58:52 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:59:22 EET" duration-ms="30153" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:14 EET" name="tearDown" finished-at="2025-01-23T11:06:14 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:14 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:06:27 EET" duration-ms="12394" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -780,25 +739,16 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.cssSelector: body > div:nth-child(23) > div.ranges > ul > li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.9.3-76060903-generic', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37437}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37437/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 710851e94948b28484af789fa6dacd52]]>
+              <![CDATA['Total Spent' header was not found in the table expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: body > div:nth-child(23) > div.ranges > ul > li:nth-child(13) (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.9.3-76060903-generic', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37437}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37437/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 710851e94948b28484af789fa6dacd52
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:58)
+              <![CDATA[java.lang.AssertionError: 'Total Spent' header was not found in the table expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.crm.ClientTest.SpendAndTotalSpendTest.signIn(SpendAndTotalSpendTest.java:81)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
@@ -831,7 +781,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Utilizator bodmrclient@vebo.io s-a logat]]>
@@ -844,15 +794,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:59:22 EET" name="tearDown" finished-at="2025-01-22T17:59:22 EET" duration-ms="73" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:27 EET" name="tearDown" finished-at="2025-01-23T11:06:27 EET" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:59:22 EET" name="setUp" finished-at="2025-01-22T17:59:23 EET" duration-ms="351" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:27 EET" name="setUp" finished-at="2025-01-23T11:06:27 EET" duration-ms="429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:59:23 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T17:59:46 EET" duration-ms="23360" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:27 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:06:40 EET" duration-ms="12670" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -880,15 +830,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:59:46 EET" name="tearDown" finished-at="2025-01-22T17:59:46 EET" duration-ms="72" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:59:46 EET" name="setUp" finished-at="2025-01-22T17:59:47 EET" duration-ms="473" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:40 EET" name="setUp" finished-at="2025-01-23T11:06:40 EET" duration-ms="422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T17:59:47 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T18:00:09 EET" duration-ms="22758" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:40 EET" name="tearDown" finished-at="2025-01-23T11:06:40 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:40 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:06:54 EET" duration-ms="13561" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -916,15 +866,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:00:09 EET" name="tearDown" finished-at="2025-01-22T18:00:09 EET" duration-ms="74" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:54 EET" name="tearDown" finished-at="2025-01-23T11:06:54 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:00:09 EET" name="setUp" finished-at="2025-01-22T18:00:10 EET" duration-ms="443" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:54 EET" name="setUp" finished-at="2025-01-23T11:06:54 EET" duration-ms="445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:00:10 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T18:00:23 EET" duration-ms="12630" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:06:54 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:07:07 EET" duration-ms="12687" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -950,17 +900,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             <line>
               <![CDATA[Found: Total Spent -> $17,289.93]]>
             </line>
+            <line>
+              <![CDATA[Found: Total Spent -> $17,289.93]]>
+            </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:00:23 EET" name="tearDown" finished-at="2025-01-22T18:00:23 EET" duration-ms="72" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:07 EET" name="tearDown" finished-at="2025-01-23T11:07:07 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:00:23 EET" name="setUp" finished-at="2025-01-22T18:00:23 EET" duration-ms="463" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:07 EET" name="setUp" finished-at="2025-01-23T11:07:08 EET" duration-ms="471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:00:23 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T18:00:46 EET" duration-ms="23088" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:08 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:07:20 EET" duration-ms="12783" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -988,15 +941,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:00:46 EET" name="tearDown" finished-at="2025-01-22T18:00:46 EET" duration-ms="71" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:20 EET" name="tearDown" finished-at="2025-01-23T11:07:20 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:00:46 EET" name="setUp" finished-at="2025-01-22T18:00:47 EET" duration-ms="438" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:20 EET" name="setUp" finished-at="2025-01-23T11:07:21 EET" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:00:47 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T18:01:09 EET" duration-ms="22474" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:21 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:07:33 EET" duration-ms="12688" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1024,15 +977,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:01:09 EET" name="tearDown" finished-at="2025-01-22T18:01:09 EET" duration-ms="77" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:33 EET" name="tearDown" finished-at="2025-01-23T11:07:33 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:01:09 EET" name="setUp" finished-at="2025-01-22T18:01:10 EET" duration-ms="537" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:33 EET" name="setUp" finished-at="2025-01-23T11:07:34 EET" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:01:10 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T18:01:33 EET" duration-ms="22941" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:34 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:07:47 EET" duration-ms="12879" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1060,15 +1013,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:01:33 EET" name="tearDown" finished-at="2025-01-22T18:01:33 EET" duration-ms="71" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:47 EET" name="tearDown" finished-at="2025-01-23T11:07:47 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:01:33 EET" name="setUp" finished-at="2025-01-22T18:01:33 EET" duration-ms="435" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:47 EET" name="setUp" finished-at="2025-01-23T11:07:47 EET" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:01:33 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-22T18:01:46 EET" duration-ms="13001" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:07:47 EET" name="signIn" data-provider="ClientCredentials" finished-at="2025-01-23T11:08:00 EET" duration-ms="12737" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1096,7 +1049,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-22T18:01:46 EET" name="tearDown" finished-at="2025-01-22T18:01:46 EET" duration-ms="73" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.ClientTest.SpendAndTotalSpendTest@6ce139a4]" started-at="2025-01-23T11:08:00 EET" name="tearDown" finished-at="2025-01-23T11:08:00 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

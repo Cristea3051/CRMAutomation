@@ -46,23 +46,10 @@ public class SpendAndTotalSpendTest extends BaseTest {
 
         Helpers.waitForSeconds(2);
 
-        try {
-            // Încercăm să dăm click pe primul selector
-            WebElement element = wait.until(ExpectedConditions.elementToBeClickable(
-                    By.cssSelector("body > div:nth-child(22) > div.ranges > ul > li:nth-child(13)")));
-            element.click();
-        } catch (Exception e) {
 
-            try {
-                // Încercăm să dăm click pe al doilea selector
-                WebElement fallbackElement = wait.until(ExpectedConditions.elementToBeClickable(
-                        By.cssSelector("body > div:nth-child(23) > div.ranges > ul > li:nth-child(13)")));
-                fallbackElement.click();
-            } catch (Exception fallbackException) {
-                // Dacă nici al doilea selector nu este găsit, aruncăm o excepție
-                throw fallbackException;
-            }
-        }
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(
+            By.xpath("//div[contains(@class, 'ranges') and ancestor::div[contains(@class, 'daterangepicker') and contains(@style, 'display: block;')]]//li[text()='All Time']")));
+            element.click();
 
         Helpers.waitForSeconds(3);
         List<WebElement> headers = driver.findElements(By.cssSelector("div.dataTables_scroll > div.dataTables_scrollHead > div > table > thead > tr > th"));
@@ -92,7 +79,7 @@ public class SpendAndTotalSpendTest extends BaseTest {
         
         // Aserțiune finală pentru a verifica dacă "Total Spent" a fost găsit
         Assert.assertTrue(found, "'Total Spent' header was not found in the table");
-        // driver.quit();
+        driver.quit();
 
     }
 }
