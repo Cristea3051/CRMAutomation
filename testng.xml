@@ -12,9 +12,10 @@
       </classes>
    </test> -->
 
-   <test name="column Test">
+   <test name="Dash Card Test">
       <classes>
-         <class name="com.crm.Dashboard.TestDashboardSearch" />
+         <class name="com.crm.Dashboard.TestDashboardRedirectCard" />
+         <class name="com.crm.Dashboard.TestDashboardRedirectCard" />
       </classes>
    </test>
 </suite>
