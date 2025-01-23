@@ -7,6 +7,7 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/DownloadCSVPerOffer.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/utilities/Filters.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/TestATMR.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/AccountProxy/TestAccountProxy.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/utilities/Login.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/CreateAndOrderTableSettings.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/DeleteTableSettings.java
@@ -22,7 +23,6 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/SGFilter.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/DeleteSettingsPerOffer.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/Filter.java
-/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/TestAccountProxy.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/Base/BaseTest.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/SearchSG.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/Dashboard/TestDashboardRedirectCard.java

@@ -6,6 +6,7 @@ com/crm/SGCampaigns/DeleteSettingsPerOffer.class
 com/crm/Dashboard/TestDashboardSearch.class
 com/crm/SGCampaigns/SearchSG.class
 com/crm/GoogleAccounts/DeleteTableSettings.class
+com/crm/AccountProxy/TestAccountProxy.class
 com/crm/GoogleAccounts/CreateAndOrderTableSettings.class
 com/Base/BaseTest.class
 com/crm/GoogleAccounts/FindAndDeleteGoogleAccountTest.class
@@ -22,7 +23,6 @@ com/crm/TestAccountSource.class
 com/resources/CredentialsProvider.class
 com/crm/SGCampaigns/DownloadCSVPerOffer.class
 com/utilities/Filters.class
-com/crm/TestAccountProxy.class
 com/crm/GoogleAccounts/Search.class
 com/crm/SGCampaigns/DownloadCSV.class
 com/crm/TestProxySource.class

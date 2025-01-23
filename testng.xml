@@ -14,7 +14,7 @@
 
    <test name="column Test">
       <classes>
-         <class name="com.crm.test" />
+         <class name="com.crm.Dashboard.TestDashboardSearch" />
       </classes>
    </test>
 </suite>
