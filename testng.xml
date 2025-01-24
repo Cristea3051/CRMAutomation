@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-   <!-- <test name="Google Accounts Test">
+<suite name="Test Google Accounts">
+   <test name="Google Accounts Test">
       <classes>
          <class name="com.crm.GoogleAccounts.CreateGoogleAccount" />
          <class name="com.crm.GoogleAccounts.UpdateGoogleAccount" />
@@ -10,12 +10,12 @@
          <class name="com.crm.GoogleAccounts.DeleteTableSettings" />
          <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest" />
       </classes>
-   </test> -->
+   </test>
 
-   <test name="Dash Card Test">
+   <!-- <test name="Dash Card Test">
       <classes>
          <class name="com.crm.Dashboard.TestDashboardRedirectCard" />
          <class name="com.crm.Dashboard.TestDashboardRedirectCard" />
       </classes>
-   </test>
+   </test> -->
 </suite>
