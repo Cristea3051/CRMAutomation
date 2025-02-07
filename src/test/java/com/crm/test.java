@@ -56,11 +56,19 @@ public class test extends BaseTest {
 
         Helpers.waitForSeconds(3);
         
-
+        driver.findElement(By.cssSelector(".fa-table")).click();
+        Helpers.waitForSeconds(3);
+        
+        WebElement selectSettings = driver.findElement(By.cssSelector("select#swap-from.custom-select"));
+        
+        // Crează un obiect Select pentru a interacționa cu dropdown-ul
+        Select SettingsRows = new Select(selectSettings);
+        
         Helpers.waitForSeconds(3);
         List<WebElement> headers = driver.findElements(By.cssSelector(".dataTables_scrollHeadInner > table:nth-child(1) > thead:nth-child(1) > tr:nth-child(1) > th"));
         List<WebElement> firstRow = driver.findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
         
+        // Iterează prin fiecare coloană din tabel
         for (int i = 0; i < headers.size(); i++) {
             // Scroll până la elementul curent din header
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", headers.get(i));
@@ -69,12 +77,26 @@ public class test extends BaseTest {
             String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : "";
         
             if (!header.isEmpty()) {
-                Reporter.log(header + " -> " + content + "\n");
+                // Iterează prin opțiunile din dropdown
+                boolean optionFound = false;
+                for (WebElement option : SettingsRows.getOptions()) {
+                    // Compară textul header + content cu opțiunile din dropdown
+                    if (option.getText().contains(header) && option.getText().contains(content)) {
+                        Reporter.log(header + " -> " + content + " -> Found in dropdown: " + option.getText());
+                        optionFound = true;
+                        break;  // Ieși din buclă dacă găsești o potrivire
+                    }
+                }
+        
+                // Dacă nu s-a găsit opțiunea, scrie un mesaj că nu a fost găsită
+                if (!optionFound) {
+                    Reporter.log(header + " -> " + content + " -> Not found in dropdown");
+                }
             } else {
-                Reporter.log("Header is empty for index " + i + "\n");
+                Reporter.log("Header is empty for index " + i);
             }
-            
         }        
+        
         driver.quit();
 
     }
