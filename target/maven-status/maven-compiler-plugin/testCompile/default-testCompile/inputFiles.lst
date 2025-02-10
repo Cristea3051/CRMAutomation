@@ -1,12 +1,11 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/UpdateGoogleAccount.java
-/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/TestAccountSource.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/ProxySource/TestProxySource.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/DeleteTableSettings.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/Dashboard/TestDashboardSearch.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/CreateAndOrderTableSettings.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/Search.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/DownloadCSVPerOffer.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/utilities/Filters.java
-/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/TestATMR.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/AccountProxy/TestAccountProxy.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/utilities/Login.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/CreateAndOrderTableSettings.java
@@ -16,6 +15,7 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/CreateTableSettingsPerOffer.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/Helpers.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/DownloadCSV.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/ATMRDash/TestATMR.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/test.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/SettingsHelper.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/CreateGoogleAccount.java
@@ -26,5 +26,4 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/Base/BaseTest.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/SearchSG.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/Dashboard/TestDashboardRedirectCard.java
-/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/TestProxySource.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/DownloadCSV.java

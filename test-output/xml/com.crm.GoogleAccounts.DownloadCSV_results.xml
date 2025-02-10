@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Google Accounts Test"
-           tests="1"
+           tests="4"
            failures="0"
            errors="0"
            skipped="0"
-           time="17.947">
+           time="70.532">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="17.947"
+                time="17.571"
+                classname="com.crm.GoogleAccounts.DownloadCSV">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="17.613"
+                classname="com.crm.GoogleAccounts.DownloadCSV">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="17.696"
+                classname="com.crm.GoogleAccounts.DownloadCSV">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="17.652"
                 classname="com.crm.GoogleAccounts.DownloadCSV">
             </testcase>
 </testsuite>
