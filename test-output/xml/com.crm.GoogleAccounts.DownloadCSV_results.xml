@@ -4,29 +4,29 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="70.532">
+           time="69.997">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="17.571"
+                time="17.450"
                 classname="com.crm.GoogleAccounts.DownloadCSV">
             </testcase>
             <testcase
                 name="signIn"
-                time="17.613"
+                time="17.440"
                 classname="com.crm.GoogleAccounts.DownloadCSV">
             </testcase>
             <testcase
                 name="signIn"
-                time="17.696"
+                time="17.516"
                 classname="com.crm.GoogleAccounts.DownloadCSV">
             </testcase>
             <testcase
                 name="signIn"
-                time="17.652"
+                time="17.591"
                 classname="com.crm.GoogleAccounts.DownloadCSV">
             </testcase>
 </testsuite>

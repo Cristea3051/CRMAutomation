@@ -831,55 +831,55 @@
       <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Ban Date -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Ban Reason -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Spend On Ban -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Under Review Reason -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Under Review Date -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Created At -> 2025-02-05 13:01:16]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[ID Verification -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[2FA -> Copy]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[License -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[GEO -> AT]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Usage -> SEARCH]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Sync From Date -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Backup Code -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1IkSAHYrCrOp8BN6oJvuQoagskHqo_yDr99uBA3iqBlA/edit?gid=0#gid=0]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Age -> 5 days]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Action -> ]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
       <![CDATA[Utilizator edward.s@vebo.io s-a logat]]>
@@ -994,7 +994,7 @@
       <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[ID Verification -> -]]>
     </line>
     <line>
       <![CDATA[2FA -> Copy]]>
@@ -1112,28 +1112,28 @@
       <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Other Fees -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[MB Delivery Date -> 2025-02-05 13:26:49]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[BH Date -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Ban Date -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Ban Reason -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Spend On Ban -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Under Review Reason -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Under Review Date -> -]]>
+      <![CDATA[Header is empty for index ]]>
     </line>
     <line>
       <![CDATA[Created At -> 2025-02-05 11:01:21]]>
@@ -1172,16 +1172,16 @@
       <![CDATA[Action -> ]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-02-10T10:45:01 EET" name="Test Google Accounts" finished-at="2025-02-10T10:49:54 EET" duration-ms="292875">
+  <suite started-at="2025-02-10T12:45:22 EET" name="Test Google Accounts" finished-at="2025-02-10T12:50:12 EET" duration-ms="290852">
     <groups>
     </groups>
-    <test started-at="2025-02-10T10:45:01 EET" name="Google Accounts Test" finished-at="2025-02-10T10:49:54 EET" duration-ms="292875">
+    <test started-at="2025-02-10T12:45:22 EET" name="Google Accounts Test" finished-at="2025-02-10T12:50:12 EET" duration-ms="290852">
       <class name="com.crm.GoogleAccounts.DownloadCSV">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T10:46:58 EET" name="setUp" finished-at="2025-02-10T10:46:59 EET" duration-ms="399" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:18 EET" name="setUp" finished-at="2025-02-10T12:47:19 EET" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T10:46:59 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:47:16 EET" duration-ms="17652" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:19 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:47:36 EET" duration-ms="17591" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1210,11 +1210,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T10:47:16 EET" name="setUp" finished-at="2025-02-10T10:47:17 EET" duration-ms="373" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:36 EET" name="setUp" finished-at="2025-02-10T12:47:37 EET" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T10:47:17 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:47:34 EET" duration-ms="17696" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:37 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:47:54 EET" duration-ms="17516" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1243,11 +1243,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T10:47:34 EET" name="setUp" finished-at="2025-02-10T10:47:35 EET" duration-ms="417" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:54 EET" name="setUp" finished-at="2025-02-10T12:47:55 EET" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T10:47:35 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:47:53 EET" duration-ms="17613" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:55 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:48:12 EET" duration-ms="17440" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1276,11 +1276,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T10:47:53 EET" name="setUp" finished-at="2025-02-10T10:47:53 EET" duration-ms="448" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:48:12 EET" name="setUp" finished-at="2025-02-10T12:48:13 EET" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T10:47:53 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:48:11 EET" duration-ms="17571" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:48:13 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:48:30 EET" duration-ms="17450" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1311,11 +1311,11 @@
         </test-method> <!-- signIn -->
       </class> <!-- com.crm.GoogleAccounts.DownloadCSV -->
       <class name="com.crm.GoogleAccounts.DeleteTableSettings">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T10:48:11 EET" name="setUp" finished-at="2025-02-10T10:48:11 EET" duration-ms="396" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:48:30 EET" name="setUp" finished-at="2025-02-10T12:48:31 EET" duration-ms="448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T10:48:11 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:48:36 EET" duration-ms="25495" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:48:31 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:48:56 EET" duration-ms="25530" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1491,11 +1491,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T10:48:36 EET" name="setUp" finished-at="2025-02-10T10:48:37 EET" duration-ms="405" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:48:56 EET" name="setUp" finished-at="2025-02-10T12:48:56 EET" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T10:48:37 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:49:02 EET" duration-ms="25557" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:48:56 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:49:22 EET" duration-ms="25099" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1604,63 +1604,63 @@
               <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Ban Date -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Ban Reason -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Spend On Ban -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Under Review Reason -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Under Review Date -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Created At -> 2025-02-05 13:01:16]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[ID Verification -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[2FA -> Copy]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[License -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[GEO -> AT]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Usage -> SEARCH]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Sync From Date -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Backup Code -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1IkSAHYrCrOp8BN6oJvuQoagskHqo_yDr99uBA3iqBlA/edit?gid=0#gid=0]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Age -> 5 days]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Action -> ]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T10:49:02 EET" name="setUp" finished-at="2025-02-10T10:49:03 EET" duration-ms="438" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:49:22 EET" name="setUp" finished-at="2025-02-10T12:49:22 EET" duration-ms="401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T10:49:03 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:49:28 EET" duration-ms="25277" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:49:22 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:49:47 EET" duration-ms="25034" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1787,7 +1787,7 @@
               <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[ID Verification -> -]]>
             </line>
             <line>
               <![CDATA[2FA -> Copy]]>
@@ -1821,11 +1821,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T10:49:28 EET" name="setUp" finished-at="2025-02-10T10:49:29 EET" duration-ms="423" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:49:47 EET" name="setUp" finished-at="2025-02-10T12:49:47 EET" duration-ms="427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T10:49:29 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:49:54 EET" duration-ms="25147" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:49:47 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:50:12 EET" duration-ms="25109" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1925,28 +1925,28 @@
               <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Other Fees -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[MB Delivery Date -> 2025-02-05 13:26:49]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[BH Date -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Ban Date -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Ban Reason -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Spend On Ban -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Under Review Reason -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
-              <![CDATA[Under Review Date -> -]]>
+              <![CDATA[Header is empty for index ]]>
             </line>
             <line>
               <![CDATA[Created At -> 2025-02-05 11:01:21]]>
@@ -1988,11 +1988,11 @@
         </test-method> <!-- signIn -->
       </class> <!-- com.crm.GoogleAccounts.DeleteTableSettings -->
       <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettings">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T10:45:01 EET" name="setUp" finished-at="2025-02-10T10:45:01 EET" duration-ms="648" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:45:22 EET" name="setUp" finished-at="2025-02-10T12:45:22 EET" duration-ms="590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T10:45:01 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:45:31 EET" duration-ms="29552" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:45:22 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:45:51 EET" duration-ms="29004" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2150,11 +2150,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T10:45:31 EET" name="setUp" finished-at="2025-02-10T10:45:31 EET" duration-ms="405" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:45:51 EET" name="setUp" finished-at="2025-02-10T12:45:52 EET" duration-ms="430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T10:45:31 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:46:00 EET" duration-ms="28857" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:45:52 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:46:20 EET" duration-ms="28648" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2297,11 +2297,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T10:46:00 EET" name="setUp" finished-at="2025-02-10T10:46:01 EET" duration-ms="411" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:46:20 EET" name="setUp" finished-at="2025-02-10T12:46:21 EET" duration-ms="404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T10:46:01 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:46:29 EET" duration-ms="28642" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:46:21 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:46:49 EET" duration-ms="28663" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2444,11 +2444,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T10:46:29 EET" name="setUp" finished-at="2025-02-10T10:46:30 EET" duration-ms="421" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:46:49 EET" name="setUp" finished-at="2025-02-10T12:46:50 EET" duration-ms="387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T10:46:30 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T10:46:58 EET" duration-ms="28614" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:46:50 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:47:18 EET" duration-ms="28723" status="PASS">
           <params>
             <param index="0">
               <value>
