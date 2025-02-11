@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Utilizator victor.cristea@vebo.io s-a logat]]>
@@ -8,38 +8,11 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
     </line>
     <line>
-      <![CDATA[A fost creat cu succes noua setare cu coloanele:
+      <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Name -> test develop]]>
-    </line>
-    <line>
-      <![CDATA[Status -> Active]]>
-    </line>
-    <line>
-      <![CDATA[Owner -> Victor Cristea]]>
-    </line>
-    <line>
-      <![CDATA[Price -> 1]]>
-    </line>
-    <line>
-      <![CDATA[Monthly Fee -> 1]]>
-    </line>
-    <line>
-      <![CDATA[Batch Type -> other]]>
-    </line>
-    <line>
-      <![CDATA[Accounts Count -> 0]]>
-    </line>
-    <line>
-      <![CDATA[Account Sources -> SuperADS]]>
     </line>
     <line>
       <![CDATA[Utilizator chriss.c@vebo.io s-a logat]]>
@@ -48,38 +21,11 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
     </line>
     <line>
-      <![CDATA[A fost creat cu succes noua setare cu coloanele:
+      <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Name -> test develop]]>
-    </line>
-    <line>
-      <![CDATA[Status -> Active]]>
-    </line>
-    <line>
-      <![CDATA[Owner -> Victor Cristea]]>
-    </line>
-    <line>
-      <![CDATA[Price -> 1]]>
-    </line>
-    <line>
-      <![CDATA[Monthly Fee -> 1]]>
-    </line>
-    <line>
-      <![CDATA[Batch Type -> other]]>
-    </line>
-    <line>
-      <![CDATA[Accounts Count -> 0]]>
-    </line>
-    <line>
-      <![CDATA[Account Sources -> SuperADS]]>
     </line>
     <line>
       <![CDATA[Utilizator marcel.g@vebo.io s-a logat]]>
@@ -88,38 +34,11 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
     </line>
     <line>
-      <![CDATA[A fost creat cu succes noua setare cu coloanele:
+      <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Name -> test develop]]>
-    </line>
-    <line>
-      <![CDATA[Status -> Active]]>
-    </line>
-    <line>
-      <![CDATA[Owner -> Victor Cristea]]>
-    </line>
-    <line>
-      <![CDATA[Price -> 1]]>
-    </line>
-    <line>
-      <![CDATA[Monthly Fee -> 1]]>
-    </line>
-    <line>
-      <![CDATA[Batch Type -> other]]>
-    </line>
-    <line>
-      <![CDATA[Accounts Count -> 0]]>
-    </line>
-    <line>
-      <![CDATA[Account Sources -> SuperADS]]>
     </line>
     <line>
       <![CDATA[Utilizator victor.cristea@vebo.io s-a logat]]>
@@ -128,74 +47,11 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[A fost ștearsă cu succes setarea
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
+    </line>
+    <line>
+      <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
-    </line>
-    <line>
-      <![CDATA[Index: 0, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 0]]>
-    </line>
-    <line>
-      <![CDATA[Index: 1, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 1]]>
-    </line>
-    <line>
-      <![CDATA[Index: 2, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 2]]>
-    </line>
-    <line>
-      <![CDATA[Index: 3, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 3]]>
-    </line>
-    <line>
-      <![CDATA[Index: 4, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 4]]>
-    </line>
-    <line>
-      <![CDATA[Index: 5, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 5]]>
-    </line>
-    <line>
-      <![CDATA[Index: 6, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 6]]>
-    </line>
-    <line>
-      <![CDATA[Index: 7, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 7]]>
-    </line>
-    <line>
-      <![CDATA[Index: 8, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 8]]>
-    </line>
-    <line>
-      <![CDATA[Index: 9, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 9]]>
-    </line>
-    <line>
-      <![CDATA[Index: 10, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 10]]>
     </line>
     <line>
       <![CDATA[Utilizator chriss.c@vebo.io s-a logat]]>
@@ -204,74 +60,11 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[A fost ștearsă cu succes setarea
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
+    </line>
+    <line>
+      <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
-    </line>
-    <line>
-      <![CDATA[Index: 0, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 0]]>
-    </line>
-    <line>
-      <![CDATA[Index: 1, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 1]]>
-    </line>
-    <line>
-      <![CDATA[Index: 2, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 2]]>
-    </line>
-    <line>
-      <![CDATA[Index: 3, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 3]]>
-    </line>
-    <line>
-      <![CDATA[Index: 4, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 4]]>
-    </line>
-    <line>
-      <![CDATA[Index: 5, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 5]]>
-    </line>
-    <line>
-      <![CDATA[Index: 6, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 6]]>
-    </line>
-    <line>
-      <![CDATA[Index: 7, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 7]]>
-    </line>
-    <line>
-      <![CDATA[Index: 8, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 8]]>
-    </line>
-    <line>
-      <![CDATA[Index: 9, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 9]]>
-    </line>
-    <line>
-      <![CDATA[Index: 10, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 10]]>
     </line>
     <line>
       <![CDATA[Utilizator marcel.g@vebo.io s-a logat]]>
@@ -280,86 +73,62 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[A fost ștearsă cu succes setarea
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
+    </line>
+    <line>
+      <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
     </line>
     <line>
-      <![CDATA[Index: 0, Text: ']]>
+      <![CDATA[Utilizator victor.cristea@vebo.io s-a logat]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index: 0]]>
+      <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Index: 1, Text: ']]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index: 1]]>
+      <![CDATA[A fost descarcat cu success fiserul CSV
+]]>
     </line>
     <line>
-      <![CDATA[Index: 2, Text: ']]>
+      <![CDATA[Utilizator chriss.c@vebo.io s-a logat]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index: 2]]>
+      <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Index: 3, Text: ']]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index: 3]]>
+      <![CDATA[A fost descarcat cu success fiserul CSV
+]]>
     </line>
     <line>
-      <![CDATA[Index: 4, Text: ']]>
+      <![CDATA[Utilizator marcel.g@vebo.io s-a logat]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index: 4]]>
+      <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Index: 5, Text: ']]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index: 5]]>
-    </line>
-    <line>
-      <![CDATA[Index: 6, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 6]]>
-    </line>
-    <line>
-      <![CDATA[Index: 7, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 7]]>
-    </line>
-    <line>
-      <![CDATA[Index: 8, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 8]]>
-    </line>
-    <line>
-      <![CDATA[Index: 9, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 9]]>
-    </line>
-    <line>
-      <![CDATA[Index: 10, Text: ']]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index: 10]]>
+      <![CDATA[A fost descarcat cu success fiserul CSV
+]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-02-11T12:22:57 EET" name="Test CRM AUTO" finished-at="2025-02-11T12:25:36 EET" duration-ms="158672">
+  <suite started-at="2025-02-11T17:34:17 EET" name="Test CRM AUTO" finished-at="2025-02-11T17:36:59 EET" duration-ms="161328">
     <groups>
     </groups>
-    <test started-at="2025-02-11T12:22:57 EET" name="Batch Account Test" finished-at="2025-02-11T12:25:36 EET" duration-ms="158672">
-      <class name="com.crm.BatchAccounts.CreateAndOrderTableSettings">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:22:57 EET" name="setUp" finished-at="2025-02-11T12:22:58 EET" duration-ms="509" status="PASS">
+    <test started-at="2025-02-11T17:34:17 EET" name="Download CSV Accounts Test" finished-at="2025-02-11T17:36:59 EET" duration-ms="161328">
+      <class name="com.crm.OtherAccounts.DownloadCSV">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:11 EET" name="setUp" finished-at="2025-02-11T17:35:12 EET" duration-ms="412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:22:58 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:23:26 EET" duration-ms="28389" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:12 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:35:29 EET" duration-ms="17401" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -380,46 +149,19 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
             </line>
             <line>
-              <![CDATA[A fost creat cu succes noua setare cu coloanele:
+              <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Name -> test develop]]>
-            </line>
-            <line>
-              <![CDATA[Status -> Active]]>
-            </line>
-            <line>
-              <![CDATA[Owner -> Victor Cristea]]>
-            </line>
-            <line>
-              <![CDATA[Price -> 1]]>
-            </line>
-            <line>
-              <![CDATA[Monthly Fee -> 1]]>
-            </line>
-            <line>
-              <![CDATA[Batch Type -> other]]>
-            </line>
-            <line>
-              <![CDATA[Accounts Count -> 0]]>
-            </line>
-            <line>
-              <![CDATA[Account Sources -> SuperADS]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:23:26 EET" name="setUp" finished-at="2025-02-11T12:23:26 EET" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:29 EET" name="setUp" finished-at="2025-02-11T17:35:29 EET" duration-ms="448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:23:26 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:23:55 EET" duration-ms="28388" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:29 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:35:47 EET" duration-ms="17304" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -440,46 +182,19 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
             </line>
             <line>
-              <![CDATA[A fost creat cu succes noua setare cu coloanele:
+              <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Name -> test develop]]>
-            </line>
-            <line>
-              <![CDATA[Status -> Active]]>
-            </line>
-            <line>
-              <![CDATA[Owner -> Victor Cristea]]>
-            </line>
-            <line>
-              <![CDATA[Price -> 1]]>
-            </line>
-            <line>
-              <![CDATA[Monthly Fee -> 1]]>
-            </line>
-            <line>
-              <![CDATA[Batch Type -> other]]>
-            </line>
-            <line>
-              <![CDATA[Accounts Count -> 0]]>
-            </line>
-            <line>
-              <![CDATA[Account Sources -> SuperADS]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:23:55 EET" name="setUp" finished-at="2025-02-11T12:23:55 EET" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:47 EET" name="setUp" finished-at="2025-02-11T17:35:47 EET" duration-ms="397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:23:55 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:24:23 EET" duration-ms="28414" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:47 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:36:05 EET" duration-ms="17555" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -500,48 +215,21 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
             </line>
             <line>
-              <![CDATA[A fost creat cu succes noua setare cu coloanele:
+              <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Name -> test develop]]>
-            </line>
-            <line>
-              <![CDATA[Status -> Active]]>
-            </line>
-            <line>
-              <![CDATA[Owner -> Victor Cristea]]>
-            </line>
-            <line>
-              <![CDATA[Price -> 1]]>
-            </line>
-            <line>
-              <![CDATA[Monthly Fee -> 1]]>
-            </line>
-            <line>
-              <![CDATA[Batch Type -> other]]>
-            </line>
-            <line>
-              <![CDATA[Accounts Count -> 0]]>
-            </line>
-            <line>
-              <![CDATA[Account Sources -> SuperADS]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-      </class> <!-- com.crm.BatchAccounts.CreateAndOrderTableSettings -->
-      <class name="com.crm.BatchAccounts.DeleteTableSettings">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:24:23 EET" name="setUp" finished-at="2025-02-11T12:24:23 EET" duration-ms="190" status="PASS">
+      </class> <!-- com.crm.OtherAccounts.DownloadCSV -->
+      <class name="com.crm.GoogleAccounts.DownloadCSV">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:05 EET" name="setUp" finished-at="2025-02-11T17:36:05 EET" duration-ms="463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:24:23 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:24:47 EET" duration-ms="24003" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:05 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:36:23 EET" duration-ms="17741" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -562,82 +250,19 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[A fost ștearsă cu succes setarea
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+            </line>
+            <line>
+              <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
-            </line>
-            <line>
-              <![CDATA[Index: 0, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 0]]>
-            </line>
-            <line>
-              <![CDATA[Index: 1, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 1]]>
-            </line>
-            <line>
-              <![CDATA[Index: 2, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 2]]>
-            </line>
-            <line>
-              <![CDATA[Index: 3, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 3]]>
-            </line>
-            <line>
-              <![CDATA[Index: 4, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 4]]>
-            </line>
-            <line>
-              <![CDATA[Index: 5, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 5]]>
-            </line>
-            <line>
-              <![CDATA[Index: 6, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 6]]>
-            </line>
-            <line>
-              <![CDATA[Index: 7, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 7]]>
-            </line>
-            <line>
-              <![CDATA[Index: 8, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 8]]>
-            </line>
-            <line>
-              <![CDATA[Index: 9, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 9]]>
-            </line>
-            <line>
-              <![CDATA[Index: 10, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 10]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:24:47 EET" name="setUp" finished-at="2025-02-11T12:24:48 EET" duration-ms="469" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:23 EET" name="setUp" finished-at="2025-02-11T17:36:23 EET" duration-ms="416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:24:48 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:25:12 EET" duration-ms="23808" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:23 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:36:41 EET" duration-ms="17465" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -658,82 +283,19 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[A fost ștearsă cu succes setarea
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+            </line>
+            <line>
+              <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
-            </line>
-            <line>
-              <![CDATA[Index: 0, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 0]]>
-            </line>
-            <line>
-              <![CDATA[Index: 1, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 1]]>
-            </line>
-            <line>
-              <![CDATA[Index: 2, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 2]]>
-            </line>
-            <line>
-              <![CDATA[Index: 3, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 3]]>
-            </line>
-            <line>
-              <![CDATA[Index: 4, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 4]]>
-            </line>
-            <line>
-              <![CDATA[Index: 5, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 5]]>
-            </line>
-            <line>
-              <![CDATA[Index: 6, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 6]]>
-            </line>
-            <line>
-              <![CDATA[Index: 7, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 7]]>
-            </line>
-            <line>
-              <![CDATA[Index: 8, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 8]]>
-            </line>
-            <line>
-              <![CDATA[Index: 9, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 9]]>
-            </line>
-            <line>
-              <![CDATA[Index: 10, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 10]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:25:12 EET" name="setUp" finished-at="2025-02-11T12:25:12 EET" duration-ms="199" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:41 EET" name="setUp" finished-at="2025-02-11T17:36:41 EET" duration-ms="435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:25:12 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:25:36 EET" duration-ms="23897" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:41 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:36:59 EET" duration-ms="17489" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -754,78 +316,116 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[A fost ștearsă cu succes setarea
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+            </line>
+            <line>
+              <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
-            </line>
-            <line>
-              <![CDATA[Index: 0, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 0]]>
-            </line>
-            <line>
-              <![CDATA[Index: 1, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 1]]>
-            </line>
-            <line>
-              <![CDATA[Index: 2, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 2]]>
-            </line>
-            <line>
-              <![CDATA[Index: 3, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 3]]>
-            </line>
-            <line>
-              <![CDATA[Index: 4, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 4]]>
-            </line>
-            <line>
-              <![CDATA[Index: 5, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 5]]>
-            </line>
-            <line>
-              <![CDATA[Index: 6, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 6]]>
-            </line>
-            <line>
-              <![CDATA[Index: 7, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 7]]>
-            </line>
-            <line>
-              <![CDATA[Index: 8, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 8]]>
-            </line>
-            <line>
-              <![CDATA[Index: 9, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 9]]>
-            </line>
-            <line>
-              <![CDATA[Index: 10, Text: ']]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index: 10]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-      </class> <!-- com.crm.BatchAccounts.DeleteTableSettings -->
-    </test> <!-- Batch Account Test -->
+      </class> <!-- com.crm.GoogleAccounts.DownloadCSV -->
+      <class name="com.crm.FacebookAccounts.DownloadCSV">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:17 EET" name="setUp" finished-at="2025-02-11T17:34:18 EET" duration-ms="638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:18 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:34:35 EET" duration-ms="17330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[victor.cristea@vebo.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[j8L3pc5hJ20Sjn10Lp!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Utilizator victor.cristea@vebo.io s-a logat]]>
+            </line>
+            <line>
+              <![CDATA[Debug Bar a fost ascuns]]>
+            </line>
+            <line>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
+            </line>
+            <line>
+              <![CDATA[A fost descarcat cu success fiserul CSV
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:35 EET" name="setUp" finished-at="2025-02-11T17:34:36 EET" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:36 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:34:53 EET" duration-ms="17494" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chriss.c@vebo.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[j8L3pc5hJ20Sjn10Lp!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Utilizator chriss.c@vebo.io s-a logat]]>
+            </line>
+            <line>
+              <![CDATA[Debug Bar a fost ascuns]]>
+            </line>
+            <line>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
+            </line>
+            <line>
+              <![CDATA[A fost descarcat cu success fiserul CSV
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:53 EET" name="setUp" finished-at="2025-02-11T17:34:54 EET" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:54 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:35:11 EET" duration-ms="17547" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[marcel.g@vebo.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[j8L3pc5hJ20Sjn10Lp!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Utilizator marcel.g@vebo.io s-a logat]]>
+            </line>
+            <line>
+              <![CDATA[Debug Bar a fost ascuns]]>
+            </line>
+            <line>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
+            </line>
+            <line>
+              <![CDATA[A fost descarcat cu success fiserul CSV
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+      </class> <!-- com.crm.FacebookAccounts.DownloadCSV -->
+    </test> <!-- Download CSV Accounts Test -->
   </suite> <!-- Test CRM AUTO -->
 </testng-results>

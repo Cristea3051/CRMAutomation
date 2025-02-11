@@ -19,10 +19,18 @@
       </classes>
    </test> -->
 
-   <test name="Batch Account Test">
+   <!-- <test name="Batch Account Test">
       <classes>
          <class name="com.crm.BatchAccounts.CreateAndOrderTableSettings" />
          <class name="com.crm.BatchAccounts.DeleteTableSettings" />
+      </classes>
+   </test> -->
+
+      <test name="Download CSV Accounts Test">
+      <classes>
+         <class name="com.crm.FacebookAccounts.DownloadCSV" />
+         <class name="com.crm.OtherAccounts.DownloadCSV" />
+         <class name="com.crm.GoogleAccounts.DownloadCSV" />
       </classes>
    </test>
    </suite>

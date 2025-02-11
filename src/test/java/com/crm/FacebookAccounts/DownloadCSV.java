@@ -1,4 +1,4 @@
-package com.crm.GoogleAccounts;
+package com.crm.FacebookAccounts;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
@@ -35,24 +35,24 @@ public class DownloadCSV {
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/google-accounts");
+        driver.get("http://crm-dash/facebook-accounts");
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
 
         Helpers.waitForSeconds(3);
-        WebElement select = driver.findElement(By.cssSelector("select.custom-select[name='google-accounts-list_length']"));
+        WebElement select = driver.findElement(By.cssSelector("select.custom-select[name='facebook-accounts-list_length']"));
         Select rows = new Select(select);
         rows.selectByIndex(0);
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-                "//button[@title='Export to CSV File' and contains(@class, 'buttons-csv') and @aria-controls='google-accounts-list']")))
+                "//button[@title='Export to CSV File' and contains(@class, 'buttons-csv') and @aria-controls='facebook-accounts-list']")))
                 .click();
 
         try {
             Helpers.waitForSeconds(3);
-            WebElement confirmButton = driver.findElement(By.id("google-accounts-list-export-button"));
+            WebElement confirmButton = driver.findElement(By.id("facebook-accounts-list-export-button"));
             confirmButton.click();
 
             Reporter.log("A fost descarcat cu success fiserul CSV" + "\n");

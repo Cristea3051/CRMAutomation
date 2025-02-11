@@ -1,6 +1,9 @@
+com/crm/FacebookAccounts/DownloadCSV.class
 com/resources/configfiles/SettingsHelper.class
+com/crm/OtherAccounts/DownloadCSV.class
 com/crm/SGCampaigns/DeleteTableSettings.class
 com/crm/GoogleAccounts/UpdateGoogleAccount.class
+com/crm/BatchAccounts/TestBatchSettings.class
 com/crm/SGCampaigns/CreateTableSettingsPerOffer.class
 com/crm/SGCampaigns/DeleteSettingsPerOffer.class
 com/crm/Dashboard/TestDashboardSearch.class

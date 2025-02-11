@@ -7,6 +7,8 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/Search.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/DownloadCSVPerOffer.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/utilities/Filters.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/OtherAccounts/DownloadCSV.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/BatchAccounts/TestBatchSettings.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/AccountProxy/TestAccountProxy.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/utilities/Login.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/CreateAndOrderTableSettings.java
@@ -15,6 +17,7 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/ClientTest/SpendAndTotalSpendTest.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/CreateTableSettingsPerOffer.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/Helpers.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/FacebookAccounts/DownloadCSV.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/DownloadCSV.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/ATMRDash/TestATMR.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/test.java
