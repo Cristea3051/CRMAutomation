@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Batch Account Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="71.708">
+    <properties></properties>
+
+
+
+            <testcase
+                name="signIn"
+                time="24.003"
+                classname="com.crm.BatchAccounts.DeleteTableSettings">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="23.808"
+                classname="com.crm.BatchAccounts.DeleteTableSettings">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="23.897"
+                classname="com.crm.BatchAccounts.DeleteTableSettings">
+            </testcase>
+</testsuite>

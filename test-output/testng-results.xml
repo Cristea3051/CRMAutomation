@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Utilizator victor.cristea@vebo.io s-a logat]]>
@@ -8,7 +8,7 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
     </line>
     <line>
       <![CDATA[A fost creat cu succes noua setare cu coloanele:
@@ -18,139 +18,37 @@
       <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Name -> GUL-AT2100-FRM-167355]]>
+      <![CDATA[Name -> test develop]]>
     </line>
     <line>
-      <![CDATA[Status -> New]]>
+      <![CDATA[Status -> Active]]>
     </line>
     <line>
-      <![CDATA[Batch Name -> FJ500]]>
+      <![CDATA[Owner -> Victor Cristea]]>
     </line>
     <line>
-      <![CDATA[Price -> $379]]>
+      <![CDATA[Price -> 1]]>
     </line>
     <line>
-      <![CDATA[Card Name -> -]]>
+      <![CDATA[Monthly Fee -> 1]]>
     </line>
     <line>
-      <![CDATA[Account Id -> 9955720227]]>
+      <![CDATA[Batch Type -> other]]>
     </line>
     <line>
-      <![CDATA[Account Source -> FJ]]>
+      <![CDATA[Accounts Count -> 0]]>
     </line>
     <line>
-      <![CDATA[First Last Name -> -]]>
+      <![CDATA[Account Sources -> SuperADS]]>
     </line>
     <line>
-      <![CDATA[Login -> -]]>
-    </line>
-    <line>
-      <![CDATA[Password -> -]]>
-    </line>
-    <line>
-      <![CDATA[Proxy -> -]]>
-    </line>
-    <line>
-      <![CDATA[Proxy Type -> -]]>
-    </line>
-    <line>
-      <![CDATA[Account RDP -> Download RDP File]]>
-    </line>
-    <line>
-      <![CDATA[Account Owner -> Dorin M]]>
-    </line>
-    <line>
-      <![CDATA[Domain -> paulinesails.com]]>
-    </line>
-    <line>
-      <![CDATA[Farmer -> FJ]]>
-    </line>
-    <line>
-      <![CDATA[Last Update -> 2025-02-05 13:43]]>
-    </line>
-    <line>
-      <![CDATA[Email Login -> -]]>
-    </line>
-    <line>
-      <![CDATA[Email Password -> -]]>
-    </line>
-    <line>
-      <![CDATA[Warming Cost -> 9.2]]>
-    </line>
-    <line>
-      <![CDATA[Monthly Fees -> -]]>
-    </line>
-    <line>
-      <![CDATA[Under Review Reason -> -]]>
-    </line>
-    <line>
-      <![CDATA[Revenue -> -]]>
-    </line>
-    <line>
-      <![CDATA[Profit -> -9.2]]>
-    </line>
-    <line>
-      <![CDATA[Spend -> 9.2]]>
-    </line>
-    <line>
-      <![CDATA[BH Spend -> -]]>
-    </line>
-    <line>
-      <![CDATA[Other Fees -> -]]>
-    </line>
-    <line>
-      <![CDATA[MB Delivery Date -> 2025-02-05 13:43:03]]>
-    </line>
-    <line>
-      <![CDATA[BH Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Ban Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Ban Reason -> -]]>
-    </line>
-    <line>
-      <![CDATA[Spend On Ban -> -]]>
-    </line>
-    <line>
-      <![CDATA[Under Review Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[ID Verification -> -]]>
-    </line>
-    <line>
-      <![CDATA[2FA -> Copy]]>
-    </line>
-    <line>
-      <![CDATA[License -> -]]>
-    </line>
-    <line>
-      <![CDATA[GEO -> AT]]>
-    </line>
-    <line>
-      <![CDATA[Usage -> SEARCH]]>
-    </line>
-    <line>
-      <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-    </line>
-    <line>
-      <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1IkSAHYrCrOp8BN6oJvuQoagskHqo_yDr99uBA3iqBlA/edit?gid=0#gid=0]]>
-    </line>
-    <line>
-      <![CDATA[Age -> 5 days]]>
-    </line>
-    <line>
-      <![CDATA[Action -> ]]>
-    </line>
-    <line>
-      <![CDATA[Utilizator dorin.m@vebo.io s-a logat]]>
+      <![CDATA[Utilizator chriss.c@vebo.io s-a logat]]>
     </line>
     <line>
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
     </line>
     <line>
       <![CDATA[A fost creat cu succes noua setare cu coloanele:
@@ -160,124 +58,37 @@
       <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Name -> GUL-AT2100-FRM-167355]]>
+      <![CDATA[Name -> test develop]]>
     </line>
     <line>
-      <![CDATA[Status -> New]]>
+      <![CDATA[Status -> Active]]>
     </line>
     <line>
-      <![CDATA[Batch Name -> FJ500]]>
+      <![CDATA[Owner -> Victor Cristea]]>
     </line>
     <line>
-      <![CDATA[Price -> $379]]>
+      <![CDATA[Price -> 1]]>
     </line>
     <line>
-      <![CDATA[Account Id -> 9955720227]]>
+      <![CDATA[Monthly Fee -> 1]]>
     </line>
     <line>
-      <![CDATA[Account Source -> FJ]]>
+      <![CDATA[Batch Type -> other]]>
     </line>
     <line>
-      <![CDATA[First Last Name -> -]]>
+      <![CDATA[Accounts Count -> 0]]>
     </line>
     <line>
-      <![CDATA[Login -> -]]>
+      <![CDATA[Account Sources -> SuperADS]]>
     </line>
     <line>
-      <![CDATA[Password -> -]]>
-    </line>
-    <line>
-      <![CDATA[Account RDP -> Download RDP File]]>
-    </line>
-    <line>
-      <![CDATA[Account Owner -> Dorin M]]>
-    </line>
-    <line>
-      <![CDATA[Domain -> paulinesails.com]]>
-    </line>
-    <line>
-      <![CDATA[Farmer -> FJ]]>
-    </line>
-    <line>
-      <![CDATA[Last Update -> 2025-02-05 13:43]]>
-    </line>
-    <line>
-      <![CDATA[Warming Cost -> 9.2]]>
-    </line>
-    <line>
-      <![CDATA[Monthly Fees -> -]]>
-    </line>
-    <line>
-      <![CDATA[Under Review Reason -> -]]>
-    </line>
-    <line>
-      <![CDATA[Revenue -> -]]>
-    </line>
-    <line>
-      <![CDATA[Profit -> -9.2]]>
-    </line>
-    <line>
-      <![CDATA[Spend -> 9.2]]>
-    </line>
-    <line>
-      <![CDATA[BH Spend -> -]]>
-    </line>
-    <line>
-      <![CDATA[Other Fees -> -]]>
-    </line>
-    <line>
-      <![CDATA[MB Delivery Date -> 2025-02-05 13:43:03]]>
-    </line>
-    <line>
-      <![CDATA[BH Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Ban Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Ban Reason -> -]]>
-    </line>
-    <line>
-      <![CDATA[Spend On Ban -> -]]>
-    </line>
-    <line>
-      <![CDATA[Under Review Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[ID Verification -> -]]>
-    </line>
-    <line>
-      <![CDATA[2FA -> Copy]]>
-    </line>
-    <line>
-      <![CDATA[License -> -]]>
-    </line>
-    <line>
-      <![CDATA[GEO -> AT]]>
-    </line>
-    <line>
-      <![CDATA[Usage -> SEARCH]]>
-    </line>
-    <line>
-      <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-    </line>
-    <line>
-      <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1IkSAHYrCrOp8BN6oJvuQoagskHqo_yDr99uBA3iqBlA/edit?gid=0#gid=0]]>
-    </line>
-    <line>
-      <![CDATA[Age -> 5 days]]>
-    </line>
-    <line>
-      <![CDATA[Action -> ]]>
-    </line>
-    <line>
-      <![CDATA[Utilizator edward.s@vebo.io s-a logat]]>
+      <![CDATA[Utilizator marcel.g@vebo.io s-a logat]]>
     </line>
     <line>
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
     </line>
     <line>
       <![CDATA[A fost creat cu succes noua setare cu coloanele:
@@ -287,294 +98,28 @@
       <![CDATA[Header is empty for index ]]>
     </line>
     <line>
-      <![CDATA[Name -> ONP-GDN-1071]]>
+      <![CDATA[Name -> test develop]]>
     </line>
     <line>
-      <![CDATA[Status -> New]]>
+      <![CDATA[Status -> Active]]>
     </line>
     <line>
-      <![CDATA[Batch Name -> ONP]]>
+      <![CDATA[Owner -> Victor Cristea]]>
     </line>
     <line>
-      <![CDATA[Price -> $200]]>
+      <![CDATA[Price -> 1]]>
     </line>
     <line>
-      <![CDATA[Account Id -> 2403438248]]>
+      <![CDATA[Monthly Fee -> 1]]>
     </line>
     <line>
-      <![CDATA[Account Source -> ONP-infarmed]]>
+      <![CDATA[Batch Type -> other]]>
     </line>
     <line>
-      <![CDATA[First Last Name -> -]]>
+      <![CDATA[Accounts Count -> 0]]>
     </line>
     <line>
-      <![CDATA[Login -> uanirvana34zeal52@gmail.com]]>
-    </line>
-    <line>
-      <![CDATA[Password -> Tixeku8384binup]]>
-    </line>
-    <line>
-      <![CDATA[Account RDP -> OCTO inside]]>
-    </line>
-    <line>
-      <![CDATA[Account Owner -> Edward S]]>
-    </line>
-    <line>
-      <![CDATA[Domain -> ironswomancon.com]]>
-    </line>
-    <line>
-      <![CDATA[Farmer -> ONP-infarmed]]>
-    </line>
-    <line>
-      <![CDATA[Last Update -> 2025-02-05 10:27]]>
-    </line>
-    <line>
-      <![CDATA[Warming Cost -> -]]>
-    </line>
-    <line>
-      <![CDATA[Monthly Fees -> -]]>
-    </line>
-    <line>
-      <![CDATA[Under Review Reason -> -]]>
-    </line>
-    <line>
-      <![CDATA[Revenue -> -]]>
-    </line>
-    <line>
-      <![CDATA[Profit -> -]]>
-    </line>
-    <line>
-      <![CDATA[Spend -> -]]>
-    </line>
-    <line>
-      <![CDATA[BH Spend -> -]]>
-    </line>
-    <line>
-      <![CDATA[Other Fees -> -]]>
-    </line>
-    <line>
-      <![CDATA[MB Delivery Date -> 2025-02-05 10:27:49]]>
-    </line>
-    <line>
-      <![CDATA[BH Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Ban Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Ban Reason -> -]]>
-    </line>
-    <line>
-      <![CDATA[Spend On Ban -> -]]>
-    </line>
-    <line>
-      <![CDATA[Under Review Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[ID Verification -> -]]>
-    </line>
-    <line>
-      <![CDATA[2FA -> Copy]]>
-    </line>
-    <line>
-      <![CDATA[License -> -]]>
-    </line>
-    <line>
-      <![CDATA[GEO -> AU]]>
-    </line>
-    <line>
-      <![CDATA[Usage -> SEARCH]]>
-    </line>
-    <line>
-      <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-    </line>
-    <line>
-      <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1LPerVZtYX2rpxuOfcBMXJjTZptiNEHHkdYEV3PqnqDs/edit?gid=0#gid=0]]>
-    </line>
-    <line>
-      <![CDATA[Age -> 5 days]]>
-    </line>
-    <line>
-      <![CDATA[Action -> ]]>
-    </line>
-    <line>
-      <![CDATA[Utilizator andreic@vebo.io s-a logat]]>
-    </line>
-    <line>
-      <![CDATA[Debug Bar a fost ascuns]]>
-    </line>
-    <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
-    </line>
-    <line>
-      <![CDATA[A fost creat cu succes noua setare cu coloanele:
-]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Name -> GUL-AT2164-FRM-168020]]>
-    </line>
-    <line>
-      <![CDATA[Status -> New]]>
-    </line>
-    <line>
-      <![CDATA[Batch Name -> FJ500]]>
-    </line>
-    <line>
-      <![CDATA[Price -> $379]]>
-    </line>
-    <line>
-      <![CDATA[Account Id -> 4682622825]]>
-    </line>
-    <line>
-      <![CDATA[Account Source -> FJ]]>
-    </line>
-    <line>
-      <![CDATA[First Last Name -> -]]>
-    </line>
-    <line>
-      <![CDATA[Login -> -]]>
-    </line>
-    <line>
-      <![CDATA[Password -> -]]>
-    </line>
-    <line>
-      <![CDATA[Account RDP -> Download RDP File]]>
-    </line>
-    <line>
-      <![CDATA[Account Owner -> Andrei C]]>
-    </line>
-    <line>
-      <![CDATA[Domain -> harrisonwrite.com]]>
-    </line>
-    <line>
-      <![CDATA[Farmer -> FJ]]>
-    </line>
-    <line>
-      <![CDATA[Last Update -> 2025-02-05 13:26]]>
-    </line>
-    <line>
-      <![CDATA[Warming Cost -> 5.83]]>
-    </line>
-    <line>
-      <![CDATA[Monthly Fees -> 149.00]]>
-    </line>
-    <line>
-      <![CDATA[Under Review Reason -> -]]>
-    </line>
-    <line>
-      <![CDATA[Revenue -> -]]>
-    </line>
-    <line>
-      <![CDATA[Profit -> -154.83]]>
-    </line>
-    <line>
-      <![CDATA[Spend -> 5.83]]>
-    </line>
-    <line>
-      <![CDATA[BH Spend -> -]]>
-    </line>
-    <line>
-      <![CDATA[Other Fees -> -]]>
-    </line>
-    <line>
-      <![CDATA[MB Delivery Date -> 2025-02-05 13:26:49]]>
-    </line>
-    <line>
-      <![CDATA[BH Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Ban Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Ban Reason -> -]]>
-    </line>
-    <line>
-      <![CDATA[Spend On Ban -> -]]>
-    </line>
-    <line>
-      <![CDATA[Under Review Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[ID Verification -> -]]>
-    </line>
-    <line>
-      <![CDATA[2FA -> Copy]]>
-    </line>
-    <line>
-      <![CDATA[License -> -]]>
-    </line>
-    <line>
-      <![CDATA[GEO -> AT]]>
-    </line>
-    <line>
-      <![CDATA[Usage -> DISPLAY]]>
-    </line>
-    <line>
-      <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-    </line>
-    <line>
-      <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1NdbcOxN4EpUCLH28pcbVeahB1eujeByHRwP6CcJnI5c/edit?gid=0#gid=0]]>
-    </line>
-    <line>
-      <![CDATA[Age -> 5 days]]>
-    </line>
-    <line>
-      <![CDATA[Action -> ]]>
-    </line>
-    <line>
-      <![CDATA[Utilizator victor.cristea@vebo.io s-a logat]]>
-    </line>
-    <line>
-      <![CDATA[Debug Bar a fost ascuns]]>
-    </line>
-    <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
-    </line>
-    <line>
-      <![CDATA[A fost descarcat cu success fiserul CSV
-]]>
-    </line>
-    <line>
-      <![CDATA[Utilizator dorin.m@vebo.io s-a logat]]>
-    </line>
-    <line>
-      <![CDATA[Debug Bar a fost ascuns]]>
-    </line>
-    <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
-    </line>
-    <line>
-      <![CDATA[A fost descarcat cu success fiserul CSV
-]]>
-    </line>
-    <line>
-      <![CDATA[Utilizator edward.s@vebo.io s-a logat]]>
-    </line>
-    <line>
-      <![CDATA[Debug Bar a fost ascuns]]>
-    </line>
-    <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
-    </line>
-    <line>
-      <![CDATA[A fost descarcat cu success fiserul CSV
-]]>
-    </line>
-    <line>
-      <![CDATA[Utilizator andreic@vebo.io s-a logat]]>
-    </line>
-    <line>
-      <![CDATA[Debug Bar a fost ascuns]]>
-    </line>
-    <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
-    </line>
-    <line>
-      <![CDATA[A fost descarcat cu success fiserul CSV
-]]>
+      <![CDATA[Account Sources -> SuperADS]]>
     </line>
     <line>
       <![CDATA[Utilizator victor.cristea@vebo.io s-a logat]]>
@@ -587,157 +132,73 @@
 ]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 0, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 0]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 1, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 1]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 2, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 2]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 3, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 3]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 4, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 4]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 5, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 5]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 6, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 6]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 7, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 7]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 8, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 8]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 9, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 9]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 10, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 10]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[BH Spend -> -]]>
-    </line>
-    <line>
-      <![CDATA[Other Fees -> -]]>
-    </line>
-    <line>
-      <![CDATA[MB Delivery Date -> 2025-02-05 13:43:03]]>
-    </line>
-    <line>
-      <![CDATA[BH Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Ban Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Ban Reason -> -]]>
-    </line>
-    <line>
-      <![CDATA[Spend On Ban -> -]]>
-    </line>
-    <line>
-      <![CDATA[Under Review Reason -> -]]>
-    </line>
-    <line>
-      <![CDATA[Under Review Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Created At -> 2025-02-05 13:01:16]]>
-    </line>
-    <line>
-      <![CDATA[ID Verification -> -]]>
-    </line>
-    <line>
-      <![CDATA[2FA -> Copy]]>
-    </line>
-    <line>
-      <![CDATA[License -> -]]>
-    </line>
-    <line>
-      <![CDATA[GEO -> AT]]>
-    </line>
-    <line>
-      <![CDATA[Usage -> SEARCH]]>
-    </line>
-    <line>
-      <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-    </line>
-    <line>
-      <![CDATA[Sync From Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Backup Code -> -]]>
-    </line>
-    <line>
-      <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1IkSAHYrCrOp8BN6oJvuQoagskHqo_yDr99uBA3iqBlA/edit?gid=0#gid=0]]>
-    </line>
-    <line>
-      <![CDATA[Age -> 5 days]]>
-    </line>
-    <line>
-      <![CDATA[Action -> ]]>
-    </line>
-    <line>
-      <![CDATA[Utilizator dorin.m@vebo.io s-a logat]]>
+      <![CDATA[Utilizator chriss.c@vebo.io s-a logat]]>
     </line>
     <line>
       <![CDATA[Debug Bar a fost ascuns]]>
@@ -747,142 +208,73 @@
 ]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 0, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 0]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 1, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 1]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 2, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 2]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 3, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 3]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 4, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 4]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 5, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 5]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 6, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 6]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 7, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 7]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 8, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 8]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 9, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 9]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 10, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 10]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Utilizator edward.s@vebo.io s-a logat]]>
+      <![CDATA[Utilizator marcel.g@vebo.io s-a logat]]>
     </line>
     <line>
       <![CDATA[Debug Bar a fost ascuns]]>
@@ -892,296 +284,82 @@
 ]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 0, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 0]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 1, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 1]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 2, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 2]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 3, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 3]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 4, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 4]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 5, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 5]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 6, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 6]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 7, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 7]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 8, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 8]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 9, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Header is empty for index: 9]]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
+      <![CDATA[Index: 10, Text: ']]>
     </line>
     <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[ID Verification -> -]]>
-    </line>
-    <line>
-      <![CDATA[2FA -> Copy]]>
-    </line>
-    <line>
-      <![CDATA[License -> -]]>
-    </line>
-    <line>
-      <![CDATA[GEO -> AU]]>
-    </line>
-    <line>
-      <![CDATA[Usage -> SEARCH]]>
-    </line>
-    <line>
-      <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-    </line>
-    <line>
-      <![CDATA[Sync From Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Backup Code -> -]]>
-    </line>
-    <line>
-      <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1LPerVZtYX2rpxuOfcBMXJjTZptiNEHHkdYEV3PqnqDs/edit?gid=0#gid=0]]>
-    </line>
-    <line>
-      <![CDATA[Age -> 5 days]]>
-    </line>
-    <line>
-      <![CDATA[Action -> ]]>
-    </line>
-    <line>
-      <![CDATA[Utilizator andreic@vebo.io s-a logat]]>
-    </line>
-    <line>
-      <![CDATA[Debug Bar a fost ascuns]]>
-    </line>
-    <line>
-      <![CDATA[A fost ștearsă cu succes setarea
-]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Header is empty for index ]]>
-    </line>
-    <line>
-      <![CDATA[Created At -> 2025-02-05 11:01:21]]>
-    </line>
-    <line>
-      <![CDATA[ID Verification -> -]]>
-    </line>
-    <line>
-      <![CDATA[2FA -> Copy]]>
-    </line>
-    <line>
-      <![CDATA[License -> -]]>
-    </line>
-    <line>
-      <![CDATA[GEO -> AT]]>
-    </line>
-    <line>
-      <![CDATA[Usage -> DISPLAY]]>
-    </line>
-    <line>
-      <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-    </line>
-    <line>
-      <![CDATA[Sync From Date -> -]]>
-    </line>
-    <line>
-      <![CDATA[Backup Code -> -]]>
-    </line>
-    <line>
-      <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1NdbcOxN4EpUCLH28pcbVeahB1eujeByHRwP6CcJnI5c/edit?gid=0#gid=0]]>
-    </line>
-    <line>
-      <![CDATA[Age -> 5 days]]>
-    </line>
-    <line>
-      <![CDATA[Action -> ]]>
+      <![CDATA[Header is empty for index: 10]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-02-10T12:45:22 EET" name="Test Google Accounts" finished-at="2025-02-10T12:50:12 EET" duration-ms="290852">
+  <suite started-at="2025-02-11T12:22:57 EET" name="Test CRM AUTO" finished-at="2025-02-11T12:25:36 EET" duration-ms="158672">
     <groups>
     </groups>
-    <test started-at="2025-02-10T12:45:22 EET" name="Google Accounts Test" finished-at="2025-02-10T12:50:12 EET" duration-ms="290852">
-      <class name="com.crm.GoogleAccounts.DownloadCSV">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:18 EET" name="setUp" finished-at="2025-02-10T12:47:19 EET" duration-ms="353" status="PASS">
+    <test started-at="2025-02-11T12:22:57 EET" name="Batch Account Test" finished-at="2025-02-11T12:25:36 EET" duration-ms="158672">
+      <class name="com.crm.BatchAccounts.CreateAndOrderTableSettings">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:22:57 EET" name="setUp" finished-at="2025-02-11T12:22:58 EET" duration-ms="509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:19 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:47:36 EET" duration-ms="17591" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:22:58 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:23:26 EET" duration-ms="28389" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1202,23 +380,50 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
             </line>
             <line>
-              <![CDATA[A fost descarcat cu success fiserul CSV
+              <![CDATA[A fost creat cu succes noua setare cu coloanele:
 ]]>
+            </line>
+            <line>
+              <![CDATA[Header is empty for index ]]>
+            </line>
+            <line>
+              <![CDATA[Name -> test develop]]>
+            </line>
+            <line>
+              <![CDATA[Status -> Active]]>
+            </line>
+            <line>
+              <![CDATA[Owner -> Victor Cristea]]>
+            </line>
+            <line>
+              <![CDATA[Price -> 1]]>
+            </line>
+            <line>
+              <![CDATA[Monthly Fee -> 1]]>
+            </line>
+            <line>
+              <![CDATA[Batch Type -> other]]>
+            </line>
+            <line>
+              <![CDATA[Accounts Count -> 0]]>
+            </line>
+            <line>
+              <![CDATA[Account Sources -> SuperADS]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:36 EET" name="setUp" finished-at="2025-02-10T12:47:37 EET" duration-ms="376" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:23:26 EET" name="setUp" finished-at="2025-02-11T12:23:26 EET" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:37 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:47:54 EET" duration-ms="17516" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:23:26 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:23:55 EET" duration-ms="28388" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[dorin.m@vebo.io]]>
+                <![CDATA[chriss.c@vebo.io]]>
               </value>
             </param>
             <param index="1">
@@ -1229,29 +434,56 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Utilizator dorin.m@vebo.io s-a logat]]>
+              <![CDATA[Utilizator chriss.c@vebo.io s-a logat]]>
             </line>
             <line>
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
             </line>
             <line>
-              <![CDATA[A fost descarcat cu success fiserul CSV
+              <![CDATA[A fost creat cu succes noua setare cu coloanele:
 ]]>
+            </line>
+            <line>
+              <![CDATA[Header is empty for index ]]>
+            </line>
+            <line>
+              <![CDATA[Name -> test develop]]>
+            </line>
+            <line>
+              <![CDATA[Status -> Active]]>
+            </line>
+            <line>
+              <![CDATA[Owner -> Victor Cristea]]>
+            </line>
+            <line>
+              <![CDATA[Price -> 1]]>
+            </line>
+            <line>
+              <![CDATA[Monthly Fee -> 1]]>
+            </line>
+            <line>
+              <![CDATA[Batch Type -> other]]>
+            </line>
+            <line>
+              <![CDATA[Accounts Count -> 0]]>
+            </line>
+            <line>
+              <![CDATA[Account Sources -> SuperADS]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:54 EET" name="setUp" finished-at="2025-02-10T12:47:55 EET" duration-ms="415" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:23:55 EET" name="setUp" finished-at="2025-02-11T12:23:55 EET" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:47:55 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:48:12 EET" duration-ms="17440" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.CreateAndOrderTableSettings@78aab498]" started-at="2025-02-11T12:23:55 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:24:23 EET" duration-ms="28414" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edward.s@vebo.io]]>
+                <![CDATA[marcel.g@vebo.io]]>
               </value>
             </param>
             <param index="1">
@@ -1262,60 +494,54 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Utilizator edward.s@vebo.io s-a logat]]>
+              <![CDATA[Utilizator marcel.g@vebo.io s-a logat]]>
             </line>
             <line>
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Batch accounts - iCRM v.37.4]]>
             </line>
             <line>
-              <![CDATA[A fost descarcat cu success fiserul CSV
+              <![CDATA[A fost creat cu succes noua setare cu coloanele:
 ]]>
+            </line>
+            <line>
+              <![CDATA[Header is empty for index ]]>
+            </line>
+            <line>
+              <![CDATA[Name -> test develop]]>
+            </line>
+            <line>
+              <![CDATA[Status -> Active]]>
+            </line>
+            <line>
+              <![CDATA[Owner -> Victor Cristea]]>
+            </line>
+            <line>
+              <![CDATA[Price -> 1]]>
+            </line>
+            <line>
+              <![CDATA[Monthly Fee -> 1]]>
+            </line>
+            <line>
+              <![CDATA[Batch Type -> other]]>
+            </line>
+            <line>
+              <![CDATA[Accounts Count -> 0]]>
+            </line>
+            <line>
+              <![CDATA[Account Sources -> SuperADS]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:48:12 EET" name="setUp" finished-at="2025-02-10T12:48:13 EET" duration-ms="428" status="PASS">
+      </class> <!-- com.crm.BatchAccounts.CreateAndOrderTableSettings -->
+      <class name="com.crm.BatchAccounts.DeleteTableSettings">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:24:23 EET" name="setUp" finished-at="2025-02-11T12:24:23 EET" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-10T12:48:13 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:48:30 EET" duration-ms="17450" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[andreic@vebo.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[j8L3pc5hJ20Sjn10Lp!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Utilizator andreic@vebo.io s-a logat]]>
-            </line>
-            <line>
-              <![CDATA[Debug Bar a fost ascuns]]>
-            </line>
-            <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
-            </line>
-            <line>
-              <![CDATA[A fost descarcat cu success fiserul CSV
-]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- signIn -->
-      </class> <!-- com.crm.GoogleAccounts.DownloadCSV -->
-      <class name="com.crm.GoogleAccounts.DeleteTableSettings">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:48:30 EET" name="setUp" finished-at="2025-02-10T12:48:31 EET" duration-ms="448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:48:31 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:48:56 EET" duration-ms="25530" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:24:23 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:24:47 EET" duration-ms="24003" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1340,166 +566,82 @@
 ]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 0, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 0]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 1, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 1]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 2, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 2]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 3, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 3]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 4, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 4]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 5, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 5]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 6, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 6]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 7, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 7]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 8, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 8]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 9, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 9]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 10, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[BH Spend -> -]]>
-            </line>
-            <line>
-              <![CDATA[Other Fees -> -]]>
-            </line>
-            <line>
-              <![CDATA[MB Delivery Date -> 2025-02-05 13:43:03]]>
-            </line>
-            <line>
-              <![CDATA[BH Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Ban Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Ban Reason -> -]]>
-            </line>
-            <line>
-              <![CDATA[Spend On Ban -> -]]>
-            </line>
-            <line>
-              <![CDATA[Under Review Reason -> -]]>
-            </line>
-            <line>
-              <![CDATA[Under Review Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Created At -> 2025-02-05 13:01:16]]>
-            </line>
-            <line>
-              <![CDATA[ID Verification -> -]]>
-            </line>
-            <line>
-              <![CDATA[2FA -> Copy]]>
-            </line>
-            <line>
-              <![CDATA[License -> -]]>
-            </line>
-            <line>
-              <![CDATA[GEO -> AT]]>
-            </line>
-            <line>
-              <![CDATA[Usage -> SEARCH]]>
-            </line>
-            <line>
-              <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-            </line>
-            <line>
-              <![CDATA[Sync From Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Backup Code -> -]]>
-            </line>
-            <line>
-              <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1IkSAHYrCrOp8BN6oJvuQoagskHqo_yDr99uBA3iqBlA/edit?gid=0#gid=0]]>
-            </line>
-            <line>
-              <![CDATA[Age -> 5 days]]>
-            </line>
-            <line>
-              <![CDATA[Action -> ]]>
+              <![CDATA[Header is empty for index: 10]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:48:56 EET" name="setUp" finished-at="2025-02-10T12:48:56 EET" duration-ms="369" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:24:47 EET" name="setUp" finished-at="2025-02-11T12:24:48 EET" duration-ms="469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:48:56 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:49:22 EET" duration-ms="25099" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:24:48 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:25:12 EET" duration-ms="23808" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[dorin.m@vebo.io]]>
+                <![CDATA[chriss.c@vebo.io]]>
               </value>
             </param>
             <param index="1">
@@ -1510,7 +652,7 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Utilizator dorin.m@vebo.io s-a logat]]>
+              <![CDATA[Utilizator chriss.c@vebo.io s-a logat]]>
             </line>
             <line>
               <![CDATA[Debug Bar a fost ascuns]]>
@@ -1520,151 +662,82 @@
 ]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 0, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 0]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 1, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 1]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 2, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 2]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 3, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 3]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 4, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 4]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 5, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 5]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 6, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 6]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 7, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 7]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 8, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 8]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 9, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 9]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 10, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 10]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:49:22 EET" name="setUp" finished-at="2025-02-10T12:49:22 EET" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:25:12 EET" name="setUp" finished-at="2025-02-11T12:25:12 EET" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:49:22 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:49:47 EET" duration-ms="25034" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.BatchAccounts.DeleteTableSettings@3aefe5e5]" started-at="2025-02-11T12:25:12 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T12:25:36 EET" duration-ms="23897" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edward.s@vebo.io]]>
+                <![CDATA[marcel.g@vebo.io]]>
               </value>
             </param>
             <param index="1">
@@ -1675,7 +748,7 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Utilizator edward.s@vebo.io s-a logat]]>
+              <![CDATA[Utilizator marcel.g@vebo.io s-a logat]]>
             </line>
             <line>
               <![CDATA[Debug Bar a fost ascuns]]>
@@ -1685,913 +758,74 @@
 ]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 0, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 0]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 1, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 1]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 2, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 2]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 3, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 3]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 4, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 4]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 5, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 5]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 6, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 6]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 7, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 7]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 8, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 8]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 9, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Header is empty for index: 9]]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
+              <![CDATA[Index: 10, Text: ']]>
             </line>
             <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[ID Verification -> -]]>
-            </line>
-            <line>
-              <![CDATA[2FA -> Copy]]>
-            </line>
-            <line>
-              <![CDATA[License -> -]]>
-            </line>
-            <line>
-              <![CDATA[GEO -> AU]]>
-            </line>
-            <line>
-              <![CDATA[Usage -> SEARCH]]>
-            </line>
-            <line>
-              <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-            </line>
-            <line>
-              <![CDATA[Sync From Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Backup Code -> -]]>
-            </line>
-            <line>
-              <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1LPerVZtYX2rpxuOfcBMXJjTZptiNEHHkdYEV3PqnqDs/edit?gid=0#gid=0]]>
-            </line>
-            <line>
-              <![CDATA[Age -> 5 days]]>
-            </line>
-            <line>
-              <![CDATA[Action -> ]]>
+              <![CDATA[Header is empty for index: 10]]>
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:49:47 EET" name="setUp" finished-at="2025-02-10T12:49:47 EET" duration-ms="427" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DeleteTableSettings@1b1473ab]" started-at="2025-02-10T12:49:47 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:50:12 EET" duration-ms="25109" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[andreic@vebo.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[j8L3pc5hJ20Sjn10Lp!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Utilizator andreic@vebo.io s-a logat]]>
-            </line>
-            <line>
-              <![CDATA[Debug Bar a fost ascuns]]>
-            </line>
-            <line>
-              <![CDATA[A fost ștearsă cu succes setarea
-]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Created At -> 2025-02-05 11:01:21]]>
-            </line>
-            <line>
-              <![CDATA[ID Verification -> -]]>
-            </line>
-            <line>
-              <![CDATA[2FA -> Copy]]>
-            </line>
-            <line>
-              <![CDATA[License -> -]]>
-            </line>
-            <line>
-              <![CDATA[GEO -> AT]]>
-            </line>
-            <line>
-              <![CDATA[Usage -> DISPLAY]]>
-            </line>
-            <line>
-              <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-            </line>
-            <line>
-              <![CDATA[Sync From Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Backup Code -> -]]>
-            </line>
-            <line>
-              <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1NdbcOxN4EpUCLH28pcbVeahB1eujeByHRwP6CcJnI5c/edit?gid=0#gid=0]]>
-            </line>
-            <line>
-              <![CDATA[Age -> 5 days]]>
-            </line>
-            <line>
-              <![CDATA[Action -> ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- signIn -->
-      </class> <!-- com.crm.GoogleAccounts.DeleteTableSettings -->
-      <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettings">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:45:22 EET" name="setUp" finished-at="2025-02-10T12:45:22 EET" duration-ms="590" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:45:22 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:45:51 EET" duration-ms="29004" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[victor.cristea@vebo.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[j8L3pc5hJ20Sjn10Lp!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Utilizator victor.cristea@vebo.io s-a logat]]>
-            </line>
-            <line>
-              <![CDATA[Debug Bar a fost ascuns]]>
-            </line>
-            <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
-            </line>
-            <line>
-              <![CDATA[A fost creat cu succes noua setare cu coloanele:
-]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Name -> GUL-AT2100-FRM-167355]]>
-            </line>
-            <line>
-              <![CDATA[Status -> New]]>
-            </line>
-            <line>
-              <![CDATA[Batch Name -> FJ500]]>
-            </line>
-            <line>
-              <![CDATA[Price -> $379]]>
-            </line>
-            <line>
-              <![CDATA[Card Name -> -]]>
-            </line>
-            <line>
-              <![CDATA[Account Id -> 9955720227]]>
-            </line>
-            <line>
-              <![CDATA[Account Source -> FJ]]>
-            </line>
-            <line>
-              <![CDATA[First Last Name -> -]]>
-            </line>
-            <line>
-              <![CDATA[Login -> -]]>
-            </line>
-            <line>
-              <![CDATA[Password -> -]]>
-            </line>
-            <line>
-              <![CDATA[Proxy -> -]]>
-            </line>
-            <line>
-              <![CDATA[Proxy Type -> -]]>
-            </line>
-            <line>
-              <![CDATA[Account RDP -> Download RDP File]]>
-            </line>
-            <line>
-              <![CDATA[Account Owner -> Dorin M]]>
-            </line>
-            <line>
-              <![CDATA[Domain -> paulinesails.com]]>
-            </line>
-            <line>
-              <![CDATA[Farmer -> FJ]]>
-            </line>
-            <line>
-              <![CDATA[Last Update -> 2025-02-05 13:43]]>
-            </line>
-            <line>
-              <![CDATA[Email Login -> -]]>
-            </line>
-            <line>
-              <![CDATA[Email Password -> -]]>
-            </line>
-            <line>
-              <![CDATA[Warming Cost -> 9.2]]>
-            </line>
-            <line>
-              <![CDATA[Monthly Fees -> -]]>
-            </line>
-            <line>
-              <![CDATA[Under Review Reason -> -]]>
-            </line>
-            <line>
-              <![CDATA[Revenue -> -]]>
-            </line>
-            <line>
-              <![CDATA[Profit -> -9.2]]>
-            </line>
-            <line>
-              <![CDATA[Spend -> 9.2]]>
-            </line>
-            <line>
-              <![CDATA[BH Spend -> -]]>
-            </line>
-            <line>
-              <![CDATA[Other Fees -> -]]>
-            </line>
-            <line>
-              <![CDATA[MB Delivery Date -> 2025-02-05 13:43:03]]>
-            </line>
-            <line>
-              <![CDATA[BH Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Ban Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Ban Reason -> -]]>
-            </line>
-            <line>
-              <![CDATA[Spend On Ban -> -]]>
-            </line>
-            <line>
-              <![CDATA[Under Review Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[ID Verification -> -]]>
-            </line>
-            <line>
-              <![CDATA[2FA -> Copy]]>
-            </line>
-            <line>
-              <![CDATA[License -> -]]>
-            </line>
-            <line>
-              <![CDATA[GEO -> AT]]>
-            </line>
-            <line>
-              <![CDATA[Usage -> SEARCH]]>
-            </line>
-            <line>
-              <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-            </line>
-            <line>
-              <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1IkSAHYrCrOp8BN6oJvuQoagskHqo_yDr99uBA3iqBlA/edit?gid=0#gid=0]]>
-            </line>
-            <line>
-              <![CDATA[Age -> 5 days]]>
-            </line>
-            <line>
-              <![CDATA[Action -> ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:45:51 EET" name="setUp" finished-at="2025-02-10T12:45:52 EET" duration-ms="430" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:45:52 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:46:20 EET" duration-ms="28648" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[dorin.m@vebo.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[j8L3pc5hJ20Sjn10Lp!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Utilizator dorin.m@vebo.io s-a logat]]>
-            </line>
-            <line>
-              <![CDATA[Debug Bar a fost ascuns]]>
-            </line>
-            <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
-            </line>
-            <line>
-              <![CDATA[A fost creat cu succes noua setare cu coloanele:
-]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Name -> GUL-AT2100-FRM-167355]]>
-            </line>
-            <line>
-              <![CDATA[Status -> New]]>
-            </line>
-            <line>
-              <![CDATA[Batch Name -> FJ500]]>
-            </line>
-            <line>
-              <![CDATA[Price -> $379]]>
-            </line>
-            <line>
-              <![CDATA[Account Id -> 9955720227]]>
-            </line>
-            <line>
-              <![CDATA[Account Source -> FJ]]>
-            </line>
-            <line>
-              <![CDATA[First Last Name -> -]]>
-            </line>
-            <line>
-              <![CDATA[Login -> -]]>
-            </line>
-            <line>
-              <![CDATA[Password -> -]]>
-            </line>
-            <line>
-              <![CDATA[Account RDP -> Download RDP File]]>
-            </line>
-            <line>
-              <![CDATA[Account Owner -> Dorin M]]>
-            </line>
-            <line>
-              <![CDATA[Domain -> paulinesails.com]]>
-            </line>
-            <line>
-              <![CDATA[Farmer -> FJ]]>
-            </line>
-            <line>
-              <![CDATA[Last Update -> 2025-02-05 13:43]]>
-            </line>
-            <line>
-              <![CDATA[Warming Cost -> 9.2]]>
-            </line>
-            <line>
-              <![CDATA[Monthly Fees -> -]]>
-            </line>
-            <line>
-              <![CDATA[Under Review Reason -> -]]>
-            </line>
-            <line>
-              <![CDATA[Revenue -> -]]>
-            </line>
-            <line>
-              <![CDATA[Profit -> -9.2]]>
-            </line>
-            <line>
-              <![CDATA[Spend -> 9.2]]>
-            </line>
-            <line>
-              <![CDATA[BH Spend -> -]]>
-            </line>
-            <line>
-              <![CDATA[Other Fees -> -]]>
-            </line>
-            <line>
-              <![CDATA[MB Delivery Date -> 2025-02-05 13:43:03]]>
-            </line>
-            <line>
-              <![CDATA[BH Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Ban Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Ban Reason -> -]]>
-            </line>
-            <line>
-              <![CDATA[Spend On Ban -> -]]>
-            </line>
-            <line>
-              <![CDATA[Under Review Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[ID Verification -> -]]>
-            </line>
-            <line>
-              <![CDATA[2FA -> Copy]]>
-            </line>
-            <line>
-              <![CDATA[License -> -]]>
-            </line>
-            <line>
-              <![CDATA[GEO -> AT]]>
-            </line>
-            <line>
-              <![CDATA[Usage -> SEARCH]]>
-            </line>
-            <line>
-              <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-            </line>
-            <line>
-              <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1IkSAHYrCrOp8BN6oJvuQoagskHqo_yDr99uBA3iqBlA/edit?gid=0#gid=0]]>
-            </line>
-            <line>
-              <![CDATA[Age -> 5 days]]>
-            </line>
-            <line>
-              <![CDATA[Action -> ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:46:20 EET" name="setUp" finished-at="2025-02-10T12:46:21 EET" duration-ms="404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:46:21 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:46:49 EET" duration-ms="28663" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edward.s@vebo.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[j8L3pc5hJ20Sjn10Lp!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Utilizator edward.s@vebo.io s-a logat]]>
-            </line>
-            <line>
-              <![CDATA[Debug Bar a fost ascuns]]>
-            </line>
-            <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
-            </line>
-            <line>
-              <![CDATA[A fost creat cu succes noua setare cu coloanele:
-]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Name -> ONP-GDN-1071]]>
-            </line>
-            <line>
-              <![CDATA[Status -> New]]>
-            </line>
-            <line>
-              <![CDATA[Batch Name -> ONP]]>
-            </line>
-            <line>
-              <![CDATA[Price -> $200]]>
-            </line>
-            <line>
-              <![CDATA[Account Id -> 2403438248]]>
-            </line>
-            <line>
-              <![CDATA[Account Source -> ONP-infarmed]]>
-            </line>
-            <line>
-              <![CDATA[First Last Name -> -]]>
-            </line>
-            <line>
-              <![CDATA[Login -> uanirvana34zeal52@gmail.com]]>
-            </line>
-            <line>
-              <![CDATA[Password -> Tixeku8384binup]]>
-            </line>
-            <line>
-              <![CDATA[Account RDP -> OCTO inside]]>
-            </line>
-            <line>
-              <![CDATA[Account Owner -> Edward S]]>
-            </line>
-            <line>
-              <![CDATA[Domain -> ironswomancon.com]]>
-            </line>
-            <line>
-              <![CDATA[Farmer -> ONP-infarmed]]>
-            </line>
-            <line>
-              <![CDATA[Last Update -> 2025-02-05 10:27]]>
-            </line>
-            <line>
-              <![CDATA[Warming Cost -> -]]>
-            </line>
-            <line>
-              <![CDATA[Monthly Fees -> -]]>
-            </line>
-            <line>
-              <![CDATA[Under Review Reason -> -]]>
-            </line>
-            <line>
-              <![CDATA[Revenue -> -]]>
-            </line>
-            <line>
-              <![CDATA[Profit -> -]]>
-            </line>
-            <line>
-              <![CDATA[Spend -> -]]>
-            </line>
-            <line>
-              <![CDATA[BH Spend -> -]]>
-            </line>
-            <line>
-              <![CDATA[Other Fees -> -]]>
-            </line>
-            <line>
-              <![CDATA[MB Delivery Date -> 2025-02-05 10:27:49]]>
-            </line>
-            <line>
-              <![CDATA[BH Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Ban Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Ban Reason -> -]]>
-            </line>
-            <line>
-              <![CDATA[Spend On Ban -> -]]>
-            </line>
-            <line>
-              <![CDATA[Under Review Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[ID Verification -> -]]>
-            </line>
-            <line>
-              <![CDATA[2FA -> Copy]]>
-            </line>
-            <line>
-              <![CDATA[License -> -]]>
-            </line>
-            <line>
-              <![CDATA[GEO -> AU]]>
-            </line>
-            <line>
-              <![CDATA[Usage -> SEARCH]]>
-            </line>
-            <line>
-              <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-            </line>
-            <line>
-              <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1LPerVZtYX2rpxuOfcBMXJjTZptiNEHHkdYEV3PqnqDs/edit?gid=0#gid=0]]>
-            </line>
-            <line>
-              <![CDATA[Age -> 5 days]]>
-            </line>
-            <line>
-              <![CDATA[Action -> ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:46:49 EET" name="setUp" finished-at="2025-02-10T12:46:50 EET" duration-ms="387" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@5dd6264]" started-at="2025-02-10T12:46:50 EET" name="signIn" data-provider="MediaBuyerGlobalCredentials" finished-at="2025-02-10T12:47:18 EET" duration-ms="28723" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[andreic@vebo.io]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[j8L3pc5hJ20Sjn10Lp!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Utilizator andreic@vebo.io s-a logat]]>
-            </line>
-            <line>
-              <![CDATA[Debug Bar a fost ascuns]]>
-            </line>
-            <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
-            </line>
-            <line>
-              <![CDATA[A fost creat cu succes noua setare cu coloanele:
-]]>
-            </line>
-            <line>
-              <![CDATA[Header is empty for index ]]>
-            </line>
-            <line>
-              <![CDATA[Name -> GUL-AT2164-FRM-168020]]>
-            </line>
-            <line>
-              <![CDATA[Status -> New]]>
-            </line>
-            <line>
-              <![CDATA[Batch Name -> FJ500]]>
-            </line>
-            <line>
-              <![CDATA[Price -> $379]]>
-            </line>
-            <line>
-              <![CDATA[Account Id -> 4682622825]]>
-            </line>
-            <line>
-              <![CDATA[Account Source -> FJ]]>
-            </line>
-            <line>
-              <![CDATA[First Last Name -> -]]>
-            </line>
-            <line>
-              <![CDATA[Login -> -]]>
-            </line>
-            <line>
-              <![CDATA[Password -> -]]>
-            </line>
-            <line>
-              <![CDATA[Account RDP -> Download RDP File]]>
-            </line>
-            <line>
-              <![CDATA[Account Owner -> Andrei C]]>
-            </line>
-            <line>
-              <![CDATA[Domain -> harrisonwrite.com]]>
-            </line>
-            <line>
-              <![CDATA[Farmer -> FJ]]>
-            </line>
-            <line>
-              <![CDATA[Last Update -> 2025-02-05 13:26]]>
-            </line>
-            <line>
-              <![CDATA[Warming Cost -> 5.83]]>
-            </line>
-            <line>
-              <![CDATA[Monthly Fees -> 149.00]]>
-            </line>
-            <line>
-              <![CDATA[Under Review Reason -> -]]>
-            </line>
-            <line>
-              <![CDATA[Revenue -> -]]>
-            </line>
-            <line>
-              <![CDATA[Profit -> -154.83]]>
-            </line>
-            <line>
-              <![CDATA[Spend -> 5.83]]>
-            </line>
-            <line>
-              <![CDATA[BH Spend -> -]]>
-            </line>
-            <line>
-              <![CDATA[Other Fees -> -]]>
-            </line>
-            <line>
-              <![CDATA[MB Delivery Date -> 2025-02-05 13:26:49]]>
-            </line>
-            <line>
-              <![CDATA[BH Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Ban Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[Ban Reason -> -]]>
-            </line>
-            <line>
-              <![CDATA[Spend On Ban -> -]]>
-            </line>
-            <line>
-              <![CDATA[Under Review Date -> -]]>
-            </line>
-            <line>
-              <![CDATA[ID Verification -> -]]>
-            </line>
-            <line>
-              <![CDATA[2FA -> Copy]]>
-            </line>
-            <line>
-              <![CDATA[License -> -]]>
-            </line>
-            <line>
-              <![CDATA[GEO -> AT]]>
-            </line>
-            <line>
-              <![CDATA[Usage -> DISPLAY]]>
-            </line>
-            <line>
-              <![CDATA[Status Logs -> 05 February - Delivery (Alexandru Iurcu)]]>
-            </line>
-            <line>
-              <![CDATA[Campaigns Spreadsheet -> https://docs.google.com/spreadsheets/d/1NdbcOxN4EpUCLH28pcbVeahB1eujeByHRwP6CcJnI5c/edit?gid=0#gid=0]]>
-            </line>
-            <line>
-              <![CDATA[Age -> 5 days]]>
-            </line>
-            <line>
-              <![CDATA[Action -> ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- signIn -->
-      </class> <!-- com.crm.GoogleAccounts.CreateAndOrderTableSettings -->
-    </test> <!-- Google Accounts Test -->
-  </suite> <!-- Test Google Accounts -->
+      </class> <!-- com.crm.BatchAccounts.DeleteTableSettings -->
+    </test> <!-- Batch Account Test -->
+  </suite> <!-- Test CRM AUTO -->
 </testng-results>

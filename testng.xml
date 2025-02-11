@@ -1,16 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Google Accounts">
-   <test name="Google Accounts Test">
+<suite name="Test CRM AUTO">
+   <!-- <test name="Google Accounts Test">
       <classes>
-         <!-- <class name="com.crm.GoogleAccounts.CreateGoogleAccount" /> -->
-         <!-- <class name="com.crm.GoogleAccounts.UpdateGoogleAccount" /> -->
+         <class name="com.crm.GoogleAccounts.CreateGoogleAccount" />
+         <class name="com.crm.GoogleAccounts.UpdateGoogleAccount" />
          <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettings" />
          <class name="com.crm.GoogleAccounts.DownloadCSV" />
-         <!-- <class name="com.crm.GoogleAccounts.Search" /> -->
+         <class name="com.crm.GoogleAccounts.Search" />
          <class name="com.crm.GoogleAccounts.DeleteTableSettings" />
-         <!-- <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest" /> -->
+         <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest" />
       </classes>
-   </test>
+   </test> -->
 
    <!-- <test name="Dash Card Test">
       <classes>
@@ -18,4 +18,11 @@
          <class name="com.crm.Dashboard.TestDashboardRedirectCard" />
       </classes>
    </test> -->
-</suite>
+
+   <test name="Batch Account Test">
+      <classes>
+         <class name="com.crm.BatchAccounts.CreateAndOrderTableSettings" />
+         <class name="com.crm.BatchAccounts.DeleteTableSettings" />
+      </classes>
+   </test>
+   </suite>

@@ -10,7 +10,9 @@ com/crm/AccountProxy/TestAccountProxy.class
 com/crm/GoogleAccounts/CreateAndOrderTableSettings.class
 com/Base/BaseTest.class
 com/crm/GoogleAccounts/FindAndDeleteGoogleAccountTest.class
+com/crm/ProxySource/TestProxySource.class
 com/crm/ClientTest/SpendAndTotalSpendTest.class
+com/crm/BatchAccounts/DeleteTableSettings.class
 com/resources/Helpers.class
 com/crm/Dashboard/TestDashboardRedirectCard.class
 com/crm/SGCampaigns/SGFilter.class
@@ -21,6 +23,8 @@ com/crm/SGCampaigns/CreateAndOrderTableSettings.class
 com/crm/GoogleAccounts/CreateGoogleAccount.class
 com/resources/CredentialsProvider.class
 com/crm/SGCampaigns/DownloadCSVPerOffer.class
+com/crm/BatchAccounts/CreateAndOrderTableSettings.class
+com/crm/ATMRDash/TestATMR.class
 com/utilities/Filters.class
 com/crm/GoogleAccounts/Search.class
 com/crm/SGCampaigns/DownloadCSV.class
