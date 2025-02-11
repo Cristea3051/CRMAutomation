@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestNGTest-e102c47c-5b6c-4885-b660-c7c5d5365c64"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="15.738">
+    <properties></properties>
+
+
+
+            <testcase
+                name="signIn"
+                time="5.216"
+                classname="com.crm.BatchAccounts.TestBatchSettings">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="5.087"
+                classname="com.crm.BatchAccounts.TestBatchSettings">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="5.435"
+                classname="com.crm.BatchAccounts.TestBatchSettings">
+            </testcase>
+</testsuite>
