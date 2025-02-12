@@ -28,7 +28,9 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/SGFilter.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/DeleteSettingsPerOffer.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/Filter.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GetConsloeError/CaptureConsloleError.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/Base/BaseTest.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/SGCampaigns/SearchSG.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/Dashboard/TestDashboardRedirectCard.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/Dashboard/GetDasboardUrls.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/DownloadCSV.java

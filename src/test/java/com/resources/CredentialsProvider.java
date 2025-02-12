@@ -4,6 +4,14 @@ import org.testng.annotations.DataProvider;
 
 public class CredentialsProvider {
 
+
+    @DataProvider(name = "GlobalCred")
+    public Object[][] providerCreds() {
+        return new Object[][] {
+                { "victor.cristea@vebo.io", "j8L3pc5hJ20Sjn10Lp!" },
+        };
+    }
+
     @DataProvider(name = "credentials")
     public Object[][] providerDataSet() {
         return new Object[][] {

@@ -17,6 +17,7 @@ com/crm/ProxySource/TestProxySource.class
 com/crm/ClientTest/SpendAndTotalSpendTest.class
 com/crm/BatchAccounts/DeleteTableSettings.class
 com/resources/Helpers.class
+com/crm/Dashboard/GetDasboardUrls.class
 com/crm/Dashboard/TestDashboardRedirectCard.class
 com/crm/SGCampaigns/SGFilter.class
 com/crm/GoogleAccounts/Filter.class
@@ -31,4 +32,6 @@ com/crm/ATMRDash/TestATMR.class
 com/utilities/Filters.class
 com/crm/GoogleAccounts/Search.class
 com/crm/SGCampaigns/DownloadCSV.class
+com/crm/GetConsloeError/CaptureConsloleError$1.class
 com/crm/GoogleAccounts/DownloadCSV.class
+com/crm/GetConsloeError/CaptureConsloleError.class

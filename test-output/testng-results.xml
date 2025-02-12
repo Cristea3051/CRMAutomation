@@ -8,7 +8,7 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.41]]>
     </line>
     <line>
       <![CDATA[A fost descarcat cu success fiserul CSV
@@ -21,7 +21,7 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.41]]>
     </line>
     <line>
       <![CDATA[A fost descarcat cu success fiserul CSV
@@ -34,7 +34,7 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.41]]>
     </line>
     <line>
       <![CDATA[A fost descarcat cu success fiserul CSV
@@ -47,7 +47,7 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.41]]>
     </line>
     <line>
       <![CDATA[A fost descarcat cu success fiserul CSV
@@ -60,7 +60,7 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.41]]>
     </line>
     <line>
       <![CDATA[A fost descarcat cu success fiserul CSV
@@ -73,7 +73,7 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.41]]>
     </line>
     <line>
       <![CDATA[A fost descarcat cu success fiserul CSV
@@ -86,7 +86,7 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.41]]>
     </line>
     <line>
       <![CDATA[A fost descarcat cu success fiserul CSV
@@ -99,7 +99,7 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.41]]>
     </line>
     <line>
       <![CDATA[A fost descarcat cu success fiserul CSV
@@ -112,23 +112,23 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
     <line>
-      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+      <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.41]]>
     </line>
     <line>
       <![CDATA[A fost descarcat cu success fiserul CSV
 ]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-02-11T17:34:17 EET" name="Test CRM AUTO" finished-at="2025-02-11T17:36:59 EET" duration-ms="161328">
+  <suite started-at="2025-02-12T10:55:25 EET" name="Test CRM AUTO" finished-at="2025-02-12T10:58:09 EET" duration-ms="163953">
     <groups>
     </groups>
-    <test started-at="2025-02-11T17:34:17 EET" name="Download CSV Accounts Test" finished-at="2025-02-11T17:36:59 EET" duration-ms="161328">
+    <test started-at="2025-02-12T10:55:25 EET" name="Download CSV Accounts Test" finished-at="2025-02-12T10:58:09 EET" duration-ms="163953">
       <class name="com.crm.OtherAccounts.DownloadCSV">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:11 EET" name="setUp" finished-at="2025-02-11T17:35:12 EET" duration-ms="412" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-12T10:56:21 EET" name="setUp" finished-at="2025-02-12T10:56:21 EET" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:12 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:35:29 EET" duration-ms="17401" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-12T10:56:21 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-12T10:56:38 EET" duration-ms="17314" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,7 +149,7 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.41]]>
             </line>
             <line>
               <![CDATA[A fost descarcat cu success fiserul CSV
@@ -157,11 +157,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:29 EET" name="setUp" finished-at="2025-02-11T17:35:29 EET" duration-ms="448" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-12T10:56:38 EET" name="setUp" finished-at="2025-02-12T10:56:39 EET" duration-ms="431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:29 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:35:47 EET" duration-ms="17304" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-12T10:56:39 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-12T10:56:56 EET" duration-ms="17426" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -182,7 +182,7 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.41]]>
             </line>
             <line>
               <![CDATA[A fost descarcat cu success fiserul CSV
@@ -190,11 +190,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:47 EET" name="setUp" finished-at="2025-02-11T17:35:47 EET" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-12T10:56:56 EET" name="setUp" finished-at="2025-02-12T10:56:57 EET" duration-ms="444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-11T17:35:47 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:36:05 EET" duration-ms="17555" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.OtherAccounts.DownloadCSV@149e0f5d]" started-at="2025-02-12T10:56:57 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-12T10:57:14 EET" duration-ms="17563" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -215,7 +215,7 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Other accounts - iCRM v.37.41]]>
             </line>
             <line>
               <![CDATA[A fost descarcat cu success fiserul CSV
@@ -225,11 +225,11 @@
         </test-method> <!-- signIn -->
       </class> <!-- com.crm.OtherAccounts.DownloadCSV -->
       <class name="com.crm.GoogleAccounts.DownloadCSV">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:05 EET" name="setUp" finished-at="2025-02-11T17:36:05 EET" duration-ms="463" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-12T10:57:14 EET" name="setUp" finished-at="2025-02-12T10:57:15 EET" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:05 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:36:23 EET" duration-ms="17741" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-12T10:57:15 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-12T10:57:32 EET" duration-ms="17708" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -250,7 +250,7 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.41]]>
             </line>
             <line>
               <![CDATA[A fost descarcat cu success fiserul CSV
@@ -258,11 +258,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:23 EET" name="setUp" finished-at="2025-02-11T17:36:23 EET" duration-ms="416" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-12T10:57:32 EET" name="setUp" finished-at="2025-02-12T10:57:33 EET" duration-ms="477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:23 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:36:41 EET" duration-ms="17465" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-12T10:57:33 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-12T10:57:50 EET" duration-ms="17493" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -283,7 +283,7 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.41]]>
             </line>
             <line>
               <![CDATA[A fost descarcat cu success fiserul CSV
@@ -291,11 +291,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:41 EET" name="setUp" finished-at="2025-02-11T17:36:41 EET" duration-ms="435" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-12T10:57:50 EET" name="setUp" finished-at="2025-02-12T10:57:51 EET" duration-ms="407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-11T17:36:41 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:36:59 EET" duration-ms="17489" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSV@1b1473ab]" started-at="2025-02-12T10:57:51 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-12T10:58:09 EET" duration-ms="17665" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -316,7 +316,7 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Google accounts - iCRM v.37.41]]>
             </line>
             <line>
               <![CDATA[A fost descarcat cu success fiserul CSV
@@ -326,11 +326,11 @@
         </test-method> <!-- signIn -->
       </class> <!-- com.crm.GoogleAccounts.DownloadCSV -->
       <class name="com.crm.FacebookAccounts.DownloadCSV">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:17 EET" name="setUp" finished-at="2025-02-11T17:34:18 EET" duration-ms="638" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-12T10:55:25 EET" name="setUp" finished-at="2025-02-12T10:55:27 EET" duration-ms="2182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:18 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:34:35 EET" duration-ms="17330" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-12T10:55:27 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-12T10:55:45 EET" duration-ms="17989" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -351,7 +351,7 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.41]]>
             </line>
             <line>
               <![CDATA[A fost descarcat cu success fiserul CSV
@@ -359,11 +359,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:35 EET" name="setUp" finished-at="2025-02-11T17:34:36 EET" duration-ms="409" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-12T10:55:45 EET" name="setUp" finished-at="2025-02-12T10:55:45 EET" duration-ms="383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:36 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:34:53 EET" duration-ms="17494" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-12T10:55:45 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-12T10:56:03 EET" duration-ms="17657" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -384,7 +384,7 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.41]]>
             </line>
             <line>
               <![CDATA[A fost descarcat cu success fiserul CSV
@@ -392,11 +392,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:53 EET" name="setUp" finished-at="2025-02-11T17:34:54 EET" duration-ms="362" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-12T10:56:03 EET" name="setUp" finished-at="2025-02-12T10:56:03 EET" duration-ms="404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-11T17:34:54 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-11T17:35:11 EET" duration-ms="17547" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.FacebookAccounts.DownloadCSV@5dd6264]" started-at="2025-02-12T10:56:03 EET" name="signIn" data-provider="FarmerGlobalCredentials" finished-at="2025-02-12T10:56:21 EET" duration-ms="17543" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -417,7 +417,7 @@
               <![CDATA[Debug Bar a fost ascuns]]>
             </line>
             <line>
-              <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.37]]>
+              <![CDATA[Utilizatorul a navigat cu succes la pagina - Facebook accounts - iCRM v.37.41]]>
             </line>
             <line>
               <![CDATA[A fost descarcat cu success fiserul CSV

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestNGTest-6ee9403c-27ad-46b3-91ac-e22403694fcf"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="197.106">
+    <properties></properties>
+
+
+
+            <testcase
+                name="signIn"
+                time="197.106"
+                classname="com.crm.GetConsloeError.CaptureConsloleError">
+            </testcase>
+</testsuite>

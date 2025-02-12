@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestNGTest-b9a7ad56-cd9a-4a81-82fd-a4a8e6803411"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="12.968">
+    <properties></properties>
+
+
+
+            <testcase
+                name="signIn"
+                time="12.968"
+                classname="com.crm.Dashboard.GetDasboardUrls">
+            </testcase>
+</testsuite>
