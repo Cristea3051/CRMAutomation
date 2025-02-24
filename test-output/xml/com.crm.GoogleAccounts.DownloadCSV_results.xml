@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Download CSV Accounts Test"
+<testsuite name="TestNGTest-d123fc8a-d364-4e06-8fcc-31cfbe33f235"
            tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="52.866">
+           time="67.041">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="17.708"
+                time="18.122"
                 classname="com.crm.GoogleAccounts.DownloadCSV">
             </testcase>
             <testcase
                 name="signIn"
-                time="17.665"
+                time="21.501"
                 classname="com.crm.GoogleAccounts.DownloadCSV">
             </testcase>
             <testcase
                 name="signIn"
-                time="17.493"
+                time="27.418"
                 classname="com.crm.GoogleAccounts.DownloadCSV">
             </testcase>
 </testsuite>

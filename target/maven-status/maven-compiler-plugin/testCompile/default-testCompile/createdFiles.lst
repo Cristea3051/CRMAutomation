@@ -17,6 +17,7 @@ com/crm/ProxySource/TestProxySource.class
 com/crm/ClientTest/SpendAndTotalSpendTest.class
 com/crm/BatchAccounts/DeleteTableSettings.class
 com/resources/Helpers.class
+com/crm/ClientTest/VerifyInfoPopUpTest.class
 com/crm/Dashboard/GetDasboardUrls.class
 com/crm/Dashboard/TestDashboardRedirectCard.class
 com/crm/SGCampaigns/SGFilter.class

@@ -22,6 +22,7 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/ATMRDash/TestATMR.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/test.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/BatchAccounts/DeleteTableSettings.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/ClientTest/VerifyInfoPopUpTest.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/SettingsHelper.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/CreateGoogleAccount.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/FindAndDeleteGoogleAccountTest.java

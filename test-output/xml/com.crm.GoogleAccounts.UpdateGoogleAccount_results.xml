@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="23.589">
+           time="26.261">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="23.589"
+                time="26.261"
                 classname="com.crm.GoogleAccounts.UpdateGoogleAccount">
             </testcase>
 </testsuite>

@@ -6,9 +6,7 @@ import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,23 +15,24 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.Base.BaseTest;
 import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
-public class UpdateGoogleAccount {
-        private WebDriver driver;
-        private WebDriverWait wait;
+public class UpdateGoogleAccount extends BaseTest{
         private Login login;
-
+        private WebDriverWait wait;
+    
         @BeforeMethod
+        @Override
         public void setUp() {
-                driver = new ChromeDriver();
-                login = new Login(driver);
-                wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            super.setUp();
+            login = new Login(driver);
+            wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         }
 
-        @Test(dataProvider = "MediaBuyerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
+        @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
         public void signIn(String username, String password) {
                 login.performLogin(username, password);
                 Reporter.log("Utilizator " + username + " s-a logat");
@@ -62,12 +61,11 @@ public class UpdateGoogleAccount {
                 fillFormFields();
 
                 Helpers.waitForSeconds(3);
-
                 String searchKeyword = "GoogleAccountUpdatedTestJava";
                 WebElement search = driver.findElement(By.cssSelector("input.form-control-sm"));
                 search.clear();
                 search.sendKeys(searchKeyword);
-                Helpers.waitForSeconds(3);
+                Helpers.waitForSeconds(5);
                 List<WebElement> headers = driver.findElements(By.cssSelector(
                         ".dataTables_scrollHeadInner > table:nth-child(1) > thead:nth-child(1) > tr:nth-child(1) > th"));
         List<WebElement> firstRow = driver

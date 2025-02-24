@@ -5,9 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,19 +13,20 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.Base.BaseTest;
 import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.resources.configfiles.SettingsHelper;
 import com.utilities.Login;
 
-public class CreateAndOrderTableSettings {
-    private WebDriver driver;
-    private WebDriverWait wait;
+public class CreateAndOrderTableSettings extends BaseTest {
     private Login login;
+    private WebDriverWait wait;
 
     @BeforeMethod
+    @Override
     public void setUp() {
-        driver = new ChromeDriver();
+        super.setUp();
         login = new Login(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
