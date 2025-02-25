@@ -35,7 +35,7 @@ public class Filter extends BaseTest {
         filters = new Filters(driver);
     }
 
-    @Test(dataProvider = "MediaBuyerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
         Reporter.log("Utilizator " + username + " s-a logat");

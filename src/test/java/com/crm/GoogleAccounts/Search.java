@@ -27,7 +27,7 @@ public class Search extends BaseTest{
         new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    @Test(dataProvider = "MediaBuyerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
         Reporter.log("Utilizator " + username + " s-a logat");
