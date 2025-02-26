@@ -6,24 +6,10 @@
       <class name="com.crm.GoogleAccounts.DeleteTableSettings">
         <methods>
           <include name="tearDown"/>
-          <include name="signIn" invocation-numbers="0 1 2 3"/>
+          <include name="signIn" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.crm.GoogleAccounts.DeleteTableSettings -->
-      <class name="com.crm.GoogleAccounts.Search">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="signIn" invocation-numbers="2 3"/>
-        </methods>
-      </class> <!-- com.crm.GoogleAccounts.Search -->
-      <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettings">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="signIn" invocation-numbers="1 3"/>
-        </methods>
-      </class> <!-- com.crm.GoogleAccounts.CreateAndOrderTableSettings -->
     </classes>
   </test> <!-- Google Accounts Test(failed) -->
 </suite> <!-- Failed suite [Test CRM AUTO] -->

@@ -1,42 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNGTest-d761c6b2-6fa0-4f59-8a86-964e409301e1"
+<testsuite name="TestNGTest-5f97ca48-c3aa-4678-98ba-a96659017fa0"
            tests="19"
            failures="0"
            errors="0"
            skipped="0"
-           time="109.042">
+           time="106.360">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="5.681"
+                time="5.507"
                 classname="com.crm.ClientTest.VerifyInfoPopUpTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="5.834"
+                time="5.603"
                 classname="com.crm.ClientTest.VerifyInfoPopUpTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="5.527"
+                time="5.820"
                 classname="com.crm.ClientTest.VerifyInfoPopUpTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="5.908"
+                time="5.669"
                 classname="com.crm.ClientTest.VerifyInfoPopUpTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="5.521"
+                time="5.571"
                 classname="com.crm.ClientTest.VerifyInfoPopUpTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="5.805"
+                time="5.366"
+                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="5.534"
+                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="5.594"
+                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="5.662"
+                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="5.787"
+                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="5.633"
+                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="5.547"
+                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="5.549"
+                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="5.524"
                 classname="com.crm.ClientTest.VerifyInfoPopUpTest">
             </testcase>
             <testcase
@@ -46,62 +86,22 @@
             </testcase>
             <testcase
                 name="signIn"
-                time="5.858"
+                time="5.483"
                 classname="com.crm.ClientTest.VerifyInfoPopUpTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="5.988"
+                time="5.642"
                 classname="com.crm.ClientTest.VerifyInfoPopUpTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="6.024"
+                time="5.547"
                 classname="com.crm.ClientTest.VerifyInfoPopUpTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="5.475"
-                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
-            </testcase>
-            <testcase
-                name="signIn"
-                time="5.530"
-                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
-            </testcase>
-            <testcase
-                name="signIn"
-                time="5.871"
-                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
-            </testcase>
-            <testcase
-                name="signIn"
-                time="5.522"
-                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
-            </testcase>
-            <testcase
-                name="signIn"
-                time="5.738"
-                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
-            </testcase>
-            <testcase
-                name="signIn"
-                time="5.720"
-                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
-            </testcase>
-            <testcase
-                name="signIn"
-                time="5.670"
-                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
-            </testcase>
-            <testcase
-                name="signIn"
-                time="5.769"
-                classname="com.crm.ClientTest.VerifyInfoPopUpTest">
-            </testcase>
-            <testcase
-                name="signIn"
-                time="5.950"
+                time="5.671"
                 classname="com.crm.ClientTest.VerifyInfoPopUpTest">
             </testcase>
 </testsuite>

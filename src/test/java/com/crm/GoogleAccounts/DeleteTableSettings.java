@@ -49,7 +49,7 @@ public class DeleteTableSettings extends BaseTest {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn[data-wizard='next']"))).click();
 
         Helpers.waitForSeconds(3);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fas.fa-trash.text-red-600"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fas.fa-trash.tw-text-red-600"))).click();
 
         Helpers.waitForSeconds(3);
         WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
