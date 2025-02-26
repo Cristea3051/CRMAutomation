@@ -1,9 +1,10 @@
 package com.crm.GoogleAccounts;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -14,25 +15,21 @@ import org.testng.annotations.Test;
 
 import com.Base.BaseTest;
 import com.resources.CredentialsProvider;
+import com.resources.Helpers;
 import com.utilities.Filters;
 import com.utilities.Login;
 
 public class Filter extends BaseTest {
-    private WebDriver driver;
     private WebDriverWait wait;
     private Login login;
     private Filters filters;
 
-    // Constructor gol
-    public Filter() {
-    }
-
     @BeforeMethod
     public void setUp() {
-        super.setUp();
-        login = new Login(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        filters = new Filters(driver);
+        super.setUp();  // Inițializează WebDriver din BaseTest
+        login = new Login(super.driver);  // Folosește driver-ul inițializat de BaseTest
+        wait = new WebDriverWait(super.driver, Duration.ofSeconds(10));
+        filters = new Filters(super.driver);
     }
 
     @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
@@ -42,7 +39,7 @@ public class Filter extends BaseTest {
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/google-accounts");
+        super.driver.get("http://crm-dash/google-accounts");
 
         WebElement select = wait
                 .until(ExpectedConditions.visibilityOfElementLocated(By.name("google-accounts-list_length")));
@@ -50,12 +47,29 @@ public class Filter extends BaseTest {
         rows.selectByIndex(0);
 
         try {
-            filters.applyRandomFilters(); // Reuse Filters logic
+            filters.applyRandomFilters();
         } catch (InterruptedException e) {
-            e.printStackTrace(); // Gestionează eroarea aici
+            e.printStackTrace();
         }
 
-        driver.quit();
-    }
+         Helpers.waitForSeconds(3);
+        List<WebElement> headers = driver.findElements(By.cssSelector(
+                ".dataTables_scrollHeadInner > table:nth-child(1) > thead:nth-child(1) > tr:nth-child(1) > th"));
+        List<WebElement> firstRow = driver
+                .findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
 
+        for (int i = 0; i < headers.size(); i++) {
+            // Scroll până la elementul curent din header
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", headers.get(i));
+
+            String header = headers.get(i).getText().trim();
+            String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : "";
+
+            if (!header.isEmpty()) {
+                Reporter.log(header + " -> " + content);
+            } else {
+                Reporter.log("Header is empty for index ");
+            }
+    }
+}
 }
