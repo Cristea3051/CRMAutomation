@@ -1,8 +1,10 @@
-package com.crm.GoogleAccounts;
+package com.crm.FacebookAccounts;
 
-import java.time.Duration;
-import java.util.List;
-
+import com.Base.BaseTest;
+import com.resources.CredentialsProvider;
+import com.resources.Helpers;
+import com.resources.configfiles.SettingsHelper;
+import com.utilities.Login;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -13,13 +15,10 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.Base.BaseTest;
-import com.resources.CredentialsProvider;
-import com.resources.Helpers;
-import com.resources.configfiles.SettingsHelper;
-import com.utilities.Login;
+import java.time.Duration;
+import java.util.List;
 
-public class CreateAndOrderTableSettings extends BaseTest {
+public class CreateAndOrderTableSettingsTest extends BaseTest {
     private Login login;
     private WebDriverWait wait;
 
@@ -38,14 +37,14 @@ public class CreateAndOrderTableSettings extends BaseTest {
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/google-accounts");
+        driver.get("http://crm-dash/facebook-accounts");
 
         String title = driver.getTitle();
         Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
 
         Helpers.waitForSeconds(3);
 
-        WebElement select = driver.findElement(By.name("google-accounts-list_length"));
+        WebElement select = driver.findElement(By.name("facebook-accounts-list_length"));
         Select rows = new Select(select);
         rows.selectByIndex(0);
 
@@ -88,7 +87,7 @@ public class CreateAndOrderTableSettings extends BaseTest {
         List<WebElement> headers = driver.findElements(By.cssSelector(
                 ".dataTables_scrollHeadInner > table:nth-child(1) > thead:nth-child(1) > tr:nth-child(1) > th"));
         List<WebElement> firstRow = driver
-                .findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
+                .findElements(By.cssSelector("#facebook-accounts-list tbody tr:first-child td"));
 
         for (int i = 0; i < headers.size(); i++) {
             // Scroll până la elementul curent din header

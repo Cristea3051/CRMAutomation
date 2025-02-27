@@ -512,7 +512,7 @@ Session ID: 1ea53d0d10968878b893ca9daf9f13e3
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></system-err>
   </testcase>
-  <testcase name="signIn[victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!](1)" classname="com.crm.GoogleAccounts.CreateAndOrderTableSettings" time="28.681">
+  <testcase name="signIn[victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!](1)" classname="com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest" time="28.681">
     <system-err><![CDATA[Feb 25, 2025 12:50:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 133
 Feb 25, 2025 12:50:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5

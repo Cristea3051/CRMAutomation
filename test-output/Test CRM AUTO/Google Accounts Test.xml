@@ -3,7 +3,7 @@
 <testsuite ignored="0" hostname="pop-os" failures="1" tests="7" name="Google Accounts Test" time="165.732" errors="0" timestamp="2025-02-25T12:52:03 EET">
   <testcase classname="com.crm.GoogleAccounts.CreateGoogleAccount" name="signIn" time="30.338"/>
   <testcase classname="com.crm.GoogleAccounts.UpdateGoogleAccount" name="signIn" time="25.764"/>
-  <testcase classname="com.crm.GoogleAccounts.CreateAndOrderTableSettings" name="signIn" time="28.681"/>
+  <testcase classname="com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest" name="signIn" time="28.681"/>
   <testcase classname="com.crm.GoogleAccounts.DownloadCSV" name="signIn" time="20.129"/>
   <testcase classname="com.crm.GoogleAccounts.Search" name="signIn" time="15.122"/>
   <testcase classname="com.crm.GoogleAccounts.DeleteTableSettings" name="signIn" time="25.916">

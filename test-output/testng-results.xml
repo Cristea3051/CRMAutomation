@@ -1548,12 +1548,12 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crm.GoogleAccounts.Search -->
-      <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettings">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@7ce3cb8e]" started-at="2025-02-25T12:50:16 EET" name="setUp" finished-at="2025-02-25T12:50:16 EET" duration-ms="425" status="PASS">
+      <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest@7ce3cb8e]" started-at="2025-02-25T12:50:16 EET" name="setUp" finished-at="2025-02-25T12:50:16 EET" duration-ms="425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@7ce3cb8e]" started-at="2025-02-25T12:50:16 EET" name="signIn" data-provider="GlobalCred" finished-at="2025-02-25T12:50:45 EET" duration-ms="28681" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest@7ce3cb8e]" started-at="2025-02-25T12:50:16 EET" name="signIn" data-provider="GlobalCred" finished-at="2025-02-25T12:50:45 EET" duration-ms="28681" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1711,11 +1711,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettings@7ce3cb8e]" started-at="2025-02-25T12:50:45 EET" name="tearDown" finished-at="2025-02-25T12:50:45 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest@7ce3cb8e]" started-at="2025-02-25T12:50:45 EET" name="tearDown" finished-at="2025-02-25T12:50:45 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.GoogleAccounts.CreateAndOrderTableSettings -->
+      </class> <!-- com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest -->
     </test> <!-- Google Accounts Test -->
   </suite> <!-- Test CRM AUTO -->
 </testng-results>

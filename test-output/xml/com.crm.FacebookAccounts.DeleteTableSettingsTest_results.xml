@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Google Accounts Test"
+<testsuite name="crmAuto"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="29.290">
+           time="26.485">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="29.290"
-                classname="com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest">
+                time="26.485"
+                classname="com.crm.FacebookAccounts.DeleteTableSettingsTest">
             </testcase>
 </testsuite>

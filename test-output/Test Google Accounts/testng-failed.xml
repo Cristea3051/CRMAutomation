@@ -3,12 +3,12 @@
 <suite name="Failed suite [Test Google Accounts]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Google Accounts Test(failed)" verbose="0">
     <classes>
-      <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettings">
+      <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest">
         <methods>
           <include name="setUp"/>
           <include name="signIn" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.crm.GoogleAccounts.CreateAndOrderTableSettings -->
+      </class> <!-- com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest -->
     </classes>
   </test> <!-- Google Accounts Test(failed) -->
 </suite> <!-- Failed suite [Test Google Accounts] -->
