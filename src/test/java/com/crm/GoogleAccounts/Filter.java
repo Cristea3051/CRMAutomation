@@ -26,8 +26,8 @@ public class Filter extends BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        super.setUp();  // Inițializează WebDriver din BaseTest
-        login = new Login(super.driver);  // Folosește driver-ul inițializat de BaseTest
+        super.setUp();
+        login = new Login(super.driver); 
         wait = new WebDriverWait(super.driver, Duration.ofSeconds(10));
         filters = new Filters(super.driver);
     }

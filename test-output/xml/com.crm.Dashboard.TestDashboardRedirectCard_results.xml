@@ -4,29 +4,29 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="98.716">
+           time="104.243">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="25.084"
+                time="24.148"
                 classname="com.crm.Dashboard.TestDashboardRedirectCard">
             </testcase>
             <testcase
                 name="signIn"
-                time="24.676"
+                time="27.651"
                 classname="com.crm.Dashboard.TestDashboardRedirectCard">
             </testcase>
             <testcase
                 name="signIn"
-                time="24.241"
+                time="27.220"
                 classname="com.crm.Dashboard.TestDashboardRedirectCard">
             </testcase>
             <testcase
                 name="signIn"
-                time="24.715"
+                time="25.224"
                 classname="com.crm.Dashboard.TestDashboardRedirectCard">
             </testcase>
 </testsuite>

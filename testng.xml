@@ -12,25 +12,19 @@
       </classes>
   </test>
 
-   <!-- <test name="Dash Card Test">
+<test name="Dash Card Test">
       <classes>
          <class name="com.crm.Dashboard.TestDashboardRedirectCard" />
-         <class name="com.crm.Dashboard.TestDashboardRedirectCard" />
+         <class name="com.crm.Dashboard.TestDashboardSearch" />
+          <class name="com.crm.Dashboard.GetDasboardUrls" />
       </classes>
-   </test> -->
+  </test>
 
-   <!-- <test name="Batch Account Test">
+      <test name="Download CSV Accounts Test">
       <classes>
-         <class name="com.crm.BatchAccounts.CreateAndOrderTableSettings" />
-         <class name="com.crm.BatchAccounts.DeleteTableSettings" />
+         <class name="com.crm.FacebookAccounts.DownloadCSV" />
+         <class name="com.crm.OtherAccounts.DownloadCSV" />
+         <class name="com.crm.GoogleAccounts.DownloadCSV" />
       </classes>
-   </test> -->
-
-<!--      <test name="Download CSV Accounts Test">-->
-<!--      <classes>-->
-<!--         <class name="com.crm.FacebookAccounts.DownloadCSV" />-->
-<!--         <class name="com.crm.OtherAccounts.DownloadCSV" />-->
-<!--         <class name="com.crm.GoogleAccounts.DownloadCSV" />-->
-<!--      </classes>-->
-   <!-- </test> -->
-   </suite>
+    </test>
+</suite>

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Download CSV Accounts Test"
+<testsuite name="crmAuto"
            tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="54.743">
+           time="321.443">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="18.727"
-                classname="com.crm.OtherAccounts.DownloadCSV">
+                time="106.828"
+                classname="com.crm.AccountProxy.TestAccountProxy">
             </testcase>
             <testcase
                 name="signIn"
-                time="18.062"
-                classname="com.crm.OtherAccounts.DownloadCSV">
+                time="107.257"
+                classname="com.crm.AccountProxy.TestAccountProxy">
             </testcase>
             <testcase
                 name="signIn"
-                time="17.954"
-                classname="com.crm.OtherAccounts.DownloadCSV">
+                time="107.358"
+                classname="com.crm.AccountProxy.TestAccountProxy">
             </testcase>
 </testsuite>
