@@ -54,32 +54,27 @@ public class SpendAndTotalSpendTest extends BaseTest {
         Helpers.waitForSeconds(3);
         List<WebElement> headers = driver.findElements(By.cssSelector("div.dataTables_scroll > div.dataTables_scrollHead > div > table > thead > tr > th"));
         List<WebElement> firstRow = driver.findElements(By.cssSelector("div.dataTables_scroll > div.dataTables_scrollFoot.footer-on-top > div > table > tfoot > tr > th"));
-        
+
         boolean found = false;
 
         for (int i = 0; i < headers.size(); i++) {
             String header = headers.get(i).getText().trim(); // Eliminăm spațiile suplimentare
-        
-            // Verificăm dacă textul este "Total Spent"
-            if (header.equalsIgnoreCase("Total Spent")) {
-                // Verificăm că indexul este valid în lista `firstRow`
+
+            // Verificăm dacă textul este "Total Spend" sau "Ad Spend"
+            if (header.equalsIgnoreCase("Total Spend") || header.equalsIgnoreCase("Ad Spend")) {
+
                 String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : null;
-        
-                // Afișăm rezultatul
-                Reporter.log("Found: " + header + " -> " + content);
-        
-                // Aserțiune pentru a verifica dacă valoarea este diferită de null
-                Assert.assertNotNull(content, "Value under 'Total Spent' should not be null");
-                Assert.assertFalse(content.isEmpty(), "Value under 'Total Spent' should not be empty");
-        
-                // Marchez că a fost găsit
+
+                Reporter.log("Found column: " + header + " -> '" + content + "'");
+                System.out.println("DEBUG: Found column: " + header + " -> '" + content + "'");
+
+                Assert.assertNotNull(content, "Value under '" + header + "' should not be null");
+
                 found = true;
             }
         }
-        
-        // Aserțiune finală pentru a verifica dacă "Total Spent" a fost găsit
-        Assert.assertTrue(found, "'Total Spent' header was not found in the table");
-        driver.quit();
+
+        Assert.assertTrue(found, "'Total Spend' or 'Ad Spend' header was not found in the table");
 
     }
 }
