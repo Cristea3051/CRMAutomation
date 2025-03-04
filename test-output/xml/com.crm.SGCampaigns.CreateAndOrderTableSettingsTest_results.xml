@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Download CSV Accounts Test"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="119.385">
+    <properties></properties>
+
+
+
+            <testcase
+                name="signIn"
+                time="29.686"
+                classname="com.crm.SGCampaigns.CreateAndOrderTableSettingsTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="30.082"
+                classname="com.crm.SGCampaigns.CreateAndOrderTableSettingsTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="29.713"
+                classname="com.crm.SGCampaigns.CreateAndOrderTableSettingsTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="29.904"
+                classname="com.crm.SGCampaigns.CreateAndOrderTableSettingsTest">
+            </testcase>
+</testsuite>

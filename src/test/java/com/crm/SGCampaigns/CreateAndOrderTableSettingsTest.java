@@ -1,7 +1,10 @@
 package com.crm.SGCampaigns;
 
-import java.util.List;
-import java.time.Duration;
+import com.Base.BaseTest;
+import com.resources.CredentialsProvider;
+import com.resources.Helpers;
+import com.resources.configfiles.SettingsHelper;
+import com.utilities.Login;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,18 +16,17 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.resources.CredentialsProvider;
-import com.resources.Helpers;
-import com.utilities.Login;
+import java.time.Duration;
+import java.util.List;
 
-public class DeleteTableSettings {
-    private WebDriver driver;
-    private WebDriverWait wait;
+public class CreateAndOrderTableSettingsTest extends BaseTest {
     private Login login;
+    private WebDriverWait wait;
 
     @BeforeMethod
+    @Override
     public void setUp() {
-        driver = new ChromeDriver();
+        super.setUp();
         login = new Login(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
@@ -38,34 +40,56 @@ public class DeleteTableSettings {
 
         driver.get("http://crm-dash/google-dashboard/sg-campaigns");
 
-        WebElement select = wait
-                .until(ExpectedConditions.visibilityOfElementLocated(By.name("sg-campaigns-list_length")));
+        String title = driver.getTitle();
+        Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
+
+        Helpers.waitForSeconds(3);
+
+        WebElement select = driver.findElement(By.name("sg-campaigns-list_length"));
         Select rows = new Select(select);
         rows.selectByIndex(0);
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fa.fa-caret-down"))).click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-                "//div[@style='display: block; top: 222.594px; left: auto; right: 0px;'] //li[@data-range-key='All Time']")))
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
+                "div.daterangepicker[style*=\"display: block\"] div.ranges li[data-range-key=\"All Time\"]")))
                 .click();
+
         Helpers.waitForSeconds(3);
+
         driver.findElement(By.cssSelector(".fa-table")).click();
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn[data-wizard='next']"))).click();
+        Helpers.waitForSeconds(3);
+
+        driver.findElement(By.id("setting-name")).sendKeys("AutoTableSetting");
 
         Helpers.waitForSeconds(3);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fas.fa-trash.text-red-600"))).click();
+
+        SettingsHelper settingsHelper = new SettingsHelper(driver);
 
         Helpers.waitForSeconds(3);
-        WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
-        deletePreset.click();
+        // Selectează multiple valori
+        String[] valuesToSelect = { "Rev", "CVR", "Ftd", "Conv", "LP CTR", "GEO",
+                "B Clicks", "G Clicks" };
+        settingsHelper.selectMultipleValuesByValue(valuesToSelect);
+
+        // Apasă pe butonul de navigare
+        settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
+
+        // Mută elementele
+        settingsHelper.selectMultipleValuesByValue(new String[] { "CPA" });
+        settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
+
+        driver.findElement(By.cssSelector(".btn[data-wizard='next']")).click();
 
         Helpers.waitForSeconds(3);
+
         wait.until(ExpectedConditions.elementToBeClickable(By.id("apply-swap-list-settings"))).click();
+
         Helpers.waitForSeconds(3);
+        Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
 
-        Reporter.log("A fost ștearsă cu succes setarea" + "\n");
-
+        Helpers.waitForSeconds(3);
         List<WebElement> headers = driver
                 .findElements(By.cssSelector("#sg-campaigns-list_wrapper .table-striped.dataTable thead th"));
         List<WebElement> firstRow = driver.findElements(By.cssSelector("#sg-campaigns-list tbody tr:first-child td"));
@@ -74,10 +98,6 @@ public class DeleteTableSettings {
             String header = headers.get(i).getText();
             String content = (i < firstRow.size()) ? firstRow.get(i).getText() : "";
             Reporter.log(header + " -> " + content);
-
         }
-        Helpers.waitForSeconds(2);
-        driver.quit();
     }
-
 }
