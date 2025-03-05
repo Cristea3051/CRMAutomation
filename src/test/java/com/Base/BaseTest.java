@@ -27,11 +27,11 @@ public class BaseTest {
     public void setUp() {
         // Configurarea opțiunilor pentru ChromeDriver în mod Headless
         ChromeOptions options = new ChromeOptions();
-//         options.addArguments("--headless");
-//         options.addArguments("--disable-gpu");
-//         options.addArguments("--window-size=1920,1080");
-//         options.addArguments("--no-sandbox");
-//         options.addArguments("--disable-dev-shm-usage");
+         options.addArguments("--headless");
+         options.addArguments("--disable-gpu");
+         options.addArguments("--window-size=1920,1080");
+         options.addArguments("--no-sandbox");
+         options.addArguments("--disable-dev-shm-usage");
 
         // Crearea instanței ChromeDriver cu opțiunile configurate
         driver = new ChromeDriver(options);
