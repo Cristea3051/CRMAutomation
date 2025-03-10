@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestNGTest-eb326df7-a608-4050-b03d-d027dfec3faf"
-           tests="1"
+<testsuite name="crmAuto"
+           tests="4"
            failures="0"
            errors="0"
            skipped="0"
-           time="25.253">
+           time="26.667">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="25.253"
+                time="6.463"
+                classname="com.crm.test">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="6.866"
+                classname="com.crm.test">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="6.755"
+                classname="com.crm.test">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="6.583"
                 classname="com.crm.test">
             </testcase>
 </testsuite>
