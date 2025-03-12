@@ -67,7 +67,6 @@ public class Search extends BaseTest{
             }
         }
 
-        // Adăugăm aserția
         Assert.assertTrue(found, "Keyword-ul '" + searchKeyword + "' nu a fost găsit în prima linie a tabelului!");
         Reporter.log("Keyword-ul '" + searchKeyword + "' a fost găsit în prima linie a tabelului.");
 
