@@ -107,3 +107,39 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
         driver.quit();
     }
 }
+
+
+
+//        Helpers.waitForSeconds(3);
+//
+//        driver.findElement(By.cssSelector("button.tw-mr-1:nth-child(5)")).click();
+//
+//        Helpers.waitForSeconds(3);
+//
+//        driver.findElement(By.id("setting-name")).sendKeys("AutoTableSetting");
+//
+//        Helpers.waitForSeconds(3);
+//
+//        SettingsHelper settingsHelper = new SettingsHelper(driver);
+//
+//        Helpers.waitForSeconds(3);
+//
+//        String[] valuesToSelect = { "Domains", "Mb Comments", "Farmer Comments", "Backup Code",
+//                "Source Delivery Date", "Created At",
+//                "Sync From Date" };
+//        settingsHelper.selectMultipleValuesByValue(valuesToSelect);
+//
+//        settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
+//
+//        settingsHelper.selectMultipleValuesByValue(new String[] { "Under Review Reason", "Under Review Date Time" });
+//        settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
+//        Helpers.waitForSeconds(3);
+//        driver.findElement(By.id("save-modal-swap-list")).click();
+//
+//        Helpers.waitForSeconds(3);
+//        Reporter.log("A trecut pe next wizard");
+//        driver.findElement(By.id("apply-swap-list-settings")).click();
+//
+//        Helpers.waitForSeconds(3);
+//        Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
+
