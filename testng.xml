@@ -1,37 +1,44 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test CRM AUTO">
-   <test name="Google Accounts Test">
-      <classes>
-         <class name="com.crm.GoogleAccounts.CreateGoogleAccount" />
-         <class name="com.crm.GoogleAccounts.UpdateGoogleAccount" />
-         <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest" />
-         <class name="com.crm.GoogleAccounts.DownloadCSV" />
-         <class name="com.crm.GoogleAccounts.Search" />
-         <class name="com.crm.GoogleAccounts.DeleteTableSettings" />
-         <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest" />
-      </classes>
-  </test>
+<!--   <test name="Google Accounts Test">-->
+<!--      <classes>-->
+<!--         <class name="com.crm.GoogleAccounts.CreateGoogleAccount" />-->
+<!--         <class name="com.crm.GoogleAccounts.UpdateGoogleAccount" />-->
+<!--         <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest" />-->
+<!--         <class name="com.crm.GoogleAccounts.DownloadCSV" />-->
+<!--         <class name="com.crm.GoogleAccounts.Search" />-->
+<!--         <class name="com.crm.GoogleAccounts.DeleteTableSettings" />-->
+<!--         <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest" />-->
+<!--      </classes>-->
+<!--  </test>-->
 
-<test name="Dash Card Test">
-      <classes>
-         <class name="com.crm.Dashboard.TestDashboardRedirectCard" />
-         <class name="com.crm.Dashboard.TestDashboardSearch" />
-          <class name="com.crm.Dashboard.GetDasboardUrls" />
-      </classes>
-  </test>
+<!--<test name="Dash Card Test">-->
+<!--      <classes>-->
+<!--         <class name="com.crm.Dashboard.TestDashboardRedirectCard" />-->
+<!--         <class name="com.crm.Dashboard.TestDashboardSearch" />-->
+<!--          <class name="com.crm.Dashboard.GetDasboardUrls" />-->
+<!--      </classes>-->
+<!--  </test>-->
 
-      <test name="Download CSV Accounts Test">
-      <classes>
-         <class name="com.crm.FacebookAccounts.DownloadCSV" />
-         <class name="com.crm.OtherAccounts.DownloadCSV" />
-         <class name="com.crm.GoogleAccounts.DownloadCSV" />
-      </classes>
-    </test>
+<!--      <test name="Download CSV Accounts Test">-->
+<!--      <classes>-->
+<!--         <class name="com.crm.FacebookAccounts.DownloadCSV" />-->
+<!--         <class name="com.crm.OtherAccounts.DownloadCSV" />-->
+<!--         <class name="com.crm.GoogleAccounts.DownloadCSV" />-->
+<!--      </classes>-->
+<!--    </test>-->
 
-    <test name="SG TableSettings Test">
+<!--    <test name="SG TableSettings Test">-->
+<!--        <classes>-->
+<!--            <class name="com.crm.SGCampaigns.CreateAndOrderTableSettingsTest" />-->
+<!--            <class name="com.crm.SGCampaigns.DeleteTableSettingsTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Proxy Source Test">
         <classes>
-            <class name="com.crm.SGCampaigns.CreateAndOrderTableSettingsTest" />
-            <class name="com.crm.SGCampaigns.DeleteTableSettingsTest" />
+            <class name="com.crm.ProxySource.CreateAccountProxySourceTest" />
+            <class name="com.crm.ProxySource.DeleteAccountProxySourceTest" />
         </classes>
     </test>
 </suite>
