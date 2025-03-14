@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="29.027">
+           time="29.625">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="29.027"
-                classname="com.crm.FacebookAccounts.CreateAndOrderTableSettingsTest">
+                time="29.625"
+                classname="com.crm.OtherAccounts.FilterOthTest">
             </testcase>
 </testsuite>

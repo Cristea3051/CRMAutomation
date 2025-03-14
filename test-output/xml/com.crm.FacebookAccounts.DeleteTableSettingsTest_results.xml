@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="26.485">
+           time="24.496">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="26.485"
+                time="24.496"
                 classname="com.crm.FacebookAccounts.DeleteTableSettingsTest">
             </testcase>
 </testsuite>
