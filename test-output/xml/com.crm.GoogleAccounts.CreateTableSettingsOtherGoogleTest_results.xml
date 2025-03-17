@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="66.591">
+           time="123.672">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="66.591"
+                time="123.672"
                 classname="com.crm.GoogleAccounts.CreateTableSettingsOtherGoogleTest">
             </testcase>
 </testsuite>

@@ -12,6 +12,6 @@
             <testcase
                 name="signIn"
                 time="51.836"
-                classname="com.crm.GoogleAccounts.TableSettingsOtherGoogleTest">
+                classname="com.crm.GoogleAccounts.CreateTableSettingsOtherGoogleTest">
             </testcase>
 </testsuite>
