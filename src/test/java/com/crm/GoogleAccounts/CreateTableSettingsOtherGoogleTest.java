@@ -31,7 +31,7 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "credentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
         Reporter.log("Utilizator " + username + " s-a logat");
@@ -39,7 +39,7 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
         login.closeDebugBar();
 
         driver.get("http://crm-dash/google-accounts-v2");
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         // Capturăm și printăm lista inițială
         Reporter.log("Lista completă a coloanelor înainte de modificări:");
@@ -51,13 +51,13 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
 
         // Aplicăm modificările
         driver.findElement(By.cssSelector("button.tw-mr-1:nth-child(5)")).click();
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         driver.findElement(By.id("setting-name")).sendKeys("AutoTableSetting");
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         SettingsHelper settingsHelper = new SettingsHelper(driver);
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         String[] valuesToSelect = { "Domains", "Mb Comments", "Farmer Comments", "Backup Code",
                 "Source Delivery Date", "Proxy Type", "License", "Backup Code", "Created At", "Sync From Date" };
@@ -67,14 +67,14 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
 
         settingsHelper.selectMultipleValuesByValue(new String[] { "Under Review Reason", "Under Review Date Time" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         driver.findElement(By.id("save-modal-swap-list")).click();
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
         Reporter.log("A trecut pe next wizard");
 
         driver.findElement(By.id("apply-swap-list-settings")).click();
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         // Capturăm lista finală
         Reporter.log("Lista coloanelor după modificări:");
@@ -100,10 +100,10 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
     private List<String> printTableHeaders() {
         WebElement scrollBar = driver.findElement(By.cssSelector("revogr-scroll-virtual.horizontal.hydrated"));
         Set<String> foundHeaders = new HashSet<>();
-        List<String> headerList = new ArrayList<>(); // Păstrăm ordinea
+        List<String> headerList = new ArrayList<>();
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft = 0;", scrollBar);
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         double initialScroll = 0.0;
         boolean canScroll = true;
@@ -119,10 +119,11 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
             }
 
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft += 300;", scrollBar);
-            Helpers.waitForSeconds(3);
+            Helpers.waitForSeconds(1);
 
-            double newScroll = (double) ((JavascriptExecutor) driver).executeScript(
-                    "return arguments[0].scrollLeft;", scrollBar);
+            // Conversie sigură
+            Object scrollResult = ((JavascriptExecutor) driver).executeScript("return arguments[0].scrollLeft;", scrollBar);
+            double newScroll = ((Number) scrollResult).doubleValue();
 
             if (newScroll == initialScroll) {
                 canScroll = false;
@@ -131,7 +132,7 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
         }
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft = 0;", scrollBar);
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         return headerList;
     }

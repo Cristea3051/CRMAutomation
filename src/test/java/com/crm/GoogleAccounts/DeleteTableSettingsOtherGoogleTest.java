@@ -30,7 +30,7 @@ public class DeleteTableSettingsOtherGoogleTest extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "credentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
         Reporter.log("Utilizator " + username + " s-a logat");
@@ -38,7 +38,7 @@ public class DeleteTableSettingsOtherGoogleTest extends BaseTest {
         login.closeDebugBar();
 
         driver.get("http://crm-dash/google-accounts-v2");
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         Reporter.log("Lista completă a coloanelor înainte de modificări:");
         List<String> beforeHeaders = printTableHeaders();
@@ -48,16 +48,16 @@ public class DeleteTableSettingsOtherGoogleTest extends BaseTest {
         Reporter.log("Numărul total de coloane afișate: " + beforeHeaders.size());
 
         driver.findElement(By.cssSelector("button.tw-mr-1:nth-child(5)")).click();
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         driver.findElement(By.id("save-modal-swap-list")).click();
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
         Reporter.log("A trecut pe next wizard");
 
         driver.findElement(By.cssSelector("i.fa-trash")).click();
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
         driver.findElement(By.cssSelector("button.swal2-confirm")).click();
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
         driver.findElement(By.id("apply-swap-list-settings")).click();
 
         Reporter.log("Lista coloanelor după modificări:");
@@ -71,10 +71,10 @@ public class DeleteTableSettingsOtherGoogleTest extends BaseTest {
     private List<String> printTableHeaders() {
         WebElement scrollBar = driver.findElement(By.cssSelector("revogr-scroll-virtual.horizontal.hydrated"));
         Set<String> foundHeaders = new HashSet<>();
-        List<String> headerList = new ArrayList<>(); // Păstrăm ordinea
+        List<String> headerList = new ArrayList<>();
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft = 0;", scrollBar);
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         double initialScroll = 0.0;
         boolean canScroll = true;
@@ -90,10 +90,11 @@ public class DeleteTableSettingsOtherGoogleTest extends BaseTest {
             }
 
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft += 300;", scrollBar);
-            Helpers.waitForSeconds(3);
+            Helpers.waitForSeconds(1);
 
-            double newScroll = (double) ((JavascriptExecutor) driver).executeScript(
-                    "return arguments[0].scrollLeft;", scrollBar);
+            // Conversie sigură
+            Object scrollResult = ((JavascriptExecutor) driver).executeScript("return arguments[0].scrollLeft;", scrollBar);
+            double newScroll = ((Number) scrollResult).doubleValue();
 
             if (newScroll == initialScroll) {
                 canScroll = false;
@@ -102,7 +103,7 @@ public class DeleteTableSettingsOtherGoogleTest extends BaseTest {
         }
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft = 0;", scrollBar);
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(1);
 
         return headerList;
     }

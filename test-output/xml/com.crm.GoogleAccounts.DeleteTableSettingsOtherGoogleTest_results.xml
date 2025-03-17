@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Google V2 Test"
-           tests="1"
+           tests="4"
            failures="0"
            errors="0"
            skipped="0"
-           time="112.849">
+           time="161.960">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="112.849"
+                time="40.436"
+                classname="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="40.467"
+                classname="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="40.941"
+                classname="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest">
+            </testcase>
+            <testcase
+                name="signIn"
+                time="40.116"
                 classname="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest">
             </testcase>
 </testsuite>

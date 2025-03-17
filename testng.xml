@@ -35,17 +35,17 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-<!--    <test name="Proxy Source Test">-->
-<!--        <classes>-->
-<!--            <class name="com.crm.ProxySource.CreateAccountProxySourceTest" />-->
-<!--            <class name="com.crm.ProxySource.DeleteAccountProxySourceTest" />-->
-<!--        </classes>-->
-<!--    </test>-->
-
-    <test name="Google V2 Test">
+    <test name="Proxy Source Test">
         <classes>
-            <class name="com.crm.GoogleAccounts.CreateTableSettingsOtherGoogleTest" />
-            <class name="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest" />
+            <class name="com.crm.ProxySource.CreateAccountProxySourceTest" />
+            <class name="com.crm.ProxySource.DeleteAccountProxySourceTest" />
         </classes>
     </test>
+
+<!--    <test name="Google V2 Test">-->
+<!--        <classes>-->
+<!--            <class name="com.crm.GoogleAccounts.CreateTableSettingsOtherGoogleTest" />-->
+<!--            <class name="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
