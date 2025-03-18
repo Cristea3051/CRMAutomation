@@ -35,12 +35,12 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-    <test name="Proxy Source Test">
-        <classes>
-            <class name="com.crm.ProxySource.CreateAccountProxySourceTest" />
-            <class name="com.crm.ProxySource.DeleteAccountProxySourceTest" />
-        </classes>
-    </test>
+<!--    <test name="Proxy Source Test">-->
+<!--        <classes>-->
+<!--            <class name="com.crm.ProxySource.CreateAccountProxySourceTest" />-->
+<!--            <class name="com.crm.ProxySource.DeleteAccountProxySourceTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 
 <!--    <test name="Google V2 Test">-->
 <!--        <classes>-->
@@ -48,4 +48,12 @@
 <!--            <class name="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest" />-->
 <!--        </classes>-->
 <!--    </test>-->
+
+    <test name="Facebook Accounts Test">
+          <classes>
+             <class name="com.crm.FacebookAccounts.CreateFacebookAccountTest" />
+              <class name="com.crm.FacebookAccounts.UpdateFacebookAccountTest" />
+              <class name="com.crm.FacebookAccounts.FindAndDeleteFacebookAccountTest" />
+        </classes>
+    </test>
 </suite>

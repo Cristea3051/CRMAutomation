@@ -32,13 +32,13 @@ public class FindAndDeleteFacebookAccountTest extends BaseTest {
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/google-accounts");
+        driver.get("http://crm-dash/facebook-accounts");
         String title = driver.getTitle();
         Reporter.log("S-a navigat cu succes la pagina - " + title);
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.form-control[type='search']")))
-                .sendKeys("GoogleAccountUpdatedTestJava");
+                .sendKeys("UpdatedFacebookAccountNameTestJava");
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions
@@ -51,7 +51,7 @@ public class FindAndDeleteFacebookAccountTest extends BaseTest {
 
         Helpers.waitForSeconds(3);
 
-        Reporter.log("A fost sters cu succes contul - GoogleAccountNameTestJava");
+        Reporter.log("A fost sters cu succes contul - UpdatedFacebookAccountNameTestJava");
 
         driver.quit();
 
