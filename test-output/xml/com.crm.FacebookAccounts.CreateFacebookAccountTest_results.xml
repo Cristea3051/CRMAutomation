@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="crmAuto"
+<testsuite name="Facebook Accounts Test"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="28.289">
+           time="28.450">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="28.289"
+                time="28.450"
                 classname="com.crm.FacebookAccounts.CreateFacebookAccountTest">
             </testcase>
 </testsuite>

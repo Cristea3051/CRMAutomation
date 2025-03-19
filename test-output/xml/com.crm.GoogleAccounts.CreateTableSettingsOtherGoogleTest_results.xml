@@ -4,29 +4,29 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="173.316">
+           time="187.880">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="42.968"
+                time="47.133"
                 classname="com.crm.GoogleAccounts.CreateTableSettingsOtherGoogleTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="43.284"
+                time="46.875"
                 classname="com.crm.GoogleAccounts.CreateTableSettingsOtherGoogleTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="43.200"
+                time="46.893"
                 classname="com.crm.GoogleAccounts.CreateTableSettingsOtherGoogleTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="43.864"
+                time="46.979"
                 classname="com.crm.GoogleAccounts.CreateTableSettingsOtherGoogleTest">
             </testcase>
 </testsuite>

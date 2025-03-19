@@ -4,29 +4,29 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="161.960">
+           time="176.753">
     <properties></properties>
 
 
 
             <testcase
                 name="signIn"
-                time="40.436"
+                time="44.769"
                 classname="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="40.467"
+                time="44.142"
                 classname="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="40.941"
+                time="44.368"
                 classname="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest">
             </testcase>
             <testcase
                 name="signIn"
-                time="40.116"
+                time="43.474"
                 classname="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest">
             </testcase>
 </testsuite>

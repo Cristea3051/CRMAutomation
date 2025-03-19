@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Facebook Accounts Test"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="19.305">
+    <properties></properties>
+
+            <testcase
+                name="signIn"
+                time="19.305"
+                classname="com.crm.FacebookAccounts.FindAndDeleteFacebookAccountTest">
+
+            <failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for element to be clickable: By.cssSelector: td.text-center.desktop.sorting_1.dtfc-fixed-left (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.12.10-76061203-generic&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.88, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33031/devtoo..., se:cdpVersion: 134.0.6998.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f06011b29002eef88c7147aae2467ed9">
+                <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: td.text-center.desktop.sorting_1.dtfc-fixed-left (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.12.10-76061203-generic', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.88, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33031/devtoo..., se:cdpVersion: 134.0.6998.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f06011b29002eef88c7147aae2467ed9
+                org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)com.crm.FacebookAccounts.FindAndDeleteFacebookAccountTest.signIn(FindAndDeleteFacebookAccountTest.java:44)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)java.base/java.lang.reflect.Method.invoke(Method.java:580)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1597)org.testng.TestRunner.privateRun(TestRunner.java:808)org.testng.TestRunner.run(TestRunner.java:603)org.testng.SuiteRunner.runTest(SuiteRunner.java:429)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)org.testng.SuiteRunner.run(SuiteRunner.java:326)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)org.testng.TestNG.runSuitesLocally(TestNG.java:1169)org.testng.TestNG.runSuites(TestNG.java:1092)org.testng.TestNG.run(TestNG.java:1060)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </failure>
+    </testcase>
+
+
+</testsuite>
