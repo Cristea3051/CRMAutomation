@@ -42,18 +42,18 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-    <test name="Google V2 Test">
-        <classes>
-            <class name="com.crm.GoogleAccounts.CreateTableSettingsOtherGoogleTest" />
-            <class name="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest" />
-        </classes>
-    </test>
-
-<!--    <test name="Facebook Accounts Test">-->
-<!--          <classes>-->
-<!--             <class name="com.crm.FacebookAccounts.CreateFacebookAccountTest" />-->
-<!--              <class name="com.crm.FacebookAccounts.UpdateFacebookAccountTest" />-->
-<!--              <class name="com.crm.FacebookAccounts.FindAndDeleteFacebookAccountTest" />-->
+<!--    <test name="Google V2 Test">-->
+<!--        <classes>-->
+<!--            <class name="com.crm.GoogleAccounts.CreateTableSettingsOtherGoogleTest" />-->
+<!--            <class name="com.crm.GoogleAccounts.DeleteTableSettingsOtherGoogleTest" />-->
 <!--        </classes>-->
 <!--    </test>-->
+
+    <test name="Facebook Accounts Test">
+          <classes>
+             <class name="com.crm.FacebookAccounts.CreateFacebookAccountTest" />
+              <class name="com.crm.FacebookAccounts.UpdateFacebookAccountTest" />
+              <class name="com.crm.FacebookAccounts.FindAndDeleteFacebookAccountTest" />
+        </classes>
+    </test>
 </suite>

@@ -212,23 +212,32 @@ public class CreateFacebookAccountTest extends BaseTest {
 
         private void handleAutocomplete(By locator, String inputText, By autocompleteListLocator) {
                 try {
-                        WebElement autocompleteInput = driver.findElement(locator);
+                        WebElement autocompleteInput = wait.until(ExpectedConditions.elementToBeClickable(locator));
+                        autocompleteInput.clear();
                         autocompleteInput.sendKeys(inputText);
 
-                        WebElement autocompleteList = wait
-                                        .until(ExpectedConditions.visibilityOfElementLocated(autocompleteListLocator));
+                        WebElement autocompleteList = wait.until(
+                                ExpectedConditions.visibilityOfElementLocated(autocompleteListLocator)
+                        );
+
+                        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.tagName("div")));
                         List<WebElement> options = autocompleteList.findElements(By.tagName("div"));
 
                         if (!options.isEmpty()) {
                                 WebElement firstOption = options.get(0);
+                                String optionText = firstOption.getText();
                                 firstOption.click();
-                                Reporter.log("Primul element selectat: " + firstOption.getText());
+
+                                Reporter.log("Primul element selectat: " + optionText);
+
+                                wait.until(ExpectedConditions.attributeContains(autocompleteInput, "value", optionText));
+                                Reporter.log("Valoare input după selecție: " + autocompleteInput.getAttribute("value"));
                         } else {
-                                Reporter.log("Nu există sugestii disponibile.");
+                                Reporter.log("Nu există sugestii disponibile pentru '" + inputText + "'.");
                         }
                 } catch (Exception e) {
+                        Reporter.log("Eroare în handleAutocomplete: " + e.getMessage());
                         e.printStackTrace();
                 }
-
         }
 }

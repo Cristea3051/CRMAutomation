@@ -38,7 +38,7 @@ public class FindAndDeleteFacebookAccountTest extends BaseTest {
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.form-control[type='search']")))
-                .sendKeys("UpdatedFacebookAccountNameTestJava");
+                .sendKeys("FacebookAccountUpdatedTestJava");
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions
