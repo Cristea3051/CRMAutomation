@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test CRM AUTO">
+<suite name="Test CRM Suite ">
+    <listeners>
+        <listener class-name="com.utilities.TestListener"/>
+    </listeners>
 <!--   <test name="Google Accounts Test">-->
 <!--      <classes>-->
 <!--         <class name="com.crm.GoogleAccounts.CreateGoogleAccount" />-->
