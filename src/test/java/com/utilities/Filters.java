@@ -1,5 +1,6 @@
 package com.utilities;
 
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,8 +11,6 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 import java.util.ArrayList;
-import org.testng.Reporter;
-
 public class Filters {
     private WebDriver driver;
     private JavascriptExecutor jsc;
@@ -37,7 +36,7 @@ public class Filters {
 
         // Ensure there are enough filters
         if (filterNames.size() < 3) {
-            Reporter.log("Not enough filters available to select 3.");
+            TestListener.getTest().log(Status.INFO,"Not enough filters available to select 3.");
             return;
         }
 
@@ -45,7 +44,7 @@ public class Filters {
         Random random = new Random();
         for (int i = 0; i < 3; i++) {
             String randomFilterName = getRandomFilter(random, filterNames);
-            Reporter.log("Selected filter: " + randomFilterName);
+            TestListener.getTest().log(Status.INFO,"Selected filter: " + randomFilterName);
 
             WebElement filterElement = driver.findElement(By.cssSelector("div[data-collapse='" + randomFilterName + "']"));
             filterElement.click();
@@ -91,7 +90,7 @@ public class Filters {
         } else if (minMaxInputs.size() == 2) {
             setRandomMinMax(driver, minMaxInputs);
         } else {
-            Reporter.log("No valid inputs found for the filter.");
+            TestListener.getTest().log(Status.INFO,"No valid inputs found for the filter.");
         }
     }
 
@@ -103,13 +102,13 @@ public class Filters {
             WebElement checkbox = checkboxes.get(randomCheckboxIndex);
             js.executeScript("arguments[0].click();", checkbox);
             Thread.sleep(2000);
-            Reporter.log("Checkbox clicked with value: " + checkbox.getAttribute("value"));
+            TestListener.getTest().log(Status.INFO,"Checkbox clicked with value: " + checkbox.getAttribute("value"));
         }
     }
 
     // Select a date range from the calendar
     public static void selectDateRange(WebDriver driver, JavascriptExecutor jsc, List<WebElement> dateRangeInputs) throws InterruptedException {
-        Reporter.log("Selecting date range.");
+        TestListener.getTest().log(Status.INFO,"Selecting date range.");
         WebElement dateRangeInput = dateRangeInputs.get(0);
         Thread.sleep(1000);
 
@@ -149,6 +148,6 @@ public class Filters {
         maxInput.clear();
         maxInput.sendKeys(String.valueOf(randomMaxValue));
 
-        Reporter.log("Min value set to: " + randomMinValue + ", Max value set to: " + randomMaxValue);
+        TestListener.getTest().log(Status.INFO,"Min value set to: " + randomMinValue + ", Max value set to: " + randomMaxValue);
     }
 }
