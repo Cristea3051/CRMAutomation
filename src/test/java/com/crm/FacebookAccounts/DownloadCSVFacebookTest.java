@@ -34,7 +34,7 @@ public class DownloadCSVFacebookTest  extends BaseTest {
         logger.info("Setup complet pentru UpdateFacebookAccountTest");
     }
 
-    @Test(dataProvider = "credentials", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
         TestListener.getTest().log(Status.PASS, "Utilizator " + username + " s-a logat");

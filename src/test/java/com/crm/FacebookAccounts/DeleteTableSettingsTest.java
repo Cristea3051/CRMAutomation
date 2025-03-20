@@ -32,7 +32,7 @@ public class DeleteTableSettingsTest extends BaseTest {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    @Test(dataProvider = "FarmerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
         TestListener.getTest().log(Status.PASS, "Utilizator" + username + " s-a logat");

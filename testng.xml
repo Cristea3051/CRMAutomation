@@ -56,8 +56,11 @@
           <classes>
              <class name="com.crm.FacebookAccounts.CreateFacebookAccountTest" />
               <class name="com.crm.FacebookAccounts.UpdateFacebookAccountTest" />
-              <class name="com.crm.FacebookAccounts.FindAndDeleteFacebookAccountTest" />
               <class name="com.crm.FacebookAccounts.DownloadCSVFacebookTest" />
+              <class name="com.crm.FacebookAccounts.CreateAndOrderTableSettingsTest" />
+              <class name="com.crm.FacebookAccounts.FilterFBTest" />
+              <class name="com.crm.FacebookAccounts.DeleteTableSettingsTest" />
+              <class name="com.crm.FacebookAccounts.FindAndDeleteFacebookAccountTest" />
         </classes>
     </test>
 </suite>
