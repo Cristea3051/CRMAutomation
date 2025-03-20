@@ -35,7 +35,7 @@ public class FilterFBTest extends BaseTest {
         filters = new Filters(super.driver);
     }
 
-    @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "FarmerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
         TestListener.getTest().log(Status.PASS,"Utilizator " + username + " s-a logat");

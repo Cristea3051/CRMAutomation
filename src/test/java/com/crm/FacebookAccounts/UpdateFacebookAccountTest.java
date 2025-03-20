@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.aventstack.extentreports.Status; // Import pentru Extent Reports
+import com.aventstack.extentreports.Status;
 
 import java.time.Duration;
 import java.util.List;

@@ -5,10 +5,10 @@ import java.time.Duration;
 import com.Base.BaseTest;
 import com.aventstack.extentreports.Status;
 import com.utilities.TestListener;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,18 +22,19 @@ import com.utilities.Login;
 
 @Listeners(com.utilities.TestListener.class)
 public class DownloadCSVFacebookTest  extends BaseTest {
-    private WebDriver driver;
-    private WebDriverWait wait;
+    private static final Logger logger = LogManager.getLogger(DownloadCSVFacebookTest.class);
     private Login login;
 
     @BeforeMethod
+    @Override
     public void setUp() {
-        driver = new ChromeDriver();
+        super.setUp();
         login = new Login(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        logger.info("Setup complet pentru UpdateFacebookAccountTest");
     }
 
-    @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "credentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
         TestListener.getTest().log(Status.PASS, "Utilizator " + username + " s-a logat");
@@ -65,8 +66,5 @@ public class DownloadCSVFacebookTest  extends BaseTest {
             TestListener.getTest().log(Status.FAIL, "Eroare: Nu s-a putut descarca fisierul!" + "\n");
         }
 
-        Helpers.waitForSeconds(5);
-
-        driver.quit();
     }
 }
