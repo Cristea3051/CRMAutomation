@@ -1,23 +1,26 @@
 package com.crm.FacebookAccounts;
 
 import com.Base.BaseTest;
+import com.aventstack.extentreports.Status;
 import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.resources.configfiles.SettingsHelper;
 import com.utilities.Login;
+import com.utilities.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
 
 import java.time.Duration;
 import java.util.List;
 
+@Listeners(com.utilities.TestListener.class)
 public class CreateAndOrderTableSettingsTest extends BaseTest {
     private Login login;
     private WebDriverWait wait;
@@ -33,14 +36,14 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
     @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
-        Reporter.log("Utilizator " + username + " s-a logat");
+        TestListener.getTest().log(Status.PASS, "Utilizator logat: " + username);
 
         login.closeDebugBar();
 
         driver.get("http://crm-dash/facebook-accounts");
 
         String title = driver.getTitle();
-        Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
+        TestListener.getTest().log(Status.PASS,"Utilizatorul a navigat cu succes la pagina - " + title);
 
         Helpers.waitForSeconds(3);
 
@@ -81,7 +84,7 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.id("apply-swap-list-settings"))).click();
 
         Helpers.waitForSeconds(3);
-        Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
+        TestListener.getTest().log(Status.INFO,"A fost creat cu succes noua setare cu coloanele:" + "\n");
 
         Helpers.waitForSeconds(3);
         List<WebElement> headers = driver.findElements(By.cssSelector(
@@ -97,9 +100,9 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
             String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : "";
 
             if (!header.isEmpty()) {
-                Reporter.log(header + " -> " + content);
+                TestListener.getTest().log(Status.INFO,header + " -> " + content);
             } else {
-                Reporter.log("Header is empty for index ");
+                TestListener.getTest().log(Status.INFO,"Header is empty for index ");
             }
 
         }

@@ -17,11 +17,13 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
+import org.testng.annotations.Listeners;
 
 import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 
+@Listeners(com.utilities.TestListener.class)
 public class CreateFacebookAccountTest extends BaseTest {
         private static final Logger logger = LogManager.getLogger(CreateFacebookAccountTest.class);
         private Login login;

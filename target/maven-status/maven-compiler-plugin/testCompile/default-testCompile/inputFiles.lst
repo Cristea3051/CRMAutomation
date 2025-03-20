@@ -8,7 +8,6 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/CredentialsProvider.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/ClientTest/SpendAndTotalSpendTest.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/Helpers.java
-/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/FacebookAccounts/DownloadCSV.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/ATMRDash/TestATMR.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/test.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/BatchAccounts/DeleteTableSettings.java
@@ -45,6 +44,7 @@
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/ProxySource/DeleteTableSettingsTest.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GoogleAccounts/Filter.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/FacebookAccounts/DeleteTableSettingsTest.java
+/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/FacebookAccounts/DownloadCSVFacebookTest.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/GetConsloeError/CaptureConsloleError.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/crm/MBTest/InfoPopUpMBTest.java
 /home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/Base/BaseTest.java

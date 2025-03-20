@@ -9,8 +9,8 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class TestListener implements ITestListener {
-    private static ExtentReports extent = new ExtentReports();
-    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    private static final ExtentReports extent = new ExtentReports();
+    private static final ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
     @Override
     public void onStart(ITestContext context) {
@@ -20,9 +20,10 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName());
-        test.set(extentTest);
-        test.get().log(Status.INFO, "Testul a început: " + result.getMethod().getMethodName());
+        String className = result.getTestClass().getName();
+        String testName = className.substring(className.lastIndexOf(".") + 1);
+        test.set(extent.createTest(testName));
+        test.get().log(Status.INFO, "Testul a început: " + testName);
     }
 
     @Override

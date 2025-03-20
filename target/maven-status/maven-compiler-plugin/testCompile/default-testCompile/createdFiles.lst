@@ -10,6 +10,7 @@ com/crm/SGCampaigns/SearchSG.class
 com/crm/AccountProxy/TestAccountProxy.class
 com/utilities/TestListener.class
 com/crm/ClientTest/SpendAndTotalSpendTest.class
+com/crm/FacebookAccounts/DownloadCSVFacebookTest.class
 com/crm/ClientTest/VerifyInfoPopUpTest.class
 com/crm/Dashboard/GetDasboardUrls.class
 com/crm/Dashboard/TestDashboardRedirectCard.class
@@ -29,7 +30,6 @@ com/crm/GetConsloeError/CaptureConsloleError$1.class
 com/crm/GoogleAccounts/DownloadCSV.class
 com/crm/FacebookAccounts/FilterFBTest.class
 com/crm/GetConsloeError/CaptureConsloleError.class
-com/crm/FacebookAccounts/DownloadCSV.class
 com/crm/GoogleAccounts/UpdateGoogleAccount.class
 com/crm/FacebookAccounts/FindAndDeleteFacebookAccountTest.class
 com/crm/BatchAccounts/TestBatchSettings.class

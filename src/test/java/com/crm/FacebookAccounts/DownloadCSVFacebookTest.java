@@ -1,6 +1,10 @@
 package com.crm.FacebookAccounts;
 
 import java.time.Duration;
+
+import com.Base.BaseTest;
+import com.aventstack.extentreports.Status;
+import com.utilities.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,15 +12,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
 
 import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
-public class DownloadCSV {
+@Listeners(com.utilities.TestListener.class)
+public class DownloadCSVFacebookTest  extends BaseTest {
     private WebDriver driver;
     private WebDriverWait wait;
     private Login login;
@@ -28,17 +33,17 @@ public class DownloadCSV {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    @Test(dataProvider = "FarmerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
-        Reporter.log("Utilizator " + username + " s-a logat");
+        TestListener.getTest().log(Status.PASS, "Utilizator " + username + " s-a logat");
 
         login.closeDebugBar();
 
         driver.get("http://crm-dash/facebook-accounts");
 
         String title = driver.getTitle();
-        Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
+        TestListener.getTest().log(Status.PASS, "Utilizatorul a navigat cu succes la pagina - " + title);
 
         Helpers.waitForSeconds(3);
         WebElement select = driver.findElement(By.cssSelector("select.custom-select[name='facebook-accounts-list_length']"));
@@ -55,9 +60,9 @@ public class DownloadCSV {
             WebElement confirmButton = driver.findElement(By.id("facebook-accounts-list-export-button"));
             confirmButton.click();
 
-            Reporter.log("A fost descarcat cu success fiserul CSV" + "\n");
+            TestListener.getTest().log(Status.PASS, "A fost descarcat cu success fiserul CSV" + "\n");
         } catch (Exception e) {
-            Reporter.log("Eroare: Nu s-a putut descarca fisierul!" + "\n");
+            TestListener.getTest().log(Status.FAIL, "Eroare: Nu s-a putut descarca fisierul!" + "\n");
         }
 
         Helpers.waitForSeconds(5);

@@ -1,10 +1,12 @@
 package com.crm.FacebookAccounts;
 
 import com.Base.BaseTest;
+import com.aventstack.extentreports.Status;
 import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Filters;
 import com.utilities.Login;
+import com.utilities.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -14,10 +16,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
 
 import java.time.Duration;
 import java.util.List;
 
+@Listeners(com.utilities.TestListener.class)
 public class FilterFBTest extends BaseTest {
     private WebDriverWait wait;
     private Login login;
@@ -34,7 +38,7 @@ public class FilterFBTest extends BaseTest {
     @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
-        Reporter.log("Utilizator " + username + " s-a logat");
+        TestListener.getTest().log(Status.PASS,"Utilizator " + username + " s-a logat");
 
         login.closeDebugBar();
 
@@ -65,9 +69,9 @@ public class FilterFBTest extends BaseTest {
             String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : "";
 
             if (!header.isEmpty()) {
-                Reporter.log(header + " -> " + content);
+                TestListener.getTest().log(Status.INFO,header + " -> " + content);
             } else {
-                Reporter.log("Header is empty for index ");
+                TestListener.getTest().log(Status.INFO,"Header is empty for index ");
             }
     }
 }
