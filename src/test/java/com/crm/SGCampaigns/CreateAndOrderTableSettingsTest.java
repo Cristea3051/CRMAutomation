@@ -1,24 +1,26 @@
 package com.crm.SGCampaigns;
 
 import com.Base.BaseTest;
+import com.aventstack.extentreports.Status;
 import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.resources.configfiles.SettingsHelper;
 import com.utilities.Login;
+import com.utilities.TestListener;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 import java.util.List;
 
+@Listeners(com.utilities.TestListener.class)
 public class CreateAndOrderTableSettingsTest extends BaseTest {
     private Login login;
     private WebDriverWait wait;
@@ -34,14 +36,14 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
     @Test(dataProvider = "MediaBuyerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
-        Reporter.log("Utilizator " + username + " s-a logat");
+        TestListener.getTest().log(Status.PASS, "Utilizator logat: " + username);
 
         login.closeDebugBar();
 
         driver.get("http://crm-dash/google-dashboard/sg-campaigns");
 
         String title = driver.getTitle();
-        Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
+        TestListener.getTest().log(Status.PASS,"Utilizatorul a navigat cu succes la pagina - " + title);
 
         Helpers.waitForSeconds(3);
 
@@ -68,16 +70,15 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
         SettingsHelper settingsHelper = new SettingsHelper(driver);
 
         Helpers.waitForSeconds(3);
-        // Selectează multiple valori
+
         String[] valuesToSelect = { "Rev", "CVR", "Ftd", "Conv", "LP CTR", "GEO",
                 "B Clicks", "G Clicks" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
-        // Apasă pe butonul de navigare
         settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
 
-        // Mută elementele
         settingsHelper.selectMultipleValuesByValue(new String[] { "CPA" });
+
         settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
 
         driver.findElement(By.cssSelector(".btn[data-wizard='next']")).click();
@@ -87,7 +88,7 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.id("apply-swap-list-settings"))).click();
 
         Helpers.waitForSeconds(3);
-        Reporter.log("A fost creat cu succes noua setare cu coloanele:" + "\n");
+        TestListener.getTest().log(Status.PASS,"A fost creat cu succes noua setare cu coloanele:" + "\n");
 
         Helpers.waitForSeconds(3);
         List<WebElement> headers = driver
@@ -97,7 +98,7 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
         for (int i = 0; i < firstRow.size(); i++) {
             String header = headers.get(i).getText();
             String content = (i < firstRow.size()) ? firstRow.get(i).getText() : "";
-            Reporter.log(header + " -> " + content);
+            TestListener.getTest().log(Status.INFO,header + " -> " + content);
         }
     }
 }

@@ -52,15 +52,28 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-    <test name="Facebook Accounts Test">
-          <classes>
-             <class name="com.crm.FacebookAccounts.CreateFacebookAccountTest" />
-              <class name="com.crm.FacebookAccounts.UpdateFacebookAccountTest" />
-              <class name="com.crm.FacebookAccounts.DownloadCSVFacebookTest" />
-              <class name="com.crm.FacebookAccounts.CreateAndOrderTableSettingsTest" />
-              <class name="com.crm.FacebookAccounts.FilterFBTest" />
-              <class name="com.crm.FacebookAccounts.DeleteTableSettingsTest" />
-              <class name="com.crm.FacebookAccounts.FindAndDeleteFacebookAccountTest" />
+<!--    <test name="Facebook Accounts Test">-->
+<!--          <classes>-->
+<!--             <class name="com.crm.FacebookAccounts.CreateFacebookAccountTest" />-->
+<!--              <class name="com.crm.FacebookAccounts.UpdateFacebookAccountTest" />-->
+<!--              <class name="com.crm.FacebookAccounts.DownloadCSVFacebookTest" />-->
+<!--              <class name="com.crm.FacebookAccounts.CreateAndOrderTableSettingsTest" />-->
+<!--              <class name="com.crm.FacebookAccounts.FilterFBTest" />-->
+<!--              <class name="com.crm.FacebookAccounts.DeleteTableSettingsTest" />-->
+<!--              <class name="com.crm.FacebookAccounts.FindAndDeleteFacebookAccountTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="SG Campaigns Test">
+        <classes>
+            <class name="com.crm.SGCampaigns.CreateAndOrderTableSettingsTest" />
+            <class name="com.crm.SGCampaigns.CreateTableSettingsPerOfferTest" />
+            <class name="com.crm.SGCampaigns.DownloadCSVTest" />
+            <class name="com.crm.SGCampaigns.DownloadCSVPerOfferTest" />
+            <class name="com.crm.SGCampaigns.SearchSGTest" />
+            <class name="com.crm.SGCampaigns.SGFilterTest" />
+            <class name="com.crm.SGCampaigns.DeleteTableSettingsTest" />
+            <class name="com.crm.SGCampaigns.DeleteSettingsPerOfferTest" />
         </classes>
     </test>
 </suite>

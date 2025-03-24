@@ -15,7 +15,7 @@ import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
-public class DownloadCSV {
+public class DownloadCSVTest {
       private WebDriver driver;
     private WebDriverWait wait;
     private Login login;

@@ -29,11 +29,11 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
-         options.addArguments("--headless");
-         options.addArguments("--disable-gpu");
-         options.addArguments("--window-size=1920,1080");
-         options.addArguments("--no-sandbox");
-         options.addArguments("--disable-dev-shm-usage");
+//         options.addArguments("--headless");
+//         options.addArguments("--disable-gpu");
+//         options.addArguments("--window-size=1920,1080");
+//         options.addArguments("--no-sandbox");
+//         options.addArguments("--disable-dev-shm-usage");
 
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();

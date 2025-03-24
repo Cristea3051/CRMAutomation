@@ -17,14 +17,14 @@ import com.resources.CredentialsProvider;
 import com.utilities.Filters;
 import com.utilities.Login;
 
-public class SGFilter {
+public class SGFilterTest {
     private WebDriver driver;
     private WebDriverWait wait;
     private Login login;
     private Filters filters;
 
     // Constructor gol
-    public SGFilter() {
+    public SGFilterTest() {
     }
 
     @BeforeMethod

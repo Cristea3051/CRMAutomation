@@ -1,5 +1,5 @@
 package com.crm.SGCampaigns;
 
-public class SearchSG {
+public class SearchSGTest {
 
 }
