@@ -4,21 +4,23 @@ import java.util.List;
 import java.time.Duration;
 
 import com.Base.BaseTest;
+import com.aventstack.extentreports.Status;
+import com.utilities.TestListener;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
+@Listeners(com.utilities.TestListener.class)
 public class DeleteTableSettingsTest extends BaseTest {
     private Login login;
     private WebDriverWait wait;
@@ -34,7 +36,7 @@ public class DeleteTableSettingsTest extends BaseTest {
     @Test(dataProvider = "MediaBuyerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
-        Reporter.log("Utilizator " + username + " s-a logat");
+        TestListener.getTest().log(Status.PASS,"Utilizator " + username + " s-a logat");
 
         login.closeDebugBar();
 
@@ -50,35 +52,35 @@ public class DeleteTableSettingsTest extends BaseTest {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
                 "div.daterangepicker[style*=\"display: block\"] div.ranges li[data-range-key=\"All Time\"]")))
                 .click();
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(2);
         driver.findElement(By.cssSelector(".fa-table")).click();
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn[data-wizard='next']"))).click();
 
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(2);
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fas.fa-trash.swap-list-remove-item.tw-text-red-600[onclick=\"deleteDtColSetting(event)\"]"))).click();
 
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(2);
         WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
         deletePreset.click();
 
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(2);
         wait.until(ExpectedConditions.elementToBeClickable(By.id("apply-swap-list-settings"))).click();
-        Helpers.waitForSeconds(3);
+        Helpers.waitForSeconds(2);
 
-        Reporter.log("A fost ștearsă cu succes setarea" + "\n");
+        TestListener.getTest().log(Status.PASS,"A fost ștearsă cu succes setarea" + "\n");
 
         List<WebElement> headers = driver
                 .findElements(By.cssSelector("#sg-campaigns-list_wrapper .table-striped.dataTable thead th"));
         List<WebElement> firstRow = driver.findElements(By.cssSelector("#sg-campaigns-list tbody tr:first-child td"));
-
+        Helpers.waitForSeconds(2);
         for (int i = 0; i < firstRow.size(); i++) {
             String header = headers.get(i).getText();
             String content = (i < firstRow.size()) ? firstRow.get(i).getText() : "";
-            Reporter.log(header + " -> " + content);
+            TestListener.getTest().log(Status.INFO,header + " -> " + content);
 
         }
-        Helpers.waitForSeconds(2);
+        Helpers.waitForSeconds(1);
     }
 
 }
