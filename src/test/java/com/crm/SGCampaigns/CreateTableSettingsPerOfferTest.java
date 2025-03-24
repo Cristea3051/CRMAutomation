@@ -84,11 +84,6 @@ public class CreateTableSettingsPerOfferTest extends BaseTest {
         settingsHelper.selectMultipleValuesByValue(new String[] { "CPA" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 5);
 
-        List<WebElement> swapedCols = driver.findElements(By.cssSelector(".select[id='swap-to'] option"));
-        for (WebElement swapedCol : swapedCols) {
-            TestListener.getTest().log(Status.INFO,swapedCol.getText());
-        }
-
         driver.findElement(By.cssSelector(".btn[data-wizard='next']")).click();
 
         Helpers.waitForSeconds(2);

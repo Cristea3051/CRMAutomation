@@ -31,7 +31,7 @@ public class DeleteSettingsPerOfferTest extends BaseTest {
                 wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         }
 
-        @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
+        @Test(dataProvider = "MediaBuyerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
         public void signIn(String username, String password) {
                 login.performLogin(username, password);
                 TestListener.getTest().log(Status.PASS, "Utilizator " + username + " s-a logat");
@@ -79,8 +79,15 @@ public class DeleteSettingsPerOfferTest extends BaseTest {
                 Helpers.waitForSeconds(2);
                 wait.until(ExpectedConditions.elementToBeClickable(By.id("apply-swap-list-settings"))).click();
                 Helpers.waitForSeconds(2);
-
+                wait.until(ExpectedConditions.elementToBeClickable(By.id("scroll-top-dt-tables"))).click();
+                Helpers.waitForSeconds(2);
+                wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+                                "//h3[contains(text(), 'Google Campaigns')]/following-sibling::div[@class='block-options']//button[@data-action='content_toggle']//i[@class='si si-arrow-up']")))
+                        .click();
+                Helpers.waitForSeconds(2);
                 TestListener.getTest().log(Status.PASS,"A fost ștearsă cu succes setarea" + "\n");
+                Helpers.waitForSeconds(2);
+
                 List<WebElement> headers = driver
                                 .findElements(By.cssSelector(
                                                 "#binom-offers-reports-sg_wrapper .table-striped.dataTable thead th"));

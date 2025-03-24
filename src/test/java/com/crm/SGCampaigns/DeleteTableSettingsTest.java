@@ -33,7 +33,7 @@ public class DeleteTableSettingsTest extends BaseTest {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    @Test(dataProvider = "MediaBuyerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
         TestListener.getTest().log(Status.PASS,"Utilizator " + username + " s-a logat");
@@ -63,17 +63,19 @@ public class DeleteTableSettingsTest extends BaseTest {
         Helpers.waitForSeconds(2);
         WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
         deletePreset.click();
-
         Helpers.waitForSeconds(2);
         wait.until(ExpectedConditions.elementToBeClickable(By.id("apply-swap-list-settings"))).click();
+
         Helpers.waitForSeconds(2);
 
         TestListener.getTest().log(Status.PASS,"A fost ștearsă cu succes setarea" + "\n");
 
+        Helpers.waitForSeconds(2);
+
         List<WebElement> headers = driver
                 .findElements(By.cssSelector("#sg-campaigns-list_wrapper .table-striped.dataTable thead th"));
         List<WebElement> firstRow = driver.findElements(By.cssSelector("#sg-campaigns-list tbody tr:first-child td"));
-        Helpers.waitForSeconds(2);
+
         for (int i = 0; i < firstRow.size(); i++) {
             String header = headers.get(i).getText();
             String content = (i < firstRow.size()) ? firstRow.get(i).getText() : "";
