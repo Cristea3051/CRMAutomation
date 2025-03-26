@@ -6,13 +6,16 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.aventstack.extentreports.Status;
 import com.resources.configfiles.SettingsHelper;
+import com.utilities.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Base.BaseTest;
@@ -20,6 +23,7 @@ import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
+@Listeners(com.utilities.TestListener.class)
 public class CreateTableSettingsOtherGoogleTest extends BaseTest {
     private Login login;
 
@@ -31,25 +35,23 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    @Test(dataProvider = "credentials", dataProviderClass = CredentialsProvider.class)
+    @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
-        Reporter.log("Utilizator " + username + " s-a logat");
+        TestListener.getTest().log(Status.PASS,"Utilizator " + username + " s-a logat");
 
         login.closeDebugBar();
 
         driver.get("http://crm-dash/google-accounts-v2");
         Helpers.waitForSeconds(1);
 
-        // Capturăm și printăm lista inițială
-        Reporter.log("Lista completă a coloanelor înainte de modificări:");
+        TestListener.getTest().log(Status.INFO,"Lista completă a coloanelor înainte de modificări:");
         List<String> beforeHeaders = printTableHeaders();
         for (String header : beforeHeaders) {
-            Reporter.log(header);
+            TestListener.getTest().log(Status.INFO,header);
         }
-        Reporter.log("Numărul total de coloane afișate: " + beforeHeaders.size());
+        TestListener.getTest().log(Status.INFO,"Numărul total de coloane afișate: " + beforeHeaders.size());
 
-        // Aplicăm modificările
         driver.findElement(By.cssSelector("button.tw-mr-1:nth-child(5)")).click();
         Helpers.waitForSeconds(1);
 
@@ -59,33 +61,31 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
         SettingsHelper settingsHelper = new SettingsHelper(driver);
         Helpers.waitForSeconds(1);
 
-        String[] valuesToSelect = { "Domains", "Mb Comments", "Farmer Comments", "Backup Code",
-                "Source Delivery Date", "Proxy Type", "License", "Backup Code", "Created At", "Sync From Date" };
+        String[] valuesToSelect = { "Account Domains", "MB Commentss", "Farmer Comments", "Backup Code",
+                "Source Delivery Date", "Proxy Type", "License", "Created At", "Sync from date" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
         settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
 
-        settingsHelper.selectMultipleValuesByValue(new String[] { "Under Review Reason", "Under Review Date Time" });
+        settingsHelper.selectMultipleValuesByValue(new String[] { "Under Review Reason", "Under Review Date" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
         Helpers.waitForSeconds(1);
 
         driver.findElement(By.id("save-modal-swap-list")).click();
         Helpers.waitForSeconds(1);
-        Reporter.log("A trecut pe next wizard");
+        TestListener.getTest().log(Status.PASS,"A trecut pe next wizard");
 
         driver.findElement(By.id("apply-swap-list-settings")).click();
         Helpers.waitForSeconds(1);
 
-        // Capturăm lista finală
-        Reporter.log("Lista coloanelor după modificări:");
+        TestListener.getTest().log(Status.PASS,"Lista coloanelor după modificări:");
         List<String> afterHeaders = printTableHeaders();
         for (String header : afterHeaders) {
-            Reporter.log(header);
+            TestListener.getTest().log(Status.INFO,header);
         }
-        Reporter.log("Numărul total de coloane afișate: " + afterHeaders.size());
+        TestListener.getTest().log(Status.INFO,"Numărul total de coloane afișate: " + afterHeaders.size());
 
-        // Concatenăm și comparăm listele
-        Reporter.log("Comparație înainte și după aplicarea setărilor:");
+        TestListener.getTest().log(Status.INFO,"Comparație înainte și după aplicarea setărilor:");
         for (String beforeHeader : beforeHeaders) {
             String result;
             if (afterHeaders.contains(beforeHeader)) {
@@ -93,7 +93,7 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
             } else {
                 result = beforeHeader + " => \"This column is hidden\"";
             }
-            Reporter.log(result);
+            TestListener.getTest().log(Status.INFO,result);
         }
     }
 
@@ -121,7 +121,6 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft += 300;", scrollBar);
             Helpers.waitForSeconds(1);
 
-            // Conversie sigură
             Object scrollResult = ((JavascriptExecutor) driver).executeScript("return arguments[0].scrollLeft;", scrollBar);
             double newScroll = ((Number) scrollResult).doubleValue();
 
