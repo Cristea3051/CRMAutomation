@@ -121,3 +121,41 @@
 2025-03-28 11:38:29 INFO  com.Base.BaseTest - Driver închis după test
 2025-03-28 11:38:29 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
 2025-03-28 11:39:00 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 13:37:27 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 13:37:56 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 13:37:57 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 13:38:26 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 13:38:26 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 13:38:55 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 13:39:37 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 13:40:00 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 13:40:01 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 13:40:24 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 13:40:25 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 13:40:46 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 13:41:09 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 13:41:10 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 13:41:32 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 13:41:56 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 13:41:56 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 13:42:20 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 13:42:21 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 13:42:45 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 14:52:15 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 14:52:20 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 14:52:21 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 14:52:27 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 14:52:27 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 14:52:33 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 14:53:09 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 14:53:17 INFO  com.utilities.WebDriverUtils - Selectat primul element din autocomplete: SuperADS
+2025-03-28 14:53:20 INFO  com.crm.BatchAccounts.CreateAccountBatchTest - Apasat butonul de salvare cont
+2025-03-28 14:53:20 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 14:53:21 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 14:53:29 INFO  com.utilities.WebDriverUtils - Selectat primul element din autocomplete: SuperADS
+2025-03-28 14:53:32 INFO  com.crm.BatchAccounts.CreateAccountBatchTest - Apasat butonul de salvare cont
+2025-03-28 14:53:32 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 14:53:33 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 14:53:41 INFO  com.utilities.WebDriverUtils - Selectat primul element din autocomplete: SuperADS
+2025-03-28 14:53:44 INFO  com.crm.BatchAccounts.CreateAccountBatchTest - Apasat butonul de salvare cont
+2025-03-28 14:53:44 INFO  com.Base.BaseTest - Driver închis după test
