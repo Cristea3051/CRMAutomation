@@ -1,14 +1,123 @@
-2025-03-26 11:54:55 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
-2025-03-26 11:55:23 INFO  com.Base.BaseTest - Driver închis după test
-2025-03-26 11:56:10 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
-2025-03-26 11:56:39 INFO  com.Base.BaseTest - Driver închis după test
-2025-03-26 11:57:11 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
-2025-03-26 11:57:57 INFO  com.Base.BaseTest - Driver închis după test
-2025-03-26 12:00:47 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
-2025-03-26 12:00:57 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
-2025-03-26 12:01:41 INFO  com.Base.BaseTest - Driver închis după test
-2025-03-26 12:01:42 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
-2025-03-26 12:02:24 INFO  com.Base.BaseTest - Driver închis după test
-2025-03-26 12:02:25 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
-2025-03-26 12:02:52 INFO  com.Base.BaseTest - Driver închis după test
-2025-03-26 12:02:52 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:49:24 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:49:53 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:49:54 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:50:23 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:50:23 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:50:52 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:50:52 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:51:21 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:51:22 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:51:48 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:51:48 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:52:03 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:52:04 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:52:06 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:52:07 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:52:21 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:52:22 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:52:37 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:52:37 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:52:56 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:52:57 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:53:16 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:53:16 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:53:35 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:53:36 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:53:55 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:53:56 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:54:20 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:54:21 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:55:10 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:55:10 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:55:49 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:55:49 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:56:32 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:56:33 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:56:53 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:56:53 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:57:24 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:57:25 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:57:50 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:57:51 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:58:16 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 10:58:17 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 10:58:43 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:02:21 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:03:10 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:03:53 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:04:08 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:04:08 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:04:23 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:04:24 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:04:39 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:04:39 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:04:54 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:24:46 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:25:15 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:25:15 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:25:34 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:25:35 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:27:03 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:27:31 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:27:32 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:28:01 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:28:01 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:28:30 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:28:31 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:28:59 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:29:00 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:29:26 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:29:26 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:29:52 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:29:52 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:30:18 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:30:18 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:30:44 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:30:45 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:31:00 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:31:00 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:31:15 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:31:16 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:31:32 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:31:32 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:31:47 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:31:48 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:32:07 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:32:07 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:32:27 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:32:27 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:32:46 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:32:47 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:33:06 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:33:06 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:33:12 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:33:13 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:33:20 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:33:21 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:33:26 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:33:27 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:33:32 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:33:33 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:34:21 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:34:21 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:35:10 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:35:10 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:35:21 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:35:22 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:35:32 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:35:32 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:35:53 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:35:53 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:36:14 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:36:14 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:36:35 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:36:36 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:36:56 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:36:57 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:37:27 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:37:28 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:37:58 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:37:58 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:38:29 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 11:38:29 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 11:39:00 INFO  com.Base.BaseTest - Driver închis după test

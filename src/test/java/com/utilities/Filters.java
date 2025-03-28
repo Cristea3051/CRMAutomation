@@ -47,6 +47,7 @@ public class Filters {
             TestListener.getTest().log(Status.INFO,"Selected filter: " + randomFilterName);
 
             WebElement filterElement = driver.findElement(By.cssSelector("div[data-collapse='" + randomFilterName + "']"));
+            System.out.println(filterElement);
             filterElement.click();
             Thread.sleep(2000);
 
