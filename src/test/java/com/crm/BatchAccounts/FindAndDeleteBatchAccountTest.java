@@ -43,7 +43,7 @@ public class FindAndDeleteBatchAccountTest extends BaseTest {
         logger.info("Navigat la pagina: " + title);
         TestListener.getTest().log(Status.PASS, "Navigat la: " + title);
 
-        String uniqueBatchName = "Batch_Java_" + username;
+        String uniqueBatchName = "Updated_Batch_Java_" + username;
 
         Helpers.waitForSeconds(3);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.form-control[type='search']")))

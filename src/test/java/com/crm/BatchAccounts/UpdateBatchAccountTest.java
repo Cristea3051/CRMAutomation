@@ -63,44 +63,39 @@ public class UpdateBatchAccountTest extends BaseTest {
 
 //        Aici completez modaul de edit
 
-
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.swal2-confirm[type='button']")))
-                .click();
-        logger.info("Confirmat ștergerea contului");
-
         Helpers.waitForSeconds(3);
 
-        logger.info("Contul '{}' a fost șters cu succes", uniqueBatchName);
-        TestListener.getTest().log(Status.PASS, "Contul '" + uniqueBatchName + "' a fost șters cu succes");
+        fillFormFields(uniqueBatchName);
+
+        Helpers.waitForSeconds(3);
     }
 
     private void fillFormFields(String username) {  // Adăugăm parametrul username
         TestListener.getTest().log(Status.INFO, "Completare formular creare cont");
-        String uniqueBatchName = "Updated_Batch_Java_" + username;
-        utils.enterText(By.cssSelector("input[data-modal-field-id='create_name'][name='name']"), uniqueBatchName);
+        String uniqueBatchName = "Updated_" + username;
+        utils.enterText(By.cssSelector("input[data-modal-field-id='edit_name'][placeholder='Enter your batch name..']"), uniqueBatchName);
 
-        utils.enterText(By.cssSelector("input[data-modal-field-id='create_monthly_fee'][name='monthly_fee']"), "20");
+        utils.enterText(By.cssSelector("input[data-modal-field-id='edit_monthly_fee'][name='monthly_fee']"), "30");
 
-        utils.enterText(By.cssSelector("input[data-modal-field-id='create_raw_price']"), "50");
+        utils.enterText(By.cssSelector("input[data-modal-field-id='edit_raw_price'][name='raw_price']"), "30");
 
-        utils.enterText(By.cssSelector("input[data-modal-field-id='create_price'][name='price']"), "100");
+        utils.enterText(By.cssSelector("input[data-modal-field-id='edit_price'][name='price']"), "200");
 
-        utils.handleAutocomplete(By.cssSelector("input[data-modal-field-id='create_source_id'][inputname='source_id']"),
-                "Super", By.id("autocomplete-list"));
+        utils.handleAutocomplete(By.cssSelector("input[data-modal-field-id='edit_account_sources'][inputname='source_id']"),
+                "CDS", By.id("autocomplete-list"));
 
         utils.selectDropdownOption(
-                By.cssSelector("select[data-modal-field-id='create_batch_type'][name='batch_type']"), 2);
+                By.cssSelector("select[data-modal-field-id='edit_batch_type'][name='batch_type']"), 0);
 
-        utils.enterText(By.cssSelector("input[data-modal-field-id='create_spendshare_amount'][name='spendshare_amount']"), "50");
+        utils.enterText(By.cssSelector("input[data-modal-field-id='edit_spendshare_amount'][name='spendshare_amount']"), "10");
 
-        utils.enterText(By.cssSelector("input[data-modal-field-id='create_spendshare_percentage'][name='spendshare_percentage']"), "100");
+        utils.enterText(By.cssSelector("input[data-modal-field-id='edit_spendshare_percentage'][name='spendshare_percentage']"), "10");
 
-        utils.clickAndSelectRandomDay(By.cssSelector("input[data-modal-field-id='create_spendshare_date'][name='spendshare_date']"));
+        utils.clickAndSelectRandomDay(By.cssSelector("input[data-modal-field-id='edit_spendshare_date'][name='spendshare_date']"));
 
         Helpers.waitForSeconds(2);
-        driver.findElement(By.cssSelector("button#create-batch-accounts-button")).click();
-        logger.info("Apasat butonul de salvare cont");
-        TestListener.getTest().log(Status.PASS, "Cont salvat");
+        driver.findElement(By.cssSelector("button#edit-batch-accounts-button")).click();
+        logger.info("Apasat butonul de edit cont");
+        TestListener.getTest().log(Status.PASS, "Cont Editat");
     }
 }
