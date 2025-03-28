@@ -159,3 +159,43 @@
 2025-03-28 14:53:41 INFO  com.utilities.WebDriverUtils - Selectat primul element din autocomplete: SuperADS
 2025-03-28 14:53:44 INFO  com.crm.BatchAccounts.CreateAccountBatchTest - Apasat butonul de salvare cont
 2025-03-28 14:53:44 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 15:30:34 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 15:30:42 INFO  com.utilities.WebDriverUtils - Selectat primul element din autocomplete: SuperADS
+2025-03-28 15:30:44 INFO  com.crm.BatchAccounts.CreateAccountBatchTest - Apasat butonul de salvare cont
+2025-03-28 15:30:47 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 15:30:47 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 15:30:55 INFO  com.utilities.WebDriverUtils - Selectat primul element din autocomplete: SuperADS
+2025-03-28 15:30:57 INFO  com.crm.BatchAccounts.CreateAccountBatchTest - Apasat butonul de salvare cont
+2025-03-28 15:30:59 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 15:31:00 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 15:31:08 INFO  com.utilities.WebDriverUtils - Selectat primul element din autocomplete: SuperADS
+2025-03-28 15:31:10 INFO  com.crm.BatchAccounts.CreateAccountBatchTest - Apasat butonul de salvare cont
+2025-03-28 15:31:12 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 15:34:15 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 15:34:15 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Setup complet pentru FindAndDeleteFacebookAccountTest
+2025-03-28 15:34:15 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Încep testul signIn cu utilizatorul: victor.cristea@vebo.io
+2025-03-28 15:34:15 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 15:36:07 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 15:36:07 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Setup complet pentru FindAndDeleteFacebookAccountTest
+2025-03-28 15:36:07 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Încep testul signIn cu utilizatorul: victor.cristea@vebo.io
+2025-03-28 15:36:10 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Utilizator victor.cristea@vebo.io s-a logat cu succes
+2025-03-28 15:36:10 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Navigat la pagina: Batch accounts - iCRM v.39.12
+2025-03-28 15:36:17 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Confirmat ștergerea contului
+2025-03-28 15:36:20 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Contul 'Batch_Java_victor.cristea@vebo.io' a fost șters cu succes
+2025-03-28 15:36:20 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 15:36:20 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 15:36:20 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Setup complet pentru FindAndDeleteFacebookAccountTest
+2025-03-28 15:36:20 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Încep testul signIn cu utilizatorul: chriss.c@vebo.io
+2025-03-28 15:36:23 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Utilizator chriss.c@vebo.io s-a logat cu succes
+2025-03-28 15:36:24 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Navigat la pagina: Batch accounts - iCRM v.39.12
+2025-03-28 15:36:30 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Confirmat ștergerea contului
+2025-03-28 15:36:33 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Contul 'Batch_Java_chriss.c@vebo.io' a fost șters cu succes
+2025-03-28 15:36:33 INFO  com.Base.BaseTest - Driver închis după test
+2025-03-28 15:36:34 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-03-28 15:36:34 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Setup complet pentru FindAndDeleteFacebookAccountTest
+2025-03-28 15:36:34 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Încep testul signIn cu utilizatorul: marcel.g@vebo.io
+2025-03-28 15:36:35 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Utilizator marcel.g@vebo.io s-a logat cu succes
+2025-03-28 15:36:37 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Navigat la pagina: Batch accounts - iCRM v.39.12
+2025-03-28 15:36:43 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Confirmat ștergerea contului
+2025-03-28 15:36:46 INFO  com.crm.BatchAccounts.FindAndDeleteBatchAccountTest - Contul 'Batch_Java_marcel.g@vebo.io' a fost șters cu succes
+2025-03-28 15:36:46 INFO  com.Base.BaseTest - Driver închis după test

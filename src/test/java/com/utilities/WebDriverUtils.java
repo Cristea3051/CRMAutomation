@@ -28,6 +28,7 @@ public class WebDriverUtils {
 
     // Mutăm funcția enterText
     public void enterText(By locator, String text) {
+        driver.findElement(locator).clear();
         driver.findElement(locator).sendKeys(text);
         logger.debug("Introdus text: " + text + " în câmpul " + locator);
     }
