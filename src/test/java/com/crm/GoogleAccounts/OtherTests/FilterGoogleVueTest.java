@@ -103,45 +103,11 @@ public class FilterGoogleVueTest extends BaseTest {
                     headerIndex++;
                 }
             }
-
-            private List<String> printTableHeaders() {
-                WebElement scrollBar = driver.findElement(By.cssSelector("revogr-scroll-virtual.horizontal.hydrated"));
-                Set<String> foundHeaders = new HashSet<>();
-                List<String> headerList = new ArrayList<>();
-
-                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft = 0;", scrollBar);
-                Helpers.waitForSeconds(1);
-
-                double initialScroll = 0.0;
-                boolean canScroll = true;
-
-                while (canScroll) {
-                    List<WebElement> headers = driver.findElements(By.cssSelector("div.rgHeaderCell div.header-content"));
-                    for (WebElement header : headers) {
-                        String cleanHeader = header.getText().trim();
-                        if (header.isDisplayed() && !cleanHeader.isEmpty() && !foundHeaders.contains(cleanHeader)) {
-                            foundHeaders.add(cleanHeader);
-                            headerList.add(cleanHeader);
-                        }
-                    }
-
-                    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft += 300;", scrollBar);
-                    Helpers.waitForSeconds(1);
-
-                    Object scrollResult = ((JavascriptExecutor) driver).executeScript("return arguments[0].scrollLeft;", scrollBar);
-                    double newScroll = ((Number) scrollResult).doubleValue();
-
-                    if (newScroll == initialScroll) {
-                        canScroll = false;
-                    }
-                    initialScroll = newScroll;
-                }
-
-                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft = 0;", scrollBar);
-                Helpers.waitForSeconds(1);
-
-                return headerList;
-            }
+//            Aici voi scoate functia print table headers in care voi face:
+//            1. scroll la fiecare coloana,
+//            2. sort asc desc pe fiecare coloana,
+//            3. verific daca s-a sortat corect,
+//            4. daca scrol barul a ajuns la sfarsitul tabelului, finisez testul,
 
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft += 300;", scrollBar);
             Helpers.waitForSeconds(1);
