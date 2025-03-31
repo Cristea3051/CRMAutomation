@@ -13,7 +13,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -50,6 +49,7 @@ public class CreateTableSettingsOtherGoogleTest extends BaseTest {
         for (String header : beforeHeaders) {
             TestListener.getTest().log(Status.INFO,header);
         }
+
         TestListener.getTest().log(Status.INFO,"Numărul total de coloane afișate: " + beforeHeaders.size());
 
         driver.findElement(By.cssSelector("button.tw-mr-1:nth-child(5)")).click();
