@@ -20,7 +20,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Listeners(com.utilities.TestListener.class)
+@Listeners(TestListener.class)
 public class FilterGoogleVueTest extends BaseTest {
     private Login login;
 
@@ -42,25 +42,24 @@ public class FilterGoogleVueTest extends BaseTest {
         driver.get("http://crm-dash/google-accounts-v2");
         Helpers.waitForSeconds(2);
 
-        TestListener.getTest().log(Status.INFO, "Lista completă a coloanelor înainte de modificări:");
-
+        TestListener.getTest().log(Status.INFO, "Începem testarea sortării coloanelor:");
         testColumnSortingWithScroll();
     }
 
     private void testColumnSortingWithScroll() {
         WebElement scrollBar = driver.findElement(By.cssSelector("revogr-scroll-virtual.horizontal.hydrated"));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft = 0;", scrollBar);
+        js.executeScript("arguments[0].scrollLeft = 0;", scrollBar);
         Helpers.waitForSeconds(1);
 
-        double initialScroll = 0.0;
-        boolean canScroll = true;
         int headerIndex = 0;
+        boolean canScroll = true;
+        Set<String> processedHeaders = new HashSet<>(); // Pentru a evita procesarea acelorași headere
 
         while (canScroll) {
             List<WebElement> headers = driver.findElements(By.cssSelector("div.rgHeaderCell div.header-content"));
-            Set<String> processedHeaders = new HashSet<>();
 
             for (WebElement header : headers) {
                 String headerText = header.getText().trim();
@@ -103,22 +102,24 @@ public class FilterGoogleVueTest extends BaseTest {
                     headerIndex++;
                 }
             }
-//            Aici voi scoate functia print table headers in care voi face:
-//            1. scroll la fiecare coloana,
-//            2. sort asc desc pe fiecare coloana,
-//            3. verific daca s-a sortat corect,
-//            4. daca scrol barul a ajuns la sfarsitul tabelului, finisez testul,
 
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft += 300;", scrollBar);
-            Helpers.waitForSeconds(1);
+            double scrollLeft = ((Number) js.executeScript("return arguments[0].scrollLeft;", scrollBar)).doubleValue();
+            double scrollWidth = ((Number) js.executeScript("return arguments[0].scrollWidth;", scrollBar)).doubleValue();
+            double clientWidth = ((Number) js.executeScript("return arguments[0].clientWidth;", scrollBar)).doubleValue();
 
-            Object scrollResult = ((JavascriptExecutor) driver).executeScript("return arguments[0].scrollLeft;", scrollBar);
-            double newScroll = ((Number) scrollResult).doubleValue();
-
-            if (newScroll == initialScroll) {
+            if (scrollLeft + clientWidth >= scrollWidth) {
+                TestListener.getTest().log(Status.INFO, "Am ajuns la capătul scrollbar-ului. Test finalizat.");
                 canScroll = false;
+            } else {
+                js.executeScript("arguments[0].scrollLeft += 300;", scrollBar);
+                Helpers.waitForSeconds(1);
+
+                double newScroll = ((Number) js.executeScript("return arguments[0].scrollLeft;", scrollBar)).doubleValue();
+                if (newScroll == scrollLeft) {
+                    TestListener.getTest().log(Status.INFO, "Scroll-ul nu mai avansează. Test finalizat.");
+                    canScroll = false;
+                }
             }
-            initialScroll = newScroll;
         }
     }
 
@@ -157,4 +158,5 @@ public class FilterGoogleVueTest extends BaseTest {
         }
         return true;
     }
+
 }
