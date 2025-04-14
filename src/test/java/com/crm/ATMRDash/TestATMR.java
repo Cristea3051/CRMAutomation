@@ -47,14 +47,11 @@ public class TestATMR extends BaseTest {
         downloadCSVPerOffer();
         deleteTableSettingsPerOffer();
         try {
-            // Verificăm dacă elementul există
             driver.findElement(By.name("atmr-google-search-daily-breakdown-campaigns_length"));
-            // Dacă elementul a fost găsit, executăm metodele
             DailyBreakdownTableSettings();
             DailyBreakdownExportCSV();
             DailyBreakdownDeleteTableSettings();
         } catch (NoSuchElementException e) {
-            // Elementul nu a fost găsit, sarim peste execuție
             System.out.println("Elementul nu a fost găsit, sar peste execuție.");
         }
     }
@@ -88,15 +85,12 @@ public class TestATMR extends BaseTest {
         SettingsHelper settingsHelper = new SettingsHelper(driver);
 
         Helpers.waitForSeconds(3);
-        // Selectează multiple valori
         String[] valuesToSelect = { "GEO", "TS", "Owner", "TMZ", "G Search Abs Top Impr", "G Search Top Impr Share",
                 "G Search Impr Share", "Impr" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
-        // Apasă pe butonul de navigare
         settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
 
-        // Mută elementele
         settingsHelper.selectMultipleValuesByValue(new String[] { "AVG Cpc" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
 
@@ -163,8 +157,6 @@ public class TestATMR extends BaseTest {
                 .click();
     }
 
-    // PER OFFER Report tabble
-
     private void createAndOrderTableSettingsPerOffer() {
         Helpers.waitForSeconds(3);
 
@@ -185,14 +177,12 @@ public class TestATMR extends BaseTest {
         SettingsHelper settingsHelper = new SettingsHelper(driver);
 
         Helpers.waitForSeconds(3);
-        // Selectează multiple valori
+
         String[] valuesToSelect = { "GEO", "Conv", "CPA", "ECPA" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
-        // Apasă pe butonul de navigare
         settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
 
-        // Mută elementele
         settingsHelper.selectMultipleValuesByValue(new String[] { "FTD" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 5);
 
@@ -286,15 +276,14 @@ public class TestATMR extends BaseTest {
         SettingsHelper settingsHelper = new SettingsHelper(driver);
 
         Helpers.waitForSeconds(3);
-        // Selectează multiple valori
+
         String[] valuesToSelect = { "TS", "Owner", "TMZ", "G Search Abs Top Impr", "G Search Top Impr Share",
                 "G Search Impr Share", "Impr" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
-        // Apasă pe butonul de navigare
+
         settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
 
-        // Mută elementele
         settingsHelper.selectMultipleValuesByValue(new String[] { "AVG Cpc" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
 
