@@ -20,30 +20,29 @@ public class TestDashboardSearch extends BaseTest {
     @BeforeMethod
     @Override
     public void setUp() {
-        super.setUp(); // Apelăm metoda setUp() din clasa de bază
-        login = new Login(driver); // Inițializăm obiectul Login
+        super.setUp();
+        login = new Login(driver);
     }
 
     @Test(dataProvider = "credentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
-        // Initializez elementul wait
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        // Localizez si aplic click() pe butonul user dropdown din header
+
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locators.getProperty("user_dropdown")))).click();
 
-        // Extrag textul cu rolul pe care
+
         WebElement element = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locators.getProperty("get_userrole"))));
         String role = element.getText();
 
         Reporter.log("Utilizator " + username + " - " + role + " s-a logat logat");
 
-        // Afisez lista de elemente cu acelasi css selector
+
         List<WebElement> spanElements = driver.findElements(By.cssSelector(locators.getProperty("get_dashcard_name")));
 
-        // Se iterează prin lista de elemente și se extrage textul din fiecare element
         for (WebElement spanElement : spanElements) {
             String card = spanElement.getText();
             Reporter.log("A fost localizat: " + card);

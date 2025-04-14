@@ -61,16 +61,15 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
         SettingsHelper settingsHelper = new SettingsHelper(driver);
 
         Helpers.waitForSeconds(3);
-        // Selectează multiple valori
+
         String[] valuesToSelect = { "Warming Cost", "Monthly Fees", "Revenue", "Profit",
                 "Spend", "Created At",
                 "Other Fees" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
-        // Apasă pe butonul de navigare
+
         settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
 
-        // Mută elementele
         settingsHelper.selectMultipleValuesByValue(new String[] { "Ban Reason" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 20);
 
@@ -90,7 +89,7 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
                 .findElements(By.cssSelector("#other-accounts-list tbody tr:first-child td"));
 
         for (int i = 0; i < headers.size(); i++) {
-            // Scroll până la elementul curent din header
+
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", headers.get(i));
 
             String header = headers.get(i).getText().trim();

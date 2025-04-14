@@ -70,7 +70,7 @@ public class UpdateBatchAccountTest extends BaseTest {
         Helpers.waitForSeconds(3);
     }
 
-    private void fillFormFields(String username) {  // Adăugăm parametrul username
+    private void fillFormFields(String username) {
         TestListener.getTest().log(Status.INFO, "Completare formular creare cont");
         String uniqueBatchName = "Updated_" + username;
         utils.enterText(By.cssSelector("input[data-modal-field-id='edit_name'][placeholder='Enter your batch name..']"), uniqueBatchName);

@@ -17,7 +17,7 @@ import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
-public class Search extends BaseTest{
+public class SearchTest extends BaseTest{
      private Login login;
      @BeforeMethod
     @Override
@@ -55,7 +55,6 @@ public class Search extends BaseTest{
         List<WebElement> firstRow = driver
                 .findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
 
-        // Construim conținutul primei linii pentru a verifica dacă există keyword-ul
         boolean found = false;
         for (int i = 0; i < firstRow.size(); i++) {
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", firstRow.get(i));

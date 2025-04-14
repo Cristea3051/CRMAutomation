@@ -41,12 +41,10 @@ public class TestTest extends BaseTest {
 
         super.driver.get("http://crm-dash/google-accounts-v2");
 
-        Helpers.waitForSeconds(3); // Așteaptă un pic pentru a da timp aplicației să se încarce
+        Helpers.waitForSeconds(3);
 
-        // Găsește scroll-ul orizontal
         WebElement scrollElement = driver.findElement(By.cssSelector("revogr-scroll-virtual.horizontal.hydrated[style='min-height: 15px;']"));
 
-        // Găsește toate header-ele
         List<WebElement> headers = driver.findElements(By.cssSelector("div[role='columnheader'].rgHeaderCell div.header-content"));
         int currentIndex = 0;
         int totalColumns = headers.size();
@@ -57,7 +55,7 @@ public class TestTest extends BaseTest {
         int currentScrollLeft = 0;
 
         while (currentIndex < totalColumns) {
-            Helpers.waitForSeconds(1); // Ajustează timpul după nevoile tale
+            Helpers.waitForSeconds(1);
 
             // Derulează puțin la dreapta
             js.executeScript("arguments[0].scrollLeft += 200;", scrollElement);

@@ -67,7 +67,7 @@ public class DeleteTableSettingsTest extends BaseTest {
                 .findElements(By.cssSelector("#other-accounts-list tbody tr:first-child td"));
 
         for (int i = 0; i < headers.size(); i++) {
-            // Scroll până la elementul curent din header
+
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", headers.get(i));
 
             String header = headers.get(i).getText().trim();

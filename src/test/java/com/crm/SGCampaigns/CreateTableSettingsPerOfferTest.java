@@ -73,14 +73,12 @@ public class CreateTableSettingsPerOfferTest extends BaseTest {
         SettingsHelper settingsHelper = new SettingsHelper(driver);
 
         Helpers.waitForSeconds(2);
-        // Selectează multiple valori
+
         String[] valuesToSelect = { "Rev", "Conv", "Ftd", "EPC" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
-        // Apasă pe butonul de navigare
         settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
 
-        // Mută elementele
         settingsHelper.selectMultipleValuesByValue(new String[] { "CPA" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 5);
 

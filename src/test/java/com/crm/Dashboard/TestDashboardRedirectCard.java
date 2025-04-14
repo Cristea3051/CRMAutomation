@@ -26,13 +26,11 @@ public class TestDashboardRedirectCard extends BaseTest {
     @Test(dataProvider = "credentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
         login.performLogin(username, password);
-        // Initializez elementul wait
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        // Localizez si aplic click() pe butonul user dropdown din header
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locators.getProperty("user_dropdown")))).click();
 
-        // Extrag textul cu rolul pe care
         WebElement element = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locators.getProperty("get_userrole"))));
         String role = element.getText();
@@ -42,7 +40,6 @@ public class TestDashboardRedirectCard extends BaseTest {
         WebElement redirect = wait.until(ExpectedConditions.visibilityOfElementLocated(
         By.xpath("//div[contains(@class, 'sign-in-redirect-container') and @route-name='google-accounts.index']//i[contains(@class, 'si-shuffle')]")));
 
-// Verifică dacă elementul este afișat înainte de a da click
 if (redirect.isDisplayed()) {
     redirect.click();
     Reporter.log("Click-ul pe 'redirect' a fost efectuat cu succes.");
@@ -55,8 +52,7 @@ try {
 } catch (InterruptedException e) {
     e.printStackTrace();
 }
-    
-    // Așteaptă apariția butonului de confirmare
+
     WebElement confirm = wait.until(ExpectedConditions.presenceOfElementLocated(
             By.cssSelector(".swal2-confirm")));
     
@@ -128,7 +124,7 @@ try {
             }
 
             try {
-                Thread.sleep(3000); // Pauză de 3 secunde
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

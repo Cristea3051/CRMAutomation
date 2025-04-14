@@ -10,7 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select; // Importă Select
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -21,7 +21,7 @@ import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 
 @Listeners(com.utilities.TestListener.class)
-public class DeleteTableSettingsTest extends BaseTest { // Moștenește BaseTest
+public class DeleteTableSettingsTest extends BaseTest {
     private Login login;
     private WebDriverWait wait;
 
@@ -34,7 +34,7 @@ public class DeleteTableSettingsTest extends BaseTest { // Moștenește BaseTest
     }
     @Test(dataProvider = "FarmerGlobalCredentials", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
-        // Nu mai trebuie să scrii setările pentru driver, acestea sunt deja în setUp() din BaseTest
+
         login.performLogin(username, password);
         TestListener.getTest().log(Status.PASS,"Utilizator " + username + " s-a logat");
 
@@ -43,7 +43,7 @@ public class DeleteTableSettingsTest extends BaseTest { // Moștenește BaseTest
         driver.get("http://crm-dash/batch-accounts");
 
         WebElement select = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("accounts-batch-list_length")));
-        Select rows = new Select(select); // Asigură-te că importi corect Select
+        Select rows = new Select(select);
         rows.selectByIndex(0);
 
         Helpers.waitForSeconds(3);

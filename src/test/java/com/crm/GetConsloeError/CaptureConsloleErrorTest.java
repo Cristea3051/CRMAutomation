@@ -12,11 +12,11 @@ import org.testng.annotations.Test;
 import com.resources.CredentialsProvider;
 import com.utilities.Login;
 
-public class CaptureConsloleError {
+public class CaptureConsloleErrorTest {
     private WebDriver driver;
     private Login login;
 
-    // Lista de URL-uri pe care le vrei testate
+
     private String[] urlsToTest = {
      "http://crm-dash/google-accounts",
     "http://crm-dash/users",
@@ -85,51 +85,44 @@ public class CaptureConsloleError {
 
     @BeforeMethod
     public void setUp() {
-        // Setează opțiunile pentru Chrome, astfel încât să capturăm log-urile din consola browserului
+
         ChromeOptions options = new ChromeOptions();
         options.setCapability("goog:loggingPrefs", new java.util.HashMap<String, String>() {{
-            put("browser", "ALL");  // Capturăm toate mesajele din consola browserului
+            put("browser", "ALL");
         }});
 
-        // Inițializează driver-ul Chrome cu opțiunile setate
         driver = new ChromeDriver(options);
         login = new Login(driver);
     }
 
     @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
     public void signIn(String username, String password) {
-        // Efectuează login-ul
+
         login.performLogin(username, password);
         Reporter.log("Utilizator " + username + " s-a logat");
 
-        // Închide bara de debug (dacă există)
         login.closeDebugBar();
 
-        // Parcurge lista de URL-uri
         for (String url : urlsToTest) {
-            // Navighează la fiecare pagină
+
             driver.get(url);
             String title = driver.getTitle();
             Reporter.log("Utilizatorul a navigat cu succes la pagina - " + title);
 
-            // Așteaptă câteva secunde pentru ca log-urile să fie capturate
             try {
-                Thread.sleep(2000);  // Ajustează timpul de așteptare după cum este necesar
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
-            // Extrage log-urile din consola browserului
             LogEntries logs = driver.manage().logs().get("browser");
 
-            // Afișează fiecare mesaj din log-uri în Reporter.log
             for (LogEntry entry : logs) {
                 Reporter.log("Nivel: " + entry.getLevel());
                 Reporter.log("Mesaj: " + entry.getMessage());
             }
         }
 
-        // Închide driver-ul
         driver.quit();
     }
 }

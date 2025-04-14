@@ -20,7 +20,7 @@ import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
-public class CreateGoogleAccount extends BaseTest {
+public class CreateGoogleAccountTest extends BaseTest {
         private Login login;
         private WebDriverWait wait;
     
@@ -61,7 +61,7 @@ public class CreateGoogleAccount extends BaseTest {
                                 .findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
                 boolean found = false;
                 for (int i = 0; i < headers.size(); i++) {
-                        // Scroll până la elementul curent din header
+
                         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",
                                         headers.get(i));
 
@@ -80,7 +80,7 @@ public class CreateGoogleAccount extends BaseTest {
                 }
 
                 Helpers.waitForSeconds(3);
-                // Adăugăm aserția
+
                 Assert.assertTrue(found,
                                 "Keyword-ul '" + searchKeyword + "' nu a fost găsit în prima linie a tabelului!");
                 Reporter.log("Keyword-ul '" + searchKeyword + "' a fost găsit în prima linie a tabelului.");
@@ -161,40 +161,34 @@ public class CreateGoogleAccount extends BaseTest {
                                                 "input.form-control.js-maxlength[inputname='rdp_id'][data-modal-field-id='create_rdp_id']"),
                                 "GUL", By.id("autocomplete-list"));
 
-                // Account Proxy
+
                 selectDropdownOption(By.cssSelector(
                                 "select.form-control[name='proxy_id'][data-modal-field-id='create_proxies']"),
                                 1);
 
-                // Account Domains
+
                 selectDropdownOption(By.cssSelector(
                                 "select.form-control[name='account-domains[]'][data-modal-field-id='create_domains']"),
                                 0);
 
-                // MediaBuyer
+
                 handleAutocomplete(
                                 By.cssSelector(
                                                 "input.form-control.js-maxlength[inputname='account_owner'][data-modal-field-id='create_account_owner']"),
                                 "Do", By.id("autocomplete-list"));
 
-                // MediaBuyer Comments
-
                 enterText(By.cssSelector(
                                 "input.form-control.js-maxlength[name='mb_comments'][data-modal-field-id='create_mb_comments']"),
                                 "1commentMB / 2commentsMB / 3commentsMB");
-
-                // License
 
                 enterText(By.cssSelector(
                                 "input.form-control.js-maxlength[name='license'][data-modal-field-id='create_license']"),
                                 "AutomationTestLicense");
 
-                // GEO
                 enterText(By.cssSelector(
                                 "input.form-control.js-maxlength[name='geo'][data-modal-field-id='create_geo']"),
                                 "ATG");
 
-                // Save button
                 Helpers.waitForSeconds(3);
                 driver.findElement(By.cssSelector(
                                 "button#create-google-accounts-button"))

@@ -13,7 +13,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.Listeners;
@@ -62,7 +61,6 @@ public class FilterFBTest extends BaseTest {
                 .findElements(By.cssSelector("#facebook-accounts-list tbody tr:first-child td"));
 
         for (int i = 0; i < headers.size(); i++) {
-            // Scroll până la elementul curent din header
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", headers.get(i));
 
             String header = headers.get(i).getText().trim();

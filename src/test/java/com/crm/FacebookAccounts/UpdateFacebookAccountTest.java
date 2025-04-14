@@ -208,7 +208,7 @@ public class UpdateFacebookAccountTest extends BaseTest {
                 } catch (Exception e) {
                         logger.error("Eroare în handleAutocomplete: " + e.getMessage(), e);
                         TestListener.getTest().log(Status.FAIL, "Eroare autocomplete: " + e.getMessage());
-                        throw e; // Pentru a raporta fail-ul
+                        throw e;
                 }
         }
 }

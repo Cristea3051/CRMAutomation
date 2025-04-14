@@ -79,10 +79,10 @@ public class CreateFacebookAccountTest extends BaseTest {
 
                         if (!header.isEmpty()) {
                                 logger.debug(header + " -> " + content);
-                                TestListener.getTest().log(Status.INFO, header + " -> " + content); // Adăugat în Extent Reports
+                                TestListener.getTest().log(Status.INFO, header + " -> " + content);
                         } else {
                                 logger.warn("Header is empty for index " + i);
-                                TestListener.getTest().log(Status.INFO, "Header is empty for index " + i); // Adăugat în Extent Reports
+                                TestListener.getTest().log(Status.INFO, "Header is empty for index " + i);
                         }
                         if (content.contains(searchKeyword)) {
                                 found = true;
