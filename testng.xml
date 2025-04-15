@@ -5,7 +5,7 @@
     </listeners>
 <!--   <test name="Google Accounts Test">-->
 <!--      <classes>-->
-<!--         <class name="com.crm.GoogleAccounts.CreateGoogleAccount" />-->
+<!--         <class name="com.crm.GoogleAccounts.CreateGoogleAccountTest" />-->
 <!--         <class name="com.crm.GoogleAccounts.UpdateGoogleAccount" />-->
 <!--         <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest" />-->
 <!--         <class name="com.crm.GoogleAccounts.DownloadCSV" />-->
