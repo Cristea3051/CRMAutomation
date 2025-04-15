@@ -64,16 +64,14 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
         SettingsHelper settingsHelper = new SettingsHelper(driver);
 
         Helpers.waitForSeconds(3);
-        // Selectează multiple valori
+
         String[] valuesToSelect = { "Account Domains", "MB Comments", "Farmer Comments", "Backup Code",
                 "Source Delivery Date", "Created At",
                 "Sync from date" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
-        // Apasă pe butonul de navigare
         settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
 
-        // Mută elementele
         settingsHelper.selectMultipleValuesByValue(new String[] { "Under Review Reason" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
 
@@ -93,7 +91,7 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
                 .findElements(By.cssSelector("#facebook-accounts-list tbody tr:first-child td"));
 
         for (int i = 0; i < headers.size(); i++) {
-            // Scroll până la elementul curent din header
+
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", headers.get(i));
 
             String header = headers.get(i).getText().trim();

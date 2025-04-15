@@ -134,14 +134,12 @@ public class TestAccountProxy extends BaseTest {
         SettingsHelper settingsHelper = new SettingsHelper(driver);
 
         Helpers.waitForSeconds(3);
-        // Selectează multiple valori
+
         String[] valuesToSelect = { "Owner", "Updated At", "Created At" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
-        // Apasă pe butonul de navigare
         settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
 
-        // Mută elementele
         settingsHelper.selectMultipleValuesByValue(new String[] { "Source" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 4);
 

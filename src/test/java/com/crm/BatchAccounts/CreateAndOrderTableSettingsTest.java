@@ -64,14 +64,12 @@ public class CreateAndOrderTableSettingsTest extends BaseTest {
         SettingsHelper settingsHelper = new SettingsHelper(driver);
 
         Helpers.waitForSeconds(3);
-        // Selectează multiple valori
+
         String[] valuesToSelect = {"Updated At", "Created At" };
         settingsHelper.selectMultipleValuesByValue(valuesToSelect);
 
-        // Apasă pe butonul de navigare
         settingsHelper.clickNavigationButton("fa fa-arrow-circle-right");
 
-        // Mută elementele
         settingsHelper.selectMultipleValuesByValue(new String[] { "Owner" });
         settingsHelper.moveElements("fa fa-arrow-circle-up", 10);
 

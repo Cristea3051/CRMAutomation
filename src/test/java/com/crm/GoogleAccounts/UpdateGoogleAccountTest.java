@@ -20,7 +20,7 @@ import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
-public class UpdateGoogleAccount extends BaseTest{
+public class UpdateGoogleAccountTest extends BaseTest{
         private Login login;
         private WebDriverWait wait;
     
@@ -72,7 +72,7 @@ public class UpdateGoogleAccount extends BaseTest{
                         .findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
         boolean found = false;
         for (int i = 0; i < headers.size(); i++) {
-                // Scroll până la elementul curent din header
+
                 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",
                                 headers.get(i));
 
@@ -91,7 +91,6 @@ public class UpdateGoogleAccount extends BaseTest{
         }
 
 
-                // Adăugăm aserția
                 Assert.assertTrue(found,
                                 "Keyword-ul '" + searchKeyword + "' nu a fost găsit în prima linie a tabelului!");
                 Reporter.log("Keyword-ul '" + searchKeyword + "' a fost găsit în prima linie a tabelului.");
@@ -176,35 +175,29 @@ public class UpdateGoogleAccount extends BaseTest{
                                                 "input.form-control.js-maxlength[inputname='rdp_id'][data-modal-field-id='edit_rdp_id']"),
                                 "GUL", By.id("autocomplete-list"));
 
-                // Account Domains
+
                 selectDropdownOption(By.cssSelector(
                                 "select.form-control[name='account-domains[]'][data-modal-field-id='edit_domains']"),
                                 1);
 
-                // MediaBuyer
                 handleAutocomplete(
                                 By.cssSelector(
                                                 "input.form-control.js-maxlength[inputname='account_owner'][data-modal-field-id='edit_account_owner']"),
                                 "Ser", By.id("autocomplete-list"));
 
-                // MediaBuyer Comments
 
                 enterText(By.cssSelector(
                                 "input.form-control.js-maxlength[name='mb_comments'][data-modal-field-id='edit_mb_comments']"),
                                 "1commentMB / 2commentsMB / 3commentsMB");
 
-                // License
 
                 enterText(By.cssSelector(
                                 "input.form-control.js-maxlength[name='license'][data-modal-field-id='edit_license']"),
                                 "AutomationTestLicense");
 
-                // GEO
                 enterText(By.cssSelector(
                                 "input.form-control.js-maxlength[name='geo'][data-modal-field-id='edit_geo']"),
                                 "ATGU");
-
-                // Save button
 
                 driver.findElement(By.id(
                                 "edit-google-accounts-button"))

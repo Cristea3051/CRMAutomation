@@ -6,11 +6,15 @@
 <!--   <test name="Google Accounts Test">-->
 <!--      <classes>-->
 <!--         <class name="com.crm.GoogleAccounts.CreateGoogleAccountTest" />-->
+<<<<<<< HEAD
 <!--         <class name="com.crm.GoogleAccounts.UpdateGoogleAccount" />-->
+=======
+<!--         <class name="com.crm.GoogleAccounts.UpdateGoogleAccountTest" />-->
+>>>>>>> 76f613180ededd32f5b7d1d7bd361874b1c7bc8c
 <!--         <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest" />-->
-<!--         <class name="com.crm.GoogleAccounts.DownloadCSV" />-->
-<!--         <class name="com.crm.GoogleAccounts.Search" />-->
-<!--         <class name="com.crm.GoogleAccounts.DeleteTableSettings" />-->
+<!--         <class name="com.crm.GoogleAccounts.DownloadCSVTest" />-->
+<!--         <class name="com.crm.GoogleAccounts.SearchTest" />-->
+<!--         <class name="com.crm.GoogleAccounts.DeleteTableSettingsTest" />-->
 <!--         <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest" />-->
 <!--      </classes>-->
 <!--  </test>-->
@@ -26,8 +30,8 @@
 <!--      <test name="Download CSV Accounts Test">-->
 <!--      <classes>-->
 <!--         <class name="com.crm.FacebookAccounts.DownloadCSV" />-->
-<!--         <class name="com.crm.OtherAccounts.DownloadCSV" />-->
-<!--         <class name="com.crm.GoogleAccounts.DownloadCSV" />-->
+<!--         <class name="com.crm.OtherAccounts.DownloadCSVTest" />-->
+<!--         <class name="com.crm.GoogleAccounts.DownloadCSVTest" />-->
 <!--      </classes>-->
 <!--    </test>-->
 

@@ -1,7 +1,8 @@
 package com.crm.GoogleAccounts;
 
-import java.util.List;
 import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -15,18 +16,20 @@ import org.testng.annotations.Test;
 import com.Base.BaseTest;
 import com.resources.CredentialsProvider;
 import com.resources.Helpers;
+import com.utilities.Filters;
 import com.utilities.Login;
 
-public class DeleteTableSettings extends BaseTest {
-    private Login login;
+public class FilterTest extends BaseTest {
     private WebDriverWait wait;
+    private Login login;
+    private Filters filters;
 
     @BeforeMethod
-    @Override
     public void setUp() {
         super.setUp();
-        login = new Login(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        login = new Login(super.driver); 
+        wait = new WebDriverWait(super.driver, Duration.ofSeconds(10));
+        filters = new Filters(super.driver);
     }
 
     @Test(dataProvider = "GlobalCred", dataProviderClass = CredentialsProvider.class)
@@ -36,38 +39,27 @@ public class DeleteTableSettings extends BaseTest {
 
         login.closeDebugBar();
 
-        driver.get("http://crm-dash/google-accounts");
+        super.driver.get("http://crm-dash/google-accounts");
 
         WebElement select = wait
                 .until(ExpectedConditions.visibilityOfElementLocated(By.name("google-accounts-list_length")));
         Select rows = new Select(select);
         rows.selectByIndex(0);
 
-        Helpers.waitForSeconds(3);
-        driver.findElement(By.cssSelector(".fa-table")).click();
+        try {
+            filters.applyRandomFilters();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".btn[data-wizard='next']"))).click();
-
-        Helpers.waitForSeconds(3);
-        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("i.fas.fa-trash.tw-text-red-600"))).click();
-
-        Helpers.waitForSeconds(3);
-        WebElement deletePreset = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".swal2-confirm")));
-        deletePreset.click();
-
-        Helpers.waitForSeconds(3);
-        wait.until(ExpectedConditions.elementToBeClickable(By.id("apply-swap-list-settings"))).click();
-        Helpers.waitForSeconds(3);
-
-        Reporter.log("A fost ștearsă cu succes setarea" + "\n");
-
-         List<WebElement> headers = driver.findElements(By.cssSelector(
+         Helpers.waitForSeconds(3);
+        List<WebElement> headers = driver.findElements(By.cssSelector(
                 ".dataTables_scrollHeadInner > table:nth-child(1) > thead:nth-child(1) > tr:nth-child(1) > th"));
         List<WebElement> firstRow = driver
                 .findElements(By.cssSelector("#google-accounts-list tbody tr:first-child td"));
 
         for (int i = 0; i < headers.size(); i++) {
-            // Scroll până la elementul curent din header
+
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", headers.get(i));
 
             String header = headers.get(i).getText().trim();
@@ -78,10 +70,6 @@ public class DeleteTableSettings extends BaseTest {
             } else {
                 Reporter.log("Header is empty for index ");
             }
-
-        }
-        Helpers.waitForSeconds(2);
-        driver.quit();
     }
-
+}
 }

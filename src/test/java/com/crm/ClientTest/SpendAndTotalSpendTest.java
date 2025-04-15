@@ -58,9 +58,8 @@ public class SpendAndTotalSpendTest extends BaseTest {
         boolean found = false;
 
         for (int i = 0; i < headers.size(); i++) {
-            String header = headers.get(i).getText().trim(); // Eliminăm spațiile suplimentare
+            String header = headers.get(i).getText().trim();
 
-            // Verificăm dacă textul este "Total Spend" sau "Ad Spend"
             if (header.equalsIgnoreCase("Total Spend") || header.equalsIgnoreCase("Ad Spend")) {
 
                 String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : null;

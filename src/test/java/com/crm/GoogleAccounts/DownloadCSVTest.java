@@ -15,7 +15,7 @@ import com.resources.CredentialsProvider;
 import com.resources.Helpers;
 import com.utilities.Login;
 
-public class DownloadCSV extends BaseTest {
+public class DownloadCSVTest extends BaseTest {
     private Login login;
     private WebDriverWait wait;
 

@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 import com.resources.CredentialsProvider;
 import com.utilities.Login;
 
-public class GetDasboardUrls {
+public class GetDasboardUrlsTest {
     private WebDriver driver;
     private Login login;
     private WebDriverWait wait;

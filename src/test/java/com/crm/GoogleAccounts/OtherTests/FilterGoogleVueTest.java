@@ -111,7 +111,7 @@ public class FilterGoogleVueTest extends BaseTest {
                 TestListener.getTest().log(Status.INFO, "Am ajuns la capătul scrollbar-ului. Test finalizat.");
                 canScroll = false;
             } else {
-                js.executeScript("arguments[0].scrollLeft += 300;", scrollBar);1
+                js.executeScript("arguments[0].scrollLeft += 300;", scrollBar);
                 Helpers.waitForSeconds(1);
 
                 double newScroll = ((Number) js.executeScript("return arguments[0].scrollLeft;", scrollBar)).doubleValue();
