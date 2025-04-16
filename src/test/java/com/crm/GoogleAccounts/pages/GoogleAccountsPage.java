@@ -1,6 +1,7 @@
 package com.crm.GoogleAccounts.pages;
 
 import com.aventstack.extentreports.Status;
+import com.resources.Helpers;
 import com.utilities.TestListener;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -80,7 +81,8 @@ public class GoogleAccountsPage {
             // Pas 1: Introdu text în câmpul de căutare și așteaptă 1 secundă
             enterText(searchInput, keyword);
             TestListener.getTest().log(Status.INFO, "Text introdus în câmpul de căutare: " + keyword);
-            pause(); // Pauză de 1 secundă pentru stabilizarea vizuală a căutării
+
+            Helpers.waitForSeconds(3);
 
             // Pas 2: Așteaptă ca indicatorul de încărcare să dispară (dacă există)
             try {
@@ -135,17 +137,6 @@ public class GoogleAccountsPage {
         } catch (Exception e) {
             TestListener.getTest().log(Status.FAIL, "Eroare la căutarea/verificarea tabelului: " + e.getMessage());
             throw e;
-        }
-    }
-
-    // Metodă auxiliară pentru pauză
-    private void pause() {
-        try {
-            Thread.sleep(1000);
-            TestListener.getTest().log(Status.INFO, "Pauză de " + 1 + " secundă(e)");
-        } catch (InterruptedException e) {
-            TestListener.getTest().log(Status.WARNING, "Pauza întreruptă: " + e.getMessage());
-            Thread.currentThread().interrupt();
         }
     }
 
