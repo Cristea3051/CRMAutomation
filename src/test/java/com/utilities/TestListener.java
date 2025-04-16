@@ -11,34 +11,48 @@ import org.testng.ITestResult;
 public class TestListener implements ITestListener {
     private static final ExtentReports extent = new ExtentReports();
     private static final ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    private static boolean isReporterAttached = false;
 
     @Override
     public void onStart(ITestContext context) {
-        ExtentSparkReporter spark = new ExtentSparkReporter("target/extent-report.html");
-        extent.attachReporter(spark);
+        if (!isReporterAttached) {
+            ExtentSparkReporter spark = new ExtentSparkReporter("target/extent-report.html");
+            extent.attachReporter(spark);
+            isReporterAttached = true;
+        }
     }
 
     @Override
     public void onTestStart(ITestResult result) {
         String className = result.getTestClass().getName();
         String testName = className.substring(className.lastIndexOf(".") + 1);
-        test.set(extent.createTest(testName));
-        test.get().log(Status.INFO, "Testul a început: " + testName);
+        ExtentTest extentTest = extent.createTest(testName);
+        test.set(extentTest);
+        extentTest.log(Status.INFO, "Testul a început: " + testName);
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        test.get().log(Status.PASS, "Testul a trecut cu succes");
+        ExtentTest extentTest = test.get();
+        if (extentTest != null) {
+            extentTest.log(Status.PASS, "Testul a trecut cu succes");
+        }
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        test.get().log(Status.FAIL, "Testul a eșuat: " + result.getThrowable().getMessage());
+        ExtentTest extentTest = test.get();
+        if (extentTest != null) {
+            extentTest.log(Status.FAIL, "Testul a eșuat: " + result.getThrowable().getMessage());
+        }
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        test.get().log(Status.SKIP, "Testul a fost sărit");
+        ExtentTest extentTest = test.get();
+        if (extentTest != null) {
+            extentTest.log(Status.SKIP, "Testul a fost sărit");
+        }
     }
 
     @Override
@@ -47,6 +61,12 @@ public class TestListener implements ITestListener {
     }
 
     public static ExtentTest getTest() {
-        return test.get();
+        ExtentTest extentTest = test.get();
+        if (extentTest == null) {
+            // Inițializează un test temporar dacă nu există unul
+            extentTest = extent.createTest("TemporaryTest");
+            test.set(extentTest);
+        }
+        return extentTest;
     }
 }
