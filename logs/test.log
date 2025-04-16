@@ -452,3 +452,7 @@ java.io.FileNotFoundException: /home/victorcristea/Documents/AutomationCRM/crmAu
 2025-04-16 15:06:41 INFO  com.Base.BaseTest - Driver închis după test
 2025-04-16 15:06:43 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
 2025-04-16 15:07:02 INFO  com.Base.BaseTest - Driver închis după test
+2025-04-16 15:21:05 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-04-16 15:21:24 INFO  com.Base.BaseTest - Driver închis după test
+2025-04-16 15:21:26 INFO  com.Base.BaseTest - Driver inițializat și configurat pentru test
+2025-04-16 15:21:43 INFO  com.Base.BaseTest - Driver închis după test

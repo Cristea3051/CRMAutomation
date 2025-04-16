@@ -6,7 +6,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
 
 import java.time.Duration;
 import java.util.List;
@@ -18,9 +17,7 @@ public class GoogleAccountsPage {
 
     // Locatori
     private final By createButton = By.cssSelector("button.btn-dual:nth-child(5)");
-    private By searchInput = By.cssSelector("input.form-control[type='search']");
-    private By tableHeaders = By.cssSelector(".dataTables_scrollHeadInner th");
-    private By firstRowCells = By.cssSelector("#google-accounts-list tbody tr:first-child td");
+    private final By searchInput = By.cssSelector("input.form-control[type='search']");
     private final By rowsSelect = By.name("google-accounts-list_length");
     private final By exportCsvButton = By.xpath("//button[@title='Export to CSV File' and contains(@class, 'buttons-csv') and @aria-controls='google-accounts-list']");
     private final By confirmExportButton = By.id("google-accounts-list-export-button");
@@ -60,7 +57,7 @@ public class GoogleAccountsPage {
     public void fillCreateForm() {
         enterText(accountNameField, "GoogleAccountNameTestJava");
         enterText(accountIdField, "1234567890");
-        selectDropdownOption(By.cssSelector("select.form-control.js-maxlength[name='status'][data-modal-field-id='create_status']"), 2);
+        selectDropdownOption(By.cssSelector("select.form-control.js-maxlength[name='status'][data-modal-field-id='create_status']"));
         clickAndSelectRandomDay(By.cssSelector("input.form-control.js-maxlength[name='id_verification'][data-modal-field-id='create_id_verification']"));
 //      NU treb de uitat de adaugat alte elemente
         WebElement saveBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(saveButton));
@@ -80,9 +77,10 @@ public class GoogleAccountsPage {
     public boolean searchAndVerify(String keyword) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         try {
-            // Pas 1: Introdu text în câmpul de căutare și așteaptă procesarea
+            // Pas 1: Introdu text în câmpul de căutare și așteaptă 1 secundă
             enterText(searchInput, keyword);
             TestListener.getTest().log(Status.INFO, "Text introdus în câmpul de căutare: " + keyword);
+            pause(); // Pauză de 1 secundă pentru stabilizarea vizuală a căutării
 
             // Pas 2: Așteaptă ca indicatorul de încărcare să dispară (dacă există)
             try {
@@ -123,7 +121,7 @@ public class GoogleAccountsPage {
                 String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : "";
 
                 // Loghează antetul și celula
-                TestListener.getTest().log(Status.INFO, "Header[" + i + "]: " + headerText + " -> Cell[" + i + "]: " + content);
+                TestListener.getTest().log(Status.INFO, "Antet[" + i + "]: " + headerText + " -> Celulă[" + i + "]: " + content);
 
                 // Verifică dacă keyword este în conținut
                 if (content.contains(keyword)) {
@@ -137,6 +135,17 @@ public class GoogleAccountsPage {
         } catch (Exception e) {
             TestListener.getTest().log(Status.FAIL, "Eroare la căutarea/verificarea tabelului: " + e.getMessage());
             throw e;
+        }
+    }
+
+    // Metodă auxiliară pentru pauză
+    private void pause() {
+        try {
+            Thread.sleep(1000);
+            TestListener.getTest().log(Status.INFO, "Pauză de " + 1 + " secundă(e)");
+        } catch (InterruptedException e) {
+            TestListener.getTest().log(Status.WARNING, "Pauza întreruptă: " + e.getMessage());
+            Thread.currentThread().interrupt();
         }
     }
 
@@ -202,10 +211,10 @@ public class GoogleAccountsPage {
         element.sendKeys(text);
     }
 
-    private void selectDropdownOption(By locator, int index) {
+    private void selectDropdownOption(By locator) {
         WebElement selectElement = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         wait.until(ExpectedConditions.elementToBeClickable(selectElement));
-        new Select(selectElement).selectByIndex(index);
+        new Select(selectElement).selectByIndex(2);
     }
 
     private void clickAndSelectRandomDay(By locator) {

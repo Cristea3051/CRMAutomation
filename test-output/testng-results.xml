@@ -11,16 +11,16 @@
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-04-16T15:06:17 EEST" name="Test CRM Suite " finished-at="2025-04-16T15:07:02 EEST" duration-ms="45038">
+  <suite started-at="2025-04-16T15:21:04 EEST" name="Test CRM Suite " finished-at="2025-04-16T15:21:43 EEST" duration-ms="39480">
     <groups>
     </groups>
-    <test started-at="2025-04-16T15:06:17 EEST" name="Google Accounts Test" finished-at="2025-04-16T15:07:02 EEST" duration-ms="45038">
+    <test started-at="2025-04-16T15:21:04 EEST" name="Google Accounts Test" finished-at="2025-04-16T15:21:43 EEST" duration-ms="39480">
       <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@18b0930f]" started-at="2025-04-16T15:06:41 EEST" name="setUp" finished-at="2025-04-16T15:06:43 EEST" duration-ms="1733" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@18b0930f]" started-at="2025-04-16T15:21:24 EEST" name="setUp" finished-at="2025-04-16T15:21:26 EEST" duration-ms="1461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@18b0930f]" started-at="2025-04-16T15:06:43 EEST" name="signIn" data-provider="GlobalCred" finished-at="2025-04-16T15:07:02 EEST" duration-ms="19004" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@18b0930f]" started-at="2025-04-16T15:21:26 EEST" name="signIn" data-provider="GlobalCred" finished-at="2025-04-16T15:21:43 EEST" duration-ms="17584" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,17 +39,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@18b0930f]" started-at="2025-04-16T15:07:02 EEST" name="tearDown" finished-at="2025-04-16T15:07:02 EEST" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@18b0930f]" started-at="2025-04-16T15:21:43 EEST" name="tearDown" finished-at="2025-04-16T15:21:43 EEST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest -->
       <class name="com.crm.GoogleAccounts.CreateGoogleAccountTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@35e5d0e5]" started-at="2025-04-16T15:06:17 EEST" name="setUp" finished-at="2025-04-16T15:06:20 EEST" duration-ms="2482" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@35e5d0e5]" started-at="2025-04-16T15:21:04 EEST" name="setUp" finished-at="2025-04-16T15:21:05 EEST" duration-ms="1443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@35e5d0e5]" started-at="2025-04-16T15:06:20 EEST" name="signIn" data-provider="GlobalCred" finished-at="2025-04-16T15:06:41 EEST" duration-ms="21476" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@35e5d0e5]" started-at="2025-04-16T15:21:05 EEST" name="signIn" data-provider="GlobalCred" finished-at="2025-04-16T15:21:24 EEST" duration-ms="18704" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,7 +71,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@35e5d0e5]" started-at="2025-04-16T15:06:41 EEST" name="tearDown" finished-at="2025-04-16T15:06:41 EEST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@35e5d0e5]" started-at="2025-04-16T15:21:24 EEST" name="tearDown" finished-at="2025-04-16T15:21:24 EEST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
