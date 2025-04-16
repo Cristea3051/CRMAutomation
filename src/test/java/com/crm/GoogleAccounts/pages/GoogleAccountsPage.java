@@ -1,5 +1,7 @@
 package com.crm.GoogleAccounts.pages;
 
+import com.aventstack.extentreports.Status;
+import com.utilities.TestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
 
 import java.time.Duration;
 import java.util.List;
@@ -18,23 +19,23 @@ public class GoogleAccountsPage {
     private final WebDriverWait wait;
 
     // Locatori
-    private By createButton = By.cssSelector("button.btn-dual:nth-child(5)");
-    private By searchInput = By.cssSelector("input.form-control-sm");
-    private By tableHeaders = By.cssSelector(".dataTables_scrollHeadInner > table:nth-child(1) > thead:nth-child(1) > tr:nth-child(1) > th");
-    private By firstRowCells = By.cssSelector("#google-accounts-list tbody tr:first-child td");
-    private By rowsSelect = By.name("google-accounts-list_length");
-    private By exportCsvButton = By.xpath("//button[@title='Export to CSV File' and contains(@class, 'buttons-csv') and @aria-controls='google-accounts-list']");
-    private By confirmExportButton = By.id("google-accounts-list-export-button");
-    private By editButton = By.cssSelector("i.fa-edit");
-    private By deleteButton = By.cssSelector("i.fa-trash-alt");
-    private By confirmDeleteButton = By.cssSelector("button.swal2-confirm[type='button']");
-    private By rowClick = By.cssSelector("td.text-center.desktop.sorting_1.dtfc-fixed-left");
+    private final By createButton = By.cssSelector("button.btn-dual:nth-child(5)");
+    private final By searchInput = By.cssSelector("input.form-control-sm");
+    private final By tableHeaders = By.cssSelector(".dataTables_scrollHeadInner > table:nth-child(1) > thead:nth-child(1) > tr:nth-child(1) > th");
+    private final By firstRowCells = By.cssSelector("#google-accounts-list tbody tr:first-child td");
+    private final By rowsSelect = By.name("google-accounts-list_length");
+    private final By exportCsvButton = By.xpath("//button[@title='Export to CSV File' and contains(@class, 'buttons-csv') and @aria-controls='google-accounts-list']");
+    private final By confirmExportButton = By.id("google-accounts-list-export-button");
+    private final By editButton = By.cssSelector("i.fa-edit");
+    private final By deleteButton = By.cssSelector("i.fa-trash-alt");
+    private final By confirmDeleteButton = By.cssSelector("button.swal2-confirm[type='button']");
+    private final By rowClick = By.cssSelector("td.text-center.desktop.sorting_1.dtfc-fixed-left");
 
     // Locatori formular creare/editare
-    private By accountNameField = By.cssSelector("textarea.form-control");
-    private By accountIdField = By.cssSelector("input.form-control.js-maxlength[name='account_id'][data-modal-field-id='create_account_id']");
-    private By saveButton = By.cssSelector("button#create-google-accounts-button");
-    private By editSaveButton = By.id("edit-google-accounts-button");
+    private final By accountNameField = By.cssSelector("textarea.form-control");
+    private final By accountIdField = By.cssSelector("input.form-control.js-maxlength[name='account_id'][data-modal-field-id='create_account_id']");
+    private final By saveButton = By.cssSelector("button#create-google-accounts-button");
+    private final By editSaveButton = By.id("edit-google-accounts-button");
 
     public GoogleAccountsPage(WebDriver driver) {
         this.driver = driver;
@@ -45,7 +46,7 @@ public class GoogleAccountsPage {
         driver.get("http://crm-dash/google-accounts");
         // Așteaptă ca pagina să fie încărcată complet
         wait.until(ExpectedConditions.urlContains("google-accounts"));
-        Reporter.log("Navigat la pagina: " + driver.getTitle());
+        TestListener.getTest().log(Status.PASS,"Navigat la pagina: " + driver.getTitle());
     }
 
     public void selectRows(int index) {
@@ -91,7 +92,7 @@ public class GoogleAccountsPage {
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", header);
             String headerText = header.getText().trim();
             String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : "";
-            Reporter.log(headerText + " -> " + content);
+            TestListener.getTest().log(Status.INFO,headerText + " -> " + content);
 
             if (content.contains(keyword)) {
                 found = true;
@@ -106,9 +107,9 @@ public class GoogleAccountsPage {
         try {
             WebElement confirmBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(confirmExportButton));
             wait.until(ExpectedConditions.elementToBeClickable(confirmBtn)).click();
-            Reporter.log("Fișier CSV descărcat cu succes");
+            TestListener.getTest().log(Status.PASS,"Fișier CSV descărcat cu succes");
         } catch (Exception e) {
-            Reporter.log("Eroare la descărcarea fișierului CSV: " + e.getMessage());
+            TestListener.getTest().log(Status.FAIL,"Eroare la descărcarea fișierului CSV: " + e.getMessage());
         }
     }
 
@@ -121,7 +122,7 @@ public class GoogleAccountsPage {
         wait.until(ExpectedConditions.elementToBeClickable(deleteBtn)).click();
         WebElement confirmBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(confirmDeleteButton));
         wait.until(ExpectedConditions.elementToBeClickable(confirmBtn)).click();
-        Reporter.log("Cont șters cu succes: " + keyword);
+        TestListener.getTest().log(Status.PASS,"Cont șters cu succes: " + keyword);
     }
 
     public void editAccount(String keyword) {
@@ -157,7 +158,7 @@ public class GoogleAccountsPage {
             WebElement day = wait.until(ExpectedConditions.elementToBeClickable(days.get(random.nextInt(days.size()))));
             day.click();
         } else {
-            Reporter.log("Nu există zile disponibile în calendar.");
+            TestListener.getTest().log(Status.INFO,"Nu există zile disponibile în calendar.");
         }
     }
 
