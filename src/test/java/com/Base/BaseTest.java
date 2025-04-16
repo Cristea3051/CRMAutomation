@@ -14,6 +14,7 @@ import com.utilities.Login;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.time.Duration;
 import java.util.Properties;
 
@@ -39,10 +40,8 @@ public class BaseTest {
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        locators = loadProperties(
-                "/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/locators.properties");
-        inputInfo = loadProperties(
-                "/home/victorcristea/Documents/AutomationCRM/crmAuto/src/test/java/com/resources/configfiles/inputinfo.properties");
+//        locators = loadProperties("src/test/java/com/resources/configfiles/locators.properties");
+//        inputInfo = loadProperties("src/test/java/com/resources/configfiles/inputinfo.properties");
 
         helpers = new Helpers(driver, locators);
         login = new Login(driver);
@@ -50,17 +49,18 @@ public class BaseTest {
         logger.info("Driver inițializat și configurat pentru test");
     }
 
-    private Properties loadProperties(String filePath) {
-        Properties properties = new Properties();
-        try (FileInputStream fis = new FileInputStream(filePath)) {
-            properties.load(fis);
-            logger.debug("Fișier de proprietăți încărcat: " + filePath);
-        } catch (IOException e) {
-            logger.error("Eroare la încărcarea fișierului de proprietăți: " + filePath, e);
-            e.printStackTrace();
-        }
-        return properties;
-    }
+//    protected Properties loadProperties(String resourcePath) {
+//        Properties props = new Properties();
+//        try (InputStream input = getClass().getClassLoader().getResourceAsStream(resourcePath)) {
+//            if (input == null) {
+//                throw new IllegalArgumentException("Fișierul nu a fost găsit: " + resourcePath);
+//            }
+//            props.load(input);
+//        } catch (IOException e) {
+//            logger.error("Eroare la încărcarea fișierului de proprietăți: " + resourcePath, e);
+//        }
+//        return props;
+//    }
 
     @AfterMethod
     public void tearDown() {

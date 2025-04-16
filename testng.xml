@@ -3,21 +3,18 @@
     <listeners>
         <listener class-name="com.utilities.TestListener"/>
     </listeners>
-<!--   <test name="Google Accounts Test">-->
-<!--      <classes>-->
-<!--         <class name="com.crm.GoogleAccounts.CreateGoogleAccountTest" />-->
-<<<<<<< HEAD
+   <test name="Google Accounts Test">
+      <classes>
+         <class name="com.crm.GoogleAccounts.CreateGoogleAccountTest" />
 <!--         <class name="com.crm.GoogleAccounts.UpdateGoogleAccount" />-->
-=======
 <!--         <class name="com.crm.GoogleAccounts.UpdateGoogleAccountTest" />-->
->>>>>>> 76f613180ededd32f5b7d1d7bd361874b1c7bc8c
 <!--         <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest" />-->
 <!--         <class name="com.crm.GoogleAccounts.DownloadCSVTest" />-->
 <!--         <class name="com.crm.GoogleAccounts.SearchTest" />-->
 <!--         <class name="com.crm.GoogleAccounts.DeleteTableSettingsTest" />-->
-<!--         <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest" />-->
-<!--      </classes>-->
-<!--  </test>-->
+         <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest" />
+      </classes>
+  </test>
 
 <!--<test name="Dash Card Test">-->
 <!--      <classes>-->
@@ -68,26 +65,26 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-    <test name="SG Campaigns Test">
-        <classes>
-            <class name="com.crm.SGCampaigns.CreateAndOrderTableSettingsTest" />
-            <class name="com.crm.SGCampaigns.CreateTableSettingsPerOfferTest" />
-            <class name="com.crm.SGCampaigns.DownloadCSVTest" />
-            <class name="com.crm.SGCampaigns.DownloadCSVPerOfferTest" />
-            <class name="com.crm.SGCampaigns.SearchSGTest" />
-            <class name="com.crm.SGCampaigns.SGFilterTest" />
-            <class name="com.crm.SGCampaigns.DeleteTableSettingsTest" />
-            <class name="com.crm.SGCampaigns.DeleteSettingsPerOfferTest" />
-        </classes>
-    </test>
+<!--    <test name="SG Campaigns Test">-->
+<!--        <classes>-->
+<!--            <class name="com.crm.SGCampaigns.CreateAndOrderTableSettingsTest" />-->
+<!--            <class name="com.crm.SGCampaigns.CreateTableSettingsPerOfferTest" />-->
+<!--            <class name="com.crm.SGCampaigns.DownloadCSVTest" />-->
+<!--            <class name="com.crm.SGCampaigns.DownloadCSVPerOfferTest" />-->
+<!--            <class name="com.crm.SGCampaigns.SearchSGTest" />-->
+<!--            <class name="com.crm.SGCampaigns.SGFilterTest" />-->
+<!--            <class name="com.crm.SGCampaigns.DeleteTableSettingsTest" />-->
+<!--            <class name="com.crm.SGCampaigns.DeleteSettingsPerOfferTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="Batch Accounts Test">
-        <classes>
-            <class name="com.crm.BatchAccounts.CreateAndOrderTableSettingsTest" />
-            <class name="com.crm.BatchAccounts.CreateAccountBatchTest" />
-            <class name="com.crm.BatchAccounts.UpdateBatchAccountTest" />
-            <class name="com.crm.BatchAccounts.FindAndDeleteBatchAccountTest" />
-            <class name="com.crm.BatchAccounts.DeleteTableSettingsTest" />
-        </classes>
-    </test>
+<!--    <test name="Batch Accounts Test">-->
+<!--        <classes>-->
+<!--            <class name="com.crm.BatchAccounts.CreateAndOrderTableSettingsTest" />-->
+<!--            <class name="com.crm.BatchAccounts.CreateAccountBatchTest" />-->
+<!--            <class name="com.crm.BatchAccounts.UpdateBatchAccountTest" />-->
+<!--            <class name="com.crm.BatchAccounts.FindAndDeleteBatchAccountTest" />-->
+<!--            <class name="com.crm.BatchAccounts.DeleteTableSettingsTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

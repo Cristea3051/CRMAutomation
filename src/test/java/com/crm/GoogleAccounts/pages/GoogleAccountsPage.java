@@ -2,13 +2,11 @@ package com.crm.GoogleAccounts.pages;
 
 import com.aventstack.extentreports.Status;
 import com.utilities.TestListener;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 import java.time.Duration;
 import java.util.List;
@@ -20,9 +18,9 @@ public class GoogleAccountsPage {
 
     // Locatori
     private final By createButton = By.cssSelector("button.btn-dual:nth-child(5)");
-    private final By searchInput = By.cssSelector("input.form-control-sm");
-    private final By tableHeaders = By.cssSelector(".dataTables_scrollHeadInner > table:nth-child(1) > thead:nth-child(1) > tr:nth-child(1) > th");
-    private final By firstRowCells = By.cssSelector("#google-accounts-list tbody tr:first-child td");
+    private By searchInput = By.cssSelector("input.form-control[type='search']");
+    private By tableHeaders = By.cssSelector(".dataTables_scrollHeadInner th");
+    private By firstRowCells = By.cssSelector("#google-accounts-list tbody tr:first-child td");
     private final By rowsSelect = By.name("google-accounts-list_length");
     private final By exportCsvButton = By.xpath("//button[@title='Export to CSV File' and contains(@class, 'buttons-csv') and @aria-controls='google-accounts-list']");
     private final By confirmExportButton = By.id("google-accounts-list-export-button");
@@ -43,7 +41,7 @@ public class GoogleAccountsPage {
     }
 
     public void navigateTo() {
-        driver.get("http://crm-dash/google-accounts");
+        driver.get("http://192.168.0.57/google-accounts");
         // Așteaptă ca pagina să fie încărcată complet
         wait.until(ExpectedConditions.urlContains("google-accounts"));
         TestListener.getTest().log(Status.PASS,"Navigat la pagina: " + driver.getTitle());
@@ -80,25 +78,66 @@ public class GoogleAccountsPage {
     }
 
     public boolean searchAndVerify(String keyword) {
-        enterText(searchInput, keyword);
-        // Așteaptă ca tabelul să fie vizibil
-        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(tableHeaders));
-        List<WebElement> headers = driver.findElements(tableHeaders);
-        List<WebElement> firstRow = driver.findElements(firstRowCells);
-        boolean found = false;
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        try {
+            // Pas 1: Introdu text în câmpul de căutare și așteaptă procesarea
+            enterText(searchInput, keyword);
+            TestListener.getTest().log(Status.INFO, "Text introdus în câmpul de căutare: " + keyword);
 
-        for (int i = 0; i < headers.size(); i++) {
-            WebElement header = wait.until(ExpectedConditions.visibilityOf(headers.get(i)));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", header);
-            String headerText = header.getText().trim();
-            String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : "";
-            TestListener.getTest().log(Status.INFO,headerText + " -> " + content);
-
-            if (content.contains(keyword)) {
-                found = true;
+            // Pas 2: Așteaptă ca indicatorul de încărcare să dispară (dacă există)
+            try {
+                wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".dataTables_processing")));
+                TestListener.getTest().log(Status.INFO, "Încărcarea tabelului finalizată");
+            } catch (TimeoutException e) {
+                TestListener.getTest().log(Status.INFO, "Niciun indicator de încărcare detectat");
             }
+
+            // Pas 3: Așteaptă ca antetele să fie prezente
+            By tableHeaders = By.cssSelector(".dataTables_scrollHeadInner th");
+            wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(tableHeaders));
+
+            // Pas 4: Așteaptă ca primul rând să fie prezent
+            By firstRowCells = By.cssSelector("#google-accounts-list tbody tr:first-child td");
+            wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(firstRowCells));
+
+            // Pas 5: Parcurge antetele și celulele, reîmprospătând referințele
+            boolean found = false;
+            List<WebElement> headers = driver.findElements(tableHeaders);
+            int headerCount = headers.size();
+            TestListener.getTest().log(Status.INFO, "Antete găsite: " + headerCount);
+
+            for (int i = 0; i < headerCount; i++) {
+                // Reîmprospătează lista antetelor pentru a evita stale elements
+                headers = driver.findElements(tableHeaders);
+                WebElement header = wait.until(ExpectedConditions.visibilityOf(headers.get(i)));
+
+                // Scroll la antet pentru a-l face vizibil
+                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'nearest', inline: 'start'});", header);
+
+                // Așteaptă ca antetul să fie stabil după scroll
+                wait.until(ExpectedConditions.visibilityOf(header));
+                String headerText = header.getText().trim();
+
+                // Reîmprospătează lista celulelor
+                List<WebElement> firstRow = driver.findElements(firstRowCells);
+                String content = (i < firstRow.size()) ? firstRow.get(i).getText().trim() : "";
+
+                // Loghează antetul și celula
+                TestListener.getTest().log(Status.INFO, "Header[" + i + "]: " + headerText + " -> Cell[" + i + "]: " + content);
+
+                // Verifică dacă keyword este în conținut
+                if (content.contains(keyword)) {
+                    found = true;
+                }
+            }
+
+            TestListener.getTest().log(found ? Status.PASS : Status.FAIL,
+                    found ? "Cuvânt cheie găsit: " + keyword : "Cuvânt cheie negăsit: " + keyword);
+            return found;
+        } catch (Exception e) {
+            TestListener.getTest().log(Status.FAIL, "Eroare la căutarea/verificarea tabelului: " + e.getMessage());
+            throw e;
         }
-        return found;
     }
 
     public void exportCsv() {
@@ -114,15 +153,37 @@ public class GoogleAccountsPage {
     }
 
     public void deleteAccount(String keyword) {
-        By searchField = By.cssSelector("input.form-control[type='search']");
-        enterText(searchField, keyword);
-        WebElement row = wait.until(ExpectedConditions.visibilityOfElementLocated(rowClick));
-        wait.until(ExpectedConditions.elementToBeClickable(row)).click();
-        WebElement deleteBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(deleteButton));
-        wait.until(ExpectedConditions.elementToBeClickable(deleteBtn)).click();
-        WebElement confirmBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(confirmDeleteButton));
-        wait.until(ExpectedConditions.elementToBeClickable(confirmBtn)).click();
-        TestListener.getTest().log(Status.PASS,"Cont șters cu succes: " + keyword);
+        try {
+            // Pas 1: Introdu text în câmpul de căutare
+            By searchField = By.cssSelector("input.form-control[type='search']");
+            enterText(searchField, keyword);
+            TestListener.getTest().log(Status.INFO, "Text introdus în câmpul de căutare: " + keyword);
+            Thread.sleep(2000); // Pauză de 1 secundă
+
+            // Pas 2: Așteaptă și selectează rândul
+            WebElement row = wait.until(ExpectedConditions.visibilityOfElementLocated(rowClick));
+            wait.until(ExpectedConditions.elementToBeClickable(row)).click();
+            TestListener.getTest().log(Status.INFO, "Rând selectat");
+            Thread.sleep(2000); // Pauză de 1 secundă
+
+            // Pas 3: Așteaptă și apasă butonul de ștergere
+            WebElement deleteBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(deleteButton));
+            wait.until(ExpectedConditions.elementToBeClickable(deleteBtn)).click();
+            TestListener.getTest().log(Status.INFO, "Buton de ștergere apăsat");
+            Thread.sleep(2000); // Pauză de 1 secundă
+
+            // Pas 4: Așteaptă și confirmă ștergerea
+            WebElement confirmBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(confirmDeleteButton));
+            wait.until(ExpectedConditions.elementToBeClickable(confirmBtn)).click();
+            TestListener.getTest().log(Status.INFO, "Ștergere confirmată");
+            Thread.sleep(2000); // Pauză de 1 secundă
+
+            // Log succes
+            TestListener.getTest().log(Status.PASS, "Cont șters cu succes: " + keyword);
+        } catch (InterruptedException e) {
+            TestListener.getTest().log(Status.FAIL, "Eroare la pauza între pași: " + e.getMessage());
+            Thread.currentThread().interrupt();
+        }
     }
 
     public void editAccount(String keyword) {

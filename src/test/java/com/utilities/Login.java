@@ -19,7 +19,7 @@ public class Login {
     }
 
     public void performLogin(String username, String password) {
-        driver.get("http://crm-dash/login");
+        driver.get("http://192.168.0.57/login");
 
         // Localizează și completează câmpurile de logare
         WebElement usernameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login-username")));
