@@ -1,9 +1,6 @@
 package com.crm.GoogleAccounts;
 
 import com.crm.GoogleAccounts.pages.GoogleAccountsPage;
-
-import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
