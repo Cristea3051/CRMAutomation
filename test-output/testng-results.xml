@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Debug Bar a fost ascuns]]>
@@ -10,17 +10,20 @@
     <line>
       <![CDATA[Debug Bar a fost ascuns]]>
     </line>
+    <line>
+      <![CDATA[Debug Bar a fost ascuns]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-04-16T15:21:04 EEST" name="Test CRM Suite " finished-at="2025-04-16T15:21:43 EEST" duration-ms="39480">
+  <suite started-at="2025-04-17T15:11:03 EEST" name="Test CRM Suite " finished-at="2025-04-17T15:12:02 EEST" duration-ms="58479">
     <groups>
     </groups>
-    <test started-at="2025-04-16T15:21:04 EEST" name="Google Accounts Test" finished-at="2025-04-16T15:21:43 EEST" duration-ms="39480">
-      <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@18b0930f]" started-at="2025-04-16T15:21:24 EEST" name="setUp" finished-at="2025-04-16T15:21:26 EEST" duration-ms="1461" status="PASS">
+    <test started-at="2025-04-17T15:11:03 EEST" name="Google Accounts Test" finished-at="2025-04-17T15:12:02 EEST" duration-ms="58479">
+      <class name="com.crm.GoogleAccounts.DownloadCSVTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSVTest@6b7906b3]" started-at="2025-04-17T15:11:24 EEST" name="setUp" finished-at="2025-04-17T15:11:26 EEST" duration-ms="1346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@18b0930f]" started-at="2025-04-16T15:21:26 EEST" name="signIn" data-provider="GlobalCred" finished-at="2025-04-16T15:21:43 EEST" duration-ms="17584" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.DownloadCSVTest@6b7906b3]" started-at="2025-04-17T15:11:26 EEST" name="signIn" data-provider="GlobalCred" finished-at="2025-04-17T15:11:41 EEST" duration-ms="15631" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,17 +42,46 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@18b0930f]" started-at="2025-04-16T15:21:43 EEST" name="tearDown" finished-at="2025-04-16T15:21:43 EEST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.GoogleAccounts.DownloadCSVTest@6b7906b3]" started-at="2025-04-17T15:11:41 EEST" name="tearDown" finished-at="2025-04-17T15:11:42 EEST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.GoogleAccounts.DownloadCSVTest -->
+      <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@3a1dd365]" started-at="2025-04-17T15:11:42 EEST" name="setUp" finished-at="2025-04-17T15:11:43 EEST" duration-ms="1379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@3a1dd365]" started-at="2025-04-17T15:11:43 EEST" name="signIn" data-provider="GlobalCred" finished-at="2025-04-17T15:12:02 EEST" duration-ms="18684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[victor.cristea@vebo.io]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[j8L3pc5hJ20Sjn10Lp!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Debug Bar a fost ascuns]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest@3a1dd365]" started-at="2025-04-17T15:12:02 EEST" name="tearDown" finished-at="2025-04-17T15:12:02 EEST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest -->
       <class name="com.crm.GoogleAccounts.CreateGoogleAccountTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@35e5d0e5]" started-at="2025-04-16T15:21:04 EEST" name="setUp" finished-at="2025-04-16T15:21:05 EEST" duration-ms="1443" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@73173f63]" started-at="2025-04-17T15:11:03 EEST" name="setUp" finished-at="2025-04-17T15:11:05 EEST" duration-ms="1644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@35e5d0e5]" started-at="2025-04-16T15:21:05 EEST" name="signIn" data-provider="GlobalCred" finished-at="2025-04-16T15:21:24 EEST" duration-ms="18704" status="PASS">
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@73173f63]" started-at="2025-04-17T15:11:05 EEST" name="signIn" data-provider="GlobalCred" finished-at="2025-04-17T15:11:24 EEST" duration-ms="19343" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,7 +103,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@35e5d0e5]" started-at="2025-04-16T15:21:24 EEST" name="tearDown" finished-at="2025-04-16T15:21:24 EEST" duration-ms="80" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.GoogleAccounts.CreateGoogleAccountTest@73173f63]" started-at="2025-04-17T15:11:24 EEST" name="tearDown" finished-at="2025-04-17T15:11:24 EEST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

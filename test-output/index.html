@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -112,6 +112,11 @@
                         <a href="#" panel-name="suite-Test_CRM_Suite_" title="com.crm.GoogleAccounts.CreateGoogleAccountTest" class="method navigator-link" hash-for-method="signIn(victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!)">signIn(victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_CRM_Suite_" title="com.crm.GoogleAccounts.DownloadCSVTest" class="method navigator-link" hash-for-method="signIn(victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!)">signIn(victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Test_CRM_Suite_ -->
                   </li>
                 </ul>
@@ -128,6 +133,22 @@
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn(victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!)">
+                  </a> <!-- signIn(victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!) -->
+                  <span class="method-name">signIn</span>
+                  <span class="parameters">(victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_CRM_Suite_-class-passed -->
+          <div class="suite-Test_CRM_Suite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.crm.GoogleAccounts.DownloadCSVTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -172,6 +193,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Google Accounts Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.crm.GoogleAccounts.CreateGoogleAccountTest&quot;/&gt;
+      &lt;class name=&quot;com.crm.GoogleAccounts.DownloadCSVTest&quot;/&gt;
       &lt;class name=&quot;com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Google Accounts Test --&gt;
@@ -186,7 +208,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Google Accounts Test (2 classes)</span>
+                <span class="test-name">Google Accounts Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,20 +234,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'signIn')
 data.setCell(0, 2, 'com.crm.GoogleAccounts.CreateGoogleAccountTest')
-data.setCell(0, 3, 18704);
+data.setCell(0, 3, 19343);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'signIn')
 data.setCell(1, 2, 'com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest')
-data.setCell(1, 3, 17584);
+data.setCell(1, 3, 18684);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'signIn')
+data.setCell(2, 2, 'com.crm.GoogleAccounts.DownloadCSVTest')
+data.setCell(2, 3, 15631);
 window.suiteTableData['Test_CRM_Suite_']= { tableData: data, tableDiv: 'times-div-Test_CRM_Suite_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-Test_CRM_Suite_">
               </div> <!-- times-div-Test_CRM_Suite_ -->
             </div> <!-- times-div -->
@@ -247,6 +273,12 @@ return data;
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Debug Bar a fost ascuns</span>
                 <span class="reporter-method-output">Cont creat și verificat cu succes</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">signIn(victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Debug Bar a fost ascuns</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,26 +303,41 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signIn(victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!)</span>
-                <span class="method-start">1445 ms</span>
+                <span class="method-start">1645 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20150 ms</span>
+                <span class="method-start">20990 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.crm.GoogleAccounts.DownloadCSVTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">21088 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signIn(victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!)</span>
+                <span class="method-start">22434 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38066 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">20232 ms</span>
+                <span class="method-start">38196 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signIn(victor.cristea@vebo.io, j8L3pc5hJ20Sjn10Lp!)</span>
-                <span class="method-start">21693 ms</span>
+                <span class="method-start">39575 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39278 ms</span>
+                <span class="method-start">58259 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

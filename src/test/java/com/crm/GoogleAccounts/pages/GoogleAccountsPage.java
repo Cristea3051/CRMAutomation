@@ -146,6 +146,7 @@ public class GoogleAccountsPage {
         try {
             WebElement confirmBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(confirmExportButton));
             wait.until(ExpectedConditions.elementToBeClickable(confirmBtn)).click();
+            Thread.sleep(5000);
             TestListener.getTest().log(Status.PASS,"Fișier CSV descărcat cu succes");
         } catch (Exception e) {
             TestListener.getTest().log(Status.FAIL,"Eroare la descărcarea fișierului CSV: " + e.getMessage());
