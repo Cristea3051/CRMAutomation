@@ -16,7 +16,7 @@ public class GoogleAccountsPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
 
-    // Locatori
+    // Locators
     private final By createButton = By.cssSelector("button.btn-dual:nth-child(5)");
     private final By searchInput = By.cssSelector("input.form-control[type='search']");
     private final By rowsSelect = By.name("google-accounts-list_length");
@@ -27,14 +27,31 @@ public class GoogleAccountsPage {
     private final By confirmDeleteButton = By.cssSelector("button.swal2-confirm[type='button']");
     private final By rowClick = By.cssSelector("td.text-center.desktop.sorting_1.dtfc-fixed-left");
 
-    // Locatori formular creare/editare
+    // Locators create form
     private final By accountNameField = By.cssSelector("textarea.form-control");
     private final By accountIdField = By.cssSelector("input.form-control.js-maxlength[name='account_id'][data-modal-field-id='create_account_id']");
     private final By selectAccountStatus = By.cssSelector("select.form-control.js-maxlength[name='status'][data-modal-field-id='create_status']");
-    private final By selectIdVerificationDate= By.cssSelector("input.form-control.js-maxlength[name='id_verification'][data-modal-field-id='create_id_verification']");
-    //      NU treb de uitat de adaugat alte elemente
+    private final By selectSyncFromDate = By.cssSelector("input.form-control.js-maxlength[name='sync_from_date'][data-modal-field-id='create_sync_from_date']");
+    private final By selectBhDate = By.cssSelector("input.form-control.js-maxlength[name='bh_date'][data-modal-field-id='create_bh_date']");
+    private final By accountLogin = By.cssSelector("input.form-control.js-maxlength[name='username'][data-modal-field-id='create_username']");
+    private final By  accountPassword= By.cssSelector("input.form-control.js-maxlength[name='password'][data-modal-field-id='create_password']");
+    private final By emailLogin = By.cssSelector("input.form-control.js-maxlength[name='email_login'][data-modal-field-id='create_email_login']");
+    private final By  emailPassword = By.cssSelector("input.form-control.js-maxlength[name='email_password'][data-modal-field-id='create_email_password']");
+    private final By  farmerComments = By.cssSelector("input.form-control.js-maxlength[name='farmer_comments'][data-modal-field-id='create_farmer_comments']");
+    private final By selectIdVerificationDate = By.cssSelector("input.form-control.js-maxlength[name='id_verification'][data-modal-field-id='create_id_verification']");
+    private final By create2FA = By.cssSelector("input.form-control.js-maxlength[name='2fa'][data-modal-field-id='create_2fa']");
+    private final By createBackUpCode = By.cssSelector("input.form-control.js-maxlength[name='backup_code'][data-modal-field-id='create_backup_code']");
+    private final By createMbDeliveryDate = By.cssSelector("input.form-control.js-maxlength[name='mb_delivery_date'][data-modal-field-id='create_mb_delivery_date']");
+    private final By attachCreditCard = By.cssSelector("select.form-control.multiple-selector-inputs[name='account-cards[]'][data-modal-field-id='create_credit_cards']");
+    private final By attachToBatch = By.cssSelector("select.form-control.multiple-selector-inputs[name='account-cards[]'][data-modal-field-id='create_credit_cards']");
+    private final By accountSource = By.cssSelector("input.form-control.js-maxlength[inputname='source_id'][data-modal-field-id='create_source_id']");
+
+
+    // Nu treb de uitat de adaugat alte elemente
     private final By saveButton = By.cssSelector("button#create-google-accounts-button");
     private final By editSaveButton = By.id("edit-google-accounts-button");
+
+    // Locators edit form
 
     public GoogleAccountsPage(WebDriver driver) {
         this.driver = driver;
@@ -50,7 +67,7 @@ public class GoogleAccountsPage {
 
     public void selectRows(int index) {
         WebElement select = wait.until(ExpectedConditions.visibilityOfElementLocated(rowsSelect));
-        wait.until(ExpectedConditions.elementToBeClickable(select)); // Așteaptă să fie clicabil
+        wait.until(ExpectedConditions.elementToBeClickable(select));
         new Select(select).selectByIndex(index);
     }
 
