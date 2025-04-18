@@ -30,6 +30,9 @@ public class GoogleAccountsPage {
     // Locatori formular creare/editare
     private final By accountNameField = By.cssSelector("textarea.form-control");
     private final By accountIdField = By.cssSelector("input.form-control.js-maxlength[name='account_id'][data-modal-field-id='create_account_id']");
+    private final By selectAccountStatus = By.cssSelector("select.form-control.js-maxlength[name='status'][data-modal-field-id='create_status']");
+    private final By selectIdVerificationDate= By.cssSelector("input.form-control.js-maxlength[name='id_verification'][data-modal-field-id='create_id_verification']");
+    //      NU treb de uitat de adaugat alte elemente
     private final By saveButton = By.cssSelector("button#create-google-accounts-button");
     private final By editSaveButton = By.id("edit-google-accounts-button");
 
@@ -58,8 +61,8 @@ public class GoogleAccountsPage {
     public void fillCreateForm() {
         enterText(accountNameField, "GoogleAccountNameTestJava");
         enterText(accountIdField, "1234567890");
-        selectDropdownOption(By.cssSelector("select.form-control.js-maxlength[name='status'][data-modal-field-id='create_status']"));
-        clickAndSelectRandomDay(By.cssSelector("input.form-control.js-maxlength[name='id_verification'][data-modal-field-id='create_id_verification']"));
+        selectDropdownOption(selectAccountStatus);
+        clickAndSelectRandomDay(selectIdVerificationDate);
 //      NU treb de uitat de adaugat alte elemente
         WebElement saveBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(saveButton));
         wait.until(ExpectedConditions.elementToBeClickable(saveBtn)).click();

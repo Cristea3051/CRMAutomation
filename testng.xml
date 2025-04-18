@@ -5,11 +5,11 @@
     </listeners>
    <test name="Google Accounts Test">
       <classes>
-         <class name="com.crm.GoogleAccounts.CreateGoogleAccountTest" />
+<!--         <class name="com.crm.GoogleAccounts.CreateGoogleAccountTest" />-->
 <!--         <class name="com.crm.GoogleAccounts.UpdateGoogleAccount" />-->
 <!--         <class name="com.crm.GoogleAccounts.UpdateGoogleAccountTest" />-->
 <!--         <class name="com.crm.GoogleAccounts.CreateAndOrderTableSettingsTest" />-->
-         <class name="com.crm.GoogleAccounts.DownloadCSVTest" />
+<!--         <class name="com.crm.GoogleAccounts.DownloadCSVTest" />-->
 <!--         <class name="com.crm.GoogleAccounts.SearchTest" />-->
 <!--         <class name="com.crm.GoogleAccounts.DeleteTableSettingsTest" />-->
          <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest" />

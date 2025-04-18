@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" name="Google Accounts Test(failed)" verbose="0">
     <classes>
+      <class name="com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="signIn" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.crm.GoogleAccounts.FindAndDeleteGoogleAccountTest -->
       <class name="com.crm.GoogleAccounts.CreateGoogleAccountTest">
         <methods>
           <include name="tearDown"/>
